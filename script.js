@@ -161,3 +161,25 @@ function initializeArticleSearch() {
   });
 }
 
+// for the info panel
+document.querySelectorAll('.info-table td button').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const id = btn.getAttribute('data-explanation-id');
+    const explanationDiv = document.getElementById(id);
+    if (explanationDiv) {
+      document.getElementById('panel-title').textContent = btn.textContent;
+      document.getElementById('panel-explanation').innerHTML = explanationDiv.innerHTML;
+      document.getElementById('sidePanel').classList.add('open');
+    }
+  });
+});
+
+document.querySelector('.close-panel-button').addEventListener('click', function() {
+  document.getElementById('sidePanel').classList.remove('open');
+});
+document.addEventListener('click', function(e) {
+  const panel = document.getElementById('sidePanel');
+  if (panel.classList.contains('open') && !panel.contains(e.target) && !e.target.closest('.info-table button')) {
+    panel.classList.remove('open');
+  }
+});
