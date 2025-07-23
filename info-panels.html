@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oakridge Nuclear Power Station - Information Panels</title>
+  <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="info-panels.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero small-hero">
+    <div class="hero-overlay"></div>
+    <img src="images/Info Panels.webp" alt="Pre-Start Reactor" />
+    <div class="hero-content">
+      <h1>Information Panels</h1>
+      <p><em>What even is Pump Cavitation???</em></p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div id="NavGrid-placeholder"></div>
+
+    <section class="location-section">
+        <h2>Information Panels</h2>
+        <br>
+        <p>Information Panels are what tell you the status of various systems within the nuclear facility. They provide real-time information, warnings, and critical alerts to the operators.</p>
+        <br>
+        <p>Understanding some of the lights can be confusing, but the interactive graphic below can help. Just click on a panel light, it's that simple.</p>
+        <br>
+
+        <details class="details">
+            <summary class="summary">Condenser Coolant Panel</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="critical" data-explanation-id="coolant-trip">Coolant Pump A1 Trip</button></td>
+                    <td><button class="critical" data-explanation-id="coolant-trip">Coolant Pump A2 Trip</button></td>
+                    <td><button class="critical" data-explanation-id="coolant-trip">Coolant Pump B1 Trip</button></td>
+                    <td><button class="critical" data-explanation-id="coolant-trip">Coolant Pump B2 Trip</button></td>
+                </tr>
+                <tr> 
+                    <td><button class="critical" data-explanation-id="coolant-trip">Coolant Pump A3 Trip</button></td>
+                    <td><button class="critical" data-explanation-id="coolant-trip">Coolant Pump A4 Trip</button></td>
+                    <td><button class="critical" data-explanation-id="coolant-trip">Coolant Pump B3 Trip</button></td>
+                    <td><button class="critical" data-explanation-id="coolant-trip">Coolant Pump B4 Trip</button></td>
+                </tr>
+                <tr> 
+                    <td><button class="warning" data-explanation-id="coolant-dry">Coolant Loop A Dry</button></td>
+                    <td><button class="warning" data-explanation-id="coolant-dry">Coolant Loop B Dry</button></td>
+                    <td><button class="critical" data-explanation-id="coolant-temp">High Coolant Temp A</button></td>
+                    <td><button class="critical" data-explanation-id="coolant-temp">High Coolant Temp B</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Turbine A/B Panel</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="critical" data-explanation-id="turbine-trip">Turbine Trip</button></td>
+                    <td><button class="info" data-explanation-id="turbine-brk">MAIN Turbine BRK.</button></td>
+                    <td><button class="info" data-explanation-id="turbine-gen-sync">Generator Synced</button></td>
+                    <td><button class="critical" data-explanation-id="turbine-vibration">High Bearing Vibration</button></td>
+                </tr>
+                <tr>
+                    <td><button class="warning" data-explanation-id="turbine-reverse">Reverse Power</button></td>
+                    <td><button class="warning" data-explanation-id="turbine-demand">Demand Unmet</button></td>
+                    <td><button class="critical" data-explanation-id="turbine-rpm">High RPM</button></td>
+                    <td><button class="critical" data-explanation-id="turbine-gear">Turning Gear Engaged</button></td>
+                </tr>
+                <tr>
+                    <td><button class="warning" data-explanation-id="turbine-inlet">High Inlet Pressure</button></td>
+                    <td><button class="warning" data-explanation-id="turbine-oulet">High Outlet Pressure</button></td>
+                    <td><button class="info" data-explanation-id="turbine-rpm">Low RPM</button></td>
+                    <td><button class="critical" data-explanation-id="turbine-rejection">Full Load Rejection</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Deaerator Panel</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="warning" data-explanation-id="deaerator-water-lvl">Deaerator A Water Level High</button></td>
+                    <td><button class="critical" data-explanation-id="deaerator-water-lvl">Deaerator A Water Level Low</button></td>
+                    <td><button class="warning" data-explanation-id="deaerator-water-lvl">Deaerator B Water Level High</button></td>
+                    <td><button class="critical" data-explanation-id="deaerator-water-lvl">Deaerator B Water Level Low</button></td>
+                </tr>
+                <tr>
+                    <td><button class="critical" data-explanation-id="deaerator-temp">Deaerator A Temp High</button></td>
+                    <td><button class="critical" data-explanation-id="deaerator-pressure">Deaerator A Pressure High</button></td>
+                    <td><button class="critical" data-explanation-id="deaerator-temp">Deaerator B Temp High</button></td>
+                    <td><button class="critical" data-explanation-id="deaerator-pressure">Deaerator B Pressure High</button></td>
+                </tr>
+                <tr>
+                    <td><button class="warning" data-explanation-id="deaerator-temp">Deaerator A Temp Low</button></td>
+                    <td><button class="critical" data-explanation-id="deaerator-pressure">Deaerator A Pressure Low</button></td>
+                    <td><button class="warning" data-explanation-id="deaerator-temp">Deaerator B Temp Low</button></td>
+                    <td><button class="critical" data-explanation-id="deaerator-pressure">Deaerator A Pressure Low</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Feedwater Panel</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="critical" data-explanation-id="core-water">Core Water High High</button></td>
+                    <td><button class="warning" data-explanation-id="feed-dry">Feed Loop Dry</button></td>
+                    <td><button class="info" data-explanation-id="feed-pump">Feedwater Pump 1</button></td>
+                    <td><button class="critical" data-explanation-id="feed-trip">Feed Pump 1 Trip</button></td>
+                </tr>
+                <tr>
+                    <td><button class="info" data-explanation-id="core-water">Core Water High</button></td>
+                    <td><button class="warning" data-explanation-id="feed-insufficient">Insufficient Feed</button></td>
+                    <td><button class="info" data-explanation-id="feed-pump">Feedwater Pump 2</button></td>
+                    <td><button class="critical" data-explanation-id="feed-trip">Feed Pump 2 Trip</button></td>
+                </tr>
+                <tr>
+                    <td><button class="critical" data-explanation-id="feed-overpressure">Circuit Overpressure</button></td>
+                    <td><button class="critical" data-explanation-id="feed-cavitation">Pump Cavitation</button></td>
+                    <td><button class="info" data-explanation-id="feed-pump">Feedwater Pump 3</button></td>
+                    <td><button class="critical" data-explanation-id="feed-trip">Feed Pump 3 Trip</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Recirculation Panel</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="info" data-explanation-id="rpv-temp">High RPV Temperature</button></td>
+                    <td><button class="warning" data-explanation-id="recirc-dry">Recirc Loop Dry</button></td>
+                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump A2</button></td>
+                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump A1</button></td>
+                </tr>
+                <tr>
+                    <td><button class="info" data-explanation-id="rpv-temp">Low RPV Temperature</button></td>
+                    <td><button class="warning" data-explanation-id="core-water">Core Water Low</button></td>
+                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump B2</button></td>
+                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump B1</button></td>
+                </tr>
+                <tr>
+                    <td><button class="critical" data-explanation-id="recirc-trip">Recirc Pump Trip</button></td>
+                    <td><button class="critical" data-explanation-id="core-water">Core Water Low Low</button></td>
+                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump C2</button></td>
+                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump C1</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Reactor Conditions Panel RIGHT</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="critical" data-explanation-id="reactor-fuel-leak">Fuel Channel Leak</button></td>
+                    <td><button class="info" data-explanation-id="reactor-mode">Mode Shutdown</button></td>
+                </tr>
+                <tr>
+                    <td><button class="warning" data-explanation-id="reactor-rods">Rod Selection +12</button></td>
+                    <td><button class="info" data-explanation-id="reactor-mode">Mode Startup</button></td>
+                </tr>
+                <tr>
+                    <td><button class="warning" data-explanation-id="rpv-pressure">High RPV Pressure</button></td>
+                    <td><button class="info" data-explanation-id="reactor-mode">Mode Operating</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Reactor Conditions Panel CENTER</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="critical" data-explanation-id="reactor-scram">АЗ-5</button></td>
+                    <td><button class="info" data-explanation-id="reactor-autorods">Automatic Rods Set</button></td>
+                </tr>
+                <tr>
+                    <td><button class="critical" data-explanation-id="reactor-power">High Thermal Power</button></td>
+                    <td><button class="info" data-explanation-id="reactor-zone">A3 Rods Out Of Zone</button></td>
+                </tr>
+                <tr>
+                    <td><button class="warning" data-explanation-id="reactor-mode">Mode Conflict</button></td>
+                    <td><button class="critical" data-explanation-id="reactor-period">Low Reactor Period</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Reactor Conditions Panel LEFT</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="critical" data-explanation-id="eccs-inject">ECCS Injection Valve</button></td>
+                    <td><button class="info" data-explanation-id="reactor-isolation">Isolation Valve I-1 Open</button></td>
+                    <td><button class="info" data-explanation-id="reactor-isolation">Isolation Valve I-2 Open</button></td>
+                    <td><button class="critical" data-explanation-id="core-temp">Core Temp High High</button></td>
+                </tr>
+                <tr>
+                    <td><button class="critical" data-explanation-id="eccs-backflow">ECCS Backflow</button></td>
+                    <td><button class="info" data-explanation-id="reactor-isolation">Isolation Valve O-2 Open</button></td>
+                    <td><button class="info" data-explanation-id="occ">Offline Cooling</button></td>
+                    <td><button class="info" data-explanation-id="reactor-shutdownrods">Shutdown Rods Withdrawn</button></td>
+                </tr>
+                <tr>
+                    <td><button class="critical" data-explanation-id="suppression-overpressure">Suppression Tank Overpressure</button></td>
+                    <td><button class="info" data-explanation-id="reactor-isolation">Isolation Valve O-1 Open</button></td>
+                    <td><button class="warning" data-explanation-id="reactor-imbalance">Core Heat Imbalance</button></td>
+                    <td><button class="warning" data-explanation-id="reactor-scrambypass">Automatic АЗ-5 Bypass</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Water/Pressure Relief System Panel</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="critical" data-explanation-id="recirc-drain">Recirc Drain Valve</button></td>
+                    <td><button class="warning" data-explanation-id="rpv-relief-valve">Relief Valve 1</button></td>
+                    <td><button class="warning" data-explanation-id="rpv-relief-valve">Relief Valve 2</button></td>
+                    <td><button class="warning" data-explanation-id="steam-relief-valve">Relief Valve 7</button></td>
+                    <td><button class="critical" data-explanation-id="valve-trip">Valve Trip</button></td>
+                </tr>
+                <tr>
+                    <td><button class="critical" data-explanation-id="hotwell-drain">Hotwell A Drain Valve</button></td>
+                    <td><button class="warning" data-explanation-id="rpv-relief-valve">Relief Valve 3</button></td>
+                    <td><button class="warning" data-explanation-id="rpv-relief-valve">Relief Valve 4</button></td>
+                    <td><button class="warning" data-explanation-id="steam-relief-valve">Relief Valve 8</button></td>
+                    <td><button class="critical" data-explanation-id="rpv-pressure">RPV Pressure High High</button></td>
+                </tr>
+                <tr>
+                    <td><button class="critical" data-explanation-id="hotwell-drain">Hotwell B Drain Valve</button></td>
+                    <td><button class="warning" data-explanation-id="steam-relief-valve">Relief Valve 5</button></td>
+                    <td><button class="warning" data-explanation-id="steam-relief-valve">Relief Valve 6</button></td>
+                    <td><button class="critical" data-explanation-id="suppression-level">Suppression Tank Level High</button></td>
+                    <td><button class="info" data-explanation-id="eccs-check">ECCS Check</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Condensate Panel</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="critical" data-explanation-id="occ-dry">Heat Exchanger Loop Dry</button></td>
+                    <td><button class="info" data-explanation-id="hotwell-lvl">High Hotwell Level</button></td>
+                    <td><button class="critical" data-explanation-id="condensate-trip">Condensate 1 Trip</button></td>
+                    <td><button class="info" data-explanation-id="condensate-pump">Condensate Pump 1</button></td>
+                </tr>
+                <tr>
+                    <td><button class="info" data-explanation-id="occ-pump">Circulation Pump 1</button></td>
+                    <td><button class="warning" data-explanation-id="hotwell-lvl">Low Hotwell Level</button></td>
+                    <td><button class="critical" data-explanation-id="condensate-trip">Condensate 2 Trip</button></td>
+                    <td><button class="info" data-explanation-id="condensate-pump">Condensate Pump 2</button></td>
+                </tr>
+                <tr>
+                    <td><button class="info" data-explanation-id="occ-pump">Circulation Pump 2</button></td>
+                    <td><button class="critical" data-explanation-id="condensate-cavitation">Pump Cavitation</button></td>
+                    <td><button class="critical" data-explanation-id="condensate-trip">Condensate E Trip</button></td>
+                    <td><button class="info" data-explanation-id="condensate-pump">Condensate Pump E</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Plant Circuitry Panel</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="info" data-explanation-id="elec-bus">Bus Main Powered</button></td>
+                    <td><button class="warning" data-explanation-id="elec-battery">Battery In Use</button></td>
+                    <td><button class="critical" data-explanation-id="elec-transformer">Transformer Load</button></td>
+                    <td><button class="critical" data-explanation-id="elec-battery">Battery Critically Low</button></td>
+                </tr>
+                <tr>
+                    <td><button class="info" data-explanation-id="elec-bus">Bus A Powered</button></td>
+                    <td><button class="info" data-explanation-id="elec-rectifier">DC Rectifier</button></td>
+                    <td><button class="info" data-explanation-id="elec-brk-main">Main Breaker Open</button></td>
+                    <td><button class="critical" data-explanation-id="turbine-trip">Turbine Trip</button></td>
+                </tr>
+                <tr>
+                    <td><button class="info" data-explanation-id="elec-bus">Bus B Powered</button></td>
+                    <td><button class="info" data-explanation-id="elec-bus">Bus LV Powered</button></td>
+                    <td><button class="critical" data-explanation-id="elec-bus">Bus A Unpowered</button></td>
+                    <td><button class="critical" data-explanation-id="elec-loop">Offsite Power Connection Lost</button></td>
+                </tr>
+            </table>
+        </details>
+
+        <details class="details">
+            <summary class="summary">Makeup Water - Diesel Generator - Radiation Monitoring Panel</summary>
+            <table class="info-table">
+                <tr>
+                    <td><button class="critical" data-explanation-id="tower-low">Cooling Tower Basin A Low</button></td>
+                    <td><button class="critical" data-explanation-id="tower-low">Cooling Tower Basin B Low</button></td>
+                    <td><button class="info" data-explanation-id="eccs-makeup">ECCS Makeup Valve</button></td>
+                    <td><button class="critical" data-explanation-id="occ-trip">Circulation 1 Trip</button></td>
+                </tr>
+                <tr>
+                    <td><button class="info" data-explanation-id="cnd-makeup">Condenser Makeup Valve 1</button></td>
+                    <td><button class="info" data-explanation-id="cnd-makeup">Condenser Makeup Valve 2</button></td>
+                    <td><button class="critical" data-explanation-id="gen-fuel-low">Fuel Level Low</button></td>
+                    <td><button class="critical" data-explanation-id="occ-trip">Circulation 2 Trip</button></td>
+                </tr>
+                <tr>
+                    <td><button class="info" data-explanation-id="gen-active">Diesel Generator A</button></td>
+                    <td><button class="info" data-explanation-id="gen-active">Diesel Generator B</button></td>
+                    <td><button class="warning" data-explanation-id="radiation">Radiation Level 4+</button></td>
+                    <td><button class="critical" data-explanation-id="radiation">Radiation Level 8+</button></td>
+                </tr>
+            </table>
+        </details>
+
+    </section>
+
+      <!-- Side Panel for Explanations -->
+      <div class="side-panel" id="sidePanel">
+          <div class="panel-header">
+              <h2 id="panel-title"></h2>
+              <button class="close-panel-button" aria-label="Close">&times;</button>
+          </div>
+          <hr class="panel-header-separator">
+          <div class="panel-content">
+              <p id="panel-explanation"></p>
+          </div>
+      </div>
+
+      <!-- Different explanations for each button type -->
+    <div id="hidden-explanations" style="display: none;">
+        <div id="coolant-trip">
+            <p>This alert indicates that the coolant pumps for either cooling tower have tripped.</p>
+            <br>
+            <p>Typically, you would only see this occur during a power loss.</p>
+        </div>
+        <div id="coolant-dry">
+            <p>This warning indicates that the cooling tower coolant loop is dry. This is normal behavior before the pumps are running.</p>
+        </div>
+        <div id="coolant-temp">
+            <p>This alarm indicates that the temperature of the cooling loop has exceeded 212°F.</p>
+            <br>
+            <p>You should enable more coolant pumps or increase the speed of them.</p>
+        </div>
+        <div id="turbine-trip">
+            <p>This alert indicates that the turbine has tripped.</p>
+            <br>
+            <p>It is caused by a wide variety of factors, typically associated with other alerts thrown by the turbine.</p>
+        </div>
+        <div id="turbine-brk">
+            <p>This light indicates that the turbine's main breaker is engaged.</p>
+            <br>
+            <p>This is normal behavior during power production.</p>
+            <br>
+            <p>This light should not be illuminated before engaging Breaker 18M-G1. Doing so will reverse power into the turbine and blow it up.</p>
+        </div>
+        <div id="turbine-gen-sync">
+            <p>This light indicates that the turbine generator is synced to the grid.</p>
+            <br>
+            <p>This is normal behavior during power production.</p>
+        </div>
+        <div id="turbine-vibration">
+            <p>This alert indicates that the turbine's bearing vibration is too high. In simple terms, the turbine is under stress.</p>
+            <br>
+            <p>It is caused by a wide variety of factors, typically associated with other alerts thrown by the turbine. When continued, this will trigger a Turbine Trip.</p>
+        </div>
+        <div id="turbine-reverse">
+            <p>This warning indicates that the turbine is experiencing reverse power.</p>
+            <br>
+            <p>This is caused by the turbine being driven by the electrical grid, noticed by a negative sign on the generator load.</p>
+            <br>
+            <p>This is normal when starting the turbine for the first time.</p>
+        </div>
+        <div id="turbine-demand">
+            <p>This warning indicates that the turbine is not meeting the electrical demand.</p>
+            <br>
+            <p>This is caused by the turbine not producing enough electrical power to meet the specified demand.</p>
+            <br>
+            <p>This can be resolved by increasing reactor power, increasing turbine flow, and verifying deaerator temperatures.</p>
+        </div>
+        <div id="turbine-rpm">
+            <p>This alert indicates that the turbine's RPM is out of safe range.</p>
+            <br>
+            <h3>If RPM is High:</h3>
+            <p>The turbine is spinning above 1800 RPM. It may eventually soon trip.</p>
+            <br>
+            <h3>If RPM is Low:</h3>
+            <p>The turbine is not spinning fast enough to sync to grid and produce power. This is normal before and during operation.</p>
+        </div>
+        <div id="turbine-gear">
+            <p>This alert indicates that the turbine turning gear is engaged.</p>
+            <br>
+            <p>This occurs when you attempt to increase turbine flow before the gear has been disengaged.</p>
+            <br>
+            <p>To resolve, you must call engineering and have them disengage the gear before attempting to start the turbine.</p>
+        </div>
+        <div id="turbine-inlet">
+            <p>This warning indicates that the inlet pressure of the turbine is too high.</p>
+            <br>
+            <p>It can be caused by numerous factors, such as high deaerator pressure, low turbine flow, and low turbine bypass.</p>
+            <br>
+            <p>To resolve, you must increase turbine flow, turbine bypass, increase deaerator bypass, or enable steam relief valves.</p>
+        </div>
+        <div id="turbine-oulet">
+            <p>This warning indicates that the outlet pressure of the turbine is too high.</p>
+            <br>
+            <p>It can be caused by numerous factors, but most notably is that your cooling towers are not cooling the steam fast enough.</p>
+            <br>
+            <p>To resolve, increase the speed of or enable more condenser coolant pumps.</p>
+        </div>
+        <div id="turbine-rejection">
+            <p>This alert indicates that the turbine has experienced a full load rejection.</p>
+            <br>
+            <p>This is caused by extreme changes in turbine generator load (disconnected while producing power, or sudden high load)</p>
+            <br>
+            <p>This will immediately trigger a turbine trip.</p>
+        </div>
+        <div id="deaerator-water-lvl">
+            <p>This alert indicates that the deaerator water level is out of safe range.</p>
+            <br>
+            <h3>If Water High:</h3>
+            <p>Enable the overflow valve, disable condensate pumps. High deaerator levels can cause a circuit overpressure if not attended to.</p>
+            <br>
+            <h3>If Water Low:</h3>
+            <p>Enable more condensate pumps or increase their speeds. Low deaerator levels can trigger a feedwater pump trip.</p>
+        </div>
+        <div id="deaerator-temp">
+            <p>This alert indicates that the deaerator temperature is out of safe range.</p>
+            <br>
+            <h3>If Temp High:</h3>
+            <p>As of 7-21-2025, there is no danger to high deaerator temperatures. They can be ignored.</p>
+            <br>
+            <h3>If Temp Low:</h3>
+            <p>Increase steam inlet valve for deaerators to increase temperature. Adjust relief as neccessary.</p>
+        </div>
+        <div id="deaerator-pressure">
+            <p>This alert indicates that the deaerator pressure is out of safe range.</p>
+            <br>
+            <h3>If Pressure High:</h3>
+            <p>Increase steam relief for deaerators. <b>DO NOT</b> exceed 300 PSI. Exceeding 300 PSI will explode the deaerators, and it will become impossible to maintain core water level.</p>
+            <br>
+            <h3>If Pressure Low:</h3>
+            <p>Decrease steam relief for deaerators. Increase steam inlet if needed.</p>
+        </div>
+        <div id="core-water">
+            <p>This alert indicates that the core water level is out of safe range.</p>
+            <br>
+            <h3>If Core Water High High:</h3>
+            <p>Disable feedwater pumps as necessary. Open recirc drain valves.</p>
+            <br>
+            <h3>If Core Water High:</h3>
+            <p>Disable feedwater pumps (do exactly the same to condensate), enable recirc drain (if needed).</p>
+            <br>
+            <h3>If Core Water Low:</h3>
+            <p>Enable more feedwater pumps or increase their speeds. Enable condensate pumps if needed.</p>
+            <br>
+            <h3>If Core Water Low Low:</h3>
+            <p>Open ECCS Injection valve.</p>
+        </div>
+        <div id="core-temp">
+            <p>This alert indicates that the core temperatures are out of safe range.</p>
+        </div>
+        <div id="feed-dry">
+            <p>This warning indicates that the feedwater loop is dry.</p>
+            <br>
+            <p>This is normal before feedwater pumps are running.</p>
+        </div>
+        <div id="feed-pump">
+            <p>This light indicates that the feedwater pump is running.</p>
+            <br>
+            <p>This is normal behavior during operation.</p>
+        </div>
+        <div id="feed-trip">
+            <p>This alert indicates that the feedwater pump has tripped.</p>
+            <br>
+            <p>This is caused by a wide variety of factors, such as closed core isolation valves, or pump cavitation.</p>
+        </div>
+        <div id="feed-insufficient">
+            <p>This warning indicates that the feedwater pumps are not providing enough water to the core.</p>
+            <br>
+            <p>This is caused by low feedwater flow.</p>
+            <br>
+            <p>To resolve, increase feedwater pump speeds, or enable more feedwater pumps. Make sure to mirror your changes with condensate pumps.</p>
+        </div>
+        <div id="feed-overpressure">
+            <p>This alert indicates that the feedwater circuit is overpressurized.</p>
+        </div>
+        <div id="feed-cavitation">
+            <p>This alert indicates that the feedwater pumps are cavitating.</p>
+            <br>
+            <p>This is caused by low deaerator water levels.</p>
+            <br>
+            <p>To resolve, increase condensate pump speed or enable them.</p>
+        </div>
+        <div id="rpv-temp">
+            <p>This warning indicates that the RPV (Reactor Pressure Vessel) temperature is out of safe range.</p>
+            <br>
+            <h3>If RPV Temp High:</h3>
+            <p>Increase recirc pump speeds, or enable more recirc pumps.</p>
+            <br>
+            <h3>If RPV Temp Low:</h3>
+            <p>Decrease recirc pump speeds, disable recirc pumps, or increase reactor power.</p>
+        </div>
+        <div id="rpv-pressure">
+            <p>This warning indicates that the RPV pressure is out of safe range.</p>
+            <br>
+            <h3>If RPV Pressure High High:</h3>
+            <p><b>This is a dangerous situation.</b> Open all RPV relief valves. SCRAM reactor. Perform ECCS Inject if water level low.</p>
+            <br>
+            <h3>If RPV Pressure High:</h3>
+            <p>Verify that you have enough recirc pumps running for your power level. Ensure that reactor water levels in safe ranges.</p>
+        </div>
+        <div id="rpv-relief-valve">
+            <p>This warning indicates that the RPV relief valve is open.</p>
+            <br>
+            <p>This is normal behavior when the relief valve is open, but it should not be open unless there is an emergency.</p>
+        </div>
+        <div id="recirc-dry">
+            <p>This warning indicates that the recirculation loop is dry.</p>
+            <br>
+            <p>This occurs when recirculation pumps are not running.</p>
+            <br>
+            <p>To resolve, enable recirculation pumps.</p>
+        </div>
+        <div id="recirc-pump">
+            <p>This light indicates that the recirculation pump is running.</p>
+            <br>
+            <p>This is normal behavior during operation.</p>
+        </div>
+        <div id="recirc-trip">
+            <p>This alert indicates that the recirculation pump has tripped.</p>
+            <br>
+            <p>This is most of the time caused by lack of core water level. This will trigger an auto-SCRAM.</p>
+        </div>
+        <div id="recirc-drain">
+            <p>This alert indicates that the recirculation drain valve is open.</p>
+            <br>
+            <p>This is normal behavior when the recirculation drain valve is open, but it should not be open unless core water levels are dangerously high.</p>
+        </div>
+        <div id="reactor-fuel-leak">
+            <p>This alert indicates that a fuel channel has leaked.</p>
+            <br>
+            <p>This is mostly caused by running the reactor at extremely high temperatures (>1600°F).</p>
+            <br>
+            <p>Follow <a href="emergency.html#fuel-leak">fuel leak emergency procedure.</a> Good luck!</p>
+        </div>
+        <div id="reactor-mode">
+            <p>This light indicates the current reactor mode.</p>
+            <br>
+            <p>Modes are: Shutdown, Startup, and Operating.</p>
+            <br>
+            <p>Reactor mode can be changed by pressing the corresponding button on the Reactor Conditions Panel.</p>
+            <br>
+            <p>Mode conflict means that the current rods are not in the correct position for the selected reactor mode.</p>
+        </div>
+        <div id="reactor-rods">
+            <p>This warning indicates that you have selected more than 12 rods to move.</p>
+            <br>
+            <p>You are only allowed to move up to 12 rods at once. To resolve, reduce how many rods you have selected.</p>
+        </div>
+        <div id="reactor-autorods">
+            <p>This light indicates that the automatic rods are set.</p>
+            <br>
+            <p>This is normal behavior during operation and when the automatic rod control is enabled.</p>
+        </div>
+        <div id="reactor-period">
+            <p>This alert indicates that the reactor power is changing rapidly.</p>
+            <br>
+            <p><b>This is a dangerous situation.</b> You should immediately SCRAM the reactor. Verify all reactor conditions.</p>
+        </div>
+        <div id="reactor-power">
+            <p>This alert indicates that the reactor thermal power is very high.</p>
+            <br>
+            <p>It is caused by running the reactor at extremely high thermal powers (4800MW or more).</p>
+            <br>
+            <p>To resolve, reduce the reactor power by inserting rods or increasing recirculation pumps.</p>
+        </div>
+        <div id="reactor-zone">
+            <p>This warning indicates that the shutdown rods are no longer inserted into the reactor.</p>
+            <br>
+            <p>This is normal during reactor startup and operation. If during shutdown, you should ensure the shutdown rods are enabled.</p>
+        </div>
+        <div id="reactor-isolation">
+            <p>This light indicates that the isolation valve is open.</p>
+            <br>
+            <p>This is normal behavior during reactor startup and operating modes. However, it should not be closed during operation.</p>
+        </div>
+        <div id="reactor-shutdownrods">
+            <p>This warning indicates that the shutdown rods are withdrawn.</p>
+            <br>
+            <p>This is normal when the reactor is shutdown.</p>
+        </div>
+        <div id="reactor-scrambypass">
+            <p>This warning indicates that the automatic АЗ-5 bypass is enabled.</p>
+            <br>
+            <p>This is expected when the auto-scram is disabled.</p>
+        </div>
+        <div id="reactor-imbalance">
+            <p>This warning indicates that the core heat is imbalanced.</p>
+            <br>
+            <p>Regions of the core perform differently. This is randomly generated upon creation of the game server.</p>
+            <br>
+            <p>To resolve, insert rods into the hottest regions of the core after stage 1 is achieved.</p>
+        </div>
+        <div id="reactor-scram">
+            <p>This alert indicates that the reactor A3-5 has been initiated.</p>
+            <br>
+            <p>Under this circumstance, the reactor will immediately insert all control rods as fast as possible.</p>
+        </div>
+        <div id="suppression-overpressure">
+            <p>This alert indicates that the suppression tank is overpressurized.</p>
+        </div>
+        <div id="suppression-level">
+            <p>This alert indicates that the suppression tank level is too high.</p>
+        </div>
+        <div id="occ">
+            <p>This light indicates that offline cooling is currently active.</p>
+        </div>
+        <div id="occ-dry">
+            <p>This light indicates that the offline core cooling heat exchangers are enabled, but the OCC circulation pumps are not active.</p>
+            <br>
+            <p>To resolve, ensure that the OCC circulation pumps are enabled, and the breakers for them are not tripped.</p>
+        </div>
+        <div id="occ-pump">
+            <p>This light indicates that the offline core cooling circulation pumps are active.</p>
+        </div>
+        <div id="occ-trip">
+            <p>This alert indicates that the offline core cooling circulation pumps have tripped.</p>
+            <br>
+            <p>This is most commonly caused by service pumps being disabled while OCC pumps are active.</p>
+        </div>
+        <div id="hotwell-lvl">
+            <p>This alert will show if the hotwell is too low or too high.</p>
+            <br>
+            <h3>If Hotwell is High:</h3>
+            <p>You don't really need to do anything, but you should make sure the CND Hotwell make-up valves are closed.</p>
+            <br>
+            <h3>If Hotwell is Low:</h3>
+            <p>Enable the make-up pump switch, and then open a CND Hotwell make-up valve for the corresponding tank.</p>
+        </div>
+        <div id="hotwell-drain">
+            <p>This alert indicates that the hotwell drain valve is open.</p>
+        </div>
+        <div id="condensate-trip">
+            <p>This alert indicates that the condensate pump has tripped.</p>
+            <br>
+            <p>This is typically caused by empty hotwells or a full deaerator.</p>
+        </div>
+        <div id="condensate-pump">
+            <p>This light indicates that the condensate pump is running.</p>
+        </div>
+        <div id="condensate-cavitation">
+            <p>This alert indicates that the condensate pump is cavitating.</p>
+            <br>
+            <p>This is caused by low hotwell levels. If continued, it will trip the condensate pump drawing from the low hotwell.</p>
+            <br>
+            <p>To resolve, increase hotwell levels for the low tank.</p>
+        </div>
+        <div id="elec-bus">
+            <p>This light indicates that a certain electrical bus is powered or unpowered.</p>
+            <br>
+            <h3>If Bus A Unpowered:</h3>
+            <p>Validate that off-grid power is available. Switch to off-grid power if possible. Otherwise, start emergency diesel generators.</p>
+        </div>
+        <div id="elec-battery">
+            <p>This warning indicates that the battery is in use or is low.</p>
+            <br>
+            <h3>If Battery Critically Low:</h3>
+            <p>Verify the DC Rectifier switch is enabled. If off-grid power unavailable, start emergnecy diesel generators.</p>
+        </div>
+        <div id="elec-transformer">
+            <p>This alert indicates that an electrical transformer is about to overload.</p>
+            <br>
+            <p>To resolve, reduce the electrical load on the transformer by shutting down pumps or unneccessary systems.</p>
+        </div>
+        <div id="elec-rectifier">
+            <p>This light indicates that the DC Rectifier is enabled.</p>
+            <br>
+            <p>This is normal behavior during operation. If this light is not illuminated, your control systems are running on battery.</p>
+        </div>
+        <div id="elec-brk-main">
+            <p>This alert indicates that the main electrical breaker is open.</p>
+        </div>
+        <div id="elec-loop">
+            <p>This alert indicates that the offsite power connection has been lost.</p>
+            <br>
+            <p>To resolve, ensure the reactor is safely shutdown. Start emergency diesel generators.</p>
+        </div>
+        <div id="tower-low">
+            <p>This alert indicates that the cooling tower basin is low.</p>
+        </div>
+        <div id="gen-fuel-low">
+            <p>This alert indicates that the diesel generator fuel level is low.</p>
+        </div>
+        <div id="gen-active">
+            <p>This light indicates that the diesel generator is active.</p>
+        </div>
+        <div id="radiation">
+            <p>This warning indicates that the radiation level is too high.</p>
+            <br>
+            <h3>If Radiation Level 4+:</h3>
+            <p>Moderate level of concern.</p>
+            <br>
+            <h3>If Radiation Level 8+:</h3>
+            <p>Extreme level of concern.</p>
+        </div>
+        <div id="eccs-inject">
+            <p>This light indicates that the ECCS (Emergency Core Cooling System) injection valve is open.</p>
+        </div>
+        <div id="eccs-backflow">
+            <p>This light indicates that water from the core is flowing backwards into the ECCS injection water tank.</p>
+            <br>
+            <p>Ensure that the Nitrogen tank is pressurized. This light will illuminate if the tank has less pressure than the Reactor Pressure Vessel pressure.</p>
+        </div>
+        <div id="eccs-check">
+            <p>This light indicates that the ECCS system is operational and ready to inject water into the reactor.</p>
+        </div>
+        <div id="eccs-makeup">
+            <p>This light indicates that the make-up valve for the ECCS water tank is open.</p>
+        </div>
+        <div id="steam-relief-valve">
+            <p>This light indicates that a steam line relief valve is open.</p>
+        </div>
+        <div id="valve-trip">
+            <p>This alert indicates that a valve has tripped.</p>
+        </div>
+        <div id="cnd-makeup">
+            <p>This light indicates that a condenser make-up valve is open.</p>
+        </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
