@@ -40,145 +40,148 @@
     </section>
 
     <section class="location-section">
-      <h2>Contents</h2>
-      <ol>
-        <li>Stable Shutdown Procedures
-          <ol>
-            <li>Pre-Shutdown Checklist</li>
-            <li>High Power Procedure with Two Turbines (4100 MW and over)</li>
-            <li>Operational Power Procedure with One Turbine (2100 MW and over)</li>
-            <li>Low Power with no Turbine (2100 MW and under)</li>
-          </ol>
-        </li>
-      </ol>
-    </section>
-
-    <section class="location-section">
-      <h2>Stable Shutdown Procedures</h2>
-      <p>
-        Follow the Pre-Shutdown Checklist, then proceed with the appropriate shutdown procedure depending on reactor power output. For High and Operational Power procedures, at least one turbine must be active. Otherwise, use the Low Power procedure.
-      </p>
-      <p>
-        <em>Reminder:</em> Decreasing or disabling Recirculation Pumps can temporarily increase power; insert more control rods to maintain balance.
-      </p>
-    </section>
-
-    <section class="location-section">
-      <h3>Pre-Shutdown Checklist</h3>
+      <h2>Shutdown Checklist</h2>
+      <p>Call the Grid Controller and click Go Offline.</p>
+      <br>
+      <h2>Stage One</h2>
+      <h3>Reduce Reactor Power</h3>
       <ul>
-        <li>Confirm Hotwell levels are above 25.</li>
-        <li>Confirm Reactor Water Temperature is less than 400 (increase recirculation pumps if needed).</li>
-        <li>Confirm Reactor Water Level is above 230 inches (increase feedwater and condensate pumps equally if needed).</li>
-        <li>Confirm Reactor Water Pressure is below 450 PSI.</li>
-        <li>Confirm Deaerator Water Level is above 40 inches.</li>
-        <li>Confirm ECCS Pressurized Tank is over 1200 PSI.</li>
-        <li>Confirm ECCS Water Tank is over 200 inches.</li>
-        <li>Confirm OCC Circ Pump 1 and 2 are active.</li>
-        <li>Confirm Condenser A and B temperatures are less than 60.</li>
-        <li>Confirm Auto G1 Offload is active at the electrical panel.</li>
-        <li>Confirm G1&lt;64A Primer is primed.</li>
-        <li>Confirm Auto Scram is enabled.</li>
-        <li>Confirm Offline Core Cooling is off.</li>
-        <li>Confirm Isolation Valves are open.</li>
-        <li>Confirm Feed Limiter Valve is enabled and set at 0%.</li>
-        <li>Confirm Auto Control Rods are enabled and set to current reactor power.</li>
+        <li>Go to the Center Reactor panel and type the numbers <strong>3400</strong> into the Auto Control Rods keypad and
+          click the grey button to set.</li>
+        <li>Insert control rods in a symmetrical pattern, the selection of control rods is not limited to 12 whilst
+        inserting rods.</li>
+        <li>Watch the water temperature, if it goes lower than 400 lower one Recirculation Pump to its lowest setting on
+        both sides.</li>
+        <li>Do not reduce power too quickly, take time with the reduction of power as it could result in a turbine trip.</li>
       </ul>
-      <p><strong>You are now ready for shutdown.</strong></p>
+      <br>
+      <h3>Deaerator Configuration</h3>
+      <ul>
+        <li>Disable Deaerator Auto Control.</li>
+        <li>Set Deaerator Inlets, both A and B, to <strong>0%</strong>.</li>
+        <li>Set Deaerator Outlets, both A and B, to <strong>50%</strong>.</li>
+      </ul>
+      <br>
+      <h3>Prepare <strong>TURBINE B</strong> For Rundown</h3>
+      <ul>
+        <li>Close Turbine A-B Bleed Valve.</li>
+        <li>Enable the Bypass Valve for Turbine B.</li>
+        <li>Set the Automatic Bypass for Turbine B to 50.</li>
+        <li>Set the Bypass Valve of Turbine B to <strong>60%</strong>.</li>
+      </ul>
+      <br>
+      <h2>Stage 2</h2>
+      <h3>Rundown Turbine B</h3>
+      <ul>
+        <li>Set Automatic Bypass for Tubrine B to <strong>0</strong>.</li>
+        <li class="r">Wait for the Generator Output of Turbine B to decrease <strong>Below 10 MW</strong>.</li>
+        <li>Go to the Plant Circuit Panel and Disable Generator B.</li>
+        <li>Disable the Auto Bypass Valve for Turbine B.</li>
+        <li>Decrease Turbine B Turbine Valve to <strong>0%</strong>.</li>
+        <li>Decrease Turbine B Bypass Valve to <strong>0%</strong>.</li>
+        <li>Open Turbine A-B Bleed Valve.</li>
+      </ul>
+      <br>
+      <h3>Shutdown Unnecessary Sub Systems</h3>
+      <ul>
+        <li>Diable Condenser Coolant Pumps B1, B2, B3, B4, and A3, A4.</li>
+        <li>Disable Feedwater Pump 2.</li>
+        <li>Disable Condensate Pump 2.</li>
+      </ul>
+      <br>
+      <h3>Lower Reactor Thermal [ 2100 MW ]</h3>
+      <ul>
+        <li>Enter the numbers <strong>2100</strong> into the Auto Control Rods Keypad and click the grey button to set.</li>
+        <li>Reduce Recirculation Pumps A2 and A1 to speed 2.</li>
+        <li>Insert control rods.</li>
+        <li class="r">Keep an eye on Turbine A generator output. <strong>DO NOT LET IT DROP BELOW 100MW.</strong></li>
+      </ul>
+      <br>
+      <h2>Stage 3</h2>
+      <h3>Call Grid Controller</h3>
+      <ul>
+        <li>Call the Grid Controller and click the Clearance Button.</li>
+      </ul>
+      <br>
+      <h3>Plant Startup Transformer</h3>
+      <ul>
+        <li class="r">Ensure plant power usage does not exceed the maximum load of <strong>30MW</strong>.</li>
+        <li>Prime G1<64A if not already primed.</li>
+        <li>Press the G1<64A Button.</li>
+        <li>Ensure 64B-M breaker trips, if not automatically disabled, disable.</li>
+      </ul>
+      <br>
+      <h3>Rundown Turbine A</h3>
+      <ul>
+        <li>Enable Turbine A Bypass Valve.</li>
+        <li>Set Automatic Bypass of Turbine A to <strong>0</strong>.</li>
+        <li class="r">Wait for Turbine Generator A output is <strong>Below 10 MW</strong>.</li>
+        <li>Go to the Plant Circuit Panel and disable Generator A.</li>
+        <li>Disable Turbine A Automatic Bypass Valve.</li>
+        <li>Reduce the Turbine Valve of Turbine A to <strong>0%</strong>.</li>
+        <li>Set Bypass Valve of Turbine A to <strong>100%</strong>.</li>
+      </ul>
+      <br>
+      <h3>Initiate Reactor Soft Scram</h3>
+      <ul>
+        <li>Set Reactor Mode to 0.</li>
+        <li>Acknowledge Mode Conflict.</li>
+        <li>Set Recirculation Pumps A1 and A2 to speed 1.</li>
+        <li>Disable Shutdown Control Rods.</li>
+      </ul>
+      <br>
+      <h3>Offline Core Cooling</h3>
+      <ul>
+        <li>Enable OCC Circulation Pumps 1 and 2.</li>
+        <li>Enable Heat Exchanger Valves A and B.</li>
+        <li>Click the Reset button next to the Acknowledge button.</li>
+      </ul>
+      <br>
+      <h2>Stage 4</h2>
+      <h3>Feedwater and Condensate</h3>
+      <ul>
+        <li class="r">Wait for Reactor water temperature to fall below 220.</li>
+        <li>Disable Condensate Pump 1.</li>
+        <li>Disable Feedwater Pump 1.</li>
+      </ul>
+      <br>
+      <h3>Turbine Turbine Gear.</h3>
+      <ul>
+        <li>Call Engineering and Click Turning gear, Enable Turbine B Turning Gear. </li>
+        <li>Put the phone back and pick it back up and call Engineering again and enable Turbine A Turning Gear.</li>
+      </ul>
+      <br>
+      <h3>Disable Main Transformer</h3>
+      <ul>
+        <li>Disable 18M-G1 Breaker.</li>
+      </ul>
+      <br>
+      <h3>Remaining Systems</h3>
+      <ul>
+        <li>Disable all Condenser Coolant Pumps.</li>
+        <li>Close Turbine and Bypass Valves.</li>
+        <li>Disable Automatic Feed Limiter.</li>
+        <li>Disable Automatic Hotwell Limiter.</li>
+        <li>Disable Automatic Control rods.</li>
+        <li>Close Reactor Isolation Valves.</li>
+      </ul>
+      <br>
+      <h3>Purge Remaining Steam</h3>
+      <ul>
+        <li>Using Pressure Relief valves 5 and 7 remove any remaining steam until the steam lines A and B are below 50
+        PSI.</li>
+      </ul>
+      <br>
+      <h3>Request Inspection</h3>
+      <ul>
+        <li class="r">ensure all rods are inserted and the OCC is functional.</li>
+        <li>Call Engineering and click Inspection.</li>
+      </ul>
+      <br>
+      <h2>Shutdown Complete</h2>
     </section>
 
-    <section class="location-section">
-      <h3>High Power Procedure with Two Turbines (4100 MW and Over)</h3>
-      <ol>
-        <li>Set Auto Bypass of both turbines to 150.</li>
-        <li>When generator load of both turbines drops below 300, disable Condenser Coolant Pumps A3 and B3.</li>
-        <li>When generator load reaches 150, set Condenser Coolant Pumps A2 and B2 to speed 1.</li>
-        <li>Set Auto Control Rods to 3000. If rods cannot reach 3000 automatically, manually insert rods in reverse startup order until reaching 3000.</li>
-        <li>Slowly disable Recirc Pumps C2 and C1; set Recirc Pumps B2 and B1 to speed 2. Maintain temperature between 256 and 400.</li>
-        <li>Set Feedwater Pump 2 to speed 1; reduce a Condensate Pump speed by 1.</li>
-        <li>When reactor power stabilizes at 3000 MW, trip Turbine B.</li>
-        <li>Lower Turbine B bypass to zero.</li>
-        <li>Disable Condenser Coolant Pumps B1 and B2; wait for system to stabilize.</li>
-        <li>Set Auto Bypass of Turbine A to 100.</li>
-        <li>Disable Condenser Coolant Pump A2.</li>
-        <li>Set Auto Control Rods to 2100; pull rods if necessary.</li>
-        <li>Set Recirc Pumps B2 and B1 to speed 2; maintain temperature between 230 and 370.</li>
-        <li>Slowly disable Feedwater Pump 2; set Feedwater Pump 1 to speed 2; reduce any Condensate Pump speed by 1.</li>
-        <li>Confirm Site Usage power is less than 38 MW.</li>
-        <li>Call Grid Controller and click Clearance.</li>
-        <li>Click on the G1&lt;64A button.</li>
-        <li>Slowly increase Turbine A bypass until flow meter is slightly below zero; keep pressure meter stable (ignore Reverse Power Alarm).</li>
-        <li>At the Electrical Panel, disable Generator A switch to desync turbine (ensure 64A-M is off).</li>
-        <li>Slowly lower Turbine A valve and increase bypass.</li>
-        <li>Disable Condenser Coolant Pump A1.</li>
-        <li>Once Turbine A valve reaches 0% and bypass is 100%, set Auto Bypass to 1100; pull rods if necessary.</li>
-        <li>Set Reactor Mode to Mode 1.</li>
-        <li>Slowly disable Recirc Pumps B2 and B1; maintain temperature between 100 and 300.</li>
-        <li>Set Feedwater Pump 1 to speed 1; set Condensate Pump 1 to speed 1.</li>
-        <li>Confirm Reactor Water Pressure is less than 80 PSI.</li>
-        <li>Confirm Reactor Water Temperature is less than 250.</li>
-        <li>Enable Offline Core Cooling and wait for temperature to drop below 200 and Reactor Water Pressure to 0 PSI.</li>
-        <li>Scram the reactor and disable Auto Control Rods.</li>
-        <li>Disable Feedwater Pump 1 and Condensate Pump 1.</li>
-        <li>Wait for system stabilization.</li>
-        <li><strong>Shutdown complete.</strong></li>
-      </ol>
-    </section>
 
-    <section class="location-section">
-      <h3>Operational Power Procedure with One Turbine (2100 MW and Over)</h3>
-      <ol>
-        <li>Set Turbine Auto Bypass to 100.</li>
-        <li>Confirm Site Usage is less than 38 MW.</li>
-        <li>Call Grid Controller and click Clearance.</li>
-        <li>Click the G1&lt;64A button.</li>
-        <li>Slowly increase turbine bypass until flow meter is slightly below zero (ignore Reverse Power Alarm).</li>
-        <li>Disable Generator A switch at the Electrical Panel to desync turbine (ensure 64A-M is off).</li>
-        <li>Slowly decrease turbine valve and increase turbine bypass; keep pressure stable.</li>
-        <li>Once turbine valve is at 0% and bypass at 100%, set Auto Control Rods to 1100; pull rods if needed.</li>
-        <li>Disable Condenser Coolant Pumps.</li>
-        <li>Set Reactor Mode to Mode 1.</li>
-        <li>Disable Recirc Pumps B1 and B2 if enabled.</li>
-        <li>Set Feedwater Pump 1 and Condensate Pump 1 to speed 1.</li>
-        <li>Confirm Reactor Water Pressure is less than 80 PSI.</li>
-        <li>Confirm Reactor Water Temperature is less than 250.</li>
-        <li>Enable Offline Core Cooling and wait for temperature below 200 and pressure at 0 PSI.</li>
-        <li>Scram reactor and disable Auto Control Rods.</li>
-        <li>Disable Feedwater Pump 1 and Condensate Pump 1.</li>
-        <li>Wait for stabilization.</li>
-        <li><strong>Shutdown complete.</strong></li>
-      </ol>
-    </section>
-
-    <section class="location-section">
-      <h3>Low Power with No Turbine (2100 MW and Under)</h3>
-      <ol>
-        <li>Set Auto Control Rods to 1100.</li>
-        <li>Set Recirc Pumps A1 and A2 to speed 3 if not already set.</li>
-        <li>Set Reactor Mode to Mode 1.</li>
-        <li>Set Feedwater Pump 1 and Condensate Pump 1 to speed 1.</li>
-        <li>Confirm Reactor Water Pressure is less than 80 PSI.</li>
-        <li>Confirm Reactor Water Temperature is less than 250.</li>
-        <li>Enable Offline Core Cooling and wait for temperature below 200 and pressure at 0 PSI.</li>
-        <li>Scram reactor and disable Auto Control Rods.</li>
-        <li>Disable Feedwater Pump 1 and Condensate Pump 1.</li>
-        <li>Wait for stabilization.</li>
-        <li><strong>Shutdown complete.</strong></li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>Video Guide</h2>
-      <p>Sometimes a video guide can be useful for people if they don't want to read. Here is the video guide for how to shutdown the reactor:</p>
-      <div class="youtube-container">
-        <iframe 
-          src="https://www.youtube.com/watch?v=Moq7UZvIDpM " 
-          title="YouTube video player" 
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </section>
 
   </main>
 
