@@ -47,13 +47,11 @@ To maximise the chances of your PR being accepted, only modify the files you're 
 ## If Your New To Git/GitHub
 
 Yes, this stuff is complex, dont worry you can figure this out. to understand the terms like `push`, `fetch`, `pull` etc... we recomend reading [this artical](https://webtuu.com/blog/04/a-laymans-introduction-to-git).
-great, now that you have read that, you should understand the basic terms of git and git related stuff. to see how to contribute, check out the [How To Contribute For Dummies ](./How_To_Contribute_For_Dummies.md) file
+great, now that you have read that, you should understand the basic terms of git and git related stuff. to see how to contribute, check out the [How To Contribute For Dummies ](docs/GITHUB-FOR-DUMMIES.md) file
 
-## ✏️ Making Your First Edit (Or How Not To Break Everything)
+## ✏️ Contributing Guidelines
 
-For the full ritual (Novel), check out the [CONTRIBUTING_GUIDE.md](./CONTRIBUTING_GUIDE.md).
-
-*This README is starting to look like a giant novel. So I moved the boring but necessary bit to a separate file because nobody needs a novel to learn how to submit a pull request.*
+For the contributing guidelines, check out the [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## 📖 Writing Guidelines
 
@@ -93,7 +91,7 @@ Not sure if your changes fit the site's goals? Ask! Open an Issue and ask. It's 
 ### 🏷️ Common Gotchas
 
 **HTML Syntax:**
-If you're new to editing HTML, focus on changing the text content rather than the structural tags. When in doubt, look at how similar content is formatted on other pages.
+If you're new to editing HTML, focus on changing the text content rather than the structural tags. When in doubt, look at how similar content is formatted on other pages, if you want to actualy use tags, @gargleblaster-RMBK has made a helpful page to learn HTML at [https://gargleblaster-rbmk.github.io/](https://gargleblaster-rbmk.github.io/)
 
 **Image Problems:**
 Remember that only `.webp` files work, and they should be compressed to keep the site loading quickly. Large image files can make pages painfully slow to load.

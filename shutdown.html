@@ -6,6 +6,11 @@
   <title>Oakridge Nuclear Power Station - Shutdown Guide</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="hero small-hero">
@@ -19,61 +24,7 @@
 
   <main class="container">
 
-    <section class="articles-section">
-        <h2>Articles</h2>
-  
-        <div class="articles-grid initial-articles">
-          <a href="prestart.html" class="article-card">
-            <img src="images/Pre Start.webp" alt="Pre-Start Guide" />
-            <h3>Pre-Start Guide</h3>
-          </a>
-          <a href="index.html" class="article-card">
-            <img src="images/banner3.webp" alt="Home" />
-            <h3>Home</h3>
-          </a>
-          <a href="startup.html" class="article-card">
-            <img src="images/Startup.webp" alt="Start-Up Guide" />
-            <h3>Start-Up Guide</h3>
-          </a>
-        </div>
-  
-        <div class="articles-grid more-articles hidden" aria-hidden="true">
-          <a href="emergency.html" class="article-card">
-            <img src="images/emergency.webp" alt="Emergency Situations" />
-            <h3>Emergency Situations</h3>
-          </a>
-          <a href="control-room.html" class="article-card">
-            <img src="images/The_control_room.webp" alt="Control Room Layout" />
-            <h3>Control Room Layout</h3>
-          </a>
-          <a href="locations.html" class="article-card">
-            <img src="images/Locations.webp" alt="Locations" />
-            <h3>Locations</h3>
-          </a>
-          <a href="credits.html" class="article-card">
-            <img src="images/credits.webp" alt="credits" />
-            <h3>Credits</h3>
-          </a>
-          <a href="RBMK-1500.html" class="article-card">
-            <img src="images/banner5.webp" alt="credits" />
-            <h3>RBMK-1500</h3>
-          </a>
-          <a href="people.html" class="article-card">
-            <img src="images/Workers Banner.webp" alt="Workers of the Plant" />
-            <h3>Workers of the Plant</h3>
-          </a>
-          <a href="points.html" class="article-card">
-            <img src="images/Points.webp" alt="Points System" />
-            <h3>Points System</h3>
-          </a>
-          <a href="badges.html" class="article-card">
-            <img src="images/Badges Chaos.webp" alt="Badges" />
-            <h3>Badges</h3>
-          </a>
-        </div>
-  
-        <button class="view-more-btn" aria-expanded="false">View More</button>
-      </section>
+    <div id="NavGrid-placeholder"></div>
 
     <section class="location-section">
       <h2>Overview</h2>
@@ -140,18 +91,18 @@
       <ol>
         <li>Set Auto Bypass of both turbines to 150.</li>
         <li>When generator load of both turbines drops below 300, disable Condenser Coolant Pumps A3 and B3.</li>
-        <li>When generator load reaches 150, set speed of Condenser Coolant Pumps A2 and B2 to 1.</li>
+        <li>When generator load reaches 150, set Condenser Coolant Pumps A2 and B2 to speed 1.</li>
         <li>Set Auto Control Rods to 3000. If rods cannot reach 3000 automatically, manually insert rods in reverse startup order until reaching 3000.</li>
-        <li>Slowly disable Recirc Pumps C2 and C1; set Recirc Pumps B2 and B1 speed to 2. Maintain temperature between 256 and 400.</li>
-        <li>Set Feedwater Pump 2 speed to 1; reduce a Condensate Pump speed by 1.</li>
+        <li>Slowly disable Recirc Pumps C2 and C1; set Recirc Pumps B2 and B1 to speed 2. Maintain temperature between 256 and 400.</li>
+        <li>Set Feedwater Pump 2 to speed 1; reduce a Condensate Pump speed by 1.</li>
         <li>When reactor power stabilizes at 3000 MW, trip Turbine B.</li>
         <li>Lower Turbine B bypass to zero.</li>
         <li>Disable Condenser Coolant Pumps B1 and B2; wait for system to stabilize.</li>
         <li>Set Auto Bypass of Turbine A to 100.</li>
         <li>Disable Condenser Coolant Pump A2.</li>
         <li>Set Auto Control Rods to 2100; pull rods if necessary.</li>
-        <li>Set Recirc Pumps B2 and B1 speed to 2; maintain temperature between 230 and 370.</li>
-        <li>Slowly disable Feedwater Pump 2; set Feedwater Pump 1 speed to 2; reduce a Condensate Pump speed by 1.</li>
+        <li>Set Recirc Pumps B2 and B1 to speed 2; maintain temperature between 230 and 370.</li>
+        <li>Slowly disable Feedwater Pump 2; set Feedwater Pump 1 to speed 2; reduce any Condensate Pump speed by 1.</li>
         <li>Confirm Site Usage power is less than 38 MW.</li>
         <li>Call Grid Controller and click Clearance.</li>
         <li>Click on the G1&lt;64A button.</li>
@@ -162,7 +113,7 @@
         <li>Once Turbine A valve reaches 0% and bypass is 100%, set Auto Bypass to 1100; pull rods if necessary.</li>
         <li>Set Reactor Mode to Mode 1.</li>
         <li>Slowly disable Recirc Pumps B2 and B1; maintain temperature between 100 and 300.</li>
-        <li>Set Feedwater Pump 1 speed to 1; set Condensate Pump 1 speed to 1.</li>
+        <li>Set Feedwater Pump 1 to speed 1; set Condensate Pump 1 to speed 1.</li>
         <li>Confirm Reactor Water Pressure is less than 80 PSI.</li>
         <li>Confirm Reactor Water Temperature is less than 250.</li>
         <li>Enable Offline Core Cooling and wait for temperature to drop below 200 and Reactor Water Pressure to 0 PSI.</li>
@@ -187,7 +138,7 @@
         <li>Disable Condenser Coolant Pumps.</li>
         <li>Set Reactor Mode to Mode 1.</li>
         <li>Disable Recirc Pumps B1 and B2 if enabled.</li>
-        <li>Set Feedwater Pump 1 and Condensate Pump 1 speeds to 1.</li>
+        <li>Set Feedwater Pump 1 and Condensate Pump 1 to speed 1.</li>
         <li>Confirm Reactor Water Pressure is less than 80 PSI.</li>
         <li>Confirm Reactor Water Temperature is less than 250.</li>
         <li>Enable Offline Core Cooling and wait for temperature below 200 and pressure at 0 PSI.</li>
@@ -202,9 +153,9 @@
       <h3>Low Power with No Turbine (2100 MW and Under)</h3>
       <ol>
         <li>Set Auto Control Rods to 1100.</li>
-        <li>Set Recirc Pumps A1 and A2 speed to 3 if not already set.</li>
+        <li>Set Recirc Pumps A1 and A2 to speed 3 if not already set.</li>
         <li>Set Reactor Mode to Mode 1.</li>
-        <li>Set Feedwater Pump 1 and Condensate Pump 1 speeds to 1.</li>
+        <li>Set Feedwater Pump 1 and Condensate Pump 1 to speed 1.</li>
         <li>Confirm Reactor Water Pressure is less than 80 PSI.</li>
         <li>Confirm Reactor Water Temperature is less than 250.</li>
         <li>Enable Offline Core Cooling and wait for temperature below 200 and pressure at 0 PSI.</li>

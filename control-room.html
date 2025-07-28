@@ -6,6 +6,11 @@
   <title>Control Room</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
+   <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
   <header class="hero small-hero">
@@ -13,63 +18,12 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Control Room</h1>
-      <p><em>"These Visitors keep messing around the panel! Where the hell is security!" - Jr. Operative</em></p>
+      <p><em>"These Visitors keep messing around the panel! Where the hell is security!" - Jr. Operator</em></p>
     </div>
   </header>
 
   <main class="container">
-    <section class="articles-section">
-      <h2>Articles</h2>
-      <div class="articles-grid initial-articles">
-        <a href="prestart.html" class="article-card">
-          <img src="images/Pre Start.webp" alt="Pre-Start Guide" />
-          <h3>Pre-Start Guide</h3>
-        </a>
-        <a href="index.html" class="article-card">
-          <img src="images/banner3.webp" alt="Home" />
-          <h3>Home</h3>
-        </a>
-        <a href="startup.html" class="article-card">
-          <img src="images/Startup.webp" alt="Start-Up Guide" />
-          <h3>Start-Up Guide</h3>
-        </a>
-      </div>
-      <div class="articles-grid more-articles hidden" aria-hidden="true">
-        <a href="emergency.html" class="article-card">
-          <img src="images/emergency.webp" alt="Emergency Situations" />
-          <h3>Emergency Situations</h3>
-        </a>
-        <a href="shutdown.html" class="article-card">
-          <img src="images/Shutdown_reactor.webp" alt="Shutdown Guide" />
-          <h3>Shutdown Guide</h3>
-        </a>
-        <a href="locations.html" class="article-card">
-          <img src="images/Locations.webp" alt="Locations" />
-          <h3>Locations</h3>
-        </a>
-        <a href="credits.html" class="article-card">
-          <img src="images/credits.webp" alt="credits" />
-          <h3>Credits</h3>
-        </a>
-        <a href="RBMK-1500.html" class="article-card">
-          <img src="images/banner5.webp" alt="credits" />
-          <h3>RBMK-1500</h3>
-        </a>
-        <a href="people.html" class="article-card">
-          <img src="images/Workers Banner.webp" alt="Workers of the Plant" />
-          <h3>Workers of the Plant</h3>
-        </a>
-        <a href="points.html" class="article-card">
-          <img src="images/Points.webp" alt="Points System" />
-          <h3>Points System</h3>
-        </a>
-        <a href="badges.html" class="article-card">
-          <img src="images/Badges Chaos.webp" alt="Badges" />
-          <h3>Badges</h3>
-        </a>
-      </div>
-      <button class="view-more-btn" aria-expanded="false">View More</button>
-    </section>
+    <div id="NavGrid-placeholder"></div>
 
     <section class="location-section">
       <h2>Overview</h2>
@@ -114,7 +68,7 @@
           <p>After going online, you should utilize the <a class="y">automatic bypass</a> to hold the <a class="b">demand</a>; Divide the demand by 2 and insert it into both keypads.</p>
           <p>Load rejection can occur if there is a sudden drop in power usage (demand). It is mainly an issue before going online, when too many pumps are turned off at once.</p>
           <p>The proper way to shut down the turbines is to lower power, desync the turbine (via the electrical panel, with the generator breakers), lower the RPM and open the bypass.</p>
-          <p>The option to <a class="r">manually trip</a> the turbines is also there, if you want to use it for some reason.</p>
+          <p>The option to <a class="r">manually trip</a> the turbines is also there, usually used at reactor shutdown.</p>
         </div>
       </div>
     </section>

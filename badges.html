@@ -1,4 +1,3 @@
-<!-- INDEX.HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,11 @@
   <title>Oakridge Nuclear Power Station</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
+   <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
   <header class="hero">
@@ -20,143 +24,89 @@
 
   <main class="container">
 
-    <section class="articles-section">
-        <h2>Articles</h2>
-  
-        <div class="articles-grid initial-articles">
-          <a href="prestart.html" class="article-card">
-            <img src="images/Pre Start.webp" alt="Pre-Start Guide" />
-            <h3>Pre-Start Guide</h3>
-          </a>
-          <a href="index.html" class="article-card">
-            <img src="images/banner3.webp" alt="Home" />
-            <h3>Home</h3>
-          </a>
-          <a href="shutdown.html" class="article-card">
-            <img src="images/Shutdown_reactor.webp" alt="Shutdown Guide" />
-            <h3>Shutdown Guide</h3>
-          </a>
-        </div>
-  
-        <div class="articles-grid more-articles hidden" aria-hidden="true">
-          <a href="emergency.html" class="article-card">
-            <img src="images/emergency.webp" alt="Emergency Situations" />
-            <h3>Emergency Situations</h3>
-          </a>
-          <a href="control-room.html" class="article-card">
-            <img src="images/The_control_room.webp" alt="Control Room Layout" />
-            <h3>Control Room Layout</h3>
-          </a>
-          <a href="locations.html" class="article-card">
-            <img src="images/Locations.webp" alt="Locations" />
-            <h3>Locations</h3>
-          </a>
-          <a href="credits.html" class="article-card">
-            <img src="images/credits.webp" alt="credits" />
-            <h3>Credits</h3>
-          </a>
-          <a href="RBMK-1500.html" class="article-card">
-            <img src="images/banner5.webp" alt="RBMK-1500" />
-            <h3>RBMK-1500</h3>
-          </a>
-          <a href="people.html" class="article-card">
-            <img src="images/Workers Banner.webp" alt="Workers of the Plant" />
-            <h3>Workers of the Plant</h3>
-          </a>
-          <a href="points.html" class="article-card">
-            <img src="images/Points.webp" alt="Points System" />
-            <h3>Points System</h3>
-          </a>
-          <a href="startup.html" class="article-card">
-            <img src="images/Startup.webp" alt="Start-Up Guide" />
-            <h3>Start-Up Guide</h3>
-          </a>
-        </div>
-  
-        <button class="view-more-btn" aria-expanded="false">View More</button>
-      </section>
+    <div id="NavGrid-placeholder"></div>
       <section class="badges-section">
         <h2 class="tier-title">Badges</h2>
         <p></p>
         <div class="badges-grid">
             <div class="badge-card">
-                <img src="images/badges/speedrunnerbadge.webp" alt="Senior Technician Badge">
+                <img src="images/badges/speedrunnerbadge.webp" alt="Speedrunner Badge">
                 <h3>Speedrunner</h3>
                 <p>Blow up the reactor within 8 minutes.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/What Badge.webp" alt="Senior Technician Badge">
+                <img src="images/badges/What Badge.webp" alt="What Badge">
                 <h3>?????</h3>
                 <p>What?</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/No1 Enemy of staff morale.webp" alt="Senior Technician Badge">
+                <img src="images/badges/No1 Enemy of staff morale.webp" alt="No1 Enemy of staff morale Badge">
                 <h3>#1 Enemy of staff morale</h3>
                 <p>Throw all the pizza into the spent fuel pool.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/Deep Fried.webp" alt="Senior Technician Badge">
-                <h3>Deep fried</h3>
+                <img src="images/badges/Deep Fried.webp" alt="Deep Fried Badge">
+                <h3>Deep Fried</h3>
                 <p>Make contact with live wires in the bridge circuit room.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/Sufficiently ionized.webp" alt="Senior Technician Badge">
-                <h3>Sufficiently ionized</h3>
+                <img src="images/badges/Sufficiently ionized.webp" alt="Sufficiently Ionized Badge">
+                <h3>Sufficiently Ionized</h3>
                 <p>Reach a fatal dosage of ionizing radiation.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/Power to the people.webp" alt="Senior Technician Badge">
-                <h3>Power to the people</h3>
+                <img src="images/badges/Power to the people.webp" alt="Power to the People Badge">
+                <h3>Power to the People</h3>
                 <p>Connect to the grid and deliver power.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/BOOP.webp" alt="Senior Technician Badge">
+                <img src="images/badges/BOOP.webp" alt="BOOP Badge">
                 <h3>BOOP!</h3>
                 <p>:3c</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/Floor Pizza.webp" alt="Senior Technician Badge">
-                <h3>Floor pizza</h3>
+                <img src="images/badges/Floor Pizza.webp" alt="Floor Pizza Badge" >
+                <h3>Floor Pizza</h3>
                 <p>Kinda gross, ngl</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/Youre Fired.webp" alt="Senior Technician Badge">
-                <h3>You're fired!</h3>
+                <img src="images/badges/Youre Fired.webp" alt="You're Fired Bade" >
+                <h3>You're Fired!</h3>
                 <p>Fail to produce any power within 48 hours.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/7 nights at Oakridge.webp" alt="Senior Technician Badge">
+                <img src="images/badges/7 nights at Oakridge.webp" alt="7 nights at Oakridge Badge" >
                 <h3>7 Nights at Oakridge</h3>
                 <p>Complete a whole week at the plant.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/Senior Operator.webp" alt="Senior Technician Badge">
+                <img src="images/badges/Senior Operator.webp" alt="Senior Operator Badge" >
                 <h3>Senior Operator</h3>
                 <p>You've proven yourself in the art of reactor operation.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/By the book.webp" alt="Senior Technician Badge">
-                <h3>By the book</h3>
+                <img src="images/badges/By the book.webp" alt="By the book badge" >
+                <h3>By the Book</h3>
                 <p>Reach 100% efficiency while meeting demand.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/Teamwork Sounds like a liability.webp" alt="Senior Technician Badge">
-                <h3>Teamwork? Sounds like a liability</h3>
+                <img src="images/badges/Teamwork Sounds like a liability.webp" alt="Teamwork Sounds like a liability Badge" >
+                <h3>Teamwork? Sounds Like a Liability</h3>
                 <p>Complete an entire shift all on your own.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/GET ME FEEDWATER.webp" alt="Senior Technician Badge">
+                <img src="images/badges/GET ME FEEDWATER.webp" alt="GET ME FEEDWATER Badge">
                 <h3>GET ME FEEDWATER!</h3>
-                <p>Don#t always take things at face value.</p>
+                <p>Don't always take things at face value.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/Junior Operator.webp" alt="Senior Technician Badge">
-                <h3>Junior operator</h3>
+                <img src="images/badges/Junior Operator.webp" alt="Junior Operator Badge" >
+                <h3>Junior Operator</h3>
                 <p>Hope you were paying attention.</p>
               </div>
               <div class="badge-card">
-                <img src="images/badges/Energy Tycoon.webp" alt="Senior Technician Badge">
-                <h3>Energy tycoon</h3>
+                <img src="images/badges/Energy Tycoon.webp" alt="Energy Tycoon Bade" >
+                <h3>Energy Tycoon</h3>
                 <p>Sell over 20 gigawatt-hours of power in one day</p>
               </div>
         </div>

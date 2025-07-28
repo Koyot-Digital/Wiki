@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oakridge Nuclear Power Station - Pre-Start Guide</title>
+  <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,96 +17,163 @@
     <img src="images/Startup.webp" alt="Pre-Start Reactor" />
     <div class="hero-content">
       <h1>Start-Up Guide</h1>
-      <p>Prepare the RBMK-1500 reactor for a safe and stable startup by completing the Pre-Startup Checklist and configuring all supporting systems.</p>
+      <p>Prepare the RBMK-1500 reactor for a safe and stable startup by completing the Pre-Startup Checklist and
+        configuring all supporting systems.</p>
     </div>
   </header>
 
   <main class="container">
 
-    <section class="articles-section">
-      <h2>Articles</h2>
-
-      <div class="articles-grid initial-articles">
-        <a href="prestart.html" class="article-card">
-          <img src="images/Pre Start.webp" alt="Pre-Start Guide" />
-          <h3>Pre-Start Guide</h3>
-        </a>
-        <a href="index.html" class="article-card">
-          <img src="images/banner3.webp" alt="Home" />
-          <h3>Home</h3>
-        </a>
-        <a href="shutdown.html" class="article-card">
-          <img src="images/Shutdown_reactor.webp" alt="Shutdown Guide" />
-          <h3>Shutdown Guide</h3>
-        </a>
-      </div>
-
-      <div class="articles-grid more-articles hidden" aria-hidden="true">
-        <a href="emergency.html" class="article-card">
-          <img src="images/emergency.webp" alt="Emergency Situations" />
-          <h3>Emergency Situations</h3>
-        </a>
-        <a href="control-room.html" class="article-card">
-          <img src="images/The_control_room.webp" alt="Control Room Layout" />
-          <h3>Control Room Layout</h3>
-        </a>
-        <a href="locations.html" class="article-card">
-          <img src="images/Locations.webp" alt="Locations" />
-          <h3>Locations</h3>
-        </a>
-        <a href="credits.html" class="article-card">
-          <img src="images/credits.webp" alt="credits" />
-          <h3>Credits</h3>
-        </a>
-        <a href="RBMK-1500.html" class="article-card">
-          <img src="images/banner5.webp" alt="credits" />
-          <h3>RBMK-1500</h3>
-        </a>
-        <a href="people.html" class="article-card">
-          <img src="images/Workers Banner.webp" alt="Workers of the Plant" />
-          <h3>Workers of the Plant</h3>
-        </a>
-        <a href="points.html" class="article-card">
-          <img src="images/Points.webp" alt="Points System" />
-          <h3>Points System</h3>
-        </a>
-        <a href="badges.html" class="article-card">
-          <img src="images/Badges Chaos.webp" alt="Badges" />
-          <h3>Badges</h3>
-        </a>
-      </div>
-
-      <button class="view-more-btn" aria-expanded="false">View More</button>
-    </section>
+    <div id="NavGrid-placeholder"></div>
 
     <section class="location-section">
       <br>
+      <h2>Stage One Startup</h2>
       <br>
-      <h2>Start-Up Tutorial</h2>
-      <br><p>There is no current writen guide on how to startup the reactor. For now please enjoy the videos provided.</p> <br>
-      <div class="youtube-container">
-        <iframe 
-          src="https://www.youtube.com/watch?v=hVXKk4gHCDc&t=1s" 
-          title="YouTube video player" 
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
+      <ul>
+        <li>Grab a bypass key from the key cabinet at the door of the Control Room.</li>
+        <li>Insert the key into the Autoscram panel and disable Autoscram.</li>
+        <li>Enable Reactor Mode 1.</li>
+        <li>Close Heat Exchanger A and B.</li>
+        <li>Disable OCC Circulation Pumps 1 and 2.</li>
+        <li>Mode Conflict alarm will flash, press the acknowledge button on the Middle Reactor Console. </li>
+        <li>Enable Shutdown Control Rods.</li>
+        <li>Click the Reset button next to the acknowledge button on the Middle Reactor Console. </li>
+        <li>Wait for the Out of Zone panel to flash, a bell will ring signalling the Shutdown Rods are fully removed. </li>
+        <li>Enable Auto Control Rods.<p>
+        <li>Type the numbers <strong>1500</strong> into the keypad next to the Auto Control Rods switch and click the
+        grey button to set.<p>
+        <li>Once the reactor reaches 1500 MW enable Reactor Mode 2. Keep an eye on the Core Heat Distribution.</li>
+        <li>Enable Feedwater Pump 1 and set it to speed 2.</li>
+        <li>Enable Condensate Pump 1 and set it to speed 2.</li>
+      </ul>
+      <br>
+      <h2>Stage Two Startup</h2>
+      <p>Withdraw Control Rods until power reaches <strong>2100</strong> MW.<p>
+      <h3>Turbine A Runup</h3>
+      <br>
+      <ul>
+        <li>Call Engineering, click Turning gear, and disengage Turbine A. </li>
+        <li>At the Turbine Panel enable the Synchronoscope for Turbine A.</li>
+        <li>Reduce Turbine A bypass valve to around <strong>20-30%</strong> at the Turbine Panel.</li>
+        <li>Slowly increas the Turbine Valve to around <strong>60-70%</strong></li>
+        <li>The RPM should start rising, it should add 30 to the RPM every time it updates.</li>
+        <li>Open the Grid Sync cap.</li>
+        <li>Once the RPM reaches around +1775 RPM the Sychronoscope will flash and make an audible sound when the needle
+          passes over the black zone at the top of the guage.</li>
+        <li>Once the needle slows down and the RPM is around 1800, wait for the green light to light up and then click
+          Grid Sync.</li>
+        <li>If you synced it correctly the RPM will stabilize at 1800.</li>
+      </ul>
+      <br>
+      <h3>If sync is unsuccessful</h3>
+      <br>
+      <ul>
+        <li>Click the Acknowledge button, the corresponding one to silence the Turbine Trip Alarm will be glowing.</li>
+        <li>Wait for the RPM to drop below 600.</li>
+        <li>Click the reset button next to the Acknowledge button you just pressed.</li>
+        <li>Retry the Turbine Sync Process.</li>
+      </ul>
+      <br>
+      <h3>If sync is successful</h3>
+      <br>
+      <ul>
+        <li>Acknowledge the Reverse Power alert<./li>
+        <li>Increase the Turbine Valve <strong>SLOWLY</strong> to 100%.</li>
+        <li>Decrease the Bypass valve to 0%.</li>
+        <li>Once the generator load is positive click the Reset button next to the Acknowledge button.</li>
+        <li>Enable Feedwater Pump 2 to speed 2.</li>
+        <li>Enable Condensate Pump 2 to speed 2.</li>
+      </ul>
+      <ul>
+        <li>Enable Breaker 64 A-M.</li>
+        <li>Call Engineering and click Reset Breakers.</li>
+        <li>Set both Deaerator A and B Relief Valves to 25%.</li>
+        <li>Set both Deaerator A and B Inlet Valves to 45%.</li>
+        <li>Enable Condensate Pump 2.</li>
+        <li>Enable Feedwater Pump 2.</li>
+        <li>Open Deaerator A-B Bleed Valve.</li>
+      </ul>
+      <br>
+      <h2>Stage Three Startup</h2>
+      <ul>
+        <li>Set Recirculation Pumps A1 and A2 to speed 3.</li>
+        <li>Enable Recirculation Pump B1 and B2.</li>
+        <li>Set Condenser Coolant Pumps A1 and A2 to speed 3.</li>
+        <li>Type the numbers <strong>3000</strong> into the Auto Control Rod panel and click the grey button.</li>
+        <li>Withdraw Control rods until power reaches 3000 MW, Keep an eye on Core Heat Distribution.</li>
+        <li>Enable Condenser Coolant Pumps B1 and B2 and set to speed 3.</li>
+      </ul>
+      <br>
+      <h3>Turbine B Runup</h3>
+      <ul>
+        <li>Call Engineering, click Turning gear, and disengage Turbine B. </li>
+        <li>At the Turbine Panel enable the Synchronoscope for Turbine B.</li>
+        <li>Reduce Turbine B bypass valve to around <strong>20-30%</strong> at the Turbine Panel.</li>
+        <li>Slowly increas the Turbine Valve to around <strong>60-70%</strong></li>
+        <li>The RPM should start rising, it should add 30 to the RPM every time it updates.</li>
+        <li>Open the Grid Sync cap.</li>
+        <li>Once the RPM reaches around +1775 RPM the Sychronoscope will flash and make an audible sound when the needle
+          passes over the black zone at the top of the guage.</li>
+        <li>Once the needle slows down and the RPM is around 1800, wait for the green light to light up and then click
+          Grid Sync.</li>
+        <li>If you synced it correctly the RPM will stabilize at 1800.</li>
+      </ul>
+      <br>
+      <h3>If sync is unsuccessful</h3>
+      <br>
+      <ul>
+        <li>Click the Acknowledge button, the corresponding one to silence the Turbine Trip Alarm will be glowing.</li>
+        <li>Wait for the RPM to drop below 600.</li>
+        <li>Click the reset button next to the Acknowledge button you just pressed.</li>
+        <li>Retry the Turbine Sync Process.</li>
+      </ul>
+      <br>
+      <h3>If sync is successful</h3>
+      <br>
+      <ul>
+        <li>Acknowledge the Reverse Power alert<./li>
+        <li>Increase the Turbine Valve <strong>SLOWLY</strong> to 100%.</li>
+        <li>Decrease the Bypass valve to 0%.</li>
+        <li>Once the generator load is positive click the Reset button next to the Acknowledge button.</li>
+        <li>Enable Feedwater Pump 2 to speed 2.</li>
+        <li>Enable Condensate Pump 2 to speed 2.</li>
+      </ul>
+      <br>
+      <h2>Stage Four Startup</h2>
+      <ul>
+        <li>Type into the Auto Control Rods keypad <strong>4000</strong> MW.</li>
+        <li>Set Recirculation Pumps B1 and B2 to speed 3.</li>
+        <li>Enable Condenser Coolant Pumps A3 and B3.</li>
+        <li>Call the Grid Controller and click Go Online.</li>
+        <li>Enables Bypass valves A and B.</li>
+        <li>Enable Auto Bypass Valves A and B.</li>
+      </ul>
+      <br>
+      <h2>Reactor Variabilty</h2>
+      <h3>Low Power Range [4000MW - 4200MW]</h3>
+      <ul>
+        <li>Enable Recirculation Pumps C1 and C2.</li>
+      </ul>
+      <br>
+      <h3>Medium Power Range [4200MW - 4500MW]</h3>
+        <ul>
+          <li>Enable Recirculation Pumps C1 and C2 and set to speed 2.</li>
+          <li>Set Condenser Coolant Pumps A3 and B3 to speed 2.</li>
+          <li>Set Condenser 1 or Feedwater 1 to speed 3</li>
+        </ul>
+      <br>
+      <h3>High Power Range [4500MW - 4800MW]</h3>
+      <ul>
+        <li>Enable Recirculation Pumps C1 and C2 and set to speed 3.</li>
+        <li>Set Condenser Coolant Pumps A3 and B3 to speed 3.</li>
+      </ul>
       <br>
       <br>
-      <h2>Start-Up Tutorial (Voiced)</h2>
-      <div class="youtube-container">
-        <iframe 
-          src="https://youtu.be/RGV0qJyq2BQ?si=w-h0giUIq_Ly5u5V" 
-          title="YouTube video player" 
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-      
-    </section>
+      <p class="r">The Deaerator significantly contributes to the amount of steam the reactor can produce;
+      adjust the inlet and outlet valves accordingly.</p>
+
+
 
   </main>
 
