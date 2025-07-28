@@ -739,6 +739,33 @@ ul {
   margin-bottom: 0.75rem;
 }
 
+.update-card {
+  background-color: #1d1d1d;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  color: #e6e6e6;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.update-card h2 {
+  color: #80c7ff;
+  border-bottom: 2px solid #80c7ff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.update-card h3 {
+  color: #ffffff;
+  margin-top: 1.5rem;
+}
+
+.update-card ul {
+  padding-left: 1.5rem;
+  list-style-type: square;
+}
+
+
 .badge-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
