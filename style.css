@@ -11,7 +11,6 @@ body {
   background-color: #121212;
   color: #ffffff;
   line-height: 1.6;
-  padding: 1rem;
 }
 
 .NavGrid {
@@ -52,6 +51,7 @@ header {
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 #dev-credits {
   margin-top: 3rem;
