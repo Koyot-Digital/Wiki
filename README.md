@@ -45,9 +45,10 @@ To maximise the chances of your PR being accepted, only modify the files you're 
 - Don't delete files unless you're really sure about it
 
 ## If Your New To Git/GitHub
-
-Yes, this stuff is complex, dont worry you can figure this out. to understand the terms like `push`, `fetch`, `pull` etc... we recomend reading [this artical](https://webtuu.com/blog/04/a-laymans-introduction-to-git).
-great, now that you have read that, you should understand the basic terms of git and git related stuff. to see how to contribute, check out the [How To Contribute For Dummies ](docs/GITHUB-FOR-DUMMIES.md) file
+In short this XKCD commic basicly explains git in a funny way.
+![XKCD 1597](https://imgs.xkcd.com/comics/git.png,XKCD 1597) 
+Yes, this stuff is kinda complex, dont worry you can figure this out. to understand the terms like `push`, `fetch`, `pull` etc... we recomend reading [this artical](https://webtuu.com/blog/04/a-laymans-introduction-to-git).
+great, now that you have read that, you should understand the basic terms of git and git related stuff. to see how to contribute, check out the [How To Contribute For Dummies ](docs/GITHUB-FOR-DUMMIES.md) file, for tone and style gudelines, see below.
 
 ## ✏️ Contributing Guidelines
 
