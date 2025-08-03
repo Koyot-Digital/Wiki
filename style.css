@@ -755,6 +755,13 @@ ul {
   margin-bottom: 1rem;
 }
 
+.update-card h2.update-hotfix {
+  color: #e26737;
+  border-bottom: 2px solid #80c7ff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 .update-card h3 {
   color: #ffffff;
   margin-top: 1.5rem;
