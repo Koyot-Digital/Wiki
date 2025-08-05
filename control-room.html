@@ -105,9 +105,9 @@
         <img src="images/Deaerator_panel.webp" alt="Rod Control Panel" class="enlargeable"/>
         <div>
           <p>The deaerator's true purpose is to remove impurities from the feedwater, using steam in order to heat the water up. This power plant features 2 deaerators, and similarly to the condenser coolant, has 2 loops (<a class="r">loop A</a> and <a class="y">loop B</a>), receiving steam from their respective steam drums, and water from the condensers.</p>
-          <p>The deaerator has 2 valves, those being the <a class="g">steam input</a> and <a class="b">relief</a>. The steam input lets more steam in, raising the temperature, and increasing the pressure sligtly, while the relief vents steam out, lowering the pressure.</p>
+          <p>The deaerator has 2 valves, those being the <a class="g">steam input</a> and <a class="b">relief</a>. The steam input lets more steam in, raising the temperature, and increasing the pressure slightly, while the relief vents steam out, lowering the pressure.</p>
           <p>The <a class="gy">A-B Bleed valve</a> mixes the water of the 2 deaerators, helping the water level equal out on both deaerators.</p>
-          <p>For proper deaeration (water cleaning), it needs to be configured at 250C and 100PSI. This can be done by using the <a class="o"automatic control<a/></p>
+          <p>For proper deaeration (water cleaning), it needs to be configured at 250C and 100PSI. This can be done by using the <a class="o">automatic control</a></p>
           <p>The water level of the deaerator is mainly managed on the condensate panel, however this panel features the <a class="o">overflow valve</a>, which prevents flooding of the deaerators.</p>
         </div>
       </div>
@@ -138,6 +138,27 @@
       </div>
     </section>
 
+    <section class="location-section">
+      <h2>The Electrical Panel</h2>
+      <div class="location-content";>
+        <img src="images/Electrical.webp" alt="Rod Control Panel" class="enlargeable"/>
+        <div>
+          <p>
+            The electrical panel is used to control the flow of electricity throughout the facility and offsite (aka. the grid). <br>
+            <br>
+            The <a class="o">64A-G2</a> breaker (Startup transformer) is used to power Bus A (orange line) during the reactor's off-time and start-up. Bus A contains all the pumps that can be powered by the startup transformer, with the rest being hosted in Bus B (blue line), which cannot be powered by the startup transformer.<br>
+            <br>
+            Breakers <a class="o">64A-M</a> and <a class="db">64B-M</a> have the functionality of moving power from the <a class="gy">turbine generators</a> to the 2 buses. After the run-up of turbine A, both of these breakers should be closed, assuming the turbine is producing enough excess power to provide for them. <a class="r">18M-G1</a> (The Main transformer) connects the turbine generators to offsite (black), allowing them to provide power to the grid.<br>
+            <br>
+            In the event that the turbines are unable to power the buses, for example, due to a trip, the <a class="y">automatic G1 offload</a> (if primed and active), will close the breaker to the startup transformer, providing power to bus A.<br>
+            <br>
+            The Low Voltage line (green), powered by either the <a class="dg">480LV-A</a> (turbines, startup transformer) or the diesel generators, hosts the lights, AC-DC converter and the battery charger, which are connected to several critical systems (crimson). Turning off the AC-DC breaker will cause the power from the low voltage line to flow directly through the battery, making it unable to charge.<br>
+            <br>
+            You may have noticed that the 480LV-A breaker goes both ways, that is because diesel generators can actually back-feed into Bus A. This requires both diesel generators to be active and Bus A to be unpowered. The diesel generators provide less power than the startup transformer and should only be used in emergencies.<br>
+          </p>
+        </div>
+      </div>
+    </section>
     <div id="image-modal" class="modal">
       <img src="" alt="Zoomed Image" id="modal-img">
     </div>
