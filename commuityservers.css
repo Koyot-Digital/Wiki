@@ -52,3 +52,23 @@
     border-radius: 10px;
 }
 
+.disclaimer {
+    background-color: #2a2a2a;
+    border: 1px solid #555;
+    border-left: 4px solid #1d5c1d; /* Orange accent border */
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    font-style: italic;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.disclaimer::before {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
