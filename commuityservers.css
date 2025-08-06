@@ -18,9 +18,37 @@
     display: inline-block;
 }
 
+.Type {
+    font-size: smaller;
+    padding-bottom: 1rem;
+}
+
 .communtiyserver img {
     width: 15%;
     height: 15%;
     border-radius: 10px;
     margin-bottom: 0.8rem;
 }
+
+.communtiyserver p {
+    padding-top: 1rem;
+}
+
+.title-with-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.left-text {
+    flex: 1;
+}
+
+.right-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
