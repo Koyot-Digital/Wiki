@@ -146,24 +146,7 @@ html {
   margin-bottom: 2rem;
   box-shadow: 0 0 10px rgba(128, 199, 255, 0.1);
 }
-.emergency-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
-}
-.emergency-nav a {
-  background-color: #2a2a2a;
-  color: #80c7ff;
-  padding: 0.6rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-.emergency-nav a:hover {
-  background-color: #3b3b3b;
-}
+
 .hero {
   position: relative;
   width: 100vw;
