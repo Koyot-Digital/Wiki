@@ -13,6 +13,8 @@ body {
   line-height: 1.6;
 }
 
+/* NavGrid */
+
 .NavGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -40,6 +42,7 @@ body {
   box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
 }
 
+/* misc */
 
 header {
   background-color: #1c1c1c;
@@ -147,6 +150,8 @@ html {
   box-shadow: 0 0 10px rgba(128, 199, 255, 0.1);
 }
 
+/* hero is just the tag that 90% of the wiki uses, dont touch without shrimp permission */
+
 .hero {
   position: relative;
   width: 100vw;
@@ -220,35 +225,35 @@ html {
 
 /* Colors */
 
-.b {
+*.b {
   color: #72b0eb;
 }
 
-.db {
+*.db {
   color: #074a89;
 }
 
-.y {
+*.y {
   color: #d2c62f;
 }
-.g {
+*.g {
   color: #4ed171;
 }
 
-.dg {
+*.dg {
   color: #217c00;
 }
 
-.gr {
+*.gr {
   color: #6e7c8c;
 }
-.o {
+*.o {
   color: #f8a674;
 }
-.r {
+*.r {
   color: #eb4c51;
 }
-.gy {
+*.gy {
   color: #c1e94b;
 }
 
