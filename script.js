@@ -1,4 +1,4 @@
-/* SCRIPT FOR VIEW-MORE-BTN */
+// SCRIPT FOR VIEW-MORE-BTN
 function initializeViewMoreButtons() {
   const buttons = document.querySelectorAll('.view-more-btn');
 
@@ -91,6 +91,8 @@ setTimeout(initializeViewMoreButtons, 500);
     });
   });
 
+// THIS IS KNOWN TO NOT WORK ON LOCAL DUE TO CORS 3:<
+
 fetch('/NavGrid.html')
     .then(response => response.text())
     .then(data => {
@@ -100,6 +102,9 @@ fetch('/NavGrid.html')
 
       initializeArticleSearch();
     });
+
+
+// search function, if it aint broke dont fix it
 
 function initializeArticleSearch() {
   const searchInput = document.getElementById('articleSearch');
@@ -162,6 +167,8 @@ function initializeArticleSearch() {
 }
 
 // for the info panel
+// probibly unneeded but dont delete it
+
 document.querySelectorAll('.info-table td button').forEach(btn => {
   btn.addEventListener('click', function() {
     const id = btn.getAttribute('data-explanation-id');
@@ -173,6 +180,8 @@ document.querySelectorAll('.info-table td button').forEach(btn => {
     }
   });
 });
+
+// shrinks the NavGrid panel when the close button is clicked
 
 document.querySelector('.close-panel-button').addEventListener('click', function() {
   document.getElementById('sidePanel').classList.remove('open');
