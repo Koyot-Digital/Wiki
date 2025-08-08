@@ -28,6 +28,8 @@
     <div id="NavGrid-placeholder"></div>
       <br><br><br>
       <div class="emergency-nav">
+        <p>Jump To Any Rank:</p>
+        <a href="#security">Security</a>
         <a href="#visitor">Visitor</a>
         <a href="#trainee">Trainee</a>
         <a href="#junior-op">Junior Operator</a>
@@ -36,12 +38,19 @@
         <a href="#shift-manager">Shift Manager</a>
         <a href="#plant-director">Plant Director</a>
       </div>
-
+    <br><br>
+    <!-- looks bad without these -->
     <section id="introduction">
         <h3>Introduction</h3>
         <br>
         <p>The Ranks and Points system in this game is fairly simple. To rank up you just need to keep the reactor and the turbines connected to the grid and meet demand. At the end of your shift (At 00:00) you will earn a paycheck. Each time you get your paycheck your 'Money' turns into points. In other words your main priority is to sell as much power as possible.</p>
         <br>
+    </section>
+    <hr><br>
+    <section id="security">
+      <h3>Security</h3><br>
+      <p>If you are security you have to wait until you get <span style="color: #eb4c51;">25,000 points</span> to get handcuffs, and <span style="color: #eb4c51;">75,000 points</span> for the baton</p>
+      <br>
     </section>
     <hr><br>
     <section id="visitor">
@@ -52,28 +61,30 @@
     <br><hr><br>
     <section id="trainee">
         <h3>Trainee</h3><br>
-        <p>Points required: 5,000 - 74,999</p><br>
+        <!-- for some reason unknown to me, the <span class="class"> trick for CSS just isnt working, so i used the hex codes from the CSS file :/-->
+        <p style="color: #eb4c51;">Points required: 5,000 - 74,999</p><br>
         <p>You've got the hang of this facility. usually more reliable than your visitors Trainees can assist around the nuclear powerplant! They can assist Jr. Operators and Sr. Operators on some menial tasks. Yet they usually aren't skilled enough to maintain a nuclear reactor solo. You can somewhat rely on them for a while before you need to intervene to stop a reactor going in a meltdown.</p>
     </section>
     <br><hr><br>
     <section id="junior-op">
         <h3>Junior Operator</h3><br>
-        <p>Points required: 75,000 - 499,999</p>
+        <p style="color: #eb4c51;">Points required: 75,000 - 499,999</p>
         <p>Bonus: 10%</p><br>
         <p>Skilled personnel. Can handle most of the emergencies with ease. Yet they can't remain calm when a visitor presses 'SCRAM' and now they need to re-do the whole reactor start up sequence... Again.</p>
     </section>
     <br><hr><br>
     <section id="sr-op">
         <h3>Senior Operator</h3><br>
-        <p>Points required: 500,000 - 1,249,999</p>
-        <p>Bonus: 35%</p><br>
+        <p style="color: #eb4c51;">Points required: 500,000 - 1,249,999</p>
+        <p>Bonus: 35%</p>
+        <br>
         <p>Considered 'One of the best.' Minimal errors, deal with emergencies, keep the plant running at 100% efficiency. There won't be anyone else like them who can handle the powerplant as good as them. You can rely onto them for anything and everything.</p>
         <i>Can get access to a Sr. Operator bypass key</i>
     </section>
     <br><hr><br>
     <section id="supervisor">
         <h3>Supervisor</h3><br>
-        <p>Points required: 1,250,000 - 2,499,999</p>
+        <p style="color: #eb4c51;">Points required: 1,250,000 - 2,499,999</p>
         <p>Bonus: 70%</p><br>
         <p>You've reached it! The Supervisor title! You should be proud of yourself. That is no small feat! You can finally oversee those who are below you! Just be prepared for chaos and prepare to discipline trainees. Good luck!</p>
         <i>Can get access to a Sr. Operator bypass key</i>
