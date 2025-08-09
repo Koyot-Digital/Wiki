@@ -171,19 +171,20 @@
       </ul>
       <h2>Auto Bypass</h2>
       <ul>
-        <li>The calculation for the Auto Bypass is <span class="math">(Demand÷2)+12</span>, for your conviniance, there is a calculator provided below</li>
+        <li>The calculation for the Auto Bypass is <span class="math">(Demand÷2)+12</span> or <span class="math">(Demand+24)÷2</span>, either way- they make the same result.</li> 
+        <li>For your convenience, there is a calculator provided below</li>
       </ul>
-      <!-- i am currently doing this in the web editor, ill do the calculator next commit -->
         <div class="calculator">
-            <label for="DMD">Demand:</label>
+            <label for="DMD">Demand in MW:</label>
             <input type="number" id="DMD" name="DMD">
             <br>
+            <span>
             <p>Would you like extra eff?</p>
             <label for="EXTRA-EFF">Yes:</label>
             <input type="radio" name="extraEff" value="yes" id="EXTRA-EFF">
-            <br>
             <label for="extraEff">No:</label>
             <input type="radio" name="extraEff" value="no">
+            </span>
             <br>
             <button onclick="runCalculation()">Calculate</button>
             <br>

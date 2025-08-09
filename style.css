@@ -769,15 +769,18 @@ ul {
 
 .calculator {
   border: 2px solid #333;
-  white-space: normal;
-  border-radius: 8px;
-  cursor: pointer;
-  display: list-item;
-  justify-content: center;
-  line-height: 1.2;
-  text-decoration: none;
-  backface-visibility: hidden;
   border-radius: 25px;
+  backface-visibility: hidden;
+
+  display: flex;
+  flex-direction:column; /* stack elements vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center;/* center vertically (optional) */
+
+  text-align: center;     /* center the text inside */
+  white-space: normal;    /* allow wrapping */
+  padding: 1rem;          /* give it breathing room */
+  gap: 0.5rem;             /* space between lines/items */
 }
 
 a {
