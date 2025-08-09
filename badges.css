@@ -1,0 +1,70 @@
+.badge-card h3 {
+  font-size: 1.1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.badge-card p {
+  font-size: 0.9rem !important;
+  color: #bbb !important;
+}
+
+.badge-section h2 {
+  font-size: 2rem !important;
+  margin-bottom: 1rem !important;
+  margin-top: 2rem !important;
+  color: #80c7ff !important;
+  border-bottom: 2px solid #444 !important;
+  padding-bottom: 0.3rem !important;
+}
+
+.badge-content {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1.5rem !important;
+  align-items: flex-start !important;
+  height: fit-content !important;
+}
+
+.badge-content img,
+.badge-content video {
+  max-width: 225px !important;
+  width: 100% !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 10px #6b6a6a !important;
+  margin-top: 2rem !important;
+}
+
+.badge-content ol {
+  position: relative !important;
+  flex: 1 1 300px !important;
+  margin-top: 2rem !important;
+  margin-left: 1rem !important;
+  padding: 3rem !important;
+  font-size: 1.1rem !important;
+  color: #d0d0d0 !important;
+  list-style-position: inside !important;
+  background-color: #1c1c1c !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0 10px rgba(128, 199, 255, 0.3) !important;
+  min-height: 225px !important;
+}
+
+.badge-content li {
+  margin-bottom: 0.3rem !important;
+}
+
+.badge-display p {
+  text-align: center !important;
+  width: 100% !important;
+  margin-top: 0.5rem !important;
+  font-size: 16px !important;
+}
+
+.badge-display {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  max-width: 225px !important;
+  width: 100% !important;
+  list-style-type: disk
+}
