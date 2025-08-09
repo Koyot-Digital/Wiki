@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oakridge Nuclear Power Station - Pre-Start Guide</title>
+  <script src="calc.js"></script>
   <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
@@ -173,7 +174,22 @@
         <li>The calculation for the Auto Bypass is <span class="math">(Demand÷2)+12</span>, for your conviniance, there is a calculator provided below</li>
       </ul>
       <!-- i am currently doing this in the web editor, ill do the calculator next commit -->
-      <div class="calculator"/>
+        <div class="calculator">
+            <label for="DMD">Demand:</label>
+            <input type="number" id="DMD" name="DMD">
+            <br>
+            <p>Would you like extra eff?</p>
+            <label for="EXTRA-EFF">Yes:</label>
+            <input type="radio" name="extraEff" value="yes" id="EXTRA-EFF">
+            <br>
+            <label for="extraEff">No:</label>
+            <input type="radio" name="extraEff" value="no">
+            <br>
+            <button onclick="runCalculation()">Calculate</button>
+            <br>
+            <h3>AutoBalance MW: <span class="math" id="calculation-span"> </span></h3>
+            <!-- insert comment here -->
+        </div>
       <br>
       <br>
       <p class="r">The Deaerator significantly contributes to the amount of steam the reactor can produce;

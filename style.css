@@ -760,8 +760,25 @@ ul {
   list-style-type: square;
 }
 
+.math {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #3b3b3bb6;
+  border-color: #1f1f1fb6;
+  letter-spacing: 1px;
+}
 
-
+.calculator {
+  border: 2px solid #333;
+  white-space: normal;
+  border-radius: 8px;
+  cursor: pointer;
+  display: list-item;
+  justify-content: center;
+  line-height: 1.2;
+  text-decoration: none;
+  backface-visibility: hidden;
+  border-radius: 25px;
+}
 
 a {
   color: #80c7ff;
