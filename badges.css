@@ -68,3 +68,8 @@
   width: 100% !important;
   list-style-type: disk
 }
+
+.badges-disclamer {
+    font-size: 10px;
+    font-style: italic;
+}
