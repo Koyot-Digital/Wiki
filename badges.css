@@ -1,7 +1,3 @@
-/* Sr. Dev: why is everything marked with !important
-   Jr. Dev: i mean i did fix it
-*/
-
 .badge-card h3 {
   font-size: 1.1rem !important;
   margin-bottom: 0.5rem !important;
