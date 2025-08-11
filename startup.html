@@ -171,6 +171,7 @@
         <li>Enable Recirculation Pumps C1 and C2 and set to speed 3.</li>
         <li>Set Condenser Coolant Pumps A3 and B3 to speed 3.</li>
       </ul>
+      <br>
       <h2 class="section-title">Auto Bypass</h2>
       <ul class="info-list">
         <p>The formula for what to input into each auto-bypass <span class="g"><strong>with</strong></span> extra efficiency is:</p>
@@ -193,18 +194,13 @@
                 max="1500"
                 step="10"
                 value="500"
-                oninput="demandValue.textContent = this.value">
-        <span id="demandValue">500</span> MW
+                oninput="demandValue.textContent = this.value + ' MW'; runCalculation();">
+        <span id="demandValue">500 MW</span>
 
-        <div class="radio-group">
-          <span>Include extra 12MW for efficiency?</span>
-          <label><input type="radio" name="extraEff" value="yes" checked> Yes</label>
-          <label><input type="radio" name="extraEff" value="no"> No</label>
-        </div>
-
-        <button onclick="runCalculation()">Calculate</button>
+        <br>
 
         <h3>AutoBalance MW: <span class="inline-codeblock" id="calculation-span">—</span></h3>
+        <h3>AutoBalance MW (+12): <span class="inline-codeblock" id="calculation-span2">—</span></h3>
       </div>
       <br>
       <br>
