@@ -44,11 +44,15 @@ To maximise the chances of your PR being accepted, only modify the files you're 
 - Avoid adding random scripts or plugins without talking to someone first
 - Don't delete files unless you're really sure about it
 
-## If Your New To Git/GitHub
-In short this XKCD commic basicly explains git in a funny way.
-![XKCD 1597](https://imgs.xkcd.com/comics/git.png,XKCD 1597) 
-Yes, this stuff is kinda complex, dont worry you can figure this out. to understand the terms like `push`, `fetch`, `pull` etc... we recomend reading [this artical](https://webtuu.com/blog/04/a-laymans-introduction-to-git).
-great, now that you have read that, you should understand the basic terms of git and git related stuff. to see how to contribute, check out the [How To Contribute For Dummies ](docs/GITHUB-FOR-DUMMIES.md) file, for tone and style gudelines, see below.
+## New to GitHub?
+
+
+This XKCD comic humourously explains Git in a simple way.
+![XKCD 1597](https://imgs.xkcd.com/comics/git.png)
+
+Git can be quite complex, but don’t worry because you can figure it out. To understand terms like `push`, `fetch`, and `pull`, @Gargleblaster recommends reading [this article](https://webtuu.com/blog/04/a-laymans-introduction-to-git).
+
+Once you’ve read that, you should have a good grasp of basic Git concepts. To learn how to contribute, see the [How To Contribute For Dummies](docs/GITHUB-FOR-DUMMIES.md) file. For guidelines, refer to the section below.
 
 ## ✏️ Contributing Guidelines
 
