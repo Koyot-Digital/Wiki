@@ -29,7 +29,6 @@
     width: 85%;
     height: 10px;
     background: #888;
-    margin-left: 4.4rem;
 }
 
 .calculator input[type="range"]::-webkit-slider-thumb {
