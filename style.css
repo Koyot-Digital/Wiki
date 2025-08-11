@@ -1,4 +1,3 @@
-/* affects all </>'s*/
 
 * {
   margin: 0;
@@ -581,9 +580,13 @@ html {
   background: #3b3b3b;
   outline: none;
 }
+
+/* keep it as it is required for NavGrid :shrug: */
 .hidden {
   display: none;
 }
+
+/* points.html Tags */
 .npc-section {
   margin-top: 2rem;
 }
@@ -626,6 +629,7 @@ html {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+/* updates.html */
 .news-section {
   margin-top: 3rem;
   padding: 2rem;
@@ -637,6 +641,7 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+
 .links-section {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -689,11 +694,9 @@ html {
   padding: 0.5rem;
   text-align: left;
   background-color: #181616;
- ;
 }
 .dialogue-table th {
   background-color: #181616;
- ;
 }
 ul {
   margin: 0;

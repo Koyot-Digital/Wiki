@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://wiki.koyot.digital/</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/updates.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/badges.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/badgesguide.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/communityservers.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/control-room.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/credits.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/emergency.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/index.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>2.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/info-panels.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/locations.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<!-- note: NavGrid should NOT be included as it is a iFrame only element. -->
+<url>
+	<loc>https://wiki.koyot.digital/people.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/points.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/prestart.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/RMBK-1500.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/shutdown.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/startup.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://wiki.koyot.digital/teams.html</loc>
+	<lastmod>2025-08-10T11:13:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
