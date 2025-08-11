@@ -761,8 +761,14 @@ ul {
   list-style-type: square;
 }
 
-
-
+.inline-codeblock {
+  font-family: Consolas, Monaco, 'Courier New', monospace;
+  font-size: 0.95em;
+  background-color: #2d2d2d;
+  color: #ffd86b;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
 
 a {
   color: #80c7ff;

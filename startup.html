@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oakridge Nuclear Power Station - Pre-Start Guide</title>
+  <script src="calc.js"></script>
   <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="calculator.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <header class="hero small-hero">
@@ -168,14 +171,46 @@
         <li>Enable Recirculation Pumps C1 and C2 and set to speed 3.</li>
         <li>Set Condenser Coolant Pumps A3 and B3 to speed 3.</li>
       </ul>
+      <h2 class="section-title">Auto Bypass</h2>
+      <ul class="info-list">
+        <p>The formula for what to input into each auto-bypass <span class="g"><strong>with</strong></span> extra efficiency is:</p>
+        <div class="math-display">
+          \( \frac{\text{Demand}}{2} + 12 = \text{...} \)
+        </div>
+        <p>The formula for what to input into each auto-bypass <span class="r"><strong>without</strong></span> extra efficiency is:</p>
+        <div class="math-display">
+          \( \frac{\text{Demand}}{2} = \text{...} \)
+        </div>
+        Here's a basic calculator to help you figure this out!
+      </ul>
+      <div class="calculator">
+        <label for="demandSlider">Demand:</label>
+        <input
+                type="range"
+                id="demandSlider"
+                name="demandSlider"
+                min="500"
+                max="1500"
+                step="10"
+                value="500"
+                oninput="demandValue.textContent = this.value">
+        <span id="demandValue">500</span> MW
+
+        <div class="radio-group">
+          <span>Include extra 12MW for efficiency?</span>
+          <label><input type="radio" name="extraEff" value="yes" checked> Yes</label>
+          <label><input type="radio" name="extraEff" value="no"> No</label>
+        </div>
+
+        <button onclick="runCalculation()">Calculate</button>
+
+        <h3>AutoBalance MW: <span class="inline-codeblock" id="calculation-span">—</span></h3>
+      </div>
       <br>
       <br>
       <p class="r">The Deaerator significantly contributes to the amount of steam the reactor can produce;
       adjust the inlet and outlet valves accordingly.</p>
-    </section class="location-section">
-
-
-
+    </section>
   </main>
 
   <footer>
@@ -185,3 +220,4 @@
   <script src="script.js" defer></script>
 </body>
 </html>
+
