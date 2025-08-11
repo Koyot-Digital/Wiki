@@ -93,7 +93,8 @@ setTimeout(initializeViewMoreButtons, 500);
 
 // THIS IS KNOWN TO NOT WORK ON LOCAL DUE TO CORS 3:<
 
-fetch('/NavGrid.html')
+fetch('https://wiki.koyot.digital/NavGrid.html')
+// for some reason Gh pages is picky with this, when editing NavGrid, please replace `https://wiki.koyot.digital/NavGrid.html` with `./NavGrid.html`
     .then(response => response.text())
     .then(data => {
       document.getElementById('NavGrid-placeholder').innerHTML = data;
