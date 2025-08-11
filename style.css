@@ -581,6 +581,11 @@ html {
   outline: none;
 }
 
+/* keep it as it is required for NavGrid :shrug: */
+.hidden {
+  display: none;
+}
+
 /* points.html Tags */
 .npc-section {
   margin-top: 2rem;
