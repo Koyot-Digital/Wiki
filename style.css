@@ -580,10 +580,7 @@ html {
   background: #3b3b3b;
   outline: none;
 }
-/* why do we have this tag? */
-.hidden {
-  display: none;
-}
+
 /* points.html Tags */
 .npc-section {
   margin-top: 2rem;
