@@ -761,9 +761,11 @@ ul {
 }
 
 .inline-codeblock {
-  font-family: monospace;
-  background: #333;
-  padding: 0.1rem 0.3rem;
+  font-family: Consolas, Monaco, 'Courier New', monospace;
+  font-size: 0.95em;
+  background-color: #2d2d2d;
+  color: #ffd86b;
+  padding: 0.1rem 0.35rem;
   border-radius: 4px;
 }
 
