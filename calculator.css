@@ -19,8 +19,34 @@
     text-align: center;
 }
 
+#demandValue {
+    position: relative;
+}
+
 #demandSlider {
-    width: 90%;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 85%;
+    height: 10px;
+    background: #888;
+    margin-left: 4.4rem;
+}
+
+.calculator input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #ffef11;
+
+    transition: transform 0.3s ease
+}
+
+.calculator input[type="range"]::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    transform: scale(1.15);
+    border-radius: 50%;
+    background-color: #ffef11;
 }
 
 .calculator label {
