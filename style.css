@@ -760,27 +760,11 @@ ul {
   list-style-type: square;
 }
 
-.math {
-  font-family: 'Times New Roman', Times, serif;
-  background-color: #3b3b3bb6;
-  border-color: #1f1f1fb6;
-  letter-spacing: 1px;
-}
-
-.calculator {
-  border: 2px solid #333;
-  border-radius: 25px;
-  backface-visibility: hidden;
-
-  display: flex;
-  flex-direction:column; /* stack elements vertically */
-  align-items: center;    /* center horizontally */
-  justify-content: center;/* center vertically (optional) */
-
-  text-align: center;     /* center the text inside */
-  white-space: normal;    /* allow wrapping */
-  padding: 1rem;          /* give it breathing room */
-  gap: 0.5rem;             /* space between lines/items */
+.inline-codeblock {
+  font-family: monospace;
+  background: #333;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
 }
 
 a {

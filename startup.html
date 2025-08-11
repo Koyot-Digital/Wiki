@@ -11,6 +11,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="calculator.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <header class="hero small-hero">
@@ -169,36 +171,46 @@
         <li>Enable Recirculation Pumps C1 and C2 and set to speed 3.</li>
         <li>Set Condenser Coolant Pumps A3 and B3 to speed 3.</li>
       </ul>
-      <h2>Auto Bypass</h2>
-      <ul>
-        <li>The calculation for the Auto Bypass is <span class="math">(Demand÷2)+12</span> or <span class="math">(Demand+24)÷2</span>, either way- they make the same result.</li> 
-        <li>For your convenience, there is a calculator provided below</li>
-      </ul>
-        <div class="calculator">
-            <label for="DMD">Demand in MW:</label>
-            <input type="number" id="DMD" name="DMD">
-            <br>
-            <span>
-            <p>Would you like extra eff?</p>
-            <label for="EXTRA-EFF">Yes:</label>
-            <input type="radio" name="extraEff" value="yes" id="EXTRA-EFF">
-            <label for="extraEff">No:</label>
-            <input type="radio" name="extraEff" value="no">
-            </span>
-            <br>
-            <button onclick="runCalculation()">Calculate</button>
-            <br>
-            <h3>AutoBalance MW: <span class="math" id="calculation-span"> </span></h3>
-            <!-- insert comment here -->
+      <h2 class="section-title">Auto Bypass</h2>
+      <ul class="info-list">
+        <p>The formula for what to input into each auto-bypass <span class="g"><strong>with</strong></span> extra efficiency is:</p>
+        <div class="math-display">
+          \( \frac{\text{Demand}}{2} + 12 = \text{...} \)
         </div>
+        <p>The formula for what to input into each auto-bypass <span class="r"><strong>without</strong></span> extra efficiency is:</p>
+        <div class="math-display">
+          \( \frac{\text{Demand}}{2} = \text{...} \)
+        </div>
+        Here's a basic calculator to help you figure this out!
+      </ul>
+      <div class="calculator">
+        <label for="demandSlider">Demand:</label>
+        <input
+                type="range"
+                id="demandSlider"
+                name="demandSlider"
+                min="500"
+                max="1500"
+                step="10"
+                value="500"
+                oninput="demandValue.textContent = this.value">
+        <span id="demandValue">500</span> MW
+
+        <div class="radio-group">
+          <span>Include extra 12MW for efficiency?</span>
+          <label><input type="radio" name="extraEff" value="yes" checked> Yes</label>
+          <label><input type="radio" name="extraEff" value="no"> No</label>
+        </div>
+
+        <button onclick="runCalculation()">Calculate</button>
+
+        <h3>AutoBalance MW: <span class="math" id="calculation-span">—</span></h3>
+      </div>
       <br>
       <br>
       <p class="r">The Deaerator significantly contributes to the amount of steam the reactor can produce;
       adjust the inlet and outlet valves accordingly.</p>
-    </section class="location-section">
-
-
-
+    </section>
   </main>
 
   <footer>

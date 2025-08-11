@@ -9,9 +9,13 @@ function calculate(D, eff) {
 }
 
 function runCalculation() {
-    let demand = parseFloat(document.getElementById("DMD").value) || 0;
+    let demand = parseFloat(document.getElementById("demandSlider").value) || 0;
     let extraEff = document.querySelector('input[name="extraEff"]:checked');
     let effFlag = extraEff && extraEff.value === "yes";
     let result = calculate(demand, effFlag);
-    document.getElementById("calculation-span").innerHTML = result + " MW";
+    if (result > 750) {
+        result = 750;
+
+    }
+    document.getElementById("calculation-span").textContent = result + " MW";
 }
