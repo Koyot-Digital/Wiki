@@ -29,11 +29,12 @@
     <br>
     <label for="FontSel" style="margin-right: 6px;">Font:</label>
     <select name="Font Selection" id="FontSel" onchange="toggleCustomFontInput();">
-        <option value="Sans Serif" style="font-family: Arial, sans-serif;">Sans Serif (Arial)</option>
-        <option value="Monospaced" style="font-family: 'Courier New', monospace;">Monospaced (Courier New)</option>
-        <option value="Unitype" style="font-family: 'Unitype', sans-serif;">Unitype</option>
-        <!-- hey, for some reason this doesnt wanna load in the dropdown, but will load elsewhere, if you wanna fix it go for it lol -->
-        <option value="Open Dyslexic" style="font-family: 'OpenDyslexic', 'OpenDyslexic';">Open Dyslexic</option>
+        <option value="Arial, sans-serif" style="font-family: Arial, sans-serif;">Sans Serif (Arial)</option>
+        <option value="'Times New Roman', serif" style="font-family: 'Times New Roman', Times, serif;">Times New Roman</option>
+        <option value="'Courier New', monospace" style="font-family: 'Courier New', monospace;">Monospaced (Courier New)</option>
+        <!-- hey, for some reason these dont wanna load in the dropdown, but will load elsewhere, if you wanna fix it go for it lol -->
+        <option value="'Unitype', sans-serif" style="font-family: 'Unitype', sans-serif;">Unitype</option>
+        <option value="'OpenDyslexic', 'OpenDyslexic'" style="font-family: 'OpenDyslexic', 'OpenDyslexic';">Open Dyslexic</option>
         <option value="Custom">Custom</option>
     </select>
     <input type="text" id="CustomFontInput" placeholder="'Comic Sans', sans-serif" style="margin-left:6px;" />
@@ -44,7 +45,8 @@
     <br>
     <h1>Example:</h1>
     <br>
-    <h2 style="font-family: Arial, sans-serif;"> It is <span class="date">23/JUN/1982</span> and the plant output is: <span class="number">1350 54</span> MW</h2>    <br><br>
+    <h2 style="font-family: Arial, sans-serif;"> It is <span class="date">01/JAN/1970</span> and the plant output is: <span class="number">1350 54</span> MW</h2>    <br><br>
+    
 </div>
 </body>
 <div id="NavGrid-placeholder"></div>

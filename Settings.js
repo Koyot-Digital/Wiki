@@ -8,17 +8,15 @@ function toggleCustomFontInput() {
 // Get the actual font string based on selection or custom input
 function getSelectedFont() {
     const select = document.getElementById('FontSel');
-    if(select.value === 'Custom') {
+    
+    if (select.value === 'Custom') {
         const input = document.getElementById('CustomFontInput');
-        return input.value || 'Arial, sans-serif';
+        // Use whatever the user typed, fallback to Arial if blank
+        return input.value.trim() || 'Arial, sans-serif';
     } else {
-        switch(select.value) {
-            case 'Sans Serif': return 'Arial, sans-serif';
-            case 'Monospaced': return "'Courier New', monospace";
-            case 'Unitype': return "'Unitype', sans-serif";
-            case 'Open Dyslexic': return "'OpenDyslexic', 'OpenDyslexic'";
-            default: return 'Arial, sans-serif';
-        }
+        // Return the selected option directly
+        // Example: <option value="'Times New Roman', serif">Times New Roman</option>
+        return select.value || 'Arial, sans-serif';
     }
 }
 
@@ -27,7 +25,7 @@ function saveToLocal() {
     const theme = document.getElementById('ClrSel').value;
     const format = document.getElementById('FrmtSel').value;
     const font = getSelectedFont();
-    
+    location.reload()
     localStorage.setItem('theme', theme);
     localStorage.setItem('format', format);
     localStorage.setItem('font', font);
@@ -61,9 +59,9 @@ function applyPreferences() {
 function formatNumber(numStr, format) {
     let num = parseFloat(numStr.replace(' ', '.'));
     if(format === 'USA') {
-        return num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        return num.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 2 });
     } else if(format === 'EUR') {
-        return num.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        return num.toLocaleString('de-DE', { minimumFractionDigits: 0, maximumFractionDigits: 2 });
     }
     return numStr;
 }
@@ -78,8 +76,8 @@ function formatDate(dateStr, format) {
         const year = parseInt(parts[2],10);
         const dateObj = new Date(year, month, day);
 
-        if(format === 'USA') return dateObj.toLocaleDateString('en-US', { month:'long', day:'2-digit', year:'numeric' });
-        if(format === 'EUR') return dateObj.toLocaleDateString('de-DE', { day:'2-digit', month:'long', year:'numeric' });
+        if(format === 'USA') return dateObj.toLocaleDateString('en-US', { month:'2-digit', day:'2-digit', year:'numeric', hour12:'true' });
+        if(format === 'EUR') return dateObj.toLocaleDateString('de-DE', { month:'2-digit', day:'2-digit', year:'numeric', hour12:'False' });
     }
     return dateStr;
 }
