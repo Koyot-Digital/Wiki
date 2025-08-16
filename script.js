@@ -103,8 +103,11 @@ fetch('https://wiki.koyot.digital/NavGrid.html')
 
       initializeArticleSearch();
     });
-
-
+// relocates the user to an arbatrary page
+function relocate(page) {
+  // when using this, ensure that it is JUST THE PAGE NAME, i.e: `settings.html`
+    window.location.href = `${page}`;
+}
 // search function, if it aint broke dont fix it
 
 function initializeArticleSearch() {

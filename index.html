@@ -16,23 +16,7 @@
 </head>
 
 <header id="header" style="padding: 8px; display: flex; justify-content: space-between; align-items: center;">
-  <div>
-    <img onclick="minimizeHeader();" src="images/minimize.svg" style="width:25px;height:25px;"></img>
-  </div>
-  <div>
-    <label for="NumberSel" style="margin-right: 6px;">Date & Number Styles:</label>
-    <select name="Font Selection" id="FontSel">
-      <option value="Sans Serif">Northern Amarican: 1,000.00 | June 23, 1982</option>
-      <option value="Monospaced">European: 1.000,00 | 23 June 1982</option>
-    </select>
-    <label for="FontSel" style="margin-right: 6px;">Font:</label>
-    <select name="Font Selection" id="FontSel">
-      <option value="Sans Serif">Sans Serif</option>
-      <option value="Monospaced">Monospaced</option>
-      <option value="Unitype">Unitype</option>
-      <option value="Open Dyslexic">Open Dyslexic</option>
-    </select>
-  </div>
+  <img src="images/settings.svg" onclick="relocate('settings.html');">
 </header>
 
 <body>
@@ -48,7 +32,7 @@
   <main class="container">
   <h2>News & Anouncements</h2>
     <div id="NavGrid-placeholder"></div>
-      <!-- News from announcements if there is no news then say: "There is no news at the moment check back soon!" -->
+      <!-- News from announcements if there is no news for at least 1 week then add: "<>There is no news at the moment check back soon!" -->
       <section class="news-section">
         <h2>Removal Of Explosion</h2>
         <p>Hey everyone,</p>
