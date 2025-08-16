@@ -8,11 +8,33 @@
   <title>Oakridge Nuclear Power Station</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  <script src="header.js"></script>
    <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 </head>
+
+<header id="header" style="padding: 8px; display: flex; justify-content: space-between; align-items: center;">
+  <div>
+    <img onclick="minimizeHeader();" src="images/minimize.svg" style="width:25px;height:25px;"></img>
+  </div>
+  <div>
+    <label for="NumberSel" style="margin-right: 6px;">Date & Number Styles:</label>
+    <select name="Font Selection" id="FontSel">
+      <option value="Sans Serif">Northern Amarican: 1,000.00 | June 23, 1982</option>
+      <option value="Monospaced">European: 1.000,00 | 23 June 1982</option>
+    </select>
+    <label for="FontSel" style="margin-right: 6px;">Font:</label>
+    <select name="Font Selection" id="FontSel">
+      <option value="Sans Serif">Sans Serif</option>
+      <option value="Monospaced">Monospaced</option>
+      <option value="Unitype">Unitype</option>
+      <option value="Open Dyslexic">Open Dyslexic</option>
+    </select>
+  </div>
+</header>
+
 <body>
   <header class="hero">
     <div class="hero-overlay"></div>
@@ -62,7 +84,7 @@
     <br>
   </main>
   <footer>
-    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
+    <p>All works associated to Koyot Digital are under &copy; 2025 to Koyot Digital.</p> <p>Wiki is under the CC BY-SA 4.0 Licenece.</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
   </footer>
 </body>
 </html>
