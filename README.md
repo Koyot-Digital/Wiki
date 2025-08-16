@@ -1,7 +1,3 @@
-# Notice: this repository has moved! please go to the new repo at https://GitHub.com/Koyot-Digital/
-
-
-
 ## ONPS Wiki
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
