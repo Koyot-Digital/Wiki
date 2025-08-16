@@ -50,7 +50,7 @@
 }
 
 body {
-  font-family: system-ui, sans-serif;
+  /* this is now user-decided, browser default if none are selected */
   background-color: #121212;
   color: #ffffff;
   line-height: 1.6;
