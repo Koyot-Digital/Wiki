@@ -1,6 +1,60 @@
 # Contributing Guidelines
 
-Thank you for your interest in contributing to this project! We welcome contributions from developers of all experience levels.
+This Document will make sure you know what you can and 
+cannot do. It will also help you find your way around git
+and how you can add onto this project.
+
+First, we will have to go over some rules. When making a pull 
+request for your feature, these rules will be checked by
+our reviewers.
+
+_Note to our Verfied Contributors: These are not the full
+rule set you have to follow. For the Full Rules Please See [Discord](https://discord.com/channels/1201740758466711562/1406227117934383204)
+or the Contributor Rules found here_ 
+
+---
+
+# GitHub Standards
+
+## Readability
+When you make changes to the wiki, you must make sure you comment
+on your work/code, and when making a commit, you must say what you
+have changed in the commit clearly. Speak like you're giving an
+action.
+#### For Example:
+- "fix: typo in about section"
+- "add: mobile responsiveness to navigation"
+- "edit: contact information"
+
+## Branches
+When working on a feature, make sure to make a new branch for
+this so you do not commit directly into the main branch.
+You must do your work in your branch, and when it is ready
+for production, you may make a pull request to merge it into
+the main branch. Only the creator of the branch should make
+pull requests for the branch.
+
+## Pull Requests
+When you submit a pull request, you should make sure you include
+the following:
+- A clear title summarizing the changes
+- Description of what was changed and why
+- Any relevant issue numbers (if applicable)
+
+
+### Other
+Keep it to one change per commit. Make sure not to make a 
+bunch of unrelated changes in one commit. If your commit is about
+organizing files, organize them, then when you do the next 
+step, make sure that in another commit. In other words, make sure 
+commits are related.
+
+
+
+---
+
+Now we have gotten that out the way we can move onto how you add
+to the wiki.
 
 ## Getting Started
 
@@ -25,26 +79,6 @@ Before contributing, make sure you have:
    ```bash
    git checkout -b feature/your-feature-name
    ```
-
-## Making Changes
-
-### Code Guidelines
-
-- Focus on content changes rather than major layout redesigns unless discussed in an issue first
-- When editing HTML files like `index.html`, make changes within existing `<section>` tags
-- Ensure your code follows proper HTML structure and validation
-- Test your changes on both desktop and mobile devices
-- Keep changes focused - one feature or fix per pull request
-
-### Commit Guidelines
-
-- Use clear, descriptive commit messages (e.g. "thing" or "stuff" won't cut it)
-- Start commit messages with a verb in present tense (e.g., "add:", "fix:", "edit:")
-- Keep the first line under 50 characters when possible
-- Example good commit messages:
-    - "fix: typo in about section"
-    - "add: mobile responsiveness to navigation"
-    - "edit: contact information"
 
 ### Testing Your Changes
 
@@ -77,14 +111,6 @@ Before submitting your pull request:
 
 ## Pull Request Guidelines
 
-### Required Information
-
-Your pull request should include:
-- A clear title summarizing the changes
-- Description of what was changed and why
-- Any relevant issue numbers (if applicable)
-- Screenshots for visual changes (if applicable)
-
 ### Review Process
 
 - You must not review your own PR
@@ -92,32 +118,6 @@ Your pull request should include:
 - Address any feedback provided by maintainers
 - Keep discussions constructive
 - Be patient as reviews may take some time
-
-## Types of Contributions
-
-We welcome various types of contributions:
-
-### Content Updates
-- Fixing typos or grammar errors
-- Updating outdated information
-- Improving clarity of existing content
-
-### Bug Fixes
-- Fixing broken links
-- Resolving display issues
-- Correcting functionality problems
-
-### Features
-- Adding new sections or pages
-- Implementing new functionality
-- Improving user experience
-
-### Documentation
-- Improving README files
-- Adding code comments
-- Creating or updating guides
-
-And more!
 
 ## Getting Help
 
@@ -137,5 +137,8 @@ What matters most is your willingness to contribute positively to the project an
 ## Recognition
 
 All contributors will be acknowledged in our project. Your contributions help make this project better for everyone!
+
+_Please note just from adding one feature to the wiki doesn't mean you will get the contributor role. Guidelines on how to get the role will be posted at a later data._
+
 
 Thank you for contributing to our project! 🎉
