@@ -128,11 +128,6 @@ fetch('./NavGrid.html')
 
       initializeArticleSearch();
     });
-fetch('./header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header').innerHTML = data;
-    });
 // relocates the user to an arbatrary page
 function relocate(page) {
   // when using this, ensure that it is JUST THE PAGE NAME, i.e: `settings.html`
