@@ -1,3 +1,29 @@
+// font setter
+
+const theme = localStorage.getItem('theme') || 'Drk';
+const format = localStorage.getItem('format') || 'USA';
+const font = localStorage.getItem('font') || 'Arial, sans-serif';
+
+// Apply theme
+document.body.style.backgroundColor = theme === 'Drk' ? '#111' : '#fff';
+document.body.style.color = theme === 'Drk' ? '#eee' : '#000';
+
+// Apply font to all of the HTML
+// easter egg that skelly wanted :3
+if (font !== "Turbine-C"){
+  document.querySelectorAll('html').forEach(el => el.style.fontFamily = font);
+}else{
+  document.body.style.transform = "rotate(180deg)";
+  document.body.style.display = "inline-block"; // required so transform applies
+}
+// Apply number and date formatting
+document.querySelectorAll('span.number').forEach(el => {
+el.textContent = formatNumber(el.textContent, format);
+});
+document.querySelectorAll('span.date').forEach(el => {
+el.textContent = formatDate(el.textContent, format);
+});
+
 // SCRIPT FOR VIEW-MORE-BTN
 function initializeViewMoreButtons() {
   const buttons = document.querySelectorAll('.view-more-btn');
@@ -93,8 +119,7 @@ setTimeout(initializeViewMoreButtons, 500);
 
 // THIS IS KNOWN TO NOT WORK ON LOCAL DUE TO CORS 3:<
 
-fetch('https://wiki.koyot.digital/NavGrid.html')
-// for some reason Gh pages is picky with this, when editing NavGrid, please replace `https://wiki.koyot.digital/NavGrid.html` with `./NavGrid.html`
+fetch('./NavGrid.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('NavGrid-placeholder').innerHTML = data;
@@ -102,6 +127,11 @@ fetch('https://wiki.koyot.digital/NavGrid.html')
       initializeViewMoreButtons();
 
       initializeArticleSearch();
+    });
+fetch('./header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
     });
 // relocates the user to an arbatrary page
 function relocate(page) {

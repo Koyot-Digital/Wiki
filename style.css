@@ -55,7 +55,6 @@ body {
   color: #ffffff;
   line-height: 1.6;
 }
-
 /* NavGrid */
 
 .NavGrid {
@@ -64,7 +63,6 @@ body {
   gap: 1rem;
   margin-top: 2rem;
 }
-
 
 .NavLink {
   background-color: #1e1e1e;

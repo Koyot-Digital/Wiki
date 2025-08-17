@@ -8,9 +8,11 @@ function toggleCustomFontInput() {
 // Get the actual font string based on selection or custom input
 function getSelectedFont() {
     const select = document.getElementById('FontSel');
-    
     if (select.value === 'Custom') {
         const input = document.getElementById('CustomFontInput');
+        if (input === "Turbine-C"){
+            return 'Arial, sans-serif; ';
+        }
         // Use whatever the user typed, fallback to Arial if blank
         return input.value.trim() || 'Arial, sans-serif';
     } else {
@@ -20,7 +22,7 @@ function getSelectedFont() {
     }
 }
 
-// Save preferences to localStorage
+// Save preferences to localStorage, used in the button on settings.html
 function saveToLocal() {
     const theme = document.getElementById('ClrSel').value;
     const format = document.getElementById('FrmtSel').value;
@@ -43,9 +45,13 @@ function applyPreferences() {
     document.body.style.backgroundColor = theme === 'Drk' ? '#111' : '#fff';
     document.body.style.color = theme === 'Drk' ? '#eee' : '#000';
 
-    // Apply font to headings
-    document.querySelectorAll('h2').forEach(el => el.style.fontFamily = font);
-
+    // Apply font to all of the HTML
+    if (font !== "Turbine-C"){
+        document.querySelectorAll('html').forEach(el => el.style.fontFamily = font);
+    }else{
+        document.body.style.transform = "rotate(180deg)";
+        document.body.style.display = "inline-block"; // required so transform applies
+        }
     // Apply number and date formatting
     document.querySelectorAll('span.number').forEach(el => {
         el.textContent = formatNumber(el.textContent, format);
