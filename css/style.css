@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'OpenDyslexic';
-    src: url('Fonts/OpenDyslexic-Italic.woff2') format('woff2'),
-        url('Fonts/OpenDyslexic-Italic.ttf') format('truetype');
+    src: url('/Fonts/OpenDyslexic-Italic.woff2') format('woff2'),
+        url('/Fonts/OpenDyslexic-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'OpenDyslexic';
-    src: url('Fonts/OpenDyslexic-Bold.woff2') format('woff2'),
-        url('Fonts/OpenDyslexic-Bold.ttf') format('truetype');
+    src: url('/Fonts/OpenDyslexic-Bold.woff2') format('woff2'),
+        url('/Fonts/OpenDyslexic-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'OpenDyslexic';
-    src: url('Fonts/OpenDyslexic-Bold-Italic.woff2') format('woff2'),
-        url('Fonts/OpenDyslexic-Bold-Italic.ttf') format('truetype');
+    src: url('/Fonts/OpenDyslexic-Bold-Italic.woff2') format('woff2'),
+        url('/Fonts/OpenDyslexic-Bold-Italic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'OpenDyslexic';
-    src: url('Fonts/OpenDyslexic-Regular.woff2') format('woff2'),
-        url('Fonts/OpenDyslexic-Regular.ttf') format('truetype');
+    src: url('/Fonts/OpenDyslexic-Regular.woff2') format('woff2'),
+        url('/Fonts/OpenDyslexic-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: '';
-    src: url('Fonts/Unitype.woff2') format('woff2'),
-        url('Fonts/Unitype.ttf') format('truetype');
+    src: url('/Fonts/Unitype.woff2') format('woff2'),
+        url('/Fonts/Unitype.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
