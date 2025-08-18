@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oakridge Nuclear Power Station</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/settings_page.css" />
   <script src="js/script.js" defer></script>
   <link rel="apple-touch-icon"      sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32"   href="/images/Favicon/favicon-32x32.p ng">
@@ -15,58 +16,62 @@
 
 <header id="header" style="display: flex; justify-content: space-between; align-items: center;padding: 8px;">
   <div style="display: flex; gap: 12px; align-items: center;">
-    <img src="images/home.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
+    <img src="images/home.svg"
+         style="width: 24px; height: 24px; cursor: pointer;"
          onclick="relocate('index.html');">
-    <img src="images/settings.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
+    <img src="images/settings.svg"
+         style="width: 24px; height: 24px; cursor: pointer;"
          onclick="relocate('settings.html');">
   </div>
 
   <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
 </header>
-<body style="margin: 12px;">
-<div>
-  <!-- this will be too much work for me, and warrents another issue/PR
-    <label for="ClrSel">Theme:</label>
-    <select name="Color Selection" id="ClrSel">
-        <option value="Lght">Light Mode</option>
-        <option value="Drk">Dark Mode</option>
-    </select>
-    <br> -->
-  <label for="FrmtSel" style="margin-right: 6px;">Date & Number Styles:</label>
-  <select name="Format Selection" id="FrmtSel">
-    <option value="USA">North American: 1,234.56 | June 23, 1982</option>
-    <option value="EUR">European: 1.234,56 | 23 June 1982</option>
-  </select>
-  <br>
-  <label for="FontSel" style="margin-right: 6px;">Font:</label>
-  <select name="Font Selection" id="FontSel" onchange="toggleCustomFontInput();">
-    <option value="Arial, sans-serif" style="font-family: Arial, sans-serif;">Sans Serif (Arial)</option>
-    <option value="'Times New Roman', serif" style="font-family: 'Times New Roman', Times, serif;">Serif (Times New Roman)</option>
-    <option value="'Courier New', monospace" style="font-family: 'Courier New', monospace;">Monospaced (Courier New)</option>
-    <!-- hey, for some reason these dont wanna load in the dropdown, but will load elsewhere, if you wanna fix it go for it lol -->
-    <option value="'Unitype', sans-serif" style="font-family: 'Unitype', sans-serif;">Unitype</option>
-    <option value="'OpenDyslexic', 'OpenDyslexic'" style="font-family: 'OpenDyslexic', 'OpenDyslexic';">Open Dyslexic</option>
-    <option value="Custom">Custom</option>
-  </select>
-  <!-- put in "Turbine-C" for an easter egg! -->
-  <input type="text" id="CustomFontInput" placeholder="'Comic Sans', sans-serif" style="margin-left:6px;" />  
-  <br>
-  <button onclick="saveToLocal();" type="button">Save</button>
-  <br>
-  <br>
-  <h1>Example:</h1>
-  <br>
-  <h2>A blackout occurred on <span class="date">14/AUG/2003</span> after demand spiked to <span class="number">5000 56</span> terrawatts.</h2>
-  <br><br>
-    
+<body>
+<div class="container">
+  <section class="settings-card">
+    <h2>Preferences</h2>
+
+    <!-- Date/Number Format -->
+    <div class="settings-row">
+      <label for="FrmtSel">Date & Number Styles:</label>
+      <select id="FrmtSel" name="Format Selection">
+        <option value="USA">North American: 1,234.56 | June 23, 1982</option>
+        <option value="EUR">European: 1.234,56 | 23 June 1982</option>
+      </select>
+    </div>
+
+    <!-- Font Selection -->
+    <div class="settings-row">
+      <label for="FontSel">Font:</label>
+      <select id="FontSel" name="Font Selection" onchange="toggleCustomFontInput();">
+        <option value="Arial, sans-serif" style="font-family: Arial, sans-serif;">Sans Serif (Arial)</option>
+        <option value="'Times New Roman', serif" style="font-family: 'Times New Roman', serif;">Serif (Times New Roman)</option>
+        <option value="'Courier New', monospace" style="font-family: 'Courier New', monospace;">Monospaced (Courier New)</option>
+        <option value="'Unitype', sans-serif">Unitype</option>
+        <option value="'OpenDyslexic', 'OpenDyslexic'">Open Dyslexic</option>
+        <option value="Custom">Custom</option>
+      </select>
+      <input type="text" id="CustomFontInput" placeholder="'Comic Sans', sans-serif" />
+    </div>
+
+    <button class="save-btn" type="button" onclick="saveToLocal();">Save</button>
+  </section>
+
+  <!-- Example Preview -->
+  <section class="settings-card example-preview">
+    <h2>Example:</h2>
+    <p>
+      A blackout occurred on <span class="date">14/AUG/2003</span> after demand
+      spiked to <span class="number">5000 56</span> terawatts.
+    </p>
+  </section>
 </div>
-</body>
-<div id="NavGrid-placeholder" ></div>
+
+<div id="NavGrid-placeholder"></div>
+<br>
 <br>
 <footer>
-    <p>All works associated to Koyot Digital are under &copy; 2025 to Koyot Digital.</p> <p>Wiki is under the CC BY-SA 4.0 Licenece.</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
+  <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
 </footer>
 </body>
 </html>
