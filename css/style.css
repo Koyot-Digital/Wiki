@@ -55,8 +55,18 @@ body {
   color: #ffffff;
   line-height: 1.6;
 }
-/* NavGrid */
-
+header {
+  background-color: #2b2b2b;
+  border-bottom: 1px solid #444;
+  padding: 0, 0, 1rem, 0;
+  text-align: center;
+  position: relative;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 .NavGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -84,19 +94,6 @@ body {
 }
 
 /* misc */
-
-header {
-  background-color: #1c1c1c;
-  border-bottom: 1px solid #444;
-  padding-bottom: 1rem;
-  text-align: center;
-  position: relative;
-}
-html {
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
 #dev-credits {
   margin-top: 3rem;
   text-align: center;

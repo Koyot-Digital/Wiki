@@ -119,7 +119,7 @@ function formatDate(dateStr, format) {
 }
 
 // ==============================
-// VIEW MORE BUTTONS
+// VIEW MORE BUTTONS IN NAVGRID
 // ==============================
 
 function initializeViewMoreButtons() {
@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // NAVGRID + SEARCH
 // ==============================
 
-fetch('./NavGrid.html')
+fetch('https://wiki.koyot.digital/NavGrid.html')
   .then(response => response.text())
   .then(data => {
     const placeholder = document.getElementById('NavGrid-placeholder');
