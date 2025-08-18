@@ -34,6 +34,25 @@ function saveToLocal() {
   localStorage.setItem('font', font);
 
   applyPreferences();
+
+  const fontList = [
+    "Arial, sans-serif",
+    "'Times New Roman', serif",
+    "'Courier New', monospace",
+    "'Unitype', sans-serif",
+    "'OpenDyslexic', 'OpenDyslexic'"
+  ];
+
+  // If the font is one of your predefined options, restore it in the <select>
+  const fontSelect = document.getElementById('FontSel');
+  if (fontSelect && fontList.includes(font)) {
+    fontSelect.value = font;
+  } else if (fontSelect) {
+    fontSelect.value = 'Custom';
+    const input = document.getElementById('CustomFontInput');
+    if (input) input.value = font;
+  }
+
   location.reload();
 }
 
@@ -74,17 +93,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (formatSel) formatSel.value = format;
 
   if (select && customInput) {
-    const predefinedFonts = {
-      'Sans Serif': 'Arial, sans-serif',
-      'Monospaced': "'Courier New', monospace",
-      'Unitype': "'Unitype', sans-serif",
-      'Open Dyslexic': "'OpenDyslexic', 'OpenDyslexic'"
-    };
-
-    if (Object.values(predefinedFonts).includes(font)) {
-      select.value = Object.keys(predefinedFonts).find(key => predefinedFonts[key] === font);
+    // If the saved font matches an <option>, select it
+    const optionExists = Array.from(select.options).some(opt => opt.value === font);
+    if (optionExists) {
+      select.value = font;   // sets the correct option as selected
       customInput.style.display = 'none';
     } else {
+      // Otherwise set to Custom and fill input
       select.value = 'Custom';
       customInput.style.display = 'inline-block';
       customInput.value = font;
