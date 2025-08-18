@@ -13,6 +13,23 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 </head>
+<header id="header" style="
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 8px;
+">
+  <div style="display: flex; gap: 12px; align-items: center;">
+    <img src="images/home.svg" 
+         style="width: 24px; height: 24px; cursor: pointer;" 
+         onclick="relocate('index.html');">
+    <img src="images/settings.svg" 
+         style="width: 24px; height: 24px; cursor: pointer;" 
+         onclick="relocate('settings.html');">
+  </div>
+
+  <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
+</header>
 <body>
   <header class="hero">
     <div class="hero-overlay"></div>
