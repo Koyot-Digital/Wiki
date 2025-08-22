@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // NAVGRID + SEARCH
 // ==============================
 
-fetch('https://wiki.koyot.digital/NavGrid.html')
+fetch('NavGrid.html')
   .then(response => response.text())
   .then(data => {
     const placeholder = document.getElementById('NavGrid-placeholder');
