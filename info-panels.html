@@ -148,25 +148,25 @@
         </details>
 
         <details class="details">
-            <summary class="summary">Recirculation Panel</summary>
+            <summary class="summary">Reactpr Circulation Panel</summary>
             <table class="info-table">
                 <tr>
                     <td><button class="info" data-explanation-id="rpv-temp">High RPV Temperature</button></td>
-                    <td><button class="warning" data-explanation-id="recirc-dry">Recirc Loop Dry</button></td>
-                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump A2</button></td>
-                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump A1</button></td>
+                    <td><button class="warning" data-explanation-id="circ-dry">MCP Loop Dry</button></td>
+                    <td><button class="info" data-explanation-id="circ-pump">MCP A2</button></td>
+                    <td><button class="info" data-explanation-id="circ-pump">MCP A1</button></td>
                 </tr>
                 <tr>
                     <td><button class="info" data-explanation-id="rpv-temp">Low RPV Temperature</button></td>
                     <td><button class="warning" data-explanation-id="core-water">Core Water Low</button></td>
-                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump B2</button></td>
-                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump B1</button></td>
+                    <td><button class="info" data-explanation-id="circ-pump">MCP B2</button></td>
+                    <td><button class="info" data-explanation-id="circ-pump">MCP B1</button></td>
                 </tr>
                 <tr>
-                    <td><button class="critical" data-explanation-id="recirc-trip">Recirc Pump Trip</button></td>
+                    <td><button class="critical" data-explanation-id="circ-trip">MCP Trip</button></td>
                     <td><button class="critical" data-explanation-id="core-water">Core Water Low Low</button></td>
-                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump C2</button></td>
-                    <td><button class="info" data-explanation-id="recirc-pump">Recirc Pump C1</button></td>
+                    <td><button class="info" data-explanation-id="circ-pump">MCP C2</button></td>
+                    <td><button class="info" data-explanation-id="circ-pump">MCP C1</button></td>
                 </tr>
             </table>
         </details>
@@ -235,7 +235,7 @@
             <summary class="summary">Water/Pressure Relief System Panel</summary>
             <table class="info-table">
                 <tr>
-                    <td><button class="critical" data-explanation-id="recirc-drain">Recirc Drain Valve</button></td>
+                    <td><button class="critical" data-explanation-id="circ-drain">circ Drain Valve</button></td>
                     <td><button class="warning" data-explanation-id="rpv-relief-valve">Relief Valve 1</button></td>
                     <td><button class="warning" data-explanation-id="rpv-relief-valve">Relief Valve 2</button></td>
                     <td><button class="warning" data-explanation-id="steam-relief-valve">Relief Valve 7</button></td>
@@ -463,10 +463,10 @@
             <p>This alert indicates that the core water level is out of safe range.</p>
             <br>
             <h3>If Core Water High High:</h3>
-            <p>Disable feedwater pumps as necessary. Open recirc drain valves.</p>
+            <p>Disable feedwater pumps as necessary. Open circ drain valves.</p>
             <br>
             <h3>If Core Water High:</h3>
-            <p>Disable feedwater pumps (do exactly the same to condensate), enable recirc drain (if needed).</p>
+            <p>Disable feedwater pumps (do exactly the same to condensate), enable circ drain (if needed).</p>
             <br>
             <h3>If Core Water Low:</h3>
             <p>Enable more feedwater pumps or increase their speeds. Enable condensate pumps if needed.</p>
@@ -513,10 +513,10 @@
             <p>This warning indicates that the RPV (Reactor Pressure Vessel) temperature is out of safe range.</p>
             <br>
             <h3>If RPV Temp High:</h3>
-            <p>Increase recirc pump speeds, or enable more recirc pumps.</p>
+            <p>Increase main circ pump speeds, or enable more recirc pumps.</p>
             <br>
             <h3>If RPV Temp Low:</h3>
-            <p>Decrease recirc pump speeds, disable recirc pumps, or increase reactor power.</p>
+            <p>Decrease main circ pump speeds, disable circ pumps, or increase reactor power.</p>
         </div>
         <div id="rpv-pressure">
             <p>This warning indicates that the RPV pressure is out of safe range.</p>
@@ -525,34 +525,34 @@
             <p><b>This is a dangerous situation.</b> Open all RPV relief valves. SCRAM reactor. Perform ECCS Inject if water level low.</p>
             <br>
             <h3>If RPV Pressure High:</h3>
-            <p>Verify that you have enough recirc pumps running for your power level. Ensure that reactor water levels in safe ranges.</p>
+            <p>Verify that you have enough main circ pumps running for your power level. Ensure that reactor water levels in safe ranges.</p>
         </div>
         <div id="rpv-relief-valve">
             <p>This warning indicates that the RPV relief valve is open.</p>
             <br>
             <p>This is normal behavior when the relief valve is open, but it should not be open unless there is an emergency.</p>
         </div>
-        <div id="recirc-dry">
-            <p>This warning indicates that the recirculation loop is dry.</p>
+        <div id="circ-dry">
+            <p>This warning indicates that the circulation loop is dry.</p>
             <br>
-            <p>This occurs when recirculation pumps are not running.</p>
+            <p>This occurs when main circulation pumps are not running.</p>
             <br>
-            <p>To resolve, enable recirculation pumps.</p>
+            <p>To resolve, enable main circulation pumps.</p>
         </div>
-        <div id="recirc-pump">
-            <p>This light indicates that the recirculation pump is running.</p>
+        <div id="circ-pump">
+            <p>This light indicates that the main circulation pump is running.</p>
             <br>
             <p>This is normal behavior during operation.</p>
         </div>
-        <div id="recirc-trip">
-            <p>This alert indicates that the recirculation pump has tripped.</p>
+        <div id="circ-trip">
+            <p>This alert indicates that the main circulation pump has tripped.</p>
             <br>
             <p>This is most of the time caused by lack of core water level. This will trigger an auto-SCRAM.</p>
         </div>
-        <div id="recirc-drain">
-            <p>This alert indicates that the recirculation drain valve is open.</p>
+        <div id="circ-drain">
+            <p>This alert indicates that the reactor circulation drain valve is open.</p>
             <br>
-            <p>This is normal behavior when the recirculation drain valve is open, but it should not be open unless core water levels are dangerously high.</p>
+            <p>This is normal behavior when the reactor circulation drain valve is open, but it should not be open unless core water levels are dangerously high.</p>
         </div>
         <div id="reactor-fuel-leak">
             <p>This alert indicates that a fuel channel has leaked.</p>
@@ -590,7 +590,7 @@
             <br>
             <p>It is caused by running the reactor at extremely high thermal powers (4800MW or more).</p>
             <br>
-            <p>To resolve, reduce the reactor power by inserting rods or increasing recirculation pumps.</p>
+            <p>To resolve, reduce the reactor power by inserting rods or increasing main circulation pumps.</p>
         </div>
         <div id="reactor-zone">
             <p>This warning indicates that the shutdown rods are no longer inserted into the reactor.</p>
