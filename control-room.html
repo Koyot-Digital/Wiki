@@ -114,7 +114,7 @@
           <p>The <a class="gr">service pump</a> provides cool water from the river for <a class="gr">OCC pumps</a> and <a class="gr">cooling tower basins</a>, that's because the water cooling is not 100% effective, and it gets lost as water vapour which can be seen coming out of the cooling towers, to prevent the condenser coolant circuit from drying up slowly the service pump provides make up water into cooling tower basins.</p>
           <p>OCC pumps, pump water provided by service pump into the heat exchanger to cool down the reactors primaly circuit when the reactor is offline, the now heated up water gets sent into a temporary basin to be cooled down, the water then gets sent back into the Susitna river. </p>
           <p>The <a class="o">make-up pump </a> transfers water from the CND tanks into hotwells A, B and ECCS water tank, in order to refill those you need to also open the <a class="o">feed valves</a>, 1 for eccs, and 2 for each hotwell.</p>
-          <p>The <a class="r">emergency pure cnd</a> and <a class="r">pure cnd-service</a> are used in case of emergency's, emergency pure cnd allows you to use the emergency CND tanks 5-6 if you quickly need water into hotwell or ECCS, pure cnd service can use battery power to power itself in case if you lose offsite power, the pump acts as service pump providing water to OCC pumps and cooling tower basins at a cost of also using the CND tanks water supply instead of taking water from the river.</p>
+          <p>The <a class="r">emergency pure cnd</a> and <a class="r">pure cnd-service</a> are used in case of emergency's, emergency pure cnd allows you to use the emergency CND tanks 5-6 if you quickly need water into hotwell or ECCS, pure cnd service can use battery power to power itself in case if you lose offsite power, the pump acts as service pump but providing water only to OCC pumps at a cost of also using the CND tanks water supply instead of taking water from the river.</p>
         </div>
       </div>
     </section>
@@ -148,12 +148,13 @@
     <section class="location-section">
       <h2>Reactor Circulation</h2>
       <div class="location-content">
-        <img src="images/Recirculation.webp" alt="Rod Control Panel" class="enlargeable"/>
+        <img src="images/Reactor_Circulation.webp" alt="Rod Control Panel" class="enlargeable"/>
         <div>
         <p>The reactors <a class="g">main circulation pumps (MCPs)</a> take water from the reactor and run it back through the steam drums; Two loops (<a class="r">Loop A</a> and <a class="y">Loop B</a>) for their respective steam drums. Their main function in-game is trading heat for steam for the turbines.</p>
         <p>The heat of the reactor fuel can be seen on the <a class="b">heat distribution display</a>. A reactor that is too cold won't boil steam and might flood the reactor; meanwhile, a reactor that is too hot has a higher risk of fuel channel leaks. It is recommended to find the sweet spot for the best efficiency.</p>
         <p>(generally between 900 and 1200°F)</p>
-        <p>Additionally, the <a class="gr">OCC system</a> and the <a class="gr">isolation valve switches</a> can be seen.</p>
+        <p>Each loop has their own <a class="dg">heat exchanger valve</a>, when the valves are open the water that exited main circulation pumps gets redirected to the <a class="dg">heat exhanger</a> to cool down by exchanging heat with water from OCC pumps, this allows to cool the reactor while its offline due to it still heating up even after shutting down.
+        <p>Additionally, loop A mainly circulates the water through reactors sectors (see on heat distibution panel) <a class="r">C and D</a>, while loop B through sectors <a class="y">A and B</a>, also, the<a class="gr">isolation valve switches</a> can be seen.</p>
         </div>
       </div>
     </section>
@@ -190,6 +191,8 @@
   </footer>
 </body>
 </html>
+
+
 
 
 
