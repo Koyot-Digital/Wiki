@@ -4,8 +4,8 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/DuckQuack001/oakridgenucpowplant?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/DuckQuack001/oakridgenucpowplant?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/Koyot-Digital/Wiki?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/Koyot-Digital/Wiki?style=for-the-badge)
 
 
 Hey there! Thanks for wanting to improve the Oakridge Nuclear Power Station wiki. This guide will show you the important stuff and help you to contribute without accidentally breaking anything important.
