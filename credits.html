@@ -1,36 +1,46 @@
+<!-- INDEX.HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oakridge Nuclear Power Station - Credits</title>
+  <title>Oakridge Nuclear Power Station</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/credits.css" />
-  <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
   <script src="js/script.js" defer></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <header id="header" style="
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 8px;
 ">
   <div style="display: flex; gap: 12px; align-items: center;">
-    <img src="images/home.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
+    <img src="images/home.svg"
+         style="width: 24px; height: 24px; cursor: pointer;"
          onclick="relocate('index.html');">
-    <img src="images/settings.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
+    <img src="images/settings.svg"
+         style="width: 24px; height: 24px; cursor: pointer;"
          onclick="relocate('settings.html');">
   </div>
 
   <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
 </header>
+
+<script>
+  function relocate(url) {
+    window.location.href = url;
+  }
+</script>
+
 <body>
+<!-- HERO -->
 <header class="hero">
   <div class="hero-overlay"></div>
   <img src="images/banner1.webp" alt="Oakridge Banner" />
@@ -44,130 +54,474 @@
 
   <div id="NavGrid-placeholder"></div>
 
-  <!-- GAME DEVELOPMENT TEAM SECTION -->
+  <!-- =========================
+       DEVELOPMENT TEAM
+  ========================== -->
   <section id="dev-credits">
-    <h2 style="font-size: 2.5rem; color: #80c7ff; text-align: center; margin-bottom: 2rem; border-bottom: 3px solid #444; padding-bottom: 1rem;">Game Development Team</h2>
+    <h2 class="page-section-title">Game Development Team</h2>
 
     <div class="dev-tier">
       <h3 class="tier-title">Head of Development</h3>
       <div class="dev-cards-grid center">
-        <div class="dev-card">
-          <img src="images/credits/Ezy_gaming888.webp" alt="Roscy">
-          <h4>Roscy (Ezy_gaming888)</h4>
-          <p>Modeling - Design - Programming</p>
-        </div>
+
+        <details class="dev-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/developers/Ezy_gaming888.webp" alt="Roscy (Ezy_gaming888)">
+              <div class="card-text">
+                <h4 class="dev-name">Roscy</h4>
+                <p class="card-role">Modeling · Design · Programming</p>
+              </div>
+            </div>
+          </summary>
+          <div class="dev-card-body">
+            <p>To be Added</p>
+          </div>
+        </details>
+
       </div>
     </div>
 
     <div class="dev-tier">
       <h3 class="tier-title">Development</h3>
       <div class="dev-cards-grid">
-        <div class="dev-card">
-          <img src="images/credits/TrashyLasers.webp" alt="TrashyLasers">
-          <h4>Anticitizen One (TrashyLasers)</h4>
-          <p>Informant - Scripting/Simulation</p>
-        </div>
-        <div class="dev-card">
-          <img src="images/credits/GottyXx2.webp" alt="Gottie">
-          <h4>Gottie (GottyXx2)</h4>
-          <p>Development - Scripting</p>
-        </div>
+
+        <details class="dev-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/developers/TrashyLasers.webp" alt="Anticitizen One (TrashyLasers)">
+              <div class="card-text">
+                <h4 class="dev-name">Anticitizen One</h4>
+                <p class="card-role">Informant · Scripting/Simulation</p>
+              </div>
+            </div>
+          </summary>
+          <div class="dev-card-body">
+            <p>To be Added</p>
+          </div>
+        </details>
+
+        <details class="dev-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/gottie.webp" alt="Gottie ">
+              <div class="card-text">
+                <h4 class="dev-name">Gottie</h4>
+                <p class="card-role">Development · Scripting</p>
+              </div>
+            </div>
+          </summary>
+          <div class="dev-card-body">
+            <p>To be Added</p>
+          </div>
+        </details>
+
       </div>
     </div>
 
     <div class="dev-tier">
       <h3 class="tier-title">Community Manager</h3>
       <div class="dev-cards-grid center">
-        <div class="dev-card">
-          <img src="images/credits/Silly_Skelly777.webp" alt="Skelly">
-          <h4>Skelly (Silly_Skelly777)</h4>
-          <p>Community Management</p>
-        </div>
+
+        <details class="dev-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/developers/Silly_Skelly777.webp" alt="Skelly">
+              <div class="card-text">
+                <h4 class="dev-name">Skelly</h4>
+                <p class="card-role">Community Management</p>
+              </div>
+            </div>
+          </summary>
+          <div class="dev-card-body">
+            <p>To be Added</p>
+          </div>
+        </details>
+
+      </div>
+
+
+    </div>
+
+    <br>
+    <div class="dev-tier">
+      <h2 class="page-section-title">Moderation Team</h2>
+      <p style="text-align: center">Keeping the community safe, supportive, and on-mission.</p>
+      <br>
+      <h3 class="tier-title">Administrators</h3>
+      <div class="dev-cards-grid center">
+        <details class="admin-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/Mell.webp" alt="MellExula">
+              <div class="card-text">
+                <h4 class="admin-name">MellExula</h4>
+                <p class="card-role">Adminstrator</p>
+              </div>
+            </div>
+          </summary>
+          <div class="dev-card-body">
+            <p>To be Added</p>
+          </div>
+        </details>
+        <details class="admin-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/developers/Azure.webp" alt="Azure">
+              <div class="card-text">
+                <h4 class="admin-name">Azure</h4>
+                <p class="card-role">Adminstrator</p>
+              </div>
+            </div>
+          </summary>
+          <div class="dev-card-body">
+            <p>To be Added</p>
+          </div>
+        </details>
+
+      </div>
+      <h3 class="tier-title">Senior Moderators</h3>
+      <div class="dev-cards-grid">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/gottie.webp" alt="Gottie">
+              <div class="card-text">
+                <h4 class="sr-moderator-name">Gottie</h4>
+                <p class="card-role">Senior Moderator</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="sr-moderator-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/DrHouse.webp" alt="DrHouse">
+              <div class="card-text">
+                <h4 class="sr-moderator-name">DrHouse</h4>
+                <p class="card-role">Senior Moderator</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="sr-moderator-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/Alaskis.webp" alt="Alaskis">
+              <div class="card-text">
+                <h4 class="sr-moderator-name">Alaskis</h4>
+                <p class="card-role">Senior Moderator</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+      </div>
+      <h3 class="tier-title">Moderators</h3>
+      <div class="dev-cards-grid">
+        <details class="moderator-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/Neodis.webp" alt="Neodis">
+              <div class="card-text">
+                <h4 class="moderator-name">NEODIS</h4>
+                <p class="card-role">Moderator</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="moderator-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/roger.webp" alt="Roger">
+              <div class="card-text">
+                <h4 class="moderator-name">Roger</h4>
+                <p class="card-role">Moderator</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="moderator-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/Tooken.webp" alt="Tooken">
+              <div class="card-text">
+                <h4 class="moderator-name">Tooken</h4>
+                <p class="card-role">Moderator</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="moderator-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/Quiet.webp" alt="Quiet">
+              <div class="card-text">
+                <h4 class="moderator-name">Quiet</h4>
+                <p class="card-role">Moderator</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="moderator-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/crazyminecrafter99.webp" alt="crazyminecrafter99">
+              <div class="card-text">
+                <h4 class="moderator-name">CrazyMinecrafter</h4>
+                <p class="card-role">Moderator</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="moderator-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/randomletters.webp" alt="randomletters">
+              <div class="card-text">
+                <h4 class="moderator-name">RandomLetters</h4>
+                <p class="card-role">Moderator</p>
+              </div>
+            </div>
+          </summary>
+        </details>
       </div>
     </div>
 
+
     <div class="dev-tier">
-      <h3 class="tier-title">Alpha Play Testing - Quality Assurance</h3>
-      <div class="dev-cards-grid">
-        <div class="dev-card">
-          <img src="images/credits/Zentechinc.webp" alt="VistaXenton">
-          <h4>VistaXenton (Zentechinc)</h4>
-        </div>
-        <div class="dev-card">
-          <img src="images/credits/glaqss.webp" alt="ITSupportGlass">
-          <h4>ITSupportGlass (glaqss)</h4>
-        </div>
-        <div class="dev-card">
-          <img src="images/credits/EOSSspartan.webp" alt="HaloBoy1000">
-          <h4>HaloBoy1000 (EOSSspartan)</h4>
-        </div>
-        <div class="dev-card">
-          <img src="images/credits/RayDYeeterson.webp" alt="Ray">
-          <h4>Ray (RayDYeeterson)</h4>
-        </div>
-        <div class="dev-card">
-          <img src="images/credits/jblstin.webp" alt="JaybeeTheArcticFox">
-          <h4>JaybeeTheArcticFox (jblstin)</h4>
-        </div>
-        <div class="dev-card">
-          <img src="images/credits/sdvgsidfgvusdfhviu.webp" alt="RandomLetters">
-          <h4>RandomLetters (sdvgsidfgvusdfhviu)</h4>
-        </div>
-        <div class="dev-card">
-          <img src="images/credits/nosamsti.webp" alt="A_randomfurry">
-          <h4>A_randomfurry (nosamsti)</h4>
-        </div>
-        <div class="dev-card">
-          <img src="images/credits/MunkoMunkey.webp" alt="Azure">
-          <h4>Azure (MunkoMunkey)</h4>
-        </div>
+      <br><br>
+      <h2 class="page-section-title">Testers</h2>
+      <p style="text-align: center">Making sure you don't get to abuse any bugs in the new update.</p>
+      <br>
+      <h3 class="tier-title"></h3>
+      <div class="dev-cards-grid center">
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/randomletters.webp" alt="randomletters">
+              <div class="card-text">
+                <h4 class="tester-name">RandomLetters</h4>
+                <p class="card-role">Alpha Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/testers/Zentechinc.webp" alt="VistaXenton">
+              <div class="card-text">
+                <h4 class="tester-name">VistaXenton</h4>
+                <p class="card-role">Alpha Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/testers/EOSSspartan.webp" alt="HaloBoy1000">
+              <div class="card-text">
+                <h4 class="tester-name">HaloBoy1000</h4>
+                <p class="card-role">Alpha Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/testers/jblstin.webp" alt="JayBee">
+              <div class="card-text">
+                <h4 class="tester-name">JayBee</h4>
+                <p class="card-role">Alpha Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/testers/nosamsti.webp" alt="A_randomfurry">
+              <div class="card-text">
+                <h4 class="tester-name">A_randomfurry</h4>
+                <p class="card-role">Alpha Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/testers/glaqss.webp" alt="ITSupportGlaqss">
+              <div class="card-text">
+                <h4 class="tester-name">ITSupportGlaqss</h4>
+                <p class="card-role">Alpha Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/testers/RayDYeeterson.webp" alt="Ray">
+              <div class="card-text">
+                <h4 class="tester-name">Ray</h4>
+                <p class="card-role">Alpha Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/developers/Azure.webp" alt="Ray">
+              <div class="card-text">
+                <h4 class="tester-name">Azure</h4>
+                <p class="card-role">Alpha Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/testers/Ga_for.webp" alt="GA_Forgone">
+              <div class="card-text">
+                <h4 class="tester-name">GA_Forgone</h4>
+                <p class="card-role">Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/testers/Mocha.webp" alt="Mocha">
+              <div class="card-text">
+                <h4 class="tester-name">Mocha</h4>
+                <p class="card-role">Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/testers/blue_fox.webp" alt="Blue_fox">
+              <div class="card-text">
+                <h4 class="tester-name">Blue_fox</h4>
+                <p class="card-role">Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="tester-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/testers/ashelyhecker.webp" alt="Ashelyhecker">
+              <div class="card-text">
+                <h4 class="tester-name">Ashelyhecker</h4>
+                <p class="card-role">Tester</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+      </div>
+    </div>
+    <div class="dev-tier">
+      <br><br>
+      <h2 class="page-section-title">Contributors</h2>
+      <p style="text-align: center">We are too lazy to make a description for ourselfs</p>
+      <br>
+      <h3 class="tier-title">Wiki Contributors</h3>
+      <div class="dev-cards-grid center">
+        <details class="wiki-contributor-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/contributors/TheOneDuck.webp" alt="TheOneDuck">
+              <div class="card-text">
+                <h4 class="contributor-name">TheOneDuck</h4>
+                <p class="card-role">Wiki Admin</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="wiki-contributor-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/contributors/Gargle.webp" alt="Gargleblaster">
+              <div class="card-text">
+                <h4 class="contributor-name">Gargleblaster</h4>
+                <p class="card-role">Wiki Contributor</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="wiki-contributor-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/DrHouse.webp" alt="DrHouse">
+              <div class="card-text">
+                <h4 class="contributor-name">DrHouse</h4>
+                <p class="card-role">Wiki Contributor</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="wiki-contributor-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/contributors/Chained.webp" alt="Chained">
+              <div class="card-text">
+                <h4 class="contributor-name">Chained</h4>
+                <p class="card-role">Wiki Contributor</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="wiki-contributor-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/contributors/Chained.webp" alt="Chained">
+              <div class="card-text">
+                <h4 class="contributor-name">Chained</h4>
+                <p class="card-role">Wiki Contributor</p>
+              </div>
+            </div>
+          </summary>
+        </details>
+      </div>
+      <h3 class="tier-title">Content Creators</h3>
+      <div class="dev-cards-grid center">
+        <details class="video-contributor-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/moderators/Neodis.webp" alt="Neodis">
+              <div class="card-text">
+                <h4 class="contributor-name">NEODIS</h4>
+                <p class="card-role"><a href="https://www.youtube.com/@Neodis83">Content Creator</a></p>
+              </div>
+            </div>
+          </summary>
+        </details>
+        <details class="video-contributor-card">
+          <summary>
+            <div class="card-header">
+              <img src="images/credits/contributors/TheChef.webp" alt="TheChef">
+              <div class="card-text">
+                <h4 class="contributor-name">TheChef</h4>
+                <p class="card-role"><a href="https://www.youtube.com/channel/UCwANYYApyG3KEdpx8j7vbog">Content Creator</a></p>
+              </div>
+            </div>
+          </summary>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- COMMUNITY & STAFF SECTION -->
-  <section id="acknowledgements" style="margin-top: 4rem;">
-    <h2 style="font-size: 2.5rem; color: #80c7ff; text-align: center; margin-bottom: 2rem; border-bottom: 3px solid #444; padding-bottom: 1rem;">Community & Staff</h2>
-    <p class="disclaimer">Due to us not having full staff list, what you are about to read may contain inadvertent errors.</p>
-
-    <h2>Administrators</h2>
     <div class="text-card-grid">
-      <div class="text-card">MellExula</div>
-    </div>
-
-    <h2>Moderators</h2>
-    <img src="images/Moderators.webp" alt="Moderator's Joint Picture"  style="max-width: 100%; height: auto; border-radius: 16px;">
-    <div class="text-card-grid">
-      <div class="text-card">CrazyMinecrafter99</div>
-      <div class="text-card">Quiet</div>
-      <div class="text-card">Gottie</div>
-      <div class="text-card">RandomLetters</div>
-      <div class="text-card">roger</div>
-      <div class="text-card">Tooken</div>
-      <div class="text-card">DrHouse</div>
-      <div class="text-card">Brit</div>
-      <div class="text-card">NEODIS</div>
-    </div>
-
-    <h2>Additional Testers</h2>
-    <div class="text-card-grid">
-      <div class="text-card">Mocha</div>
-      <div class="text-card">blue_fox</div>
-      <div class="text-card">Ga_Forgone</div>
-      <div class="text-card">ashleyhecker</div>
-    </div>
-
-    <h2 style="margin-top: 3rem;">Contributors</h2>
-    <img src="images/contributors.webp" alt="Contributors Joint Picture"  style="max-width: 100%; height: auto; border-radius: 16px;">
-
-    <div class="text-card-grid">
-      <div class="text-card">TheOneDuck</div>
-      <div class="text-card">Dr. Alto Clef</div>
       <div class="text-card">iAmScienceMan</div>
       <div class="text-card">Sunryze</div>
-      <div class="text-card">DrHouse</div>
-      <div class="text-card">TheChef</div>
-      <div class="text-card">NEODIS</div>
       <div class="text-card">CHAIN</div>
       <div class="text-card">olmatevegemite</div>
       <div class="text-card">ninja</div>
@@ -180,7 +534,6 @@
         Sincere thanks to everyone in the community who gave feedback, reported bugs, and helped shape the Oakridge Nuclear Power Station project. What began as a learning exercise in 2021 has grown into something remarkable thanks to your support.
       </p>
     </div>
-
   </section>
 
 </main>
