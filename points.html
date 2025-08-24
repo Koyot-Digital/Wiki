@@ -7,30 +7,30 @@
   <title>Oakridge Nuclear Power Station</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js" defer></script>
-    <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
-   <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
+  <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 </head>
-<header id="header" style="
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 8px;
-">
-  <div style="display: flex; gap: 12px; align-items: center;">
-    <img src="images/home.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
-         onclick="relocate('index.html');">
-    <img src="images/settings.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
-         onclick="relocate('settings.html');">
-  </div>
-
-  <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
-</header>
 <body>
+  <header id="header" style="
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 8px;
+  ">
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <img src="images/home.svg" 
+           style="width: 24px; height: 24px; cursor: pointer;" 
+           onclick="relocate('index.html');" alt="Home">
+      <img src="images/settings.svg" 
+           style="width: 24px; height: 24px; cursor: pointer;" 
+           onclick="relocate('settings.html');" alt="Settings">
+    </div>
+    <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
+  </header>
+
   <header class="hero">
     <div class="hero-overlay"></div>
     <img src="images/banner1.webp" alt="Oakridge Banner" />
@@ -41,152 +41,182 @@
   </header>
 
   <main class="container">
-
     <div id="NavGrid-placeholder"></div>
-      <br><br><br>
-      <div class="emergency-nav">
-        <p>Jump To Any Rank:</p>
-        <a href="#security-header" style="color: #72b0eb; font-weight: bold; padding-right: 1rem;">Security</a>
-        <a href="#security-Cadet" style="color: #72b0eb; font-weight: bold;">Cadet</a>
-        <a href="#security-Officer" style="color: #72b0eb; font-weight: bold;">Officer</a>
-        <a href="#security-Sergeant" style="color: #72b0eb; font-weight: bold;">Sergeant</a>
-        <a href="#security-Inspector" style="color: #72b0eb; font-weight: bold;">Inspector</a>
-        <a href="#security-Superintendent" style="color: #72b0eb; font-weight: bold;">Superintendent</a>
-        <a href="#security-Director" style="color: #72b0eb; font-weight: bold;">Security</a>
-        <br>
-        <br>
-        <a href="#Operator-header" style="color: #72b0eb; font-weight: bold; padding-right: 1rem;">Operator</a>
-        <a href="#Operator-visitor" style="color: #72b0eb; font-weight: bold;">Visitor</a>
-        <a href="#Operator-trainee" style="color: #72b0eb; font-weight: bold;">Trainee</a>
-        <a href="#Operator-junior-op" style="color: #72b0eb; font-weight: bold;">Junior Operator</a>
-        <a href="#Operator-sr-op" style="color: #72b0eb; font-weight: bold;">Senior Operator</a>
-        <a href="#Operator-supervisor" style="color: #72b0eb; font-weight: bold;">Supervisor</a>
-        <a href="#Operator-shift-manager" style="color: #72b0eb; font-weight: bold;">Shift Manager</a>
-        <a href="#Operator-plant-director" style="color: #72b0eb; font-weight: bold;">Plant Director</a>
-      </div>
+    <br><br><br>
+    <div class="emergency-nav">
+      <p>Jump To Any Rank:</p>
+      <a href="#security-header" style="color: #72b0eb; font-weight: bold; padding-right: 1rem;">Security</a>
+      <a href="#security-Cadet" style="color: #72b0eb; font-weight: bold;">Cadet</a>
+      <a href="#security-officer" style="color: #72b0eb; font-weight: bold;">Officer</a>
+      <a href="#security-Sergeant" style="color: #72b0eb; font-weight: bold;">Sergeant</a>
+      <a href="#security-Inspector" style="color: #72b0eb; font-weight: bold;">Inspector</a>
+      <a href="#security-Superintendent" style="color: #72b0eb; font-weight: bold;">Superintendent</a>
+      <a href="#security-Director" style="color: #72b0eb; font-weight: bold;">Director</a>
+      <br><br>
+      <a href="#Operator-header" style="color: #72b0eb; font-weight: bold; padding-right: 1rem;">Operator</a>
+      <a href="#visitor" style="color: #72b0eb; font-weight: bold;">Visitor</a>
+      <a href="#trainee" style="color: #72b0eb; font-weight: bold;">Trainee</a>
+      <a href="#junior-op" style="color: #72b0eb; font-weight: bold;">Junior Operator</a>
+      <a href="#sr-op" style="color: #72b0eb; font-weight: bold;">Senior Operator</a>
+      <a href="#supervisor" style="color: #72b0eb; font-weight: bold;">Supervisor</a>
+      <a href="#shift-manager" style="color: #72b0eb; font-weight: bold;">Shift Manager</a>
+      <a href="#plant-director" style="color: #72b0eb; font-weight: bold;">Plant Director</a>
+    </div>
     <br><br>
-    <!-- looks bad without these -->
+
     <section id="introduction">
-        <h3>Introduction</h3>
-        <br>
-        <p>The Ranks and Points system in this game is fairly simple. To rank up you just need to keep the reactor and the turbines connected to the grid and meet demand. At the end of your shift (At 00:00) you will earn a paycheck. Each time you get your paycheck your 'Money' turns into points. In other words your main priority is to sell as much power as possible.</p>
-        <br>
-    </section>
-    <hr><br>
-<!-- you can use this to minimize a section, has no effect on rendering. -->
-<section>
-    <section id="security-header">
-      <h2>Security Ranks</h2>
-      <h6>If you are security you have to wait until you get <span style="color: #eb4c51;">25,000 points</span> to get handcuffs, and <span style="color: #eb4c51;">75,000 points</span> for the baton</p>
+      <h3>Introduction</h3>
+      <br>
+      <p>The Ranks and Points system in this game is fairly simple. To rank up you just need to keep the reactor and the turbines connected to the grid and meet demand. At the end of your shift (At 00:00) you will earn a paycheck. Each time you get your paycheck your 'Money' turns into points. In other words your main priority is to sell as much power as possible.</p>
       <br>
     </section>
-  <section>
-    <h3>Cadet</h3>
-      <p style="color: #eb4c51;">Points required: 0 - <span class="number">4999</span></p>
-      <p style="color: #4ed171;">Bonus: 0%</p>
-      <p>"Don't ask me anything, this is my first day" - Cadet</p>
-  </section>
-    <br><hr><br>
-  <section>
-    <h3>Officer</h3>
-      <p style="color: #eb4c51;">Points required: <span class="number">5000</span> - <span class="number">499999</span></p>
-      <p style="color: #4ed171;">Bonus: 10%</p>
-      <p>"Time to put the director in the silly room!"</p>
-  </section>
-    <br><hr><br>
-  <section>
-    <h3>Sergeant</h3>
-      <p style="color: #eb4c51;">Points required: <span class="number">500000</span> - <span class="number">1249999</span></p>
-      <p style="color: #4ed171;">Bonus: 35%</p>
-      <p>"The dang Inspector is always too lazy!" - Sergeant</p>
-  </section>
-    <br><hr><br>
-  <section>
-    <h3>Inspector</h3>
-      <p style="color: #eb4c51;">Points required: <span class="number">1250000</span> - <span class="number">2499000</span></p>
-      <p style="color: #4ed171;">Bonus: 70%</p>
-      <p>"WHAT DID THE SEARGENT SAY AGAIN-" - Inspector</p>
-  </section>
-    <br><hr><br>
-  <section>
-    <h3>Superintendent</h3>
-      <p style="color: #eb4c51;">Points required: <span class="number">2500000</span>- <span class="number">4999999</span></p>
-      <p style="color: #4ed171;">Bonus: 115%</p>
-      <p>"I AM TOO BUSY FOR THIS I GOT A 5FT TALL STACK OF PAPERWORK BEACUSE OF THE DAMM DIRECTOR!" - Superintendent</p>
-  </section>
-    <br><hr><br>
-  <section>
-    <h3>Security Director</h3>
-      <p style="color: #eb4c51;">Points required: +<span class="number">5000000</span></p>
-      <p style="color: #4ed171;">Bonus: 115%</p>
-      <p>"wha- im too busy right now to do this interview! I got cadets to repermand!" - Security Director</p>
-</section>
-    <br><hr><br>
-        <br><br>
-<section>
-  <br>
     <hr><br>
-    <h2 id="Operator-header">Operator Ranks</h2>
-    <section id="visitor">
+
+    <!-- Security Section -->
+    <section style="border: 4px solid #3f3f3f;
+                    border-radius: 20px; 
+                    margin-inline: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #1f1f1f;
+                    padding: 1.5rem;
+                    border-radius: 12px;
+                    box-shadow: 0 0 12px rgba(0,0,0,0.1);">
+      <section id="security-header">
+        <h2>Security Ranks</h2>
+        <h6>If you are security you have to wait until you get <span style="color: #eb4c51;">25,000 points</span> to get handcuffs, and <span style="color: #eb4c51;">75,000 points</span> for the baton</h6>
+        <br>
+      </section>
+
+      <section id="security-Cadet">
+        <h3>Cadet</h3>
+        <p style="color: #eb4c51;">Points required: 0 - <span class="number">4999</span></p>
+        <p style="color: #4ed171;">Bonus: 0%</p>
+        <p>"Don't ask me anything, this is my first day" - Cadet</p>
+      </section>
+      <br><hr><br>
+
+      <section id="security-officer">
+        <h3>Officer</h3>
+        <p style="color: #eb4c51;">Points required: <span class="number">5000</span> - <span class="number">499999</span></p>
+        <p style="color: #4ed171;">Bonus: 10%</p>
+        <p>"Time to put the director in the silly room!"</p>
+      </section>
+      <br><hr><br>
+
+      <section id="security-Sergeant">
+        <h3>Sergeant</h3>
+        <p style="color: #eb4c51;">Points required: <span class="number">500000</span> - <span class="number">1249999</span></p>
+        <p style="color: #4ed171;">Bonus: 35%</p>
+        <p>"The dang Inspector is always too lazy!" - Sergeant</p>
+      </section>
+      <br><hr><br>
+
+      <section id="security-Inspector">
+        <h3>Inspector</h3>
+        <p style="color: #eb4c51;">Points required: <span class="number">1250000</span> - <span class="number">2499000</span></p>
+        <p style="color: #4ed171;">Bonus: 70%</p>
+        <p>"WHAT DID THE SEARGENT SAY AGAIN-" - Inspector</p>
+      </section>
+      <br><hr><br>
+
+      <section id="security-Superintendent">
+        <h3>Superintendent</h3>
+        <p style="color: #eb4c51;">Points required: <span class="number">2500000</span>- <span class="number">4999999</span></p>
+        <p style="color: #4ed171;">Bonus: 115%</p>
+        <p>"I AM TOO BUSY FOR THIS- I GOT A 5FT TALL STACK OF PAPERWORK BEACUSE OF THE DANG DIRECTOR!" - Superintendent</p>
+      </section>
+      <br><hr><br>
+
+      <section id="security-Director">
+        <h3>Security Director</h3>
+        <p style="color: #eb4c51;">Points required: +<span class="number">5000000</span></p>
+        <p style="color: #4ed171;">Bonus: 115%</p>
+        <p>"wha- im too busy right now to do this interview! I got cadets to repermand!" - Security Director</p>
+      </section>
+    </section>
+
+    <br><hr><br><br><br>
+
+    <!-- Operator Section -->
+        <section style="border: 4px solid #3f3f3f;
+                    border-radius: 20px; 
+                    margin-inline: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #1f1f1f;
+                    padding: 1.5rem;
+                    border-radius: 12px;
+                    box-shadow: 0 0 12px rgba(0,0,0,0.1);">
+      <h2 id="Operator-header">Operator Ranks</h2>
+
+      <section id="visitor">
         <h3>Visitor</h3><br>
         <p style="color: #eb4c51;">Points required: 0 - <span class="number">4999</span></p>
         <p style="color: #4ed171;">Bonus: 0%</p><br>
         <p>Welcome! You're new around here! You can ask for help or just wait for a while and let everyone else do the work for you. But that's no fun! You want to press buttons and stuff and produce unlimited energy for the people! (And for your pocket to be filled with the moneys) So it is recommended you to check out the guide![1] We're glad to have you on board.</p>
-    </section>
-    <br><hr><br>
-    <section id="trainee">
+      </section>
+      <br><hr><br>
+
+      <section id="trainee">
         <h3>Trainee</h3><br>
-        <!-- for some reason unknown to me the <span class="class"> trick for CSS just isnt working so i used the hex codes from the CSS file :/-->
         <p style="color: #eb4c51;">Points required: <span class="number">5000</span> - <span class="number">74999</span></p>
         <p style="color: #4ed171;">Bonus: 0%</p><br>
         <p>You've got the hang of this facility. usually more reliable than your visitors Trainees can assist around the nuclear powerplant! They can assist Jr. Operators and Sr. Operators on some menial tasks. Yet they usually aren't skilled enough to maintain a nuclear reactor solo. You can somewhat rely on them for a while before you need to intervene to stop a reactor going in a meltdown.</p>
-    </section>
-    <br><hr><br>
-    <section id="junior-op">
+      </section>
+      <br><hr><br>
+
+      <section id="junior-op">
         <h3>Junior Operator</h3><br>
         <p style="color: #eb4c51;">Points required: <span class="number">75000</span> - <span class="number">499999</span></p>
         <p style="color: #4ed171;">Bonus: 10%</p><br>
         <p>Skilled personnel. Can handle most of the emergencies with ease. Yet they can't remain calm when a visitor presses 'SCRAM' and now they need to re-do the whole reactor start up sequence... for the 3rd time today.</p>
-    </section>
-    <br><hr><br>
-    <section id="sr-op">
+      </section>
+      <br><hr><br>
+
+      <section id="sr-op">
         <h3>Senior Operator</h3><br>
         <p style="color: #eb4c51;">Points required: <span class="number">500000</span> - <span class="number">1249999</span></p>
         <p style="color: #4ed171;">Bonus: 35%</p>
         <br>
         <p>Considered 'One of the best.' Minimal errors, deal with emergencies, keep the plant running at 100% efficiency. There won't be anyone else like them who can handle the powerplant as good as them. You can rely onto them for anything and everything.</p>
         <i style="color: #d2c62f;">Can get access to a Sr. Operator bypass key</i>
-    </section>
-    <br><hr><br>
-    <section id="supervisor">
+      </section>
+      <br><hr><br>
+
+      <section id="supervisor">
         <h3>Supervisor</h3><br>
         <p style="color: #eb4c51;">Points required: 1250000 - 2499999</p>
         <p style="color: #4ed171;">Bonus: 70%</p><br>
         <p>You've reached it! The Supervisor title! You should be proud of yourself. That is no small feat! You can finally oversee those who are below you! Just be prepared for chaos and prepare to discipline trainees. Good luck!</p>
         <i style="color: #d2c62f;">Can get access to a Sr. Operator bypass key</i>
-    </section>
-    <br><hr><br>
-    <section id="shift-manager">
+      </section>
+      <br><hr><br>
+
+      <section id="shift-manager">
         <h3>Shift Manager</h3><br>
         <p style="color: #eb4c51;">Points required: 2500000 - 4999999</p>
         <p style="color: #4ed171;">Bonus: 115%</p><br>
         <p>At this point all nuclear reactors are too easy for you. Emergencies? You've gotten used to them. Critical failures? Can fix them in your sleep. You probably aren't even in the plant at all. Probably at some other place managing shifts... Right?</p>
         <i style="color: #d2c62f;">Can get access to a Sr. Operator bypass key</i>
-    </section>
-    <br><hr><br>
-    <section id="plant-director">
+      </section>
+      <br><hr><br>
+
+      <section id="plant-director">
         <h3>Plant Director</h3><br>
         <p style="color: #eb4c51;">Points required: 5000000+</p>
         <p style="color: #4ed171;">Bonus: 170%</p><br>
         <p>You've made it. The very top. Excellent. You know the place inside out. Can handle emergencies with no effort at all. You don't even feel panic when everything goes to hell. Because you know with you here. Everything will be fine. No matter how dire the situation becomes.</p>
         <i style="color: #d2c62f;">Can get access to a Sr. Operator bypass key</i>
+      </section>
     </section>
-<section>
-
   </main>
 
   <footer>
-    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
+    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, 
+    <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> 
+    <br> Play on 
+    <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
   </footer>
 </body>
 </html>
