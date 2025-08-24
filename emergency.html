@@ -425,7 +425,7 @@
 
       <div class="emergency-box" id="loop">
         <h3>Loss of Offsite Power (LOOP)</h3>
-        <p><strong>Description:</strong> Offsite power grid has failed. All systems run on onsite diesel generators. Core cooling is critical.</p>
+        <p><strong>Description:</strong> Offsite power grid has failed. All systems run on onsite diesel generators, they dont produce enough power to keep reactor online. Core Cooling is critical.</p>
         <table class="checklist-row sep">
           <tr>
             <td class="item">IF LOOP</td>
@@ -436,7 +436,15 @@
 
         <table class="checklist-row">
           <tr>
-            <td class="item">EMER. DIESEL GEN. 1</td>
+            <td class="item">AZ-5</td>
+            <td class="dots"></td>
+            <td class="action"><span class="r">PRESS</span></td>
+          </tr>
+        </table>
+
+        <table class="checklist-row">
+          <tr>
+            <td class="item">EMER. DIESEL GEN. 1,2</td>
             <td class="dots"></td>
             <td class="action"><span class="r">START</span></td>
           </tr>
@@ -444,7 +452,7 @@
 
         <table class="checklist-row">
           <tr>
-            <td class="item">EMER. DIESEL GEN. 1 BREAKER</td>
+            <td class="item">EMER. DIESEL GEN. 1,2 BREAKER</td>
             <td class="dots"></td>
             <td class="action"><span class="r">ENABLE</span></td>
           </tr>
@@ -452,7 +460,7 @@
 
         <table class="checklist-row">
           <tr>
-            <td class="item">COOLING SYSTEMS</td>
+            <td class="item">OFFLINE CORE COOLING SYSTEMS</td>
             <td class="dots"></td>
             <td class="action"><span class="b">VERIFY WORKING</span></td>
           </tr>
@@ -466,13 +474,6 @@
           </tr>
         </table>
 
-        <table class="checklist-row">
-          <tr>
-            <td class="item">AZ-5</td>
-            <td class="dots"></td>
-            <td class="action"><span class="g">AS RQRD</span></td>
-          </tr>
-        </table>
       </div>
     </section>
   </main>
@@ -481,3 +482,4 @@
   </footer>
 </body>
 </html>
+
