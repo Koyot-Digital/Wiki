@@ -23,9 +23,21 @@
     border-radius: 14px;
     width: 400px;
     padding: 1rem;
-    box-shadow: 0 0 8px rgba(128, 199, 255, 0.25);
+    box-shadow: 0 0 8px rgb(30, 99, 248);
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.communitym-card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 14px;
+    width: 320px;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgb(133, 72, 234);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -37,7 +49,7 @@
     border-radius: 14px;
     width: 320px;
     padding: 1rem;
-    box-shadow: 0 0 8px rgba(20, 158, 158, 0.25);
+    box-shadow: 0 0 8px rgb(83, 136, 221);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -107,7 +119,7 @@
 }
 .dev-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 0 12px rgba(128, 199, 255, 0.35);
+    box-shadow: 0 0 12px rgb(30, 99, 248);
 }
 
 .tester-card:hover {
@@ -127,11 +139,20 @@
     box-shadow: 0 0 12px rgb(195, 138, 74);
 }
 
-.contributor-card:hover {
+.wiki-contributor-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 0 12px rgb(63, 183, 79);
 }
 
+.video-contributor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 12px rgb(63, 183, 79);
+}
+
+.communitym-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 12px rgb(133, 72, 234);
+}
 
 .dev-card > summary {
     list-style: none;
@@ -165,6 +186,12 @@
     flex-direction: column;
 }
 .video-contributor-card > summary {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.communitym-card > summary {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -208,7 +235,7 @@
     overflow-wrap: anywhere;
 }
 .dev-name {
-    color: #65c0dc;
+    color: #1e63f8;
     font-size: 25px;
     font-weight: 600;
 }
@@ -235,7 +262,13 @@
 
 .contributor-name {
     color: #3fb74f;
-    font-size: 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.communitym-name {
+    color: #8548ea;
+    font-size: 24px;
     font-weight: 600;
 }
 
