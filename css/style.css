@@ -148,7 +148,7 @@ html {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding-left: 5%;
   box-sizing: border-box;
   border-bottom: 2px solid #333;
@@ -865,5 +865,7 @@ footer {
       grid-template-columns: 1fr;
  }
 }
+
+
 
 
