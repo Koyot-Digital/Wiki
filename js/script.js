@@ -342,3 +342,68 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("profile-modal");
+  const closeBtn = modal?.querySelector(".close");
+  const modalImg = document.getElementById("modal-img");
+  const modalName = document.getElementById("modal-name");
+  const modalRole = document.getElementById("modal-role");
+  const modalInfo = document.getElementById("modal-info");
+  const modalDiscord = document.getElementById("modal-discord");
+  const modalRoblox = document.getElementById("modal-roblox");
+
+  // Delegate clicks for all dev-cards
+  document.querySelectorAll(".dev-card").forEach(card => {
+    card.addEventListener("click", (e) => {
+      // If user clicked a link on the card, don't hijack it
+      const target = e.target;
+      if (target.closest("a")) return;
+
+      const name = card.dataset.name || card.querySelector("h4")?.textContent || "";
+      const role = card.dataset.role || card.querySelector(".role")?.textContent || "";
+      const info = card.dataset.info || card.querySelector(".description")?.textContent || "";
+      const img = card.dataset.img || card.querySelector("img")?.getAttribute("src") || "";
+      const discord = card.dataset.discord || "#";
+      const roblox = card.dataset.roblox || "#";
+
+      if (modal) {
+        modalImg.src = img;
+        modalImg.alt = name;
+        modalName.textContent = name;
+        modalRole.textContent = role;
+        modalInfo.textContent = info;
+
+        modalDiscord.href = discord;
+        modalRoblox.href = roblox;
+
+        modal.classList.add("show");
+        document.body.style.overflow = "hidden";
+      }
+    });
+  });
+
+  // Close modal controls
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("show");
+      document.body.style.overflow = "";
+    });
+  }
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("show")) {
+      modal.classList.remove("show");
+      document.body.style.overflow = "";
+    }
+  });
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("show");
+      document.body.style.overflow = "";
+    }
+  });
+});
+
+// Fallback relocate if not already defined elsewhere
+window.relocate = window.relocate || function (path) {
+  window.location.href = path;
+};

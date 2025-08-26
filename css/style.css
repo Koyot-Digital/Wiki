@@ -94,56 +94,7 @@ html {
 }
 
 /* misc */
-#dev-credits {
-  margin-top: 3rem;
-  text-align: center;
-}
-.tier-title {
-  color: #80c7ff;
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #444;
-  padding-bottom: 0.5rem;
-}
-.dev-tier {
-  margin-bottom: 3rem;
-}
-.dev-cards-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-.dev-card {
-  background-color: #1f1f1f;
-  border: 1px solid #333;
-  border-radius: 10px;
-  width: 220px;
-  padding: 1rem;
-  box-shadow: 0 0 8px rgba(128, 199, 255, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.dev-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 12px rgba(128, 199, 255, 0.35);
-}
-.dev-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 0.75rem;
-  box-shadow: 0 0 6px rgba(128, 199, 255, 0.2);
-}
-.dev-card h4 {
-  color: #80c7ff;
-  font-size: 1.2rem;
-  margin-bottom: 0.3rem;
-}
-.dev-card p {
-  color: #ccc;
-  font-size: 0.95rem;
-}
+
 #acknowledgements {
   text-align: center;
   margin-top: 4rem;
