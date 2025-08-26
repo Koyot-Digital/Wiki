@@ -235,6 +235,9 @@ html {
   transition: opacity 1s ease-in-out;
   opacity: 1;
 }
+.hero-header {
+    justify-content: center;
+}
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -947,5 +950,6 @@ footer {
       grid-template-columns: 1fr;
  }
 }
+
 
 
