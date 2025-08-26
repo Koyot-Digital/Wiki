@@ -67,7 +67,7 @@
     border: 4px #1a1a1a solid;
     font-size: 23px;
     display: flex;
-    background-color: #592328;
+    background-color: #121cb0;
     justify-content: center;
     border-radius: 50px;
     transition: box-shadow 0.25s ease-out, color 0.25s ease-out, box-shadow 0.25s ease-out, background-color 0.25s ease-out;
@@ -75,6 +75,6 @@
 
 .major-update:hover {
     color: white;
-    background-color: #440b0e;
+    background-color: #13163b;
     transition: background-color 0.25s ease-in, color 0.25s ease-in, box-shadow 0.25s ease-in, background-color 0.25s ease-in;
 }
