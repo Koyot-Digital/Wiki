@@ -65,7 +65,7 @@
       <div class="location-content">
         <img src="images/Rod_Control_Panel.webp" alt="Rod Control Panel" class="enlargeable"/>
         <div>
-          <p>The main feature of this panel is the <a class="b">rod control</a>, used by pressing the control rods of choice, followed by pressing the remove or insert buttons. The <a class="y">automatic controls rods</a> can be utilized to stabilize the reactor power at the desired amount. The main display shows how many rods have been removed and by how much, while the heat distribution display shows how hot each sector of the reactor is. The <a class="g">modes</a> represent what stage of operation the reactor is in: Shutdown (0), Startup (1), Operating (2). The <a class="gr"> Offline Core Cooling</a> along with the shutdown control rods keep the reactor cold while not in operation. In the event of high reactor water, the recirc drains can be used to dump out the excess water. In the event of an emergency, the <a class="r">АЗ-5</a> can be utilized to quickly insert the rods back into the reactor. If you are feeling brave however, you can turn off the automatic АЗ-5.
+          <p>The main feature of this panel is the <a class="b">rod control</a>, used by pressing the control rods of choice, followed by pressing the remove or insert buttons. The <a class="y">automatic controls rods</a> can be utilized to stabilize the reactor power at the desired amount. The main display shows how many rods have been removed and by how much, while the heat distribution display shows how hot each sector of the reactor is. The <a class="g">modes</a> represent what stage of operation the reactor is in: Shutdown (0), Startup (1), Operating (2). The <a class="gr"> Offline Core Cooling</a> along with the shutdown control rods keep the reactor cold while not in operation. In the event of high reactor water, the circ drains can be used to dump out the excess water. In the event of an emergency, the <a class="r">АЗ-5</a> can be utilized to quickly insert the rods back into the reactor. If you are feeling brave however, you can turn off the automatic АЗ-5.
 
             Displays and monitors are highlighted in pink.</p>
         </div>
@@ -158,6 +158,21 @@
         </div>
       </div>
     </section>
+    
+    <section class="location-section">
+      <h2>ECCS and Pressure relief system</h2>
+      <div class="location-content">
+        <img src="images/ECCS, Pressure_relief_system.webp" alt="Rod Control Panel" class="enlargeable"/> 
+        <div>
+          <p>During emergencies that require quick reaction, the Emergency Core Cooling System and Pressure Relief System allow you to quickly inject water into the reactor or relieve pressure from the reactor or steam lines.</p>
+          <p>The <a class="r">Emergency Core Cooling System (ECCS)</a> quickly injects water into the reactor, to do so you need to make sure that the ECCS tank has at least 144 inches of water at all times and is pressurized by opening the <a class="r">Nitrogen Valve</a> to atleast 1500 PSI, once ECCS is filled with water and is pressurized the <a class="r">Injection Valve</a> can be open to inject water into the reactor vessel, note, if reactor water pressure is above ECCS circuit pressure the water from reactor will backflow to ECCS tank, causing the water level in reactor to drop further, you can pressurize the tank further or open the <a class="y">Reactor Vessel relief valves</a>for a short period of time.</p>
+          <p>In order to refill the ECCS water tank you must make sure to depressurize the tank by opening ECCS <a class="r">Relief Valve></a>, after depressurizing go to the water service/makeup panel and activate make-up pump and open ECCS feed valve.</p>
+          <p>The <a class="o">Pressure Relief System</a>is used to quickly relieve pressure from the <a class="y">Reactor Vessel</a>with valves 1-4, <a class="b">Steam line A</a>with relief valves 5-6 and <a class="g">Steam Line B</a>with relief valves 7-8.</p>
+          <p>The relieved steam/water pressure gets sent into a <a class="db">suppresion pool</a> to naturally cool down, in extreme cases of relieving too much pressure (most of the times from reactor) the suppresion tank can get overpressurized and cause all relief valves to automaticly close.</p>
+          <p>Relieved pressure from reactor or the steam lines means that water got lost from the primary circuit, to make up the lost water, make-up water in hotwells.</p>
+          <p>The <a class="gr">Hotwell Drain Valves</a> and <a class="gr">Reactor Core Criticals</a> panel informing on reactors water level, water temperature and water pressure while also providing information about how rapidly these parameters change can also be seen.</p>
+        </div>
+    </section>
 
     <section class="location-section">
       <h2>The Electrical Panel</h2>
@@ -191,6 +206,8 @@
   </footer>
 </body>
 </html>
+
+
 
 
 
