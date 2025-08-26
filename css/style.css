@@ -197,7 +197,7 @@ html {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding-left: 5%;
   box-sizing: border-box;
   border-bottom: 2px solid #333;
@@ -234,9 +234,6 @@ html {
   z-index: 1;
   transition: opacity 1s ease-in-out;
   opacity: 1;
-}
-.hero-header {
-    justify-content: center;
 }
 .hero-overlay {
   position: absolute;
@@ -950,6 +947,7 @@ footer {
       grid-template-columns: 1fr;
  }
 }
+
 
 
 
