@@ -387,11 +387,6 @@ html {
   justify-content: center;
 }
 
-.badges-section {
-  min-height: 600px;
-  transition: min-height 0.3s ease;
-}
-
 .article {
   background-color: #1e1e1e;
   border-radius: 8px;
@@ -407,33 +402,6 @@ html {
   padding: 2rem 0;
 }
 
-@media (max-width: 600px) {
-  .badges-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-}
-
-
-.badges-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  width: 100%;
-  min-height: 300px;
-}
-
-.badge-card {
-  background: #1a1a1a;
-  padding: 1rem;
-  border-radius: 8px;
-  color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
-}
-
-.badge-card:hover {
-  transform: scale(1.02);
-}
 
 .no-results-message {
   grid-column: 1 / -1;
@@ -693,31 +661,70 @@ ul {
   padding-left: 1.2rem;
 }
 
+/* Grid setup */
 .badges-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
+  width: 100%;
   min-height: 300px;
-  padding: 2rem 0;
 }
 
+@media (max-width: 600px) {
+  .badges-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+/* Badge card styling */
 .badge-card {
-  background-color: #1e1e1e;
-  border-radius: 12px;
+  background: #1a1a1a;
   padding: 1rem;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
-  text-align: center;
-  transition: transform 0.2s ease;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .badge-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-.badge-card img {
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 0.75rem;
+.guide-arrow {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #aaa;
+  transition: transform 0.3s;
+}
+
+.toggle-section {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #2a2a2a;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.toggle-section ol {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.toggle-section-content {
+  padding: 10px;
+}
+
+.badge-card.active .guide-arrow {
+  transform: rotate(180deg);
+}
+
+.badge-card.active .toggle-section {
+  max-height: 500px; /* adjust as needed */
 }
 
 .inline-codeblock {
