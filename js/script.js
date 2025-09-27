@@ -43,7 +43,6 @@ function saveToLocal() {
     "'Courier New', monospace",
     "'Unitype', sans-serif",
     "'OpenDyslexic', 'OpenDyslexic'",
-    "'X-Files', 'X-Files'"
   ];
 
   const fontSelect = document.getElementById('FontSel');
@@ -59,6 +58,7 @@ function saveToLocal() {
 }
 
 // Apply preferences dynamically
+// note: if it works it works 😭
 function applyPreferences() {
   const format = localStorage.getItem('format') || 'USA';
   const font = localStorage.getItem('font') || 'system-ui, sans-serif';
@@ -70,7 +70,7 @@ function applyPreferences() {
   body.style.transform = '';
   body.style.transition = '';
   body.style.display = '';
-
+  
   if (font === "Turbine-C") {
     // Turbine-C Easter egg: rotate body but keep dropdown usable
     body.style.transition = "transform 0.6s ease-in-out";
