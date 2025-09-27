@@ -661,7 +661,9 @@ ul {
   padding-left: 1.2rem;
 }
 
-/* Grid setup */
+
+ /* Badge card styling */
+/* Grid setup         */
 .badges-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -675,8 +677,6 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
 }
-
-/* Badge card styling */
 .badge-card {
   background: #1a1a1a;
   padding: 1rem;
@@ -720,7 +720,7 @@ ul {
 }
 
 .badge-card.active .guide-arrow {
-  transform: rotate(180deg);
+  text-align: center;
 }
 
 .badge-card.active .toggle-section {
