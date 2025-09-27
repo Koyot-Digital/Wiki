@@ -6,70 +6,84 @@
 function toggleCustomFontInput() {
   const select = document.getElementById('FontSel');
   const input = document.getElementById('CustomFontInput');
-  if (select && input) {
-    input.style.display = (select.value === 'Custom') ? 'inline-block' : 'none';
-  }
+  if (!select || !input) return;
+
+  input.style.display = (select.value === 'Custom') ? 'inline-block' : 'none';
 }
 
-// Get the actual font string based on selection or custom input
+// Get the chosen font (built-in or custom)
 function getSelectedFont() {
-  const select = document.getElementById('FontSel');
+  const select = document.getElementById('CustomFontInput');
   if (!select) return 'Arial, sans-serif';
 
   if (select.value === 'Custom') {
     const input = document.getElementById('CustomFontInput');
     if (!input) return 'Arial, sans-serif';
-    if (input.value === "Turbine-C") return 'Arial, sans-serif';
+    if (input.value === "Turbine-C") return 'Arial, sans-serif'; // cursed Easter egg
     return input.value.trim() || 'Arial, sans-serif';
   }
   return select.value || 'Arial, sans-serif';
 }
 
-// Save preferences to localStorage (called by settings.html button)
+// Save preferences to localStorage
 function saveToLocal() {
   const formatSel = document.getElementById('FrmtSel');
-  const format = formatSel.value;
+  const format = formatSel?.value || 'USA';
   const font = getSelectedFont();
+
   localStorage.setItem('format', format);
   localStorage.setItem('font', font);
 
   applyPreferences();
 
+  // Restore dropdown state
   const fontList = [
     "Arial, sans-serif",
     "'Times New Roman', serif",
     "'Courier New', monospace",
     "'Unitype', sans-serif",
-    "'OpenDyslexic', 'OpenDyslexic'"
+    "'OpenDyslexic', 'OpenDyslexic'",
   ];
 
-  // If the font is one of your predefined options, restore it in the <select>
   const fontSelect = document.getElementById('FontSel');
-  if (fontSelect && fontList.includes(font)) {
-    fontSelect.value = font;
-  } else if (fontSelect) {
-    fontSelect.value = 'Custom';
-    const input = document.getElementById('CustomFontInput');
-    if (input) input.value = font;
+  if (fontSelect) {
+    if (fontList.includes(font)) {
+      fontSelect.value = font;
+    } else {
+      fontSelect.value = 'Custom';
+      const input = document.getElementById('CustomFontInput');
+      if (input) input.value = font;
+    }
   }
-
-  location.reload();
 }
 
 // Apply preferences dynamically
+// note: if it works it works 😭
 function applyPreferences() {
   const format = localStorage.getItem('format') || 'USA';
-  const font = localStorage.getItem('font') || 'Arial, sans-serif';
+  const font = localStorage.getItem('font') || 'system-ui, sans-serif';
 
-  // Font
-  if (font !== "Turbine-C") {
-    document.documentElement.style.fontFamily = font;
+  const root = document.documentElement;
+  const body = document.body;
+
+  // Reset previous effects
+  body.style.transform = '';
+  body.style.transition = '';
+  body.style.display = '';
+  
+  if (font === "Turbine-C") {
+    // Turbine-C Easter egg: rotate body but keep dropdown usable
+    body.style.transition = "transform 0.6s ease-in-out";
+    body.style.transform = "rotate(180deg)";
+
+    // Still set a fallback font for dropdowns and inputs
+    root.style.fontFamily = "Arial, sans-serif";
   } else {
-    document.body.style.transform = "rotate(180deg)";
-    document.body.style.display = "inline-block";
+    // Apply normal font
+    root.style.fontFamily = font;
   }
 
-  // Formatting
+  // Apply number and date formatting
   document.querySelectorAll('span.number').forEach(el => {
     el.textContent = formatNumber(el.textContent, format);
   });
@@ -78,28 +92,25 @@ function applyPreferences() {
   });
 }
 
+
+
 // Initialize preferences on page load
 document.addEventListener('DOMContentLoaded', () => {
-  const theme = localStorage.getItem('theme') || 'Lght';
   const format = localStorage.getItem('format') || 'USA';
   const font = localStorage.getItem('font') || 'Arial, sans-serif';
 
-  const themeSel = document.getElementById('ClrSel');
   const formatSel = document.getElementById('FrmtSel');
   const select = document.getElementById('FontSel');
   const customInput = document.getElementById('CustomFontInput');
 
-  if (themeSel) themeSel.value = theme;
   if (formatSel) formatSel.value = format;
 
   if (select && customInput) {
-    // If the saved font matches an <option>, select it
     const optionExists = Array.from(select.options).some(opt => opt.value === font);
     if (optionExists) {
-      select.value = font;   // sets the correct option as selected
+      select.value = font;
       customInput.style.display = 'none';
     } else {
-      // Otherwise set to Custom and fill input
       select.value = 'Custom';
       customInput.style.display = 'inline-block';
       customInput.value = font;
@@ -111,8 +122,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Number formatting
 function formatNumber(numStr, format) {
-  let num = parseFloat(numStr.replace(' ', '.'));
+  const num = parseFloat(numStr.replace(' ', '.'));
   if (isNaN(num)) return numStr;
+
   if (format === 'USA') return num.toLocaleString('en-US', { maximumFractionDigits: 2 });
   if (format === 'EUR') return num.toLocaleString('de-DE', { maximumFractionDigits: 2 });
   return numStr;
@@ -120,13 +132,18 @@ function formatNumber(numStr, format) {
 
 // Date formatting
 function formatDate(dateStr, format) {
-  const months = { JAN:0, FEB:1, MAR:2, APR:3, MAY:4, JUN:5, JUL:6, AUG:7, SEP:8, OCT:9, NOV:10, DEC:11 };
+  const months = {
+    JAN: 0, FEB: 1, MAR: 2, APR: 3, MAY: 4, JUN: 5,
+    JUL: 6, AUG: 7, SEP: 8, OCT: 9, NOV: 10, DEC: 11
+  };
+
   const parts = dateStr.split('/');
   if (parts.length === 3) {
     const day = parseInt(parts[0], 10);
-    const month = months[parts[1].toUpperCase()] ?? (parseInt(parts[1],10)-1);
-    const year = parseInt(parts[2],10);
+    const month = months[parts[1].toUpperCase()] ?? (parseInt(parts[1], 10) - 1);
+    const year = parseInt(parts[2], 10);
     const dateObj = new Date(year, month, day);
+
     if (format === 'USA') return dateObj.toLocaleDateString('en-US');
     if (format === 'EUR') return dateObj.toLocaleDateString('de-DE');
   }
@@ -407,3 +424,16 @@ document.addEventListener("DOMContentLoaded", () => {
 window.relocate = window.relocate || function (path) {
   window.location.href = path;
 };
+
+// Badges.html
+const badges = document.querySelectorAll('.badge-card');
+badges.forEach(card => {
+  card.addEventListener('click', () => {
+    // Close all other cards
+    badges.forEach(c => {
+      if (c !== card) c.classList.remove('active');
+    });
+    // Toggle clicked card
+    card.classList.toggle('active');
+  });
+});
