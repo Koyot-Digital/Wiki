@@ -113,6 +113,18 @@
     flex-direction: column;
 }
 
+.botdev-card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 14px;
+    width: 320px;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgb(72, 234, 201); 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
 .dev-card[open] {
     border-color: #3f76a6;
     box-shadow: 0 0 12px rgba(128, 199, 255, 0.35);
@@ -147,6 +159,11 @@
 .video-contributor-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 0 12px rgb(63, 183, 79);
+}
+
+.botdev-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 12px rgb(72, 234, 201); 
 }
 
 .communitym-card:hover {
@@ -186,6 +203,11 @@
     flex-direction: column;
 }
 .video-contributor-card > summary {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.botdev-card > summary {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -262,6 +284,12 @@
 
 .contributor-name {
     color: #3fb74f;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.botdev-name {
+    color: #48eac9; 
     font-size: 24px;
     font-weight: 600;
 }
