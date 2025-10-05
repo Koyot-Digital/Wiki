@@ -81,7 +81,7 @@
     background-color: #1f1f1f;
     border: 1px solid #333;
     border-radius: 14px;
-    width: 320px;
+    width: 300px;
     padding: 1rem;
     box-shadow: 0 0 8px rgb(195, 138, 74);
     overflow: hidden;
@@ -108,6 +108,18 @@
     width: 320px;
     padding: 1rem;
     box-shadow: 0 0 8px rgb(63, 183, 79);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.botdev-card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 14px;
+    width: 320px;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgb(72, 234, 201); 
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -149,6 +161,11 @@
     box-shadow: 0 0 12px rgb(63, 183, 79);
 }
 
+.botdev-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 12px rgb(72, 234, 201); 
+}
+
 .communitym-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 0 12px rgb(133, 72, 234);
@@ -186,6 +203,11 @@
     flex-direction: column;
 }
 .video-contributor-card > summary {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.botdev-card > summary {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -266,6 +288,12 @@
     font-weight: 600;
 }
 
+.botdev-name {
+    color: #48eac9; 
+    font-size: 24px;
+    font-weight: 600;
+}
+
 .communitym-name {
     color: #8548ea;
     font-size: 24px;
@@ -276,6 +304,11 @@
     color: #cfcfcf;
     font-size: 0.92rem;
     line-height: 1.3;
+}
+
+[class$="-name"] a {
+    color: inherit;          /* use the same color as the parent name class */
+    text-decoration: none;   /* remove default underline */
 }
 
 /* Links row in summary */
