@@ -55,6 +55,8 @@ function saveToLocal() {
       if (input) input.value = font;
     }
   }
+  // do not remove, it breaks without this
+  location.reload;
 }
 
 // Apply preferences dynamically
@@ -94,8 +96,10 @@ function applyPreferences() {
 
 
 
-// Initialize preferences on page load
+// Initialize page
 document.addEventListener('DOMContentLoaded', () => {
+  initializeViewMoreButtons();
+  setTimeout(initializeViewMoreButtons, 500);
   const format = localStorage.getItem('format') || 'USA';
   const font = localStorage.getItem('font') || 'Arial, sans-serif';
 
@@ -118,6 +122,133 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   applyPreferences();
+  // Banner Rotater
+  const heroImages = [
+    "images/banner1.webp",
+    "images/banner2.webp",
+    "images/banner3.webp",
+    "images/banner4.webp",
+    "images/banner5.webp",
+    "images/banner6.webp"
+  ];
+  let heroIndex = 0;
+  const heroImg = document.getElementById("hero-img");
+
+  if (heroImg) {
+    setInterval(() => {
+      heroImg.style.opacity = 0;
+      setTimeout(() => {
+        heroIndex = (heroIndex + 1) % heroImages.length;
+        heroImg.src = heroImages[heroIndex];
+        heroImg.style.opacity = 1;
+      }, 1000);
+    }, 5000);
+  }
+  // IMAGE MODAL
+  const ImgModal = document.getElementById("image-modal");
+  const modalImgImgModal = document.getElementById("modal-img");
+  if (!ImgModal || !modalImgImgModal) return;
+
+  document.querySelectorAll(".enlargeable").forEach(img => {
+    img.addEventListener("click", () => {
+      modalImg.src = img.src;
+      modal.classList.add("show");
+    });
+  });
+// Emergency Nav
+  modal.addEventListener("click", () => {
+    modal.classList.remove("show");
+    modalImg.src = "";
+  });
+    document.querySelectorAll('.emergency-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const id = this.getAttribute('href');
+      const target = document.querySelector(id);
+      if (target) {
+        e.preventDefault();
+        const offset = window.innerHeight / 2 - target.offsetHeight / 2;
+        const top = target.offsetTop - offset;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  });
+    document.querySelectorAll('.info-table td button').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const id = btn.getAttribute('data-explanation-id');
+      const explanationDiv = document.getElementById(id);
+      if (explanationDiv) {
+        document.getElementById('panel-title').textContent = btn.textContent;
+        document.getElementById('panel-explanation').innerHTML = explanationDiv.innerHTML;
+        document.getElementById('sidePanel').classList.add('open');
+      }
+    });
+  });
+  // INFO PANEL
+  const closeBtnPnl = document.querySelector('.close-panel-button');
+  if (closeBtnPnl) {
+    closeBtn.addEventListener('click', () => {
+      document.getElementById('sidePanel').classList.remove('open');
+    });
+  }
+
+  const modal = document.getElementById("profile-modal");
+  const closeBtn = modal?.querySelector(".close");
+  const modalImg = document.getElementById("modal-img");
+  const modalName = document.getElementById("modal-name");
+  const modalRole = document.getElementById("modal-role");
+  const modalInfo = document.getElementById("modal-info");
+  const modalDiscord = document.getElementById("modal-discord");
+  const modalRoblox = document.getElementById("modal-roblox");
+
+  // Delegate clicks for all dev-cards
+  document.querySelectorAll(".dev-card").forEach(card => {
+    card.addEventListener("click", (e) => {
+      // If user clicked a link on the card, don't hijack it
+      const target = e.target;
+      if (target.closest("a")) return;
+
+      const name = card.dataset.name || card.querySelector("h4")?.textContent || "";
+      const role = card.dataset.role || card.querySelector(".role")?.textContent || "";
+      const info = card.dataset.info || card.querySelector(".description")?.textContent || "";
+      const img = card.dataset.img || card.querySelector("img")?.getAttribute("src") || "";
+      const discord = card.dataset.discord || "#";
+      const roblox = card.dataset.roblox || "#";
+
+      if (modal) {
+        modalImg.src = img;
+        modalImg.alt = name;
+        modalName.textContent = name;
+        modalRole.textContent = role;
+        modalInfo.textContent = info;
+
+        modalDiscord.href = discord;
+        modalRoblox.href = roblox;
+
+        modal.classList.add("show");
+        document.body.style.overflow = "hidden";
+      }
+    });
+  });
+
+  // Close modal controls
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("show");
+      document.body.style.overflow = "";
+    });
+  }
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("show")) {
+      modal.classList.remove("show");
+      document.body.style.overflow = "";
+    }
+  });
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("show");
+      document.body.style.overflow = "";
+    }
+  });
 });
 
 // Number formatting
@@ -182,78 +313,6 @@ function initializeViewMoreButtons() {
     });
   });
 }
-
-document.addEventListener('DOMContentLoaded', initializeViewMoreButtons);
-setTimeout(initializeViewMoreButtons, 500);
-
-// ==============================
-// HERO IMAGE ROTATOR
-// ==============================
-
-document.addEventListener('DOMContentLoaded', () => {
-  const heroImages = [
-    "images/banner1.webp",
-    "images/banner2.webp",
-    "images/banner3.webp",
-    "images/banner4.webp",
-    "images/banner5.webp",
-    "images/banner6.webp"
-  ];
-  let heroIndex = 0;
-  const heroImg = document.getElementById("hero-img");
-
-  if (heroImg) {
-    setInterval(() => {
-      heroImg.style.opacity = 0;
-      setTimeout(() => {
-        heroIndex = (heroIndex + 1) % heroImages.length;
-        heroImg.src = heroImages[heroIndex];
-        heroImg.style.opacity = 1;
-      }, 1000);
-    }, 5000);
-  }
-});
-
-// ==============================
-// IMAGE MODAL
-// ==============================
-
-document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("image-modal");
-  const modalImg = document.getElementById("modal-img");
-  if (!modal || !modalImg) return;
-
-  document.querySelectorAll(".enlargeable").forEach(img => {
-    img.addEventListener("click", () => {
-      modalImg.src = img.src;
-      modal.classList.add("show");
-    });
-  });
-
-  modal.addEventListener("click", () => {
-    modal.classList.remove("show");
-    modalImg.src = "";
-  });
-});
-
-// ==============================
-// EMERGENCY NAV
-// ==============================
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.emergency-nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const id = this.getAttribute('href');
-      const target = document.querySelector(id);
-      if (target) {
-        e.preventDefault();
-        const offset = window.innerHeight / 2 - target.offsetHeight / 2;
-        const top = target.offsetTop - offset;
-        window.scrollTo({ top: top, behavior: 'smooth' });
-      }
-    });
-  });
-});
 
 // ==============================
 // NAVGRID + SEARCH
@@ -327,98 +386,7 @@ function initializeArticleSearch() {
   });
 }
 
-// ==============================
-// INFO PANEL
-// ==============================
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.info-table td button').forEach(btn => {
-    btn.addEventListener('click', function() {
-      const id = btn.getAttribute('data-explanation-id');
-      const explanationDiv = document.getElementById(id);
-      if (explanationDiv) {
-        document.getElementById('panel-title').textContent = btn.textContent;
-        document.getElementById('panel-explanation').innerHTML = explanationDiv.innerHTML;
-        document.getElementById('sidePanel').classList.add('open');
-      }
-    });
-  });
-
-  const closeBtn = document.querySelector('.close-panel-button');
-  if (closeBtn) {
-    closeBtn.addEventListener('click', () => {
-      document.getElementById('sidePanel').classList.remove('open');
-    });
-  }
-
-  document.addEventListener('click', function(e) {
-    const panel = document.getElementById('sidePanel');
-    if (panel && panel.classList.contains('open') && !panel.contains(e.target) && !e.target.closest('.info-table button')) {
-      panel.classList.remove('open');
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("profile-modal");
-  const closeBtn = modal?.querySelector(".close");
-  const modalImg = document.getElementById("modal-img");
-  const modalName = document.getElementById("modal-name");
-  const modalRole = document.getElementById("modal-role");
-  const modalInfo = document.getElementById("modal-info");
-  const modalDiscord = document.getElementById("modal-discord");
-  const modalRoblox = document.getElementById("modal-roblox");
-
-  // Delegate clicks for all dev-cards
-  document.querySelectorAll(".dev-card").forEach(card => {
-    card.addEventListener("click", (e) => {
-      // If user clicked a link on the card, don't hijack it
-      const target = e.target;
-      if (target.closest("a")) return;
-
-      const name = card.dataset.name || card.querySelector("h4")?.textContent || "";
-      const role = card.dataset.role || card.querySelector(".role")?.textContent || "";
-      const info = card.dataset.info || card.querySelector(".description")?.textContent || "";
-      const img = card.dataset.img || card.querySelector("img")?.getAttribute("src") || "";
-      const discord = card.dataset.discord || "#";
-      const roblox = card.dataset.roblox || "#";
-
-      if (modal) {
-        modalImg.src = img;
-        modalImg.alt = name;
-        modalName.textContent = name;
-        modalRole.textContent = role;
-        modalInfo.textContent = info;
-
-        modalDiscord.href = discord;
-        modalRoblox.href = roblox;
-
-        modal.classList.add("show");
-        document.body.style.overflow = "hidden";
-      }
-    });
-  });
-
-  // Close modal controls
-  if (closeBtn) {
-    closeBtn.addEventListener("click", () => {
-      modal.classList.remove("show");
-      document.body.style.overflow = "";
-    });
-  }
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && modal.classList.contains("show")) {
-      modal.classList.remove("show");
-      document.body.style.overflow = "";
-    }
-  });
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.remove("show");
-      document.body.style.overflow = "";
-    }
-  });
-});
 
 // Fallback relocate if not already defined elsewhere
 window.relocate = window.relocate || function (path) {
