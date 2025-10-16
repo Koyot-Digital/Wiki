@@ -56,7 +56,7 @@ function saveToLocal() {
     }
   }
   // do not remove, it breaks without this
-  location.reload;
+  location.reload();
 }
 
 // Apply preferences dynamically
@@ -72,7 +72,7 @@ function applyPreferences() {
   body.style.transform = '';
   body.style.transition = '';
   body.style.display = '';
-  
+
   if (font === "Turbine-C") {
     // Turbine-C Easter egg: rotate body but keep dropdown usable
     body.style.transition = "transform 0.6s ease-in-out";
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.classList.add("show");
     });
   });
-// Emergency Nav
+  // Emergency Nav
   modal.addEventListener("click", () => {
     modal.classList.remove("show");
     modalImg.src = "";
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-    document.querySelectorAll('.info-table td button').forEach(btn => {
+  document.querySelectorAll('.info-table td button').forEach(btn => {
     btn.addEventListener('click', function() {
       const id = btn.getAttribute('data-explanation-id');
       const explanationDiv = document.getElementById(id);
@@ -264,8 +264,8 @@ function formatNumber(numStr, format) {
 // Date formatting
 function formatDate(dateStr, format) {
   const months = {
-    JAN: 0, FEB: 1, MAR: 2, APR: 3, MAY: 4, JUN: 5,
-    JUL: 6, AUG: 7, SEP: 8, OCT: 9, NOV: 10, DEC: 11
+    JAN: 1, FEB: 2, MAR: 3, APR: 4, MAY: 5, JUN: 6,
+    JUL: 7, AUG: 8, SEP: 9, OCT: 10, NOV: 11, DEC: 12
   };
 
   const parts = dateStr.split('/');
