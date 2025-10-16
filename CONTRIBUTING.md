@@ -138,7 +138,7 @@ What matters most is your willingness to contribute positively to the project an
 
 All contributors will be acknowledged in our project. Your contributions help make this project better for everyone!
 
-_Please note just from adding one feature to the wiki doesn't mean you will get the contributor role. Guidelines on how to get the role will be posted at a later data._
+_Please note just from adding one feature to the wiki doesn't mean you will get the contributor role. Guidelines on how to get the role will be posted at a later date._
 
 
 Thank you for contributing to our project! 🎉

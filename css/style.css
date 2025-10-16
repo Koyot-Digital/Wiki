@@ -417,7 +417,7 @@ html {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
   flex-wrap: wrap;
 }
 
