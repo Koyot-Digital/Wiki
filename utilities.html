@@ -53,19 +53,19 @@
         <!-- Jump Navigation -->
         <nav style="margin: 2rem;">
             <p>Jump To Any Utility:</p>
-            <a href="#turbine-calc" style="color: #72b0eb; font-weight: bold; padding: 0.125rem;"><u>Turbine Auto Bypass Calculator</u>     </a>
+            <a href="#turbine-calc"    style="color: #72b0eb; font-weight: bold; padding: 0.125rem;"><u>Turbine Auto Bypass Calculator</u>     </a>
             <a href="#efficiency-calc" style="color: #72b0eb; font-weight: bold; padding: 0.125rem;"><u>Efficiency Calculator</u>     </a>
             <a href="#efficiency-calc" style="color: #72b0eb; font-weight: bold; padding: 0.125rem;"><u>Paycheck Calculator</u>     </a>
         </nav>
 
         <!-- Turbine Calculator -->
-        <section class="calculator" id="turbine-calc" style="margin: 2rem;">
+        <section class="calculator" id="turbine-calc" >
             <h2 class="section-title">Turbine Auto Bypass Calculator</h2>
             <p>The formula for what to input into each auto-bypass <span class="g"><strong>with</strong></span> extra efficiency is:</p>
-                <div class="math-display">\( \frac{\text{Demand}}{2} + 12 = \dots \)</div>
+                <div class="math-display">\( \frac{\text{Demand}}{2} + 12 = \text{MW} \)</div>
 
                 <p>The formula for what to input into each auto-bypass <span class="r"><strong>without</strong></span> extra efficiency is:</p>
-                <div class="math-display">\( \frac{\text{Demand}}{2} = \dots \)</div>
+                <div class="math-display">\( \frac{\text{Demand}}{2} = \text{MW} \)</div>
 
                 <p>Here's a basic calculator to help you figure this out!</p>
 
@@ -91,7 +91,7 @@
         <br>
 
         <!-- Efficiency Calculator -->
-        <section class="container calculator" id="efficiency-calc" style="margin: 2rem;">
+        <section class="calculator" id="efficiency-calc">
             <h2 class="section-title">Efficiency Calculator</h2>
             <p>The formula for efficiency is:</p>
             <div class="math-display">
@@ -135,9 +135,9 @@
         </section>
 
         <br>
-        <section class="calculator" id="paycheck-calc" style="margin: 2rem;">
+        <section class="calculator" id="paycheck-calc">
             <h2 class="section-title">Paycheck Points Calculator</h2>
-            <div class="math-display">
+            <div class="math-display-lg">
                 \[\text{Points} = \frac{\left( \left( \text{MW Sold} \times \text{Efficiency} \times 0.2 \right) \times \text{Bonus} \right) \times \left( \frac{\text{hours } \times \text{ 14.00}}{24} \right)}{2}\]
             </div>
             <label for="hoursInput">Hours Worked:</label>
