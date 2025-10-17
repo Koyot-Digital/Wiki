@@ -77,7 +77,7 @@
               <br>
               Deaerator level: Should be kept in the green, however some people get it lower to increase efficiency. If you have a high deaerator level, check if the overflow valve is on, on the deaerator panel. If you are facing a low deaerator level, start more condensate pumps, but keep an eye on hotwell level.<br>
               <br>
-              Deaerator temeprature and  pressure: The temperature has no limit, but higher temperatures can raise the amount of power being delivered to the grid. It is raised/lowered by the steam inlet valve. This valve might also influence the pressure. The pressure should be kept below 350 PSI. Lowered by the relief valves.<br>
+              Deaerator temperature and  pressure: The temperature has no limit, but higher temperatures can raise the amount of power being delivered to the grid. It is raised/lowered by the steam inlet valve. This valve might also influence the pressure. The pressure should be kept below 350 PSI. Lowered by the relief valves.<br>
               <br>
               Hotwell level: Anything above 0. Low level, the make-up may be used. High level, the hotwell drains.<br>
               <br>
@@ -108,7 +108,7 @@
           <p>The <a class="gr">bleed valve</a> is used to match the pressure between the turbines</p>
           <p>After going online, you should utilize the <a class="y">automatic bypass</a> to hold the demand; Divide the demand by 2 and insert it into both keypads.</p>
           <p>Load rejection can occur if there is a sudden drop in power usage. It is mainly an issue before going online, when too many pumps are turned off at once.</p>
-          <p>The proper way to shut down the turbines is to lower power, desync the turbine (via the generator breakers), lower the RPM and open the bypass.</p>
+          <p>The proper way to shut down the turbines is to lower power, de-sync the turbine (via the generator breakers), lower the RPM and open the bypass.</p>
           <p>The option to <a class="r">manually trip</a> the turbines is also there, but its rarely ever used.</p>
         </div>
       </div>
@@ -136,7 +136,7 @@
           <p>If the hotwell tank gets too full, the hotwell drains can be used (located on in the ECCS section, to be added).</p>
           <p>During emergencies when water is lost from the system or the reactor needs to be cooled while it is offline, the plants service/makeup water system comes into play, the <a class="o">Pure CND tanks</a> store water from the local Susitna river which first gets treated by service polishers, after that the water can be used to make up water in both hotwells and the ECCS water tank for emergencies.</p>
           <p>The <a class="gr">service pump</a> provides cool water from the river for <a class="gr">OCC pumps</a> and <a class="gr">cooling tower basins</a>, that's because the water cooling is not 100% effective, and it gets lost as water vapour which can be seen coming out of the cooling towers, to prevent the condenser coolant circuit from drying up slowly the service pump provides make up water into cooling tower basins.</p>
-          <p>OCC pumps, pump water provided by service pump into the heat exchanger to cool down the reactors primaly circuit when the reactor is offline, the now heated up water gets sent into a temporary basin to be cooled down, the water then gets sent back into the Susitna river. </p>
+          <p>OCC pumps, pump water provided by service pump into the heat exchanger to cool down the reactors primarily circuit when the reactor is offline, the now heated up water gets sent into a temporary basin to be cooled down, the water then gets sent back into the Susitna river. </p>
           <p>The <a class="o">make-up pump </a> transfers water from the CND tanks into hotwells A, B and ECCS water tank, in order to refill those you need to also open the <a class="o">feed valves</a>, 1 for eccs, and 2 for each hotwell.</p>
           <p>The <a class="r">emergency pure cnd</a> and <a class="r">pure cnd-service</a> are used in case of emergency's, emergency pure cnd allows you to use the emergency CND tanks 5-6 if you quickly need water into hotwell or ECCS, pure cnd service can use battery power to power itself in case if you lose offsite power, the pump acts as service pump but providing water only to OCC pumps at a cost of also using the CND tanks water supply instead of taking water from the river.</p>
         </div>
@@ -148,11 +148,11 @@
       <div class="location-content">
         <img src="images/Deaerator_panel.webp" alt="Rod Control Panel" class="enlargeable"/>
         <div>
-          <p>The deaerator's true purpose is to remove impurities from the feedwater, using steam in order to heat the water up. This power plant features 2 deaerators, and similarly to the condenser coolant, has 2 loops (<a class="r">loop A</a> and <a class="y">loop B</a>), receiving steam from their respective steam drums, and water from the condensers.</p>
+          <p>The deaerator's true purpose is to remove impurities from the feedwater, using steam in order to heat the water up. This power plant features 2 deaerator, and similarly to the condenser coolant, has 2 loops (<a class="r">loop A</a> and <a class="y">loop B</a>), receiving steam from their respective steam drums, and water from the condensers.</p>
           <p>The deaerator has 2 valves, those being the <a class="g">steam input</a> and <a class="b">relief</a>. The steam input lets more steam in, raising the temperature, and increasing the pressure slightly, while the relief vents steam out, lowering the pressure.</p>
-          <p>The <a class="gy">A-B Bleed valve</a> mixes the water of the 2 deaerators, helping the water level equal out on both deaerators.</p>
+          <p>The <a class="gy">A-B Bleed valve</a> mixes the water of the 2 deaerator, helping the water level equal out on both deaerator.</p>
           <p>For proper deaeration (water cleaning), it needs to be configured at 250C and 100PSI. This can be done by using the <a class="o">automatic control</a></p>
-          <p>The water level of the deaerator is mainly managed on the condensate panel; however, this panel features the <a class="o">overflow valve</a>, which prevents flooding of the deaerators.</p>
+          <p>The water level of the deaerator is mainly managed on the condensate panel; however, this panel features the <a class="o">overflow valve</a>, which prevents flooding of the deaerator.</p>
         </div>
       </div>
     </section>
@@ -177,7 +177,7 @@
         <p>The reactors <a class="g">main circulation pumps (MCPs)</a> take water from the reactor and run it back through the steam drums; Two loops (<a class="r">Loop A</a> and <a class="y">Loop B</a>) for their respective steam drums. Their main function in-game is trading heat for steam for the turbines.</p>
         <p>The heat of the reactor fuel can be seen on the <a class="b">heat distribution display</a>. A reactor that is too cold won't boil steam and might flood the reactor; meanwhile, a reactor that is too hot has a higher risk of fuel channel leaks. It is recommended to find the sweet spot for the best efficiency.</p>
         <p>(generally between 900 and 1200°F)</p>
-        <p>Each loop has their own <a class="db">heat exchanger valve</a>, when the valves are open the water that exited main circulation pumps gets redirected to the <a class="db">heat exhanger</a> to cool down by exchanging heat with water from OCC pumps, this allows to cool the reactor while its offline due to it still heating up even after shutting down.
+        <p>Each loop has their own <a class="db">heat exchanger valve</a>, when the valves are open the water that exited main circulation pumps gets redirected to the <a class="db">heat exchanger</a> to cool down by exchanging heat with water from OCC pumps, this allows to cool the reactor while its offline due to it still heating up even after shutting down.
         <p>Additionally, loop A mainly circulates the water through reactors sectors (see on heat distribution display) <a class="r">C and D</a>, while loop B through sectors <a class="y">A and B</a>, also, the <a class="gr">isolation valve switches</a> can be seen.</p>
         </div>
       </div>
@@ -189,12 +189,12 @@
         <img src="images/ECCS, Pressure_relief_system.webp" alt="Rod Control Panel" class="enlargeable"/> 
         <div>
           <p>During emergencies that require quick reaction, the Emergency Core Cooling System and Pressure Relief System allow you to quickly inject water into the reactor or relieve pressure from the reactor or steam lines.</p>
-          <p>The <a class="r">Emergency Core Cooling System (ECCS)</a> quickly injects water into the reactor, to do so you need to make sure that the ECCS tank has at least 144 inches of water at all times and is pressurized by opening the <a class="r">Nitrogen Valve</a> to atleast 1500 PSI, once ECCS is filled with water and is pressurized the <a class="r">Injection Valve</a> can be open to inject water into the reactor vessel, note, if reactor water pressure is above ECCS circuit pressure the water from reactor will backflow to ECCS tank, causing the water level in reactor to drop further, you can pressurize the tank further or open the <a class="y">Reactor Vessel relief valves</a>for a short period of time.</p>
+          <p>The <a class="r">Emergency Core Cooling System (ECCS)</a> quickly injects water into the reactor, to do so you need to make sure that the ECCS tank has at least 144 inches of water at all times and is pressurized by opening the <a class="r">Nitrogen Valve</a> to at least 1500 PSI, once ECCS is filled with water and is pressurized the <a class="r">Injection Valve</a> can be open to inject water into the reactor vessel, note, if reactor water pressure is above ECCS circuit pressure the water from reactor will backflow to ECCS tank, causing the water level in reactor to drop further, you can pressurize the tank further or open the <a class="y">Reactor Vessel relief valves</a>for a short period of time.</p>
           <p>In order to refill the ECCS water tank you must make sure to depressurize the tank by opening ECCS <a class="r">Relief Valve></a>, after depressurizing go to the water service/makeup panel and activate make-up pump and open ECCS feed valve.</p>
           <p>The <a class="o">Pressure Relief System</a>is used to quickly relieve pressure from the <a class="y">Reactor Vessel</a>with valves 1-4, <a class="b">Steam line A</a>with relief valves 5-6 and <a class="g">Steam Line B</a>with relief valves 7-8.</p>
-          <p>The relieved steam/water pressure gets sent into a <a class="db">suppresion pool</a> to naturally cool down, in extreme cases of relieving too much pressure (most of the times from reactor) the suppresion tank can get overpressurized and cause all relief valves to automaticly close.</p>
-          <p>Relieved pressure from reactor or the steam lines means that water got lost from the primary circuit, to make up the lost water, make-up water in hotwells.</p>
-          <p>The <a class="gr">Hotwell Drain Valves</a> and <a class="gr">Reactor Core Criticals</a> panel informing on reactors water level, water temperature and water pressure while also providing information about how rapidly these parameters change can also be seen.</p>
+          <p>The relieved steam/water pressure gets sent into a <a class="db">suppression pool</a> to naturally cool down, in extreme cases of relieving too much pressure (most of the times from reactor) the suppression tank can get overpressureized and cause all relief valves to automatically close.</p>
+          <p>Relieved pressure from reactor or the steam lines means that water got lost from the primary circuit, to make up the lost water, make-up water in Hotwells.</p>
+          <p>The <a class="gr">Hotwell Drain Valves</a> and <a class="gr">Reactor Core Critical's</a> panel informing on reactors water level, water temperature and water pressure while also providing information about how rapidly these parameters change can also be seen.</p>
         </div>
     </section>
 
@@ -214,7 +214,7 @@
             <br>
             The Low Voltage line (green), powered by either the <a class="dg">480LV-A</a> (turbines, startup transformer) or the diesel generators, hosts the lights, AC-DC converter and the battery charger, which are connected to several critical systems (crimson). Turning off the AC-DC breaker will cause the power from the low voltage line to flow directly through the battery, making it unable to charge.<br>
             <br>
-            You may have noticed that the 480LV-A breaker goes both ways, that is because diesel generators can actually back-feed into Bus A. This requires both diesel generators to be active and Bus A to be unpowered. The diesel generators provide less power than the startup transformer and should only be used in emergencies.<br>
+            You may have noticed that the 480LV-A breaker goes both ways, that is because diesel generators can actually back-feed into Bus A. This requires both diesel generators to be active and Bus A to be un-powered. The diesel generators provide less power than the startup transformer and should only be used in emergencies.<br>
           </p>
         </div>
       </div>
