@@ -1,18 +1,19 @@
 // Paycheck Calculator
 function paycheckCalc(hours, MW, bonus, EFF) {
     // Better variable name for clarity
-    let amount = ((((MW * EFF) * 0.2) * bonus) * ((hours * 14.00) / 24))/2;
-    return Math.round(amount);
+    let amount = (((MW * EFF) * 0.2) * bonus) * ((hours * 14.00) / 24);
+    let points = amount / 2;
+    return points;
 }
 
 function runCalculationPaycheck() {
     let hours = parseFloat(document.getElementById("hoursInput").value) || 0;
     let MW = parseFloat(document.getElementById("mwInput").value) || 0;
-    let bonus = parseFloat(document.getElementById("bonusSelect").value)|| 0;
-    let EFF = (document.getElementById("effSlider").value / 100) || 0;
+    let bonus = parseFloat(document.getElementById("bonusSelect").value) || 0;
+    let EFF = parseFloat(document.getElementById("effSlider").value) || 0;
 
     let result = Math.min(paycheckCalc(hours, MW, bonus, EFF), 9999999);
-    document.getElementById("calculation-span-pay").textContent = result + " Points";
+    document.getElementById("calculation-span-pay").textContent = result.toFixed(2) + " Points";
 }
 // ok most of this autocompleted but it works so who cares :3
 
@@ -46,6 +47,9 @@ function runCalculationEfficiency() {
     let eff = efficiencyCalculate(P, O, U);
     document.getElementById("calculation-span-EFF").innerHTML = eff.toFixed(2) + " %";
 }
+
+
+
 
 // Turbine Calculator
 function turbineCalc(D, eff) {
