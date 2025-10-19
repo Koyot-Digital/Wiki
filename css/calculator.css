@@ -9,12 +9,12 @@
 }
 
 .calculator {
-    font-size: 1.2rem;
     background: #1e1e1e;
     border: 1px solid #444;
     border-radius: 12px;
     padding: 1rem;
-    margin: 2rem;
+    max-width: 1500px;
+    margin: auto;
     box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     text-align: center;
 }
@@ -83,23 +83,13 @@ button:hover {
 }
 
 /* LaTeX CSS */
+
 .math-display {
-    font-size: clamp(1rem, 2vw, 2rem);  /* min, preferred, max */
-    max-width: 100%;                     /* don't overflow the calculator */
-    overflow-wrap: break-word;          /* break long expressions if needed */
-    white-space: normal;               /* allow wrapping */
+    font-size: 1.5em;
     text-align: center;
     margin: 1em 0;
 }
 
-.math-display-lg {
-    font-size: clamp(0.70rem, 2vw, 2.0rem);
-    max-width: 100%;
-    overflow-wrap: break-word;
-    white-space: normal;
-    text-align: center;
-    margin: 1em 0;
-}
 mjx-mi {
     font-family: 'Times New Roman', serif !important;
     font-style: italic;
