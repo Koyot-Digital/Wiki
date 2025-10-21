@@ -15,16 +15,8 @@ function runCalculationPaycheck() {
     let result = Math.min(paycheckCalc(hours, MW, bonus, EFF), 9999999);
     document.getElementById("calculation-span-pay").textContent = result.toFixed(2) + " Points";
 }
-// ok most of this autocompleted but it works so who cares :3
 
-
-
-
-
-// P  = Reactor Power
-// O  = Plant Output
-// C  = Plant Usage
-
+// Efficiency Calculator
 function efficiencyCalculate(P, O, U) {
     const P_w = (2 * P) / 3;
     const O_w = (107 * O) / 100;
@@ -40,6 +32,7 @@ function efficiencyCalculate(P, O, U) {
 
     return eff;
 }
+
 function runCalculationEfficiency() {
     let P = parseFloat(document.getElementById("reactorPower").value) || 3000; // tMW
     let O = parseFloat(document.getElementById("plantOutput").value) || 950; // MW
@@ -47,9 +40,6 @@ function runCalculationEfficiency() {
     let eff = efficiencyCalculate(P, O, U);
     document.getElementById("calculation-span-EFF").innerHTML = eff.toFixed(2) + " %";
 }
-
-
-
 
 // Turbine Calculator
 function turbineCalc(D, eff) {
@@ -68,11 +58,24 @@ function runCalculationTurbine() {
     let result2 = Math.min(turbineCalc(demand, true), 750);
     document.getElementById("calculation-span").textContent = result1 + " MW";
     document.getElementById("calculation-span2").textContent = result2 + " MW";
+    document.getElementById("demandValue").textContent = demand + " MW";
 }
 
-document.querySelectorAll('input[name="extraEff"]').forEach((elem) => {
-    elem.addEventListener("change", function (event) {
-        var item = event.target.value;
-        console.log(item);
-    });
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize turbine calculator
+    runCalculationTurbine();
+    
+    // Add event listener for efficiency slider
+    const effSlider = document.getElementById("effSlider");
+    if (effSlider) {
+        effSlider.addEventListener("input", function() {
+            document.getElementById("effValue").textContent = this.value + "%";
+        });
+    }
+    
+    // Initialize efficiency slider value
+    if (effSlider) {
+        document.getElementById("effValue").textContent = effSlider.value + "%";
+    }
 });

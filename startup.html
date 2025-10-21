@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oakridge Nuclear Power Station - Pre-Start Guide</title>
-  <script src="js/calc.js"></script>
   <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
@@ -15,17 +14,17 @@
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <header id="header" style="
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 8px;
 ">
   <div style="display: flex; gap: 12px; align-items: center;">
-    <img src="images/home.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
+    <img src="images/home.svg"
+         style="width: 24px; height: 24px; cursor: pointer;"
          onclick="relocate('index.html');">
-    <img src="images/settings.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
+    <img src="images/settings.svg"
+         style="width: 24px; height: 24px; cursor: pointer;"
          onclick="relocate('settings.html');">
   </div>
 
@@ -43,9 +42,6 @@
   </header>
 
   <main class="container">
-
-    <div id="NavGrid-placeholder"></div>
-
 
 
     <section class="location-section">
@@ -211,7 +207,7 @@
                 max="1500"
                 step="10"
                 value="500"
-                oninput="demandValue.textContent = this.value + ' MW'; runCalculation();">
+                oninput="runCalculationTurbine()">
         <span id="demandValue">500 MW</span>
 
         <br>
@@ -230,8 +226,7 @@
     <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
   </footer>
 
+  <script src="js/calc.js"></script>
   <script src="js/script.js" defer></script>
 </body>
 </html>
-
-
