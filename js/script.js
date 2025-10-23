@@ -329,7 +329,7 @@ fetch('NavGrid.html')
   });
 
 function relocate(page) {
-  window.location.href = `${page}`;
+  window.location.replace = page;
 }
 
 function initializeArticleSearch() {
