@@ -300,6 +300,14 @@
     font-weight: 600;
 }
 
+.card-name,
+[class$="-name"] {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  max-width: 100%;
+}
+
 .card-role {
     color: #cfcfcf;
     font-size: 0.92rem;

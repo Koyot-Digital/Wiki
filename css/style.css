@@ -709,7 +709,11 @@ ul {
   margin-top: 10px;
   border-radius: 6px;
 }
-
+.toggle-section.open {
+  display: block;
+  max-height: 1000px; 
+  opacity: 1;
+}
 .toggle-section ol {
   padding-left: 20px;
   margin: 10px 0;

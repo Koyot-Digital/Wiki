@@ -277,6 +277,31 @@ function relocate(page) {
 window.relocate = window.relocate || function (path) {
   window.location.href = path;
 };
+// ==============================
+// BADGE GUIDE TOGGLE
+// ==============================
+// Next time use search in files before removing functions
+function initializeBadgeToggles() {
+  document.querySelectorAll('.guide-arrow').forEach(arrow => {
+    if (arrow.hasAttribute('data-initialized')) return;
+    arrow.setAttribute('data-initialized', 'true');
+
+    arrow.addEventListener('click', () => {
+      const section = arrow.nextElementSibling;
+      if (!section) return;
+
+      // Toggle visibility
+      section.classList.toggle('open');
+
+      // Optional: animate arrow or change text
+      if (section.classList.contains('open')) {
+        arrow.textContent = 'Hide guide';
+      } else {
+        arrow.textContent = 'Click for guide';
+      }
+    });
+  });
+}
 
 // ==============================
 // PAGE INITIALIZATION
@@ -308,6 +333,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   applyPreferences();
+
+  initializeBadgeToggles();
 
   // Initialize info panels
   initializeInfoPanels();
