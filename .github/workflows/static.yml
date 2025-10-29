@@ -24,11 +24,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.4.0
+              
 # THIS IS THE PART THAT MAKES THE STUFF, to use this new functionality PLEASE, PLEASE, PLEASE make a new file in .github/scripts/ called anything, and put your code in there. Then call it here. same as below.
       - name: Generate banners.json
         run: node .github/scripts/make-banner-manifest.js
