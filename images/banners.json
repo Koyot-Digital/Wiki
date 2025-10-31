@@ -1,0 +1,8 @@
+[
+    "images/banners/banner1.webp",
+    "images/banners/banner2.webp",
+    "images/banners/banner3.webp",
+    {
+        "note": "updated automatically by .github/scripts/make-banner-manifest.js, this is a backup if something goes wrong with the script or the github action. it SHOULD NOT be edited manually."
+    }
+]

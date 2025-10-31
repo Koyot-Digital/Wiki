@@ -251,9 +251,10 @@ function formatNumber(numStr, format) {
 
 // Date formatting
 function formatDate(dateStr, format) {
+  // month indices for Date() are 0-11 — use 0-based months here
   const months = {
-    JAN: 1, FEB: 2, MAR: 3, APR: 4, MAY: 5, JUN: 6,
-    JUL: 7, AUG: 8, SEP: 9, OCT: 10, NOV: 11, DEC: 12
+    JAN: 0, FEB: 1, MAR: 2, APR: 3, MAY: 4, JUN: 5,
+    JUL: 6, AUG: 7, SEP: 8, OCT: 9, NOV: 10, DEC: 11
   };
 
   const parts = dateStr.split('/');
@@ -344,7 +345,9 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(initializeViewMoreButtons, 500);
 
   // Banner Rotator
-  const heroImages = [
+  // Try to load a manifest produced by .github/scripts/make-banner-manifest.js
+  // Fallback to the hardcoded list if the manifest isn't available or fails to parse.
+  const defaultHeroImages = [
     "images/banner1.webp",
     "images/banner2.webp",
     "images/banner3.webp",
@@ -352,11 +355,27 @@ document.addEventListener('DOMContentLoaded', () => {
     "images/banner5.webp",
     "images/banner6.webp"
   ];
+
+  // Expose a global flag to indicate whether we're in a dev environment
+  // (manifest missing or invalid). Other scripts can read `window.isDevEnv`.
+  window.isDevEnv = false;
+
+  let heroImages = defaultHeroImages.slice();
   let heroIndex = 0;
   const heroImg = document.getElementById("hero-img");
+  let _heroRotatorInterval = null;
 
-  if (heroImg) {
-    setInterval(() => {
+  function startHeroRotator() {
+    if (!heroImg || !heroImages || heroImages.length === 0) return;
+    // clear any existing interval
+    if (_heroRotatorInterval) clearInterval(_heroRotatorInterval);
+
+    // initialize image and start rotation
+    heroIndex = 0;
+    heroImg.src = heroImages[heroIndex];
+    heroImg.style.opacity = 1;
+
+    _heroRotatorInterval = setInterval(() => {
       heroImg.style.opacity = 0;
       setTimeout(() => {
         heroIndex = (heroIndex + 1) % heroImages.length;
@@ -364,6 +383,36 @@ document.addEventListener('DOMContentLoaded', () => {
         heroImg.style.opacity = 1;
       }, 1000);
     }, 5000);
+  }
+
+  // Attempt to fetch the generated banners.json manifest (created by the repo's GitHub Action)
+  if (heroImg) {
+    fetch('images/banners.json')
+      .then(resp => {
+        if (!resp.ok) throw new Error('Manifest cant load. Probably a cors issue, error:', err);
+        return resp.json();
+      })
+      .then(list => {
+        if (Array.isArray(list) && list.length > 3) {
+          heroImages = list.slice();
+          window.isDevEnv = false;
+          console.info('Loaded banner manifest with', list.length, 'image(s).');
+        } else {
+          // manifest present but empty/invalid
+          window.isDevEnv = true;
+          console.warn('images/banners.json is empty or invalid — using default hero images.');
+          console.info('Development Environment now enabled, if this is not a development environment please contact the wiki maintainers. Something has gone horribly wrong!');
+          heroImages = defaultHeroImages.slice();
+        }
+        startHeroRotator();
+      })
+      .catch(err => {
+        // manifest missing or invalid — fall back to defaults
+        window.isDevEnv = true;
+        console.warn('Could not load images/banners.json, using default hero images: ', err);
+        heroImages = defaultHeroImages.slice();
+        startHeroRotator();
+      });
   }
 
   // Emergency Nav
