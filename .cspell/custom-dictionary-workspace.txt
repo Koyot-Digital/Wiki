@@ -1,6 +1,5 @@
 # Custom Dictionary Words, cause the default list doesn't include our terminology or names.
 
-
 # Names:
 Alaskis
 Anticitizen
@@ -10,6 +9,7 @@ Bionicooo
 Bolshoy
 bommel
 chrxs
+Gargleblaster
 Georgempla
 Gladi
 Glaqss
@@ -18,7 +18,6 @@ Ignalina
 Kahve
 Kanalnyy
 Legasov
-Gargleblaster
 MellExula
 Moshchnosti
 NEODIS
@@ -59,11 +58,10 @@ Speedrunner
 Unpowered
 votekick
 
-
 # Acronyms/Shorthand
 ECCS
+EMER
 ONPS
 RBMK
-
-EMER
 RQRD
+webp
