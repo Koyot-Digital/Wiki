@@ -67,22 +67,22 @@
             <p>This section aims to give you a general idea of what values are considered safe, and what equipment should be used to keep said values in check.<br>
               <br>
               <br>
-              Reactor power: 0-4800 MW, mainly kept in check by the control rods.<br>
+              Reactor power (tMW, thermal MegaWatts): <span class="number">0</span>-<span class="number">4800</span> tMW, mainly kept in check by the control rods.<br>
               <br>
-              Reactor water level: The feed limiter attempts to keep the water at 250 inches, so if there is any deviation, something is wrong (make sure it's on). Low water level may cause a raise in reactor temperature and efficiency, hence why you may see people in public servers running the reactor at low levels. High water levels can be fixed with the circ drains, and lowering of the amount of feedwater pumps in service. Low level means you don't have enough feedwater pumps running. A raise in feedwater pump usage may lower the deaerator level, and in turn, hotwell level. 
+              Reactor water level: The feed limiter attempts to keep the water at <span class="number">250</span> inches, so if there is any deviation, something is wrong (make sure it's on). Low water level may cause a raise in reactor temperature and efficiency, hence why you may see people in public servers running the reactor at low levels. High water levels can be fixed with the circ drains, and/or lowering of the amount of feedwater pumps in service. Low level means you don't have enough feedwater pumps running, or there is not enough water in the loop. A raise in feedwater pump usage may lower the deaerator level, and in turn, hotwell level. 
               <br> (Water flows as such: Reactor (recirculation) > Turbines > Hotwell > Deaerator > Feedwater > Reactor). <b class="r">Below 120 inches the feedwater pumps wont be able to raise the level anymore, and ECCS should be used.</b><br>
               <br>
-              Reactor temperature: Should be kept below 1500 degrees. At 1600 degrees there is a chance of experiencing a fuel channel leak. The main way to control the temperature is by using the recirculation pumps. If only one or a few sectors are hot (seen on the heat display on the rod control panel), you may insert control rods in those sectors to get them to match the rest of the reactor.<br>
+              Reactor temperature (F&deg;): Should be kept below <span class="number">1400</span>&deg; - <span class="number">1600</span>. At <span class="number">1600</span> degrees there is a chance of experiencing a fuel channel leak. The main way to control the temperature is by using the recirculation pumps. If only one or a few sectors are hot (seen on the heat display on the rod control panel), you may insert control rods in those sectors to get them to match the rest of the reactor; pull out rods in other sectors to match the thermal output of the reactor.<br>
               <br>
-              Reactor pressure: Generally you shouldn't run into this issue, however you may use the relief valves to keep the pressure in check.<br>
+              Reactor pressure (PSI, Pounds per Square Inch): Generally you shouldn't run into this issue, however you may use the relief valves to keep the pressure in check if it gets high.<br>
               <br>
-              Deaerator level: Should be kept in the green, however some people get it lower to increase efficiency. If you have a high deaerator level, check if the overflow valve is on, on the deaerator panel. If you are facing a low deaerator level, start more condensate pumps, but keep an eye on hotwell level.<br>
+              Deaerator level (In, Inches): Should be kept in the green, however some people get it lower to increase efficiency. If you have a high deaerator level, check if the overflow valve is on, located on the deaerator panel. If you are facing a low deaerator level, start more condensate pumps, but keep an eye on hotwell level.<br>
               <br>
-              Deaerator temperature and  pressure: The temperature has no limit, but higher temperatures can raise the amount of power being delivered to the grid. It is raised/lowered by the steam inlet valve. This valve might also influence the pressure. The pressure should be kept below 350 PSI. Lowered by the relief valves.<br>
+              Deaerator temperature (F&deg;) and pressure (PSI, Pounds per Square Inch): The temperature has no limit, but higher temperatures can raise the amount of power being delivered to the grid. It is raised/lowered by the steam inlet valve. This valve might also influence the pressure. The pressure should be kept below <span class="number">350</span> PSI. Lowered by the relief valves.<br>
               <br>
-              Hotwell level: Anything above 0. Low level, the make-up may be used. High level, the hotwell drains.<br>
+              Hotwell level (In, Inches): Anything above 0. Low level, the make-up may be used. High level, the hotwell drains.<br>
               <br>
-              Turbine pressure: Below the red line (960), lowered by the bypass valve when the turbine isn't in operation.<br>
+              Turbine pressure (PSI, Pounds per Square Inch): Below the red line (960), lowered by the bypass valve when the turbine isn't in operation.<br>
             </p>
           </div>
       </div>
@@ -93,13 +93,13 @@
       <div class="location-content">
         <img src="images/Rod_Control_Panel.webp" alt="Rod Control Panel" class="enlargeable"/>
         <div>
-          <p>Here you can withdraw or insert the control rods. Withdrawing them raises the power, inserting them lowers it. The <a class="y">automatic controls rods</a> can be used to stabilize reactor power at any desired amount (preferably within 200 MW of the current reactor power level). Turning the automatic rods off will revert their position back to 50% so be careful. The shutdown rods prevent the reactor power from raising, or the control rods from being withdrawn. The main display shows you the status of each control rod (Automatic in red, shutdown in blue.). The heat distribution display shows how hot each sector of the reactor is. Generally you don't want any of the sectors to exceed 1400-1600&deg;F, as detailed above. The <a class="g">modes</a> work as such:</p>
+          <p>Here you can withdraw or insert the control rods. Withdrawing them raises the power, inserting them lowers it. The <a class="y">automatic controls rods</a> can be used to stabilize reactor power at any desired amount (preferably within 200 MW of the current reactor power level). Turning the automatic rods off will revert their position back to 50% so be careful. The shutdown rods prevent the reactor power from raising, or the control rods from being withdrawn. The main display shows you the status of each control rod (Automatic in red, shutdown in blue.). The heat distribution display shows how hot each sector of the reactor is. Generally you don't want any of the sectors to exceed <span class="number">1400</span>&deg;F-<span class="number">1600</span>&deg;F, as detailed above. The <a class="g">modes</a> work as such:</p>
             <ul> 
               <li>Mode 0, shutdown (This mode is used when the reactor is offline, and restricts the removal of the shutdown rods.)</li>
               <li>Mode 1, Start-up (0-2000 MW)</li>
               <li>Mode 2, operating (2000+ MW)</li>
             </ul>
-          <p>The <a class="gr">Offline Core Cooling</a> (along with the shutdown rods) keep the reactor cold while offline; Should be turned off during operation. The circ drains can also be found on this panel. In the event of an emergency, the <a class="r">АЗ-5</a> (often refered to as AZ-5) can be utilized to quickly insert the rods back into the reactor. They are automatic by default however, you can set it to manual operation with the key locked switch located right of the rod selection panel.</p>
+          <p>The <a class="gr">Offline Core Cooling</a> (along with the shutdown rods) keep the reactor cold while offline; Should be turned off during operation. The circ drains can also be found on this panel. In the event of an emergency, the <a class="r">АЗ-5</a> (often refered to as AZ-5) can be utilized to quickly insert the rods back into the reactor. They are automatic by default however, you can set it to manual operation with the key locked switch located right of the rod selection panel, most operators do this as they find it "annoying", "it just gets in the way of startup", "mostly useless exept for that one time-".</p>
         </div>
       </div>
     </section>
@@ -109,15 +109,16 @@
       <div class="location-content">
         <img src="images/Turbine_Panel.webp" alt="Rod Control Panel" class="enlargeable"/>
         <div>
-          <p>The turbines send power to the grid, which gets you points.</p>
-          <p>In order to start the turbines you must disengage turning gear by calling engineering. In order to sync to the grid, you must get the RPM close to 1800 ( &#177; 30 RPM.). RPM can be manipulated primarily with the turbine valve, however the bypass valve offers finer control. The flow gauge shows you how fast you are increasing your turbines speed.</p>
-          <p>To sync, you just watch the synchroscope and press the sync button once you hear the buzzer. After syncing, raise the turbine valve a little to avoid reverse power, then proceed with the checklist.</p>
+          <p>The turbines send power to the grid, which gets you <a href="/points.html">points</a>.</p>
+          <p>In order to start the turbines you must disengage turning gear by calling engineering. In order to sync to the grid, you must get the RPM close to 1800 ( &PlusMinus;30 RPM.). RPM can be manipulated primarily with the turbine valve, however the bypass valve offers finer control, if you are runing up the turbine with only the turbine valve we reccomend using the precice knob instead of the loose knob; as just using the turbine valve can cause a major, <b>UNEXPECTED</b> RPM spike.
+          <br> The flow gauge shows you how fast you are increasing your turbines speed.</p>
+          <p>To sync, you just watch the synchroscope (make sure to enable it with the lever) and press the sync button once you hear the buzzer, it is under a cover with the green leters "SYNC" on it. After syncing, raise the turbine valve a little to avoid reverse power, then proceed with the checklist. <b>KEEP IN MIND TURBINE VIBRATION.</b></p>
           <p>The <a class="gr">bleed valve</a> is used to match the pressure between the turbines</p>
-          <p>After going online, you should utilize the <a class="y">automatic bypass</a> to hold the demand; Divide the demand by 2 and insert it into both keypads.</p>
+          <p>After going online, you should utilize the <a class="y">automatic bypass</a> to hold the demand; Divide the demand by 2 and insert it into both keypads, <a href="/calcualtors.html#turbine-calculator">or use our calculator</a></p>
           <p>Load rejection can occur if there is a sudden drop in power usage. It is mainly an issue before going online, when too many pumps are turned off at once.</p>
           <p>The proper way to shut down the turbines is to lower power, de-sync the turbine (via the generator breakers), lower the RPM and open the bypass.</p>
           <br>
-          <p>The option to <a class="r">manually trip</a> the turbines is also there, but its rarely ever used, during normal operations it should not be pressed, as it often <strong class="r">explodes the turbine</strong></p>
+          <p>The option to <a class="r">manually trip</a> the turbines is also there, but its rarely ever used, during normal operations it should not be pressed, as it often <strong class="r">explodes the turbine</strong>, and will often (in public lobbys), cause you to be votekicked.</p>
         </div>
       </div>
     </section>
@@ -156,7 +157,7 @@
       <div class="location-content">
         <img src="images/Deaerator_panel.webp" alt="Rod Control Panel" class="enlargeable"/>
         <div>
-          <p>The deaerator's true purpose is to remove impurities from the feedwater, using steam in order to heat the water up. This power plant features 2 deaerator, and similarly to the condenser coolant, has 2 loops (<a class="r">loop A</a> and <a class="y">loop B</a>), receiving steam from their respective steam drums, and water from the condensers.</p>
+          <p>The deaerator's true purpose is to remove impurities from the feedwater, like kidneys in humans, using steam in order to heat the water up. This power plant features 2 deaerator, and similarly to the condenser coolant, has 2 loops (<a class="r">loop A</a> and <a class="y">loop B</a>), receiving steam from their respective steam drums, and water from the condensers.</p>
           <p>The deaerator has 2 valves, those being the <a class="g">steam input</a> and <a class="b">relief</a>. The steam input lets more steam in, raising the temperature, and increasing the pressure slightly, while the relief vents steam out, lowering the pressure.</p>
           <p>The <a class="gy">A-B Bleed valve</a> mixes the water of the 2 deaerator, helping the water level equal out on both deaerator.</p>
           <p>For proper deaeration (water cleaning), it needs to be configured at 250C and 100PSI. This can be done by using the <a class="o">automatic control</a></p>
@@ -237,4 +238,5 @@
     <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
   </footer>
 </body>
+
 </html>
