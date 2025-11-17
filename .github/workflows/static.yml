@@ -30,13 +30,15 @@ jobs:
 # THIS IS THE PART THAT MAKES THE STUFF, to use this new functionality PLEASE, PLEASE, PLEASE make a new file in .github/scripts/ called anything, and put your code in there. Then call it here. same as below.
       - name: Generate banners.json
         run: node .github/scripts/make-banner-manifest.js
+      - name: last edited date updater
+        run: node .github/scripts/html-dates.js
 
       - name: Commit and push banners.json (if changed)
         run: |
           git config user.name "Autotron"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "Auto-update of banners.json" -m "This action was performed automatically by github-actions[bot]."
+          git diff --cached --quiet || git commit -m "Auto-update of banners.json | Auto-update of html-dates.json" -m "i am an automation; this action was performed automatically by github-actions[bot]."
           git push
 
       - name: Setup Pages
