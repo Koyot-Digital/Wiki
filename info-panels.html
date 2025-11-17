@@ -10,6 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/info-panels.css">
+  <!-- For instructions i imported the emergency css stylesheet-->
+<link rel="stylesheet" href="css/emergency.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <header id="header" style="
@@ -35,7 +37,7 @@
     <img src="images/Info Panels.webp" alt="Pre-Start Reactor" />
     <div class="hero-content">
       <h1>Information Panels</h1>
-      <p><em>What even is Pump Cavitation???</em></p>
+      <p><em>WHAT THE <b>HECK</b> IS A PUMP CAVATATION!??!</em></p>
     </div>
   </header>
 
@@ -348,19 +350,66 @@
 
       <!-- Different explanations for each button type -->
     <div id="hidden-explanations" style="display: none;">
-        <div id="coolant-trip">
-            <p>This alert indicates that the coolant pumps for either cooling tower have tripped.</p>
+        <div id="coolant-trip" class="emergency-box">
+            <p><strong>Description:</strong> This alert indicates that either one of the coolant pumps for a cooling tower has tripped.</p> Typically, you would only see this occur during a power loss.</p>
             <br>
-            <p>Typically, you would only see this occur during a power loss.</p>
-            <br>
-            <p>To regain power, call engineering and tell them to reset the breakers.</p>
+            <h3>Instructions:</h3>
+            <table class="checklist-row sep">
+                <tr>
+                    <td class="item">IF COOLANT PUMP TRIP</td>
+                    <td class="dots sep"></td>
+                    <td class="action">DO</td>
+                </tr>
+            </table>
+            <table class="checklist-row">
+                <tr>
+                    <td class="item">DIAL 106 ON PLANT OPERATIONS PHONE</td>
+                    <td class="dots"></td>
+                    <td class="action"><span class="g">REQUEST "Reset Breakers"</span></td>
+                </tr>
+            </table>
         </div>
-        <div id="coolant-dry">
+        <div id="coolant-dry" class="emergency-box">
+            <h3><strong>Description:</strong></h3> 
             <p>This warning indicates that the cooling tower coolant loop is dry. This is normal behavior before the pumps are running.</p>
-        </div>
-        <div id="coolant-temp">
-            <p>This alarm indicates that the temperature of the cooling loop has exceeded 212°F.</p>
             <br>
+            <h3>Instructions:</h3>
+            <table class="checklist-row sep">
+                <tr>
+                    <td class="item">IF COOLING TOWER COOLANT LOOP DRY</td>
+                    <td class="dots sep"></td>
+                    <td class="action">DO</td>
+                </tr>
+            </table>
+            <table class="checklist-row">
+                <tr>
+                    <td class="item">TURN ON COOLING TOWER COOLANT PUMPS</td>
+                    <td class="dots"></td>
+                    <td class="action"><span class="g">AS NEEDED</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="coolant-temp" class="emergency-box">\
+            <br>
+            <h3><strong>Description:</strong></h3> 
+            <p>This alarm indicates that the temperature of the cooling loop has exceeded 212&deg;F.</p>
+            <br>
+            <h3>Instructions:</h3>
+            <table class="checklist-row sep">
+                <tr>
+                    <td class="item">IF COOLANT TEMP HIGH</td>
+                    <td class="dots sep"></td>
+                    <td class="action">DO</td>
+                </tr>
+            </table>
+            <table class="checklist-row">
+                <tr>
+                    <td class="item">TURN ON MORE COOLANT PUMPS</td>
+                    <td class="dots"></td>
+                    <td class="action"><span class="g">AS NEEDED</span></td>
+                </tr>
+            </table>
+        </div>
             <p>You should enable more coolant pumps or increase the speed of them.</p>
         </div>
         <div id="turbine-trip">
