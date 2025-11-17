@@ -2,10 +2,17 @@
 const fs = require("fs");
 const path = require("path");
 
-// root directory of the repo
 const root = process.cwd();
 
-// read everything in root, filter .html files only
+const MONTHS = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+
+function formatDate(d) {
+  const day = String(d.getDate()).padStart(2, "0");
+  const month = MONTHS[d.getMonth()];
+  const year = d.getFullYear();
+  return `${day}/${month}/${year}`;
+}
+
 const files = fs.readdirSync(root)
   .filter(f => f.toLowerCase().endsWith(".html"))
   .sort();
@@ -15,7 +22,7 @@ const manifest = {};
 for (const file of files) {
   const fullPath = path.join(root, file);
   const stats = fs.statSync(fullPath);
-  manifest[file] = stats.mtime.toISOString();
+  manifest[file] = formatDate(stats.mtime);
 }
 
 const outputPath = path.join(root, "html-dates.json");
