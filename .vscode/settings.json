@@ -43,6 +43,7 @@
         "Rosco",
         "Roscy",
         "RQRD",
+        "RMBK",
         "Skelly",
         "Skybridge",
         "Speedrunner",
@@ -64,6 +65,4 @@
             "scope": "workspace"
         }
     }
-        "RBMK"
-    ]
 }
