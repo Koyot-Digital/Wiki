@@ -4,7 +4,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="8">
+          <list size="10">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -13,10 +13,17 @@
             <item index="5" class="java.lang.String" itemvalue="script" />
             <item index="6" class="java.lang.String" itemvalue="strong" />
             <item index="7" class="java.lang.String" itemvalue="div" />
+            <item index="8" class="java.lang.String" itemvalue="figcaption" />
+            <item index="9" class="java.lang.String" itemvalue="p" />
           </list>
         </value>
       </option>
       <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
     </inspection_tool>
   </profile>
 </component>

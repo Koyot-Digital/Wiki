@@ -2,8 +2,7 @@
 function paycheckCalc(hours, MW, bonus, EFF) {
     // Better variable name for clarity
     let amount = (((MW * EFF) * 0.2) * bonus) * ((hours * 14.00) / 24);
-    let points = amount / 2;
-    return points;
+    return amount / 2;
 }
 
 function runCalculationPaycheck() {
@@ -28,9 +27,7 @@ function efficiencyCalculate(P, O, U) {
     const term1 = 65 * (O_w / (P_w - 1600));
     const term2 = 35 * ((77 * ((O_w / 4570) + 0.65)) / U);
 
-    const eff = P_L * (term1 + term2);
-
-    return eff;
+    return P_L * (term1 + term2);
 }
 
 function runCalculationEfficiency() {
@@ -48,8 +45,7 @@ function turbineCalc(D, eff) {
     } else {
         eff = 0;
     }
-    let clcAB = (D / 2) + eff;
-    return clcAB;
+    return (D / 2) + eff;
 }
 
 function runCalculationTurbine() {

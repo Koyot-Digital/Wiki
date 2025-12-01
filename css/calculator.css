@@ -90,7 +90,7 @@ button:hover {
     margin: 1em 0;
 }
 
-mjx-mi {
+.mjx-mi {
     font-family: 'Times New Roman', serif !important;
     font-style: italic;
 }
