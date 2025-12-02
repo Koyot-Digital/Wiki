@@ -1,0 +1,57 @@
+name: Deploy Branch Preview
+
+on:
+  push:
+    branches-ignore:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.4.0
+
+      # Same banner manifest generation if needed
+      - name: Generate banners.json
+        run: node .github/scripts/make-banner-manifest.js
+
+      - name: Commit updated banners.json if changed
+        run: |
+          git config user.name "Autotron"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Auto-update of banners.json"
+          git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      - name: Deploy preview to /beta/<branch>/
+        id: deploy
+        uses: actions/deploy-pages@v4
+        with:
+          destination_dir: beta/${{ github.ref_name }}
