@@ -667,7 +667,7 @@ ul {
 .badges-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1vw;
+  gap: 1.5rem;
   width: 100%;
   min-height: 300px;
 }
@@ -684,11 +684,9 @@ ul {
   color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   cursor: pointer;
-    margin: 1rem;
+  margin: 1rem;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-    position: relative;
-    text-align: center;
 
 }
 
@@ -717,7 +715,6 @@ ul {
   display: block;
   max-height: 1000px; 
   opacity: 1;
-    padding: 0.5rem;
 }
 .toggle-section ol {
   padding-left: 20px;
@@ -881,5 +878,6 @@ footer {
       grid-template-columns: 1fr;
  }
 }
+
 
 
