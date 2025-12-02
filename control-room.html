@@ -21,10 +21,10 @@
   <div style="display: flex; gap: 12px; align-items: center;">
     <img src="images/home.svg" 
          style="width: 24px; height: 24px; cursor: pointer;" 
-         onclick="relocate('index.html');">
+         onclick="relocate('index.html');" alt="Home Button">
     <img src="images/settings.svg" 
          style="width: 24px; height: 24px; cursor: pointer;" 
-         onclick="relocate('settings.html');">
+         onclick="relocate('settings.html');" alt="Settings Button">
   </div>
 
   <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
@@ -70,7 +70,7 @@
               Reactor power: 0-4800 MW, mainly kept in check by the control rods.<br>
               <br>
               Reactor water level: The feed limiter attempts to keep the water at 250 inches, so if there is any deviation, something is wrong (make sure it's on). Low water level may cause a raise in reactor temperature and efficiency, hence why you may see people in public servers running the reactor at low levels. High water levels can be fixed with the circ drains, and lowering of the amount of feedwater pumps in service. Low level means you don't have enough feedwater pumps running. A raise in feedwater pump usage may lower the deaerator level, and in turn, hotwell level. 
-              <br> (Water flows as such: Reactor (recirculation) > Turbines > Hotwell > Deaerator > Feedwater > Reactor). <b class="r">Below 120 inches the feedwater pumps wont be able to raise the level anymore, and ECCS should be used.</b><br>
+              <br> (Water flows as such: Reactor (recirculation) > Turbines > Hotwell > Deaerator > Feedwater > Reactor). <b class="r">Below 120 inches the feedwater pumps won't be able to raise the level anymore, and ECCS should be used.</b><br>
               <br>
               Reactor temperature: Should be kept below 1500 degrees. At 1600 degrees there is a chance of experiencing a fuel channel leak. The main way to control the temperature is by using the recirculation pumps. If only one or a few sectors are hot (seen on the heat display on the rod control panel), you may insert control rods in those sectors to get them to match the rest of the reactor.<br>
               <br>
@@ -99,7 +99,7 @@
               <li>Mode 1, Start-up (0-2000 MW)</li>
               <li>Mode 2, operating (2000+ MW)</li>
             </ul>
-          <p>The <a class="gr">Offline Core Cooling</a> (along with the shutdown rods) keep the reactor cold while offline; Should be turned off during operation. The circ drains can also be found on this panel. In the event of an emergency, the <a class="r">АЗ-5</a> (often refered to as AZ-5) can be utilized to quickly insert the rods back into the reactor. They are automatic by default however, you can set it to manual operation with the key locked switch located right of the rod selection panel.</p>
+          <p>The <a class="gr">Offline Core Cooling</a> (along with the shutdown rods) keep the reactor cold while offline; Should be turned off during operation. The circ drains can also be found on this panel. In the event of an emergency, the <a class="r">АЗ-5</a> (often referred to as AZ-5) can be utilized to quickly insert the rods back into the reactor. They are automatic by default however, you can set it to manual operation with the key locked switch located right of the rod selection panel.</p>
         </div>
       </div>
     </section>
@@ -145,7 +145,7 @@
           <p>During emergencies when water is lost from the system or the reactor needs to be cooled while it is offline, the plants service/makeup water system comes into play, the <a class="o">Pure CND tanks</a> store water from the local Susitna river which first gets treated by service polishers, after that the water can be used to make up water in both hotwells and the ECCS water tank for emergencies.</p>
           <p>The <a class="gr">service pump</a> provides cool water from the river for <a class="gr">OCC pumps</a> and <a class="gr">cooling tower basins</a>, as the water cooling is not 100% effective, and it gets lost as water vapour which can be seen coming out of the cooling towers, to prevent the condenser coolant circuit from drying up slowly the service pump provides make up water into cooling tower basins.</p>
           <p>OCC pumps, pump water provided by service pump into the heat exchanger to cool down the reactors primarily circuit when the reactor is offline, the now heated up water gets sent into a temporary basin to be cooled down, the water then gets sent back into the Susitna river. </p>
-          <p>The <a class="o">make-up pump </a> transfers water from the CND tanks into hotwells A, B and ECCS water tank, in order to refill those you need to also open the <a class="o">feed valves</a>, 1 for eccs, and 2 for each hotwell.</p>
+          <p>The <a class="o">make-up pump </a> transfers water from the CND tanks into hotwells A, B and ECCS water tank, in order to refill those you need to also open the <a class="o">feed valves</a>, 1 for ECCS, and 2 for each hotwell.</p>
           <p>The <a class="r">emergency pure cnd</a> and <a class="r">pure cnd-service</a> are used in case of emergency's, emergency pure cnd allows you to use the emergency CND tanks 5-6 if you quickly need water into hotwell or ECCS, pure cnd service can use battery power to power itself in case if you lose offsite power, the pump acts as service pump but providing water only to OCC pumps at a cost of also using the CND tanks water supply instead of taking water from the river.</p>
         </div>
       </div>
@@ -170,7 +170,7 @@
       <div class="location-content">
         <img src="images/Feedwater_Panel.webp" alt="Rod Control Panel" class="enlargeable"/>
         <div>
-        <p>The <a class="g">Feedwater</a> controls how much water enters the steam drums (RVP); The water level can be checked on the rod control panel, to the left of it by the relief valves, or on the centeral status panel. The pumps take water from the deaerator; If the deaerator level is too low, the pumps will start to cavitate and eventually trip. An insufficient number of them will cause the water level to drop, which can cause the reactor to scram.</p>
+        <p>The <a class="g">Feedwater</a> controls how much water enters the steam drums (RVP); The water level can be checked on the rod control panel, to the left of it by the relief valves, or on the central status panel. The pumps take water from the deaerator; If the deaerator level is too low, the pumps will start to cavitate and eventually trip. An insufficient number of them will cause the water level to drop, which can cause the reactor to scram.</p>
         <p>The <a class="o">feed limiter valve</a> is similar to the overflow valve; it prevents water from flooding the reactor pressure vessel. Turning the switch on will make it automatic by limiting the feedwater intake upwards of 50% to keep the water level; however, it can also be used in manual mode, via the keypad (with the switch off).</p>
         <p>The <a class="gr">isolation valves</a> prevent feedwater from entering and steam from exiting the <a class="gr">RVP</a>. A closed <a class="gr">isolation valve</a> will cause the feedwater pumps to trip if they are already on or are turnt on.</p>
         </div>
@@ -198,17 +198,18 @@
         <div>
           <p>During emergencies that require quick reaction, the Emergency Core Cooling System (ECCS) and Pressure Relief System (Relief Valves 1-4) allow you to quickly inject water into the reactor or relieve pressure from the reactor or steam lines.</p>
           <p>The <a class="r">Emergency Core Cooling System (ECCS)</a> quickly injects water into the reactor, to do so you need to make sure that the ECCS tank has <b>at least 144 inches of water at all times</b> and is pressurized by opening the <a class="r">Nitrogen Valve</a> to <b>at least 1500 PSI</b>, once ECCS is filled with water and is pressurized the <a class="r">Injection Valve</a> can be open to inject water into the reactor vessel, note, if reactor water pressure is above ECCS circuit pressure the water from reactor will backflow to ECCS tank, causing the water level in reactor to drop further, you can pressurize the tank further or open the <a class="y">Reactor Vessel relief valves</a>for a short period of time.</p>
-          <p>In order to refill the ECCS water tank you must make sure to depressurize the tank by opening ECCS <a class="r">Relief Valve></a>, after depressurizing go to the water service/makeup panel and activate make-up pump and open ECCS feed valve.</p>
+          <p>In order to refill the ECCS water tank, you must make sure to depressurize the tank by opening ECCS <a class="r">Relief Valve></a>, after depressurizing go to the water service/makeup panel and activate makeup pump and open ECCS feed valve.</p>
           <p>The <a class="o">Pressure Relief System</a>is used to quickly relieve pressure from the <a class="y">Reactor Vessel</a>with valves 1-4, <a class="b">Steam line A</a>with relief valves 5-6 and <a class="g">Steam Line B</a>with relief valves 7-8.</p>
-          <p>The relieved steam/water pressure gets sent into a <a class="db">suppression pool</a> to naturally cool down, in extreme cases of relieving too much pressure (most of the times from reactor) the suppression tank can get overpressureized and cause all relief valves to automatically close.</p>
+          <p>The relieved steam/water pressure gets sent into a <a class="db">suppression pool</a> to naturally cool down, in extreme cases of relieving too much pressure (most of the time from reactor) the suppression tank can get overpressureized and cause all relief valves to automatically close.</p>
           <p>Relieved pressure from reactor or the steam lines means that water got lost from the primary circuit, to make up the lost water, make-up water in Hotwells.</p>
           <p>The <a class="gr">Hotwell Drain Valves</a> and <a class="gr">Reactor Core Critical's</a> panel informing on reactors water level, water temperature and water pressure while also providing information about how rapidly these parameters change can also be seen.</p>
         </div>
+      </div>
     </section>
 
     <section class="location-section" id="electrical-panel">
       <h2>The Electrical Panel</h2>
-      <div class="location-content";>
+      <div class="location-content">
         <img src="images/Electrical.webp" alt="Rod Control Panel" class="enlargeable"/>
         <div>
           <p>

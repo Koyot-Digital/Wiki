@@ -11,7 +11,7 @@ Contributors Must also make suggestions to either the game or the
 wiki. It Must be a minimum of 1 Suggestion per week.
 
 ### LOA
-Activity may be exempt if you are on holiday or other cases but
+Activity may be exempt if you are on holiday or other cases, but
 you must inform a higher up of this LOA. You must notify a higher
 up at least 24 hours before it begins. It must include start and
 end dates of the Loa. If you fail to provide notice in advance

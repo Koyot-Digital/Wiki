@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: '';
-    src: url('/Fonts/Unitype.woff2') format('woff2'),
-        url('/Fonts/Unitype.ttf') format('truetype');
+    src: url('/Fonts/Unifont.woff2') format('woff2'),
+        url('/Fonts/Unifont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -58,7 +58,7 @@ body {
 header {
   background-color: #2b2b2b;
   border-bottom: 1px solid #444;
-  padding: 0, 0, 1rem, 0;
+  padding: 0 0 1rem 0;
   text-align: center;
   position: relative;
 }
@@ -684,8 +684,10 @@ ul {
   color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   cursor: pointer;
+  margin: 1rem;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
 
 .badge-card:hover {
@@ -876,5 +878,6 @@ footer {
       grid-template-columns: 1fr;
  }
 }
+
 
 
