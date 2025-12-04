@@ -30,10 +30,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      
           # Stage all changed files safely
-          git add -A || true
-      
+          git add -A || true      
           if ! git diff --cached --quiet; then
             git commit -m "Auto-update banners.json"
             git push origin HEAD:${{ github.ref_name }}
@@ -56,11 +54,9 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}/beta/
 
     steps:
       - name: Deploy preview to /beta/<branch>/
         id: deploy
         uses: actions/deploy-pages@v4
-        with:
-          destination_dir: beta/${{ github.ref_name }}
