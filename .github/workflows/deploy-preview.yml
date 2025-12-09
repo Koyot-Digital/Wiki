@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.4.0
 
-      # Same banner manifest generation if needed
+      # banner manifest generation
       - name: Generate banners.json
         run: node .github/scripts/make-banner-manifest.js
 
