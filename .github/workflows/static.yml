@@ -1,11 +1,8 @@
-# Combined workflow: Generate banner manifest + Deploy static content to GitHub Pages
 name: Generate and Deploy
 
 on:
   push:
     branches: ["main"]
-    paths:
-      - "**"
   workflow_dispatch:
 
 permissions:
@@ -20,25 +17,56 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4.4.0
-              
-# THIS IS THE PART THAT MAKES THE STUFF, to use this new functionality PLEASE, PLEASE, PLEASE make a new file in .github/scripts/ called anything, and put your code in there. Then call it here. same as below.
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+
+      # ---- Generate banners.json ----
       - name: Generate banners.json
         run: node .github/scripts/make-banner-manifest.js
 
-      - name: Commit and push banners.json (if changed)
+      # ---- Optimize images (WebP + compress originals) ----
+      - name: Optimize images
+        uses: calibreapp/image-actions@v1
+        with:
+          compressOnly: false  # converts to WebP if it isnt :)
+          ignoreJpg: false
+          ignorePng: false
+      - name: Minify GitHub Pages
+        uses: Massi-X/minify-gh-pages-action@v2
+        with:
+          # Directory where the source files reside. This should be the dir where jekyll outputs to.
+          source: ./
+          # Which files to compress. Choose between js, css and html or a combination of them, comma separated.
+          compress: js,css,html
+          # JS compressor options. See https://github.com/mishoo/UglifyJS for the full list.
+          js_options: '{"mangle": false}' # makes var names look bad
+          # HTML compressor options. See https://github.com/kangax/html-minifier for the full list.
+          html_options: '{"caseSensitive": true}'
+      - name: Spellcheck HTML Files
+        uses: gevhaz/Word-Warden@v1.0.0
+        with:
+          # Files to spellcheck, (glob expressions accepted).
+          files: /*.html
+          # Path to your personal dictionary in aspell format.
+          dictionary: /docs/terminoligy_aspell.txt
+                
+                
+
+      # ---- Commit any changes ----
+      - name: Commit and push changes
         run: |
           git config user.name "Autotron"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "Auto-update of banners.json" -m "This action was performed automatically by github-actions[bot]."
+          git diff --cached --quiet || git commit -m "Auto optimize assets"
           git push
 
+      # ---- GitHub Pages upload ----
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -52,10 +80,8 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
