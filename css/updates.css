@@ -60,10 +60,7 @@
 .major-update {
     color: white;
     font-weight: bold;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-    padding-bottom: 0.2rem;
-    padding-top: 0.2rem;
+    padding: 0.2rem 0.75rem;
     border: 4px #1a1a1a solid;
     font-size: 23px;
     display: flex;
