@@ -17,13 +17,13 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
         with:
-            fetch-depth: 0 # required for sitemap gen
-      
+          fetch-depth: 0 # required for sitemap gen
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
 
@@ -35,34 +35,30 @@ jobs:
       - name: Optimize images
         uses: calibreapp/image-actions@v1
         with:
-          compressOnly: false  # converts to WebP if it isnt :)
+          compressOnly: false
           ignoreJpg: false
           ignorePng: false
+
       - name: Minify GitHub Pages
         uses: Massi-X/minify-gh-pages-action@v2
         with:
-          # Directory where the source files reside. This should be the dir where jekyll outputs to.
           source: ./
-          # Which files to compress. Choose between js, css and html or a combination of them, comma separated.
           compress: js,css,html
-          # JS compressor options. See https://github.com/mishoo/UglifyJS for the full list.
-          js_options: '{"mangle": false}' # makes var names look bad
-          # HTML compressor options. See https://github.com/kangax/html-minifier for the full list.
+          js_options: '{"mangle": false}'
           html_options: '{"caseSensitive": true}'
+
       - name: Spellcheck HTML Files
         uses: gevhaz/Word-Warden@v1.0.0
         with:
-          # Files to spellcheck, (glob expressions accepted).
           files: /*.html
-          # Path to your personal dictionary in aspell format.
           dictionary: /docs/terminoligy_aspell.txt
-    
 
       - name: Generate the sitemap
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://wiki.koyot.digital
           exclude-paths: /NavGrid.html
+
       # ---- Commit any changes ----
       - name: Commit and push changes
         run: |
