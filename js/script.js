@@ -1,5 +1,5 @@
 // ==============================
-// CONSTANTS \u0026 HELPERS
+// CONSTANTS AND HELPERS
 // ==============================
 
 const DEFAULT_FONT = 'Arial, sans-serif';
