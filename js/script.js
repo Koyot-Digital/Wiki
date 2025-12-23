@@ -1,5 +1,5 @@
 // ==============================
-// CONSTANTS & HELPERS
+// CONSTANTS \u0026 HELPERS
 // ==============================
 
 const DEFAULT_FONT = 'Arial, sans-serif';
@@ -159,6 +159,25 @@ function initializeViewMoreButtons() {
       btn.setAttribute('aria-expanded', String(!expanded));
       btn.textContent = expanded ? 'View More' : 'View Less';
       more.classList.toggle('hidden', expanded);
+    });
+  });
+}
+
+// ==============================
+// BADGE GUIDE TOGGLE
+// ==============================
+
+function initializeBadgeToggles() {
+  $$('.guide-arrow').forEach(arrow => {
+    if (arrow.dataset.initialized) return;
+    arrow.dataset.initialized = 'true';
+
+    arrow.addEventListener('click', () => {
+      const section = arrow.nextElementSibling;
+      if (!section) return;
+
+      section.classList.toggle('open');
+      arrow.textContent = section.classList.contains('open') ? 'Hide guide' : 'Click for guide';
     });
   });
 }
