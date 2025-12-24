@@ -89,6 +89,18 @@
     flex-direction: column;
 }
 
+.cr-moderator-card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 14px;
+    width: 300px;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgb(30, 144, 255);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
 .wiki-contributor-card {
     background-color: #1f1f1f;
     border: 1px solid #333;
@@ -151,6 +163,11 @@
     box-shadow: 0 0 12px rgb(195, 138, 74);
 }
 
+.cr-moderator-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 12px rgb(30, 144, 255);
+}
+
 .wiki-contributor-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 0 12px rgb(63, 183, 79);
@@ -192,6 +209,12 @@
     flex-direction: column;
 }
 .sr-moderator-card > summary {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.cr-moderator-card > summary {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -278,6 +301,12 @@
 }
 .moderator-name {
     color: #c38a4a;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cr-moderator-name {
+    color: #1e90ff;
     font-size: 22px;
     font-weight: 600;
 }
