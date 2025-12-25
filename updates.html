@@ -1,7 +1,39 @@
 <!-- updates.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+    <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"
+        charset="UTF-8"></script>
+    <script type="text/javascript" charset="UTF-8">
+        document.addEventListener('DOMContentLoaded', function () {
+            cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "ONPS Wiki" });
+        });
+    </script>
+
+    <!-- Google Analitics -->
+    <script type="text/plain" data-cookie-consent="tracking" async
+        src="https://www.googletagmanager.com/gtag/js?id=G-8C0MST73WK"></script>
+    <script type="text/plain" data-cookie-consent="tracking">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8C0MST73WK');
+  </script>
+    <!-- end of Google Analitics-->
+
+    <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+    <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+
+
+
+    <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+    <a href="#" id="open_preferences_center">Update cookies preferences</a>
     <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,192 +52,201 @@
   align-items: center; 
   padding: 8px;
 ">
-  <div style="display: flex; gap: 12px; align-items: center;">
-    <img src="images/home.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
-         onclick="relocate('index.html');">
-    <img src="images/settings.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
-         onclick="relocate('settings.html');">
-  </div>
+    <div style="display: flex; gap: 12px; align-items: center;">
+        <img src="images/home.svg" style="width: 24px; height: 24px; cursor: pointer;"
+            onclick="relocate('index.html');">
+        <img src="images/settings.svg" style="width: 24px; height: 24px; cursor: pointer;"
+            onclick="relocate('settings.html');">
+    </div>
 
-  <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
+    <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
 </header>
+
 <body>
-<header class="hero">
-    <div class="hero-overlay"></div>
-    <img src="images/update_page_banner.webp" alt="Oakridge Banner" />
-    <div class="hero-content">
-        <h1>Updates</h1>
-        <p>We all love an update!</p>
-    </div>
-</header>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <img src="images/update_page_banner.webp" alt="Oakridge Banner" />
+        <div class="hero-content">
+            <h1>Updates</h1>
+            <p>We all love an update!</p>
+        </div>
+    </header>
 
-<main class="container">
+    <main class="container">
 
-    <div id="NavGrid-placeholder"></div>
+        <div id="NavGrid-placeholder"></div>
 
-    <br><br><br>
-    <div class="emergency-nav">
-        <p>Jump To Any Update:</p>
-        <br>
-        <section>
-            <a href="#v.0.2.6" class="major-update">V0.2.6</a>
-            <a href="#v.0.2.5" class="major-update">V0.2.5</a>
+        <br><br><br>
+        <div class="emergency-nav">
+            <p>Jump To Any Update:</p>
+            <br>
+            <section>
+                <a href="#v.0.2.6" class="major-update">V0.2.6</a>
+                <a href="#v.0.2.5" class="major-update">V0.2.5</a>
+            </section>
+            <br>
+            <section class="jump-to-update">
+                <a href="#v.0.2.6.1" class="reg-link">V0.2.6.1</a>
+                <a href="#hotfix-1-v0.2.5" class="reg-link">Hotfix 1 V0.2.5</a>
+                <a href="#hotfix-2-v0.2.5" class="reg-link">Hotfix 2 V0.2.5</a>
+                <a href="#hotfix-3-v0.2.5" class="reg-link">Hotfix 3 V0.2.5</a>
+            </section>
+            <br>
+        </div>
+
+        <section class="update-card" id="v.0.2.6.1">
+            <h2>[Version 0.2.6.1 BETA]</h2>
+            <h3>Halloween has begun at Oakridge Nuclear Power Station</h3>
+            <h3>✏️ Additions/Changes:</h3>
+            <ul>
+                <li>Decoration around the map</li>
+                <li>New spooky lighting</li>
+                <li>New Spooky audios</li>
+                <li>Menu changed to be orange</li>
+                <li>New Icon</li>
+                <li>Added Herobrine</li>
+            </ul>
         </section>
-        <br>
-        <section class="jump-to-update">
-            <a href="#v.0.2.6.1" class="reg-link">V0.2.6.1</a>
-            <a href="#hotfix-1-v0.2.5" class="reg-link">Hotfix 1 V0.2.5</a>
-            <a href="#hotfix-2-v0.2.5" class="reg-link">Hotfix 2 V0.2.5</a>
-            <a href="#hotfix-3-v0.2.5" class="reg-link">Hotfix 3 V0.2.5</a>
+
+        <section class="update-card" id="v.0.2.6">
+            <h2>[Version 0.2.6 BETA]</h2>
+            <h3>✏️ Additions/Changes:</h3>
+            <ul>
+                <li>Balanced malfunctions</li>
+                <li>Bonuses from malfunctions now scale with operator rank</li>
+                <li>2 additional malfunctions</li>
+                <li>Reworked the shift managers' computer</li>
+                <li>Monitors in the shift manager's office now display game information</li>
+                <li>Option to choose the lobby as a location on spawn</li>
+                <li>Added new SCRAM report to logs</li>
+                <li>Added logs for manually closing pump breakers in addition to tripping</li>
+                <li>Cooling basins are now functional</li>
+                <li>Added Plant Director badge</li>
+                <li>Increased initial fuel level for the diesel generators</li>
+                <li>Added who initialized a vote-kick, along with the final vote within the server message</li>
+                <li>Trainee raised to 10k</li>
+                <li>New "anti-trolling measures" (should make messing with reactor and turbines harder in normal
+                    conditions)</li>
+                <li>Probability of meltdown from the floppa has been limited to private servers</li>
+            </ul>
+
+            <h3>🔧 Notable Fixes:</h3>
+            <ul>
+                <li>Fixed some switches incorrectly logging</li>
+                <li>Nerfed low water method</li>
+                <li>Fixed turbine blade ordering</li>
+                <li>Fixed auto-rods on middle panel not logging</li>
+                <li>Fixed log recorder being out of order after rejoin</li>
+            </ul>
         </section>
-        <br>
-    </div>
 
-    <section class="update-card" id="v.0.2.6.1">
-        <h2>[Version 0.2.6.1 BETA]</h2>
-        <h3>Halloween has begun at Oakridge Nuclear Power Station</h3>
-        <h3>✏️ Additions/Changes:</h3>
-        <ul>
-            <li>Decoration around the map</li>
-            <li>New spooky lighting</li>
-            <li>New Spooky audios</li>
-            <li>Menu changed to be orange</li>
-            <li>New Icon</li>
-            <li>Added Herobrine</li>
-        </ul>
-    </section>
+        <section class="update-card" id="hotfix-3-v0.2.5">
+            <h2 class="update-hotfix">Hotfix 3 [Version 0.2.5 BETA]</h2>
+            <h3>❌ Removed Features:</h3>
+            <ul>
+                <li>Removal of the reactor explosion event.</li>
+            </ul>
 
-    <section class="update-card" id="v.0.2.6">
-        <h2>[Version 0.2.6 BETA]</h2>
-        <h3>✏️ Additions/Changes:</h3>
-        <ul>
-            <li>Balanced malfunctions</li>
-            <li>Bonuses from malfunctions now scale with operator rank</li>
-            <li>2 additional malfunctions</li>
-            <li>Reworked the shift managers' computer</li>
-            <li>Monitors in the shift manager's office now display game information</li>
-            <li>Option to choose the lobby as a location on spawn</li>
-            <li>Added new SCRAM report to logs</li>
-            <li>Added logs for manually closing pump breakers in addition to tripping</li>
-            <li>Cooling basins are now functional</li>
-            <li>Added Plant Director badge</li>
-            <li>Increased initial fuel level for the diesel generators</li>
-            <li>Added who initialized a vote-kick, along with the final vote within the server message</li>
-            <li>Trainee raised to 10k</li>
-            <li>New "anti-trolling measures" (should make messing with reactor and turbines harder in normal conditions)</li>
-            <li>Probability of meltdown from the floppa has been limited to private servers</li>
-        </ul>
+            <h3>Special Message from the Devs:</h3>
+            <em>"Hey everyone,
+                I bring unfortunate news, however, due to recent Roblox moderation changes regarding real-world
+                tragedies, and due
+                to Nediah's Halska unfortunate removal. I'll be making some adjustments to ensure the game stays within
+                platform
+                guidelines until further notice.
 
-        <h3>🔧 Notable Fixes:</h3>
-        <ul>
-            <li>Fixed some switches incorrectly logging</li>
-            <li>Nerfed low water method</li>
-            <li>Fixed turbine blade ordering</li>
-            <li>Fixed auto-rods on middle panel not logging</li>
-            <li>Fixed log recorder being out of order after rejoin</li>
-        </ul>
-    </section>
+                Starting today, the reactor explosion event will be temporarily removed from the game. This change is
+                being made to
+                avoid any risk of removal or moderation action due to its undeniable relation with the Chernobyl
+                disaster.
 
-    <section class="update-card" id="hotfix-3-v0.2.5">
-        <h2 class="update-hotfix">Hotfix 3 [Version 0.2.5 BETA]</h2>
-        <h3>❌ Removed Features:</h3>
-        <ul>
-            <li>Removal of the reactor explosion event.</li>
-        </ul>
+                The rest of the game will remain playable as usual, and this decision is purely to keep the experience
+                available for
+                everyone. We'll be working on how to reintroduce it in a way that fits Roblox's updated rules.
 
-        <h3>Special Message from the Devs:</h3>
-        <em>"Hey everyone,
-            I bring unfortunate news, however, due to recent Roblox moderation changes regarding real-world tragedies, and due
-            to Nediah's Halska unfortunate removal. I'll be making some adjustments to ensure the game stays within platform
-            guidelines until further notice.
-        
-            Starting today, the reactor explosion event will be temporarily removed from the game. This change is being made to
-            avoid any risk of removal or moderation action due to its undeniable relation with the Chernobyl disaster.
-        
-            The rest of the game will remain playable as usual, and this decision is purely to keep the experience available for
-            everyone. We'll be working on how to reintroduce it in a way that fits Roblox's updated rules.
-        
-            Thanks for your understanding and continued support. 🧡"</em>
-    </section>
+                Thanks for your understanding and continued support. 🧡"</em>
+        </section>
 
 
-    <section class="update-card" id="hotfix-2-v0.2.5">
-        <h2 class="update-hotfix">Hotfix 2 [Version 0.2.5 BETA]</h2>
-        <h3>New Features:</h3>
-        <ul>
-            <li>Brought "Oof" back</li>
-            <li>Faster run speeds, new animation, and reworked footsteps to prepare for Version 0.2.6 </li>
-        </ul>
+        <section class="update-card" id="hotfix-2-v0.2.5">
+            <h2 class="update-hotfix">Hotfix 2 [Version 0.2.5 BETA]</h2>
+            <h3>New Features:</h3>
+            <ul>
+                <li>Brought "Oof" back</li>
+                <li>Faster run speeds, new animation, and reworked footsteps to prepare for Version 0.2.6 </li>
+            </ul>
 
-        <h3>🔧 Bug Fixes:</h3>
-        <ul>
-            <li>Patched spamming random failures for additional points</li>
-            <li>Patched Fuel channel leaks (leaks steam instead of increasing)</li>
-            <li>Fixed deaerator not repairing after engineering was called</li>
-        </ul>
-    </section>
+            <h3>🔧 Bug Fixes:</h3>
+            <ul>
+                <li>Patched spamming random failures for additional points</li>
+                <li>Patched Fuel channel leaks (leaks steam instead of increasing)</li>
+                <li>Fixed deaerator not repairing after engineering was called</li>
+            </ul>
+        </section>
 
-    <section class="update-card" id="hotfix-1-v0.2.5">
-        <h2 class="update-hotfix">Hotfix 1 [Version 0.2.5 BETA]</h2>
-        <h3>Changed Features:</h3>
-        <ul>
-            <li>Lowered cuff minimum security points to 25k</li>
-            <li>Updated operator point offload gain to 1/2 instead of 1/3</li>
-        </ul>
+        <section class="update-card" id="hotfix-1-v0.2.5">
+            <h2 class="update-hotfix">Hotfix 1 [Version 0.2.5 BETA]</h2>
+            <h3>Changed Features:</h3>
+            <ul>
+                <li>Lowered cuff minimum security points to 25k</li>
+                <li>Updated operator point offload gain to 1/2 instead of 1/3</li>
+            </ul>
 
-        <h3>🔧 Bug Fixes:</h3>
-        <ul>
-            <li>Fixed car colors</li>
-            <li>Fixed tags randomly disappearing</li>
-        </ul>
-    </section>
+            <h3>🔧 Bug Fixes:</h3>
+            <ul>
+                <li>Fixed car colors</li>
+                <li>Fixed tags randomly disappearing</li>
+            </ul>
+        </section>
 
-    <section class="update-card" id="v.0.2.5">
-        <h2>[Version 0.2.5 BETA]</h2>
-        <h3>New Features:</h3>
-        <ul>
-            <li>Recoded vehicles on the client</li>
-            <li>Shutdown Checklist</li>
-            <li>Point bonus for safe shutdowns, with achievement</li>
-            <li>Shift Manager / Supervisor achievement</li>
-            <li>New "All Time Leaderboard" (Top 6 players)</li>
-            <li>Visitor Card system (Limited access for visitors)</li>
-            <li>Restricted access: Alarm test, SCRAM, turbine trip/breakers disabled for visitors</li>
-            <li>Security points now tracked separately from operator points</li>
-            <li>Separate ranks for Security roles</li>
-            <li>Operator point offload: 1/3 of points contribute to Security</li>
-            <li>Baton added for Officer rank</li>
-            <li>Turnstiles cycle by default on keycard swipe</li>
-            <li>Donator name tag addon</li>
-            <li>Phone now has animation when used</li>
-            <li>New hazmat suits created</li>
-            <li>Private server owners can now use `/kick [player name]`</li>
-            <li>Drivable forklifts</li>
-            <li>Loading screen & main menu UI overhauled</li>
-            <li>Disclaimer and rules now shown in public servers</li>
-            <li>Automatic deaerator control added</li>
-            <li>Removed FNAO Event</li>
-            <li>ECCS reworked: Limited nitrogen, can’t refill while pressurized</li>
-            <li>New core heat distribution display</li>
-            <li>AFK status displayed if no input after 3 and a half minutes</li>
-            <li>New Gamepass: Spawn with Geiger counter</li>
-        </ul>
+        <section class="update-card" id="v.0.2.5">
+            <h2>[Version 0.2.5 BETA]</h2>
+            <h3>New Features:</h3>
+            <ul>
+                <li>Recoded vehicles on the client</li>
+                <li>Shutdown Checklist</li>
+                <li>Point bonus for safe shutdowns, with achievement</li>
+                <li>Shift Manager / Supervisor achievement</li>
+                <li>New "All Time Leaderboard" (Top 6 players)</li>
+                <li>Visitor Card system (Limited access for visitors)</li>
+                <li>Restricted access: Alarm test, SCRAM, turbine trip/breakers disabled for visitors</li>
+                <li>Security points now tracked separately from operator points</li>
+                <li>Separate ranks for Security roles</li>
+                <li>Operator point offload: 1/3 of points contribute to Security</li>
+                <li>Baton added for Officer rank</li>
+                <li>Turnstiles cycle by default on keycard swipe</li>
+                <li>Donator name tag addon</li>
+                <li>Phone now has animation when used</li>
+                <li>New hazmat suits created</li>
+                <li>Private server owners can now use `/kick [player name]`</li>
+                <li>Drivable forklifts</li>
+                <li>Loading screen & main menu UI overhauled</li>
+                <li>Disclaimer and rules now shown in public servers</li>
+                <li>Automatic deaerator control added</li>
+                <li>Removed FNAO Event</li>
+                <li>ECCS reworked: Limited nitrogen, can’t refill while pressurized</li>
+                <li>New core heat distribution display</li>
+                <li>AFK status displayed if no input after 3 and a half minutes</li>
+                <li>New Gamepass: Spawn with Geiger counter</li>
+            </ul>
 
-        <h3>🔧 Notable Fixes:</h3>
-        <ul>
-            <li>Fixed turbine blade ordering issues</li>
-            <li>Fixed being stuck on phone after resetting</li>
-            <li>Music volume setting now saves correctly</li>
-            <li>Fixed player locator highlight not clearing on reset</li>
-        </ul>
-    </section>
+            <h3>🔧 Notable Fixes:</h3>
+            <ul>
+                <li>Fixed turbine blade ordering issues</li>
+                <li>Fixed being stuck on phone after resetting</li>
+                <li>Music volume setting now saves correctly</li>
+                <li>Fixed player locator highlight not clearing on reset</li>
+            </ul>
+        </section>
 
-</main>
+    </main>
 
-<footer>
-    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
-</footer>
+    <footer>
+        <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i
+                class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a
+            href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank"
+            rel="noopener"><i>Roblox</i></a>
+    </footer>
 </body>
+
 </html>

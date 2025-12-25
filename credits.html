@@ -1,7 +1,39 @@
 <!-- INDEX.HTML -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+  <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"
+    charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "ONPS Wiki" });
+    });
+  </script>
+
+  <!-- Google Analitics -->
+  <script type="text/plain" data-cookie-consent="tracking" async
+    src="https://www.googletagmanager.com/gtag/js?id=G-8C0MST73WK"></script>
+  <script type="text/plain" data-cookie-consent="tracking">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8C0MST73WK');
+  </script>
+  <!-- end of Google Analitics-->
+
+  <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+  <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+
+
+
+  <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+  <a href="#" id="open_preferences_center">Update cookies preferences</a>
   <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,12 +54,9 @@
   padding: 8px;
 ">
   <div style="display: flex; gap: 12px; align-items: center;">
-    <img src="images/home.svg"
-         style="width: 24px; height: 24px; cursor: pointer;"
-         onclick="relocate('index.html');">
-    <img src="images/settings.svg"
-         style="width: 24px; height: 24px; cursor: pointer;"
-         onclick="relocate('settings.html');">
+    <img src="images/home.svg" style="width: 24px; height: 24px; cursor: pointer;" onclick="relocate('index.html');">
+    <img src="images/settings.svg" style="width: 24px; height: 24px; cursor: pointer;"
+      onclick="relocate('settings.html');">
   </div>
 
   <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
@@ -40,695 +69,751 @@
 </script>
 
 <body>
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-overlay"></div>
-  <img src="images/banner1.webp" alt="Oakridge Banner" />
-  <div class="hero-content">
-    <h1>Credits</h1>
-    <p>The amazing team who helped put this game together!</p>
-  </div>
-</header>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <img src="images/banner1.webp" alt="Oakridge Banner" />
+    <div class="hero-content">
+      <h1>Credits</h1>
+      <p>The amazing team who helped put this game together!</p>
+    </div>
+  </header>
 
-<main class="container">
+  <main class="container">
 
-  <div id="NavGrid-placeholder"></div>
+    <div id="NavGrid-placeholder"></div>
 
-  <!-- =========================
+    <!-- =========================
        DEVELOPMENT TEAM
   ========================== -->
-  <section id="dev-credits">
-    <h2 class="page-section-title">Game Development Team</h2>
+    <section id="dev-credits">
+      <h2 class="page-section-title">Game Development Team</h2>
 
-    <div class="dev-tier">
-      <h3 class="tier-title">Head of Development</h3>
-      <div class="dev-cards-grid center">
+      <div class="dev-tier">
+        <h3 class="tier-title">Head of Development</h3>
+        <div class="dev-cards-grid center">
 
-        <details class="dev-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/developers/Ezy_gaming888.webp" alt="Roscy (Ezy_gaming888)">
-              <div class="card-text">
-                <h4 class="dev-name"><a href="https://discord.com/users/424013056054525953" target="_blank">Roscy</a></h4>
-                <p class="card-role">Owner of the Game</p>
+          <details class="dev-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/developers/Ezy_gaming888.webp" alt="Roscy (Ezy_gaming888)">
+                <div class="card-text">
+                  <h4 class="dev-name"><a href="https://discord.com/users/424013056054525953" target="_blank">Roscy</a>
+                  </h4>
+                  <p class="card-role">Owner of the Game</p>
+                </div>
               </div>
+            </summary>
+            <div class="dev-card-body">
+              <p>To be Added</p>
             </div>
-          </summary>
-          <div class="dev-card-body">
-            <p>To be Added</p>
-          </div>
-        </details>
+          </details>
 
-      </div>
-    </div>
-
-    <div class="dev-tier">
-      <h3 class="tier-title">Development</h3>
-      <div class="dev-cards-grid">
-
-        <details class="dev-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/developers/TrashyLasers.webp" alt="Anticitizen One (TrashyLasers)">
-              <div class="card-text">
-                <h4 class="dev-name"><a href="https://discord.com/users/838449224474558475" target="_blank">Anticitizen One</a></h4>
-                <p class="card-role">Informant · Scripting/Simulation</p>
-              </div>
-            </div>
-          </summary>
-          <div class="dev-card-body">
-            <p>To be Added</p>
-          </div>
-        </details>
-
-        <details class="dev-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/gottie.webp" alt="Gottie ">
-              <div class="card-text">
-                <h4 class="dev-name"><a href="https://discord.com/users/383693165430964224" target="_blank">Gottie</a></h4>
-                <p class="card-role">Development · Scripting</p>
-              </div>
-            </div>
-          </summary>
-          <div class="dev-card-body">
-            <p>To be Added</p>
-          </div>
-        </details>
-        <details class="dev-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/utors/Chrxs_dev.webp" alt="chrxs_dev">
-              <div class="card-text">
-                <h4 class="dev-name"><a href="https://discord.com/users/541551772288811009" target="_blank">chrxs_dev</a></h4>
-                <p class="card-role">Development · Makes Things</p>
-              </div>
-            </div>
-          </summary>
-          <div class="dev-card-body">
-            <p>To be Added</p>
-          </div>
-        </details>
-      </div>
-    </div>
-    <div class="dev-tier">
-      <h3 class="tier-title">Community Manager</h3>
-      <div class="dev-cards-grid center">
-        <details class="communitym-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/developers/Silly_Skelly777.webp" alt="Skelly">
-              <div class="card-text">
-                <h4 class="communitym-name"><a href="https://discord.com/users/410047006979915786" target="_blank">Skelly</a></h4>
-                <p class="card-role">Community Coordinator</p>
-              </div>
-            </div>
-          </summary>
-          <div class="dev-card-body">
-            <p>To be Added</p>
-          </div>
-        </details>
-
+        </div>
       </div>
 
+      <div class="dev-tier">
+        <h3 class="tier-title">Development</h3>
+        <div class="dev-cards-grid">
 
-    </div>
+          <details class="dev-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/developers/TrashyLasers.webp" alt="Anticitizen One (TrashyLasers)">
+                <div class="card-text">
+                  <h4 class="dev-name"><a href="https://discord.com/users/838449224474558475"
+                      target="_blank">Anticitizen One</a></h4>
+                  <p class="card-role">Informant · Scripting/Simulation</p>
+                </div>
+              </div>
+            </summary>
+            <div class="dev-card-body">
+              <p>To be Added</p>
+            </div>
+          </details>
 
+          <details class="dev-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/gottie.webp" alt="Gottie ">
+                <div class="card-text">
+                  <h4 class="dev-name"><a href="https://discord.com/users/383693165430964224" target="_blank">Gottie</a>
+                  </h4>
+                  <p class="card-role">Development · Scripting</p>
+                </div>
+              </div>
+            </summary>
+            <div class="dev-card-body">
+              <p>To be Added</p>
+            </div>
+          </details>
+          <details class="dev-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/utors/Chrxs_dev.webp" alt="chrxs_dev">
+                <div class="card-text">
+                  <h4 class="dev-name"><a href="https://discord.com/users/541551772288811009"
+                      target="_blank">chrxs_dev</a></h4>
+                  <p class="card-role">Development · Makes Things</p>
+                </div>
+              </div>
+            </summary>
+            <div class="dev-card-body">
+              <p>To be Added</p>
+            </div>
+          </details>
+        </div>
+      </div>
+      <div class="dev-tier">
+        <h3 class="tier-title">Community Manager</h3>
+        <div class="dev-cards-grid center">
+          <details class="communitym-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/developers/Silly_Skelly777.webp" alt="Skelly">
+                <div class="card-text">
+                  <h4 class="communitym-name"><a href="https://discord.com/users/410047006979915786"
+                      target="_blank">Skelly</a></h4>
+                  <p class="card-role">Community Coordinator</p>
+                </div>
+              </div>
+            </summary>
+            <div class="dev-card-body">
+              <p>To be Added</p>
+            </div>
+          </details>
+
+        </div>
+
+
+      </div>
+
+      <br>
+      <div class="dev-tier">
+        <h2 class="page-section-title">Moderation Team</h2>
+        <p style="text-align: center">Keeping the community safe, supportive, and on-mission.</p>
+        <br>
+        <h3 class="tier-title">Administrators</h3>
+        <div class="dev-cards-grid center">
+          <details class="admin-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/Mell.webp" alt="MellExula">
+                <div class="card-text">
+                  <h4 class="admin-name"><a href="https://discord.com/users/1271105713120477304"
+                      target="_blank">MellExula</a></h4>
+                  <p class="card-role">Administrator</p>
+                </div>
+              </div>
+            </summary>
+            <div class="dev-card-body">
+              <p>To be Added</p>
+            </div>
+          </details>
+          <details class="admin-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/gottie.webp" alt="Gottie">
+                <div class="card-text">
+                  <h4 class="admin-name"><a href="https://discord.com/users/383693165430964224"
+                      target="_blank">Gottie</a></h4>
+                  <p class="card-role">Administrator</p>
+                </div>
+              </div>
+            </summary>
+            <div class="dev-card-body">
+              <p>To be Added</p>
+            </div>
+          </details>
+        </div>
+        <h3 class="tier-title">Senior Moderators</h3>
+        <div class="dev-cards-grid">
+          <details class="sr-moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/Goober.webp" alt="Goober">
+                <div class="card-text">
+                  <h4 class="sr-moderator-name"><a href="https://discord.com/users/1324983404902486161"
+                      target="_blank">Goober</a></h4>
+                  <p class="card-role">Senior Moderator & Head of Relations</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="sr-moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/Alaskis.webp" alt="Alaskis">
+                <div class="card-text">
+                  <h4 class="sr-moderator-name"><a href="https://discord.com/users/586998420926103552"
+                      target="_blank">Alaskis</a></h4>
+                  <p class="card-role">Senior Moderator</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="sr-moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/timjn.webp" alt="timjn">
+                <div class="card-text">
+                  <h4 class="sr-moderator-name"><a href="https://discord.com/users/980924219992969286"
+                      target="_blank">Timjn</a></h4>
+                  <p class="card-role">Senior Moderator</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+        </div>
+        <h3 class="tier-title">Moderators</h3>
+        <div class="dev-cards-grid">
+          <details class="moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/DrHouse.webp" alt="DrHouse">
+                <div class="card-text">
+                  <h4 class="moderator-name"><a href="https://discord.com/users/1100511120739012618"
+                      target="_blank">DrHouse</a></h4>
+                  <p class="card-role">Moderator</p>
+                </div>
+              </div>
+            </summary>
+            <div class="dev-card-body">
+              <p>To be Added</p>
+            </div>
+          </details>
+
+          <details class="moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/Ayron.webp" alt="Ayron">
+                <div class="card-text">
+                  <h4 class="moderator-name"><a href="https://discord.com/users/409744207134195713"
+                      target="_blank">Ayron</a></h4>
+                  <p class="card-role">Moderator</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/Astr0.webp" alt="Astr0">
+                <div class="card-text">
+                  <h4 class="moderator-name"><a href="https://discord.com/users/524660647095435264"
+                      target="_blank">Astr0</a></h4>
+                  <p class="card-role">Moderator</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/Valeri Legasov.webp" alt="Valeri Legasov">
+                <div class="card-text">
+                  <h4 class="moderator-name"><a href="https://discord.com/users/636118900047872022"
+                      target="_blank">Valeri Legasov</a></h4>
+                  <p class="card-role">Moderator</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/rogervanbommel.webp" alt="roger van bommel">
+                <div class="card-text">
+                  <h4 class="moderator-name"><a href="https://discord.com/users/668429645636567042"
+                      target="_blank">rogervan bommel</a></h4>
+                  <p class="card-role">Moderator</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/utors/TheChef.webp" alt="TheChef">
+                <div class="card-text">
+                  <h4 class="moderator-name"><a href="https://discord.com/users/724042062244216842"
+                      target="_blank">TheChef</a></h4>
+                  <p class="card-role">Moderator</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/TheOneDuck.webp" alt="TheOneDuck">
+                <div class="card-text">
+                  <h4 class="moderator-name"><a href="https://discord.com/users/855808748425314334"
+                      target="_blank">TheOneDuck</a></h4>
+                  <p class="card-role">Moderator</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/Gladi.webp" alt="Gladi">
+                <div class="card-text">
+                  <h4 class="moderator-name"><a href="https://discord.com/users/792952063860015115"
+                      target="_blank">Gladi</a></h4>
+                  <p class="card-role">Moderator</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/Community-Relations-Mods/NEODIS.webp" alt="NEODIS">
+                <div class="card-text">
+                  <h4 class="moderator-name"><a href="https://discord.com/users/724042062244216842"
+                      target="_blank">NEODIS</a></h4>
+                  <p class="card-role">Moderator</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+        </div>
+        <h3 class="tier-title">Community Relations Mods</h3>
+        <div class="dev-cards-grid">
+          <details class="cr-moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/Community-Relations-Mods/NEODIS.webp" alt="NEODIS">
+                <div class="card-text">
+                  <h4 class="cr-moderator-name"><a href="https://discord.com/users/724042062244216842"
+                      target="_blank">NEODIS</a></h4>
+                  <p class="card-role">Community Relations Mod</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="cr-moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/Community-Relations-Mods/Dienow3xw.webp" alt="Dienow3xw">
+                <div class="card-text">
+                  <h4 class="cr-moderator-name"><a href="https://discord.com/users/458479754820059147"
+                      target="_blank">Dienow3xw</a></h4>
+                  <p class="card-role">Community Relations Mod</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="cr-moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/Community-Relations-Mods/kohlecoke.webp" alt="KohleCoke">
+                <div class="card-text">
+                  <h4 class="cr-moderator-name"><a href="https://discord.com/users/554795097749979172"
+                      target="_blank">KohleCoke</a></h4>
+                  <p class="card-role">Community Relations Mod</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="cr-moderator-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/TheOneDuck.webp" alt="TheOneDuck">
+                <div class="card-text">
+                  <h4 class="cr-moderator-name"><a href="https://discord.com/users/855808748425314334"
+                      target="_blank">TheOneDuck</a></h4>
+                  <p class="card-role">Community Relations Mod</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+        </div>
+      </div>
+
+
+      <div class="dev-tier">
+        <br><br>
+        <h2 class="page-section-title">Testers</h2>
+        <p style="text-align: center">Making sure you don't get to abuse any bugs in the new update.</p>
+        <br>
+        <h3 class="tier-title"></h3>
+        <div class="dev-cards-grid center">
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/randomletters.webp" alt="randomletters">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/521387604197900288"
+                      target="_blank">RandomLetters</a></h4>
+                  <p class="card-role">Alpha Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/Zentechinc.webp" alt="VistaXenton">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/774988658372509706"
+                      target="_blank">VistaXenton</a></h4>
+                  <p class="card-role">Alpha Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/EOSSspartan.webp" alt="HaloBoy1000">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/191638151620591617"
+                      target="_blank">HaloBoy1000</a></h4>
+                  <p class="card-role">Alpha Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/jblstin.webp" alt="JayBee">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/419851504313303041"
+                      target="_blank">JayBee</a></h4>
+                  <p class="card-role">Alpha Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/nosamsti.webp" alt="A_randomfurry">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://www.roblox.com/users/562983877/profile"
+                      target="_blank">A_randomfurry</a></h4>
+                  <p class="card-role">Alpha Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/glaqss.webp" alt="ITSupportGlaqss">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/720268183499571330"
+                      target="_blank">ITSupportGlaqss</a></h4>
+                  <p class="card-role">Alpha Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/RayDYeeterson.webp" alt="Ray">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/578322125023346697" target="_blank">Ray</a>
+                  </h4>
+                  <p class="card-role">Alpha Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/developers/Azure.webp" alt="Azure">
+                <div class="card-text">
+                  <h4 class="tester-name">Azure</h4>
+                  <p class="card-role">Alpha Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/Ga_for.webp" alt="GA_Forgone">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/1108140253857988649"
+                      target="_blank">GA_Forgone</a></h4>
+                  <p class="card-role">Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/Mocha.webp" alt="Mocha">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/661246312531886091"
+                      target="_blank">Mocha</a></h4>
+                  <p class="card-role">Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/blue_fox.webp" alt="Blue_fox">
+                <div class="card-text">
+                  <h4 class="tester-name">Blue_fox</h4>
+                  <p class="card-role">Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/ashelyhecker.webp" alt="Ashelyhecker">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://www.roblox.com/users/2668447179/profile"
+                      target="_blank">Ashelyhecker</a></h4>
+                  <p class="card-role">Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/wawswa.webp" alt="wawswa">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/305847582897340416"
+                      target="_blank">Wawswa</a></h4>
+                  <p class="card-role">Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/bionicooo.webp" alt="bionicooo">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/470788680416624660"
+                      target="_blank">Bionicooo</a></h4>
+                  <p class="card-role">Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/sport3321ggc.webp" alt="sport3321ggc">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/747119240384872499"
+                      target="_blank">Sport3321ggc</a></h4>
+                  <p class="card-role">Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="tester-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/testers/kahve.webp" alt="kahve">
+                <div class="card-text">
+                  <h4 class="tester-name"><a href="https://discord.com/users/749042365448323113"
+                      target="_blank">Kahve</a></h4>
+                  <p class="card-role">Tester</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+        </div>
+      </div>
+      <div class="dev-tier">
+        <br><br>
+        <h2 class="page-section-title">Contributors</h2>
+        <p style="text-align: center">// TODO: Add description for ourselves</p>
+        <br>
+        <h3 class="tier-title">Wiki Contributors</h3>
+        <div class="dev-cards-grid center">
+          <details class="wiki-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/TheOneDuck.webp" alt="TheOneDuck">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/855808748425314334"
+                      target="_blank">TheOneDuck</a></h4>
+                  <p class="card-role">Wiki Admin</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="wiki-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/Gargle.webp" alt="Gargleblaster">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/1331084623538552872"
+                      target="_blank">Gargleblaster</a></h4>
+                  <p class="card-role">Wiki Contributor</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="wiki-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/DrHouse.webp" alt="DrHouse">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/1100511120739012618"
+                      target="_blank">DrHouse</a></h4>
+                  <p class="card-role">Wiki Contributor</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="wiki-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="/images/credits/contributors/Felixmoesg1.webp" alt="Felixmoesg1 or REDACTED">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/975744322551054346"
+                      target="_blank">REDACTED</a></h4>
+                  <p class="card-role">Wiki Contributor</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="wiki-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/Tachyon.webp" alt="Tachyon">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/1424531660636160103"
+                      target="_blank">Tachyon</a></h4>
+                  <p class="card-role">Wiki Contributor</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="wiki-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/sunryze.webp" alt="sunryze">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/229709025824997377"
+                      target="_blank">sunryze</a></h4>
+                  <p class="card-role">Wiki Contributor</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="wiki-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/IamScience.webp" alt="IamScienceMan">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/587208453018091538"
+                      target="_blank">IamScienceMan</a></h4>
+                  <p class="card-role">Wiki Contributor</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="wiki-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/olmatevegemite.webp" alt="olmatevegemite">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/782392109566132225"
+                      target="_blank">olmatevegemite</a></h4>
+                  <p class="card-role">Wiki Contributor</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="wiki-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/Ninja.webp" alt="Ninja">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/819229261952712704"
+                      target="_blank">Ninja</a></h4>
+                  <p class="card-role">Wiki Contributor</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+        </div>
+        <h3 class="tier-title">Content Creators</h3>
+        <div class="dev-cards-grid center">
+          <details class="video-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/moderators/Neodis.webp" alt="Neodis">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/992479011454320711"
+                      target="_blank">NEODIS</a></h4>
+                  <p class="card-role"><a href="https://www.youtube.com/@Neodis83">Content Creator</a></p>
+                </div>
+              </div>
+            </summary>
+          </details>
+          <details class="video-contributor-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/TheChef.webp" alt="TheChef">
+                <div class="card-text">
+                  <h4 class="contributor-name"><a href="https://discord.com/users/724042062244216842"
+                      target="_blank">TheChef</a></h4>
+                  <p class="card-role"><a href="https://www.youtube.com/channel/UCwANYYApyG3KEdpx8j7vbog">Content
+                      Creator</a></p>
+                </div>
+              </div>
+            </summary>
+          </details>
+        </div>
+        <h3 class="tier-title">Bot Developers</h3>
+        <div class="dev-cards-grid center">
+          <details class="botdev-card">
+            <summary>
+              <div class="card-header">
+                <img src="images/credits/contributors/Georgempla.webp" alt="Georgempla">
+                <div class="card-text">
+                  <h4 class="botdev-name"><a href="https://discord.com/users/782889546143629333"
+                      target="_blank">Georgempla</a></h4>
+                  <p class="card-role">Lead Bot Developer</p>
+                </div>
+              </div>
+            </summary>
+          </details>
+        </div>
+      </div>
+    </section>
     <br>
-    <div class="dev-tier">
-      <h2 class="page-section-title">Moderation Team</h2>
-      <p style="text-align: center">Keeping the community safe, supportive, and on-mission.</p>
-      <br>
-      <h3 class="tier-title">Administrators</h3>
-      <div class="dev-cards-grid center">
-        <details class="admin-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/Mell.webp" alt="MellExula">
-              <div class="card-text">
-                <h4 class="admin-name"><a href="https://discord.com/users/1271105713120477304" target="_blank">MellExula</a></h4>
-                <p class="card-role">Administrator</p>
-              </div>
-            </div>
-          </summary>
-          <div class="dev-card-body">
-            <p>To be Added</p>
-          </div>
-        </details>
-        <details class="admin-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/gottie.webp" alt="Gottie">
-              <div class="card-text">
-                <h4 class="admin-name"><a href="https://discord.com/users/383693165430964224" target="_blank">Gottie</a></h4>
-                <p class="card-role">Administrator</p>
-              </div>
-            </div>
-          </summary>
-          <div class="dev-card-body">
-            <p>To be Added</p>
-          </div>
-        </details>
+    <section>
+      <h2 class="page-section-title">Special Thanks</h2>
+      <div class="emergency-box">
+        <p style="text-align: center; font-size: 1.1rem; color: #ccc; line-height: 1.6;">
+          Sincere thanks to everyone in the community who gave feedback, reported bugs, and helped shape the Oakridge
+          Nuclear Power Station project. What began as a learning exercise in 2021 has grown into something remarkable
+          thanks to your support.
+        </p>
       </div>
-      <h3 class="tier-title">Senior Moderators</h3>
-      <div class="dev-cards-grid">
-        <details class="sr-moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/Goober.webp" alt="Goober">
-              <div class="card-text">
-                <h4 class="sr-moderator-name"><a href="https://discord.com/users/1324983404902486161" target="_blank">Goober</a></h4>
-                <p class="card-role">Senior Moderator & Head of Relations</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="sr-moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/Alaskis.webp" alt="Alaskis">
-              <div class="card-text">
-                <h4 class="sr-moderator-name"><a href="https://discord.com/users/586998420926103552" target="_blank">Alaskis</a></h4>
-                <p class="card-role">Senior Moderator</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="sr-moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/timjn.webp" alt="timjn">
-              <div class="card-text">
-                <h4 class="sr-moderator-name"><a href="https://discord.com/users/980924219992969286" target="_blank">Timjn</a></h4>
-                <p class="card-role">Senior Moderator</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-      </div>
-      <h3 class="tier-title">Moderators</h3>
-      <div class="dev-cards-grid">
-                <details class="moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/DrHouse.webp" alt="DrHouse">
-              <div class="card-text">
-                <h4 class="moderator-name"><a href="https://discord.com/users/1100511120739012618" target="_blank">DrHouse</a></h4>
-                <p class="card-role">Moderator</p>
-              </div>
-            </div>
-          </summary>
-          <div class="dev-card-body">
-            <p>To be Added</p>
-          </div>
-        </details>
+    </section>
 
-        <details class="moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/Ayron.webp" alt="Ayron">
-              <div class="card-text">
-                <h4 class="moderator-name"><a href="https://discord.com/users/409744207134195713" target="_blank">Ayron</a></h4>
-                <p class="card-role">Moderator</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/Astr0.webp" alt="Astr0">
-              <div class="card-text">
-                <h4 class="moderator-name"><a href="https://discord.com/users/524660647095435264" target="_blank">Astr0</a></h4>
-                <p class="card-role">Moderator</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/Valeri Legasov.webp" alt="Valeri Legasov">
-              <div class="card-text">
-                <h4 class="moderator-name"><a href="https://discord.com/users/636118900047872022" target="_blank">Valeri Legasov</a></h4>
-                <p class="card-role">Moderator</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/rogervanbommel.webp" alt="roger van bommel">
-              <div class="card-text">
-                <h4 class="moderator-name"><a href="https://discord.com/users/668429645636567042" target="_blank">rogervan bommel</a></h4>
-                <p class="card-role">Moderator</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/utors/TheChef.webp" alt="TheChef">
-              <div class="card-text">
-                <h4 class="moderator-name"><a href="https://discord.com/users/724042062244216842" target="_blank">TheChef</a></h4>
-                <p class="card-role">Moderator</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/TheOneDuck.webp" alt="TheOneDuck">
-              <div class="card-text">
-                <h4 class="moderator-name"><a href="https://discord.com/users/855808748425314334" target="_blank">TheOneDuck</a></h4>
-                <p class="card-role">Moderator</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/Gladi.webp" alt="Gladi">
-              <div class="card-text">
-                <h4 class="moderator-name"><a href="https://discord.com/users/792952063860015115" target="_blank">Gladi</a></h4>
-                <p class="card-role">Moderator</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/Community-Relations-Mods/NEODIS.webp" alt="NEODIS">
-              <div class="card-text">
-                <h4 class="moderator-name"><a href="https://discord.com/users/724042062244216842" target="_blank">NEODIS</a></h4>
-                <p class="card-role">Moderator</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-      </div>
-      <h3 class="tier-title">Community Relations Mods</h3>
-      <div class="dev-cards-grid">
-        <details class="cr-moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/Community-Relations-Mods/NEODIS.webp" alt="NEODIS">
-              <div class="card-text">
-                <h4 class="cr-moderator-name"><a href="https://discord.com/users/724042062244216842" target="_blank">NEODIS</a></h4>
-                <p class="card-role">Community Relations Mod</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="cr-moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/Community-Relations-Mods/Dienow3xw.webp" alt="Dienow3xw">
-              <div class="card-text">
-                <h4 class="cr-moderator-name"><a href="https://discord.com/users/458479754820059147" target="_blank">Dienow3xw</a></h4>
-                <p class="card-role">Community Relations Mod</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="cr-moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/Community-Relations-Mods/kohlecoke.webp" alt="KohleCoke">
-              <div class="card-text">
-                <h4 class="cr-moderator-name"><a href="https://discord.com/users/554795097749979172" target="_blank">KohleCoke</a></h4>
-                <p class="card-role">Community Relations Mod</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="cr-moderator-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/TheOneDuck.webp" alt="TheOneDuck">
-              <div class="card-text">
-                <h4 class="cr-moderator-name"><a href="https://discord.com/users/855808748425314334" target="_blank">TheOneDuck</a></h4>
-                <p class="card-role">Community Relations Mod</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-      </div>
-    </div>
+  </main>
 
-
-    <div class="dev-tier">
-      <br><br>
-      <h2 class="page-section-title">Testers</h2>
-      <p style="text-align: center">Making sure you don't get to abuse any bugs in the new update.</p>
-      <br>
-      <h3 class="tier-title"></h3>
-      <div class="dev-cards-grid center">
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/randomletters.webp" alt="randomletters">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/521387604197900288" target="_blank">RandomLetters</a></h4>
-                <p class="card-role">Alpha Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/Zentechinc.webp" alt="VistaXenton">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/774988658372509706" target="_blank">VistaXenton</a></h4>
-                <p class="card-role">Alpha Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/EOSSspartan.webp" alt="HaloBoy1000">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/191638151620591617" target="_blank">HaloBoy1000</a></h4>
-                <p class="card-role">Alpha Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/jblstin.webp" alt="JayBee">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/419851504313303041" target="_blank">JayBee</a></h4>
-                <p class="card-role">Alpha Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/nosamsti.webp" alt="A_randomfurry">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://www.roblox.com/users/562983877/profile" target="_blank">A_randomfurry</a></h4>
-                <p class="card-role">Alpha Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/glaqss.webp" alt="ITSupportGlaqss">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/720268183499571330" target="_blank">ITSupportGlaqss</a></h4>
-                <p class="card-role">Alpha Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/RayDYeeterson.webp" alt="Ray">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/578322125023346697" target="_blank">Ray</a></h4>
-                <p class="card-role">Alpha Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/developers/Azure.webp" alt="Azure">
-              <div class="card-text">
-                <h4 class="tester-name">Azure</h4>
-                <p class="card-role">Alpha Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/Ga_for.webp" alt="GA_Forgone">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/1108140253857988649" target="_blank">GA_Forgone</a></h4>
-                <p class="card-role">Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/Mocha.webp" alt="Mocha">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/661246312531886091" target="_blank">Mocha</a></h4>
-                <p class="card-role">Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/blue_fox.webp" alt="Blue_fox">
-              <div class="card-text">
-                <h4 class="tester-name">Blue_fox</h4>
-                <p class="card-role">Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/ashelyhecker.webp" alt="Ashelyhecker">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://www.roblox.com/users/2668447179/profile" target="_blank">Ashelyhecker</a></h4>
-                <p class="card-role">Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/wawswa.webp" alt="wawswa">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/305847582897340416" target="_blank">Wawswa</a></h4>
-                <p class="card-role">Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/bionicooo.webp" alt="bionicooo">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/470788680416624660" target="_blank">Bionicooo</a></h4>
-                <p class="card-role">Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/sport3321ggc.webp" alt="sport3321ggc">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/747119240384872499" target="_blank">Sport3321ggc</a></h4>
-                <p class="card-role">Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="tester-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/testers/kahve.webp" alt="kahve">
-              <div class="card-text">
-                <h4 class="tester-name"><a href="https://discord.com/users/749042365448323113" target="_blank">Kahve</a></h4>
-                <p class="card-role">Tester</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-      </div>
-    </div>
-    <div class="dev-tier">
-      <br><br>
-      <h2 class="page-section-title">Contributors</h2>
-      <p style="text-align: center">// TODO: Add description for ourselves</p>
-      <br>
-      <h3 class="tier-title">Wiki Contributors</h3>
-      <div class="dev-cards-grid center">
-        <details class="wiki-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/TheOneDuck.webp" alt="TheOneDuck">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/855808748425314334" target="_blank">TheOneDuck</a></h4>
-                <p class="card-role">Wiki Admin</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="wiki-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/Gargle.webp" alt="Gargleblaster">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/1331084623538552872" target="_blank">Gargleblaster</a></h4>
-                <p class="card-role">Wiki Contributor</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="wiki-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/DrHouse.webp" alt="DrHouse">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/1100511120739012618" target="_blank">DrHouse</a></h4>
-                <p class="card-role">Wiki Contributor</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="wiki-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="/images/credits/contributors/Felixmoesg1.webp" alt="Felixmoesg1 or REDACTED">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/975744322551054346" target="_blank">REDACTED</a></h4>
-                <p class="card-role">Wiki Contributor</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="wiki-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/Tachyon.webp" alt="Tachyon">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/1424531660636160103" target="_blank">Tachyon</a></h4>
-                <p class="card-role">Wiki Contributor</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="wiki-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/sunryze.webp" alt="sunryze">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/229709025824997377" target="_blank">sunryze</a></h4>
-                <p class="card-role">Wiki Contributor</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="wiki-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/IamScience.webp" alt="IamScienceMan">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/587208453018091538" target="_blank">IamScienceMan</a></h4>
-                <p class="card-role">Wiki Contributor</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="wiki-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/olmatevegemite.webp" alt="olmatevegemite">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/782392109566132225" target="_blank">olmatevegemite</a></h4>
-                <p class="card-role">Wiki Contributor</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="wiki-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/Ninja.webp" alt="Ninja">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/819229261952712704" target="_blank">Ninja</a></h4>
-                <p class="card-role">Wiki Contributor</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-      </div>
-      <h3 class="tier-title">Content Creators</h3>
-      <div class="dev-cards-grid center">
-        <details class="video-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/moderators/Neodis.webp" alt="Neodis">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/992479011454320711" target="_blank">NEODIS</a></h4>
-                <p class="card-role"><a href="https://www.youtube.com/@Neodis83">Content Creator</a></p>
-              </div>
-            </div>
-          </summary>
-        </details>
-        <details class="video-contributor-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/TheChef.webp" alt="TheChef">
-              <div class="card-text">
-                <h4 class="contributor-name"><a href="https://discord.com/users/724042062244216842" target="_blank">TheChef</a></h4>
-                <p class="card-role"><a href="https://www.youtube.com/channel/UCwANYYApyG3KEdpx8j7vbog">Content Creator</a></p>
-              </div>
-            </div>
-          </summary>
-        </details>
-      </div>
-      <h3 class="tier-title">Bot Developers</h3>
-      <div class="dev-cards-grid center">
-        <details class="botdev-card">
-          <summary>
-            <div class="card-header">
-              <img src="images/credits/contributors/Georgempla.webp" alt="Georgempla">
-              <div class="card-text">
-                <h4 class="botdev-name"><a href="https://discord.com/users/782889546143629333" target="_blank">Georgempla</a></h4>
-                <p class="card-role">Lead Bot Developer</p>
-              </div>
-            </div>
-          </summary>
-        </details>
-      </div>
-    </div>
-  </section>
-  <br>
-  <section>
-    <h2 class="page-section-title">Special Thanks</h2>
-    <div class="emergency-box">
-      <p style="text-align: center; font-size: 1.1rem; color: #ccc; line-height: 1.6;">
-        Sincere thanks to everyone in the community who gave feedback, reported bugs, and helped shape the Oakridge Nuclear Power Station project. What began as a learning exercise in 2021 has grown into something remarkable thanks to your support.
-      </p>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear Power Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
-</footer>
+  <footer>
+    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i
+        class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a
+      href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear Power Station-V0-2-4-BETA" target="_blank"
+      rel="noopener"><i>Roblox</i></a>
+  </footer>
 </body>
+
 </html>
