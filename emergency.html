@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8C0MST73WK"></script>
-  <script>
+  <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+  <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"
+    charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "ONPS Wiki" });
+    });
+  </script>
+
+  <!-- Google Analitics -->
+  <script type="text/plain" data-cookie-consent="tracking" async
+    src="https://www.googletagmanager.com/gtag/js?id=G-8C0MST73WK"></script>
+  <script type="text/plain" data-cookie-consent="tracking">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-8C0MST73WK');
   </script>
+  <!-- end of Google Analitics-->
+
+  <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+  <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+
+
+
+  <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+  <a href="#" id="open_preferences_center">Update cookies preferences</a>
 
   <!-- Primary Meta Tags -->
   <meta name="title" content="ONPS - Emergency Situations" />
@@ -50,16 +73,14 @@
   padding: 8px;
 ">
   <div style="display: flex; gap: 12px; align-items: center;">
-    <img src="images/home.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
-         onclick="relocate('index.html');">
-    <img src="images/settings.svg" 
-         style="width: 24px; height: 24px; cursor: pointer;" 
-         onclick="relocate('settings.html');">
+    <img src="images/home.svg" style="width: 24px; height: 24px; cursor: pointer;" onclick="relocate('index.html');">
+    <img src="images/settings.svg" style="width: 24px; height: 24px; cursor: pointer;"
+      onclick="relocate('settings.html');">
   </div>
 
   <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
 </header>
+
 <body>
   <header class="hero small-hero">
     <img src="images/emergency.webp" alt="Emergency Situations Banner">
@@ -71,7 +92,7 @@
   </header>
 
   <main class="container">
-   <div id="NavGrid-placeholder"></div>
+    <div id="NavGrid-placeholder"></div>
 
     <section class="location-section">
       <h2>Emergency Procedure</h2>
@@ -87,7 +108,8 @@
 
       <div class="emergency-box" id="high-pressure">
         <h3>Abnormal RPV Pressure</h3>
-        <p><strong>Description:</strong> The pressure inside the RPV <i>(Reactor Pressure Vessel)</i> is above safe limits.</p>
+        <p><strong>Description:</strong> The pressure inside the RPV <i>(Reactor Pressure Vessel)</i> is above safe
+          limits.</p>
         <table class="checklist-row sep">
           <tr>
             <td class="item">IF High</td>
@@ -171,7 +193,8 @@
 
       <div class="emergency-box" id="high-temperature">
         <h3>Abnormal RPV Temperature</h3>
-        <p><strong>Description:</strong> The temperature inside the RPV <i>(Reactor Pressure Vessel)</i> is above safe limits.</p>
+        <p><strong>Description:</strong> The temperature inside the RPV <i>(Reactor Pressure Vessel)</i> is above safe
+          limits.</p>
         <table class="checklist-row sep">
           <tr>
             <td class="item">IF High</td>
@@ -235,7 +258,7 @@
             <td class="action"><span class="o">DISABLE</span></td>
           </tr>
         </table>
-        
+
         <table class="checklist-row">
           <tr>
             <td class="item">MAIN CIRCULATION PUMPS A1 & A2</td>
@@ -387,7 +410,8 @@
 
       <div class="emergency-box" id="fuel-leak">
         <h3>Fuel Channel Leak</h3>
-        <p><strong>Description:</strong> Fuel channel ruptured. May cause power surges and water level drop beyond feedwater recovery capability.</p>
+        <p><strong>Description:</strong> Fuel channel ruptured. May cause power surges and water level drop beyond
+          feedwater recovery capability.</p>
         <table class="checklist-row sep">
           <tr>
             <td class="item">IF Fuel Channel Leak</td>
@@ -463,7 +487,8 @@
 
       <div class="emergency-box" id="loop">
         <h3>Loss of Offsite Power (LOOP)</h3>
-        <p><strong>Description:</strong> Offsite power grid has failed. All systems run on onsite diesel generators, they don't produce enough power to keep reactor online. Core Cooling is critical.</p>
+        <p><strong>Description:</strong> Offsite power grid has failed. All systems run on onsite diesel generators,
+          they don't produce enough power to keep reactor online. Core Cooling is critical.</p>
         <table class="checklist-row sep">
           <tr>
             <td class="item">IF LOOP</td>
@@ -479,19 +504,19 @@
             <td class="action"><span class="r">PRESS</span></td>
           </tr>
         </table>
-<table class="checklist-row">
-            <tr>
-                <td class="item">BREAKER 64A-M</td>
-                <td class="dots"></td>
-                <td class="action"><span class="r">DISABLE</span></td>
-            </tr>
+        <table class="checklist-row">
+          <tr>
+            <td class="item">BREAKER 64A-M</td>
+            <td class="dots"></td>
+            <td class="action"><span class="r">DISABLE</span></td>
+          </tr>
         </table>
         <table class="checklist-row">
-            <tr>
-                <td class="item">BREAKER 64A-G2</td>
-                <td class="dots"></td>
-                <td class="action"><span class="r">DISABLE</span></td>
-            </tr>
+          <tr>
+            <td class="item">BREAKER 64A-G2</td>
+            <td class="dots"></td>
+            <td class="action"><span class="r">DISABLE</span></td>
+          </tr>
         </table>
 
 
@@ -512,11 +537,11 @@
         </table>
 
         <table class="checklist-row">
-            <tr>
-                <td class="item">BREAKER 480LV-A</td>
-                <td class="dots"></td>
-                <td class="action"><span class="r">VERIFY ENABLED</span></td>
-            </tr>
+          <tr>
+            <td class="item">BREAKER 480LV-A</td>
+            <td class="dots"></td>
+            <td class="action"><span class="r">VERIFY ENABLED</span></td>
+          </tr>
         </table>
 
         <table class="checklist-row">
@@ -539,9 +564,11 @@
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
+    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i
+        class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a
+      href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank"
+      rel="noopener"><i>Roblox</i></a>
   </footer>
 </body>
+
 </html>
-
-

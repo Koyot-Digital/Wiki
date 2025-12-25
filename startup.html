@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8C0MST73WK"></script>
-  <script>
+  <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+  <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"
+    charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "ONPS Wiki" });
+    });
+  </script>
+
+  <!-- Google Analitics -->
+  <script type="text/plain" data-cookie-consent="tracking" async
+    src="https://www.googletagmanager.com/gtag/js?id=G-8C0MST73WK"></script>
+  <script type="text/plain" data-cookie-consent="tracking">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-8C0MST73WK');
   </script>
+  <!-- end of Google Analitics-->
+
+  <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+  <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+
+
+
+  <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+  <a href="#" id="open_preferences_center">Update cookies preferences</a>
 
   <!-- Primary Meta Tags -->
   <meta name="title" content="ONPS - Startup Guide" />
@@ -52,16 +75,14 @@
   padding: 8px;
 ">
   <div style="display: flex; gap: 12px; align-items: center;">
-    <img src="images/home.svg"
-         style="width: 24px; height: 24px; cursor: pointer;"
-         onclick="relocate('index.html');">
-    <img src="images/settings.svg"
-         style="width: 24px; height: 24px; cursor: pointer;"
-         onclick="relocate('settings.html');">
+    <img src="images/home.svg" style="width: 24px; height: 24px; cursor: pointer;" onclick="relocate('index.html');">
+    <img src="images/settings.svg" style="width: 24px; height: 24px; cursor: pointer;"
+      onclick="relocate('settings.html');">
   </div>
 
   <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
 </header>
+
 <body>
   <header class="hero small-hero">
     <div class="hero-overlay"></div>
@@ -89,17 +110,19 @@
         <li>Mode Conflict alarm will flash, press the acknowledge button on the Middle Reactor Console. </li>
         <li>Enable Shutdown Control Rods.</li>
         <li>Click the Reset button next to the acknowledge button on the Middle Reactor Console. </li>
-        <li>Wait for the Out of Zone panel to flash, a bell will ring signalling the Shutdown Rods are fully removed. </li>
+        <li>Wait for the Out of Zone panel to flash, a bell will ring signalling the Shutdown Rods are fully removed.
+        </li>
         <li>Enable Auto Control Rods.<p>
         <li>Type the numbers <strong>1500</strong> into the keypad next to the Auto Control Rods switch and click the
-        grey button to set.<p>
+          grey button to set.<p>
         <li>Once the reactor reaches 1500 MW enable Reactor Mode 2. Keep an eye on the Core Heat Distribution.</li>
         <li>Enable Feedwater Pump 1 and set it to speed 2.</li>
         <li>Enable Condensate Pump 1 and set it to speed 2.</li>
       </ul>
       <br>
       <h2>Stage Two Startup</h2>
-      <p>Withdraw Control Rods until power reaches <strong>2100</strong> MW.<p>
+      <p>Withdraw Control Rods until power reaches <strong>2100</strong> MW.
+      <p>
       <h3>Turbine A Run-up</h3>
       <br>
       <ul>
@@ -205,11 +228,11 @@
       </ul>
       <br>
       <h3>Medium Power Range [4200MW - 4500MW]</h3>
-        <ul>
-          <li>Enable Main Circulation Pumps C1 and C2 and set to speed 2.</li>
-          <li>Set Condenser Coolant Pumps A3 and B3 to speed 2.</li>
-          <li>Set Condensate 1 and Feedwater 1 to speed 3</li>
-        </ul>
+      <ul>
+        <li>Enable Main Circulation Pumps C1 and C2 and set to speed 2.</li>
+        <li>Set Condenser Coolant Pumps A3 and B3 to speed 2.</li>
+        <li>Set Condensate 1 and Feedwater 1 to speed 3</li>
+      </ul>
       <br>
       <h3>High Power Range [4500MW - 4800MW]</h3>
       <ul>
@@ -219,11 +242,13 @@
       <br>
       <h2 class="section-title">Auto Bypass</h2>
       <ul class="info-list">
-        <p>The formula for what to input into each auto-bypass <span class="g"><strong>with</strong></span> extra efficiency is:</p>
+        <p>The formula for what to input into each auto-bypass <span class="g"><strong>with</strong></span> extra
+          efficiency is:</p>
         <div class="math-display">
           \( \frac{\text{Demand}}{2} + 12 = \text{...} \)
         </div>
-        <p>The formula for what to input into each auto-bypass <span class="r"><strong>without</strong></span> extra efficiency is:</p>
+        <p>The formula for what to input into each auto-bypass <span class="r"><strong>without</strong></span> extra
+          efficiency is:</p>
         <div class="math-display">
           \( \frac{\text{Demand}}{2} = \text{...} \)
         </div>
@@ -231,15 +256,8 @@
       </ul>
       <div class="calculator">
         <label for="demandSlider">Demand:</label>
-        <input
-                type="range"
-                id="demandSlider"
-                name="demandSlider"
-                min="950"
-                max="1500"
-                step="10"
-                value="1000"
-                oninput="runCalculationTurbine()">
+        <input type="range" id="demandSlider" name="demandSlider" min="950" max="1500" step="10" value="1000"
+          oninput="runCalculationTurbine()">
         <span id="demandValue">950 MW</span>
 
         <br>
@@ -250,15 +268,19 @@
       <br>
       <br>
       <p class="r">The Deaerator significantly contributes to the amount of steam the reactor can produce;
-      adjust the inlet and relief valves accordingly.</p>
+        adjust the inlet and relief valves accordingly.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
+    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i
+        class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a
+      href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank"
+      rel="noopener"><i>Roblox</i></a>
   </footer>
 
   <script src="js/calc.js"></script>
   <script src="js/script.js" defer></script>
 </body>
+
 </html>
