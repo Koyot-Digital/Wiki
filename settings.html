@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+  <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"
+    charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "ONPS Wiki" });
+    });
+  </script>
+
+  <!-- Google Analitics -->
+  <script type="text/plain" data-cookie-consent="tracking" async
+    src="https://www.googletagmanager.com/gtag/js?id=G-8C0MST73WK"></script>
+  <script type="text/plain" data-cookie-consent="tracking">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8C0MST73WK');
+  </script>
+  <!-- end of Google Analitics-->
+
+  <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+  <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+
+
+
+  <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+  <a href="#" id="open_preferences_center">Update cookies preferences</a>
   <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,70 +40,74 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/settings_page.css" />
   <script src="js/script.js" defer></script>
-  <link rel="apple-touch-icon"      sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32"   href="/images/Favicon/favicon-32x32.p ng">
-  <link rel="icon" type="image/png" sizes="16x16"   href="/images/Favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.p ng">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <header id="header" style="display: flex; justify-content: space-between; align-items: center;padding: 8px;">
   <div style="display: flex; gap: 12px; align-items: center;">
-    <img src="images/home.svg"
-         style="width: 24px; height: 24px; cursor: pointer;"
-         onclick="relocate('index.html');">
-    <img src="images/settings.svg"
-         style="width: 24px; height: 24px; cursor: pointer;"
-         onclick="relocate('settings.html');">
+    <img src="images/home.svg" style="width: 24px; height: 24px; cursor: pointer;" onclick="relocate('index.html');">
+    <img src="images/settings.svg" style="width: 24px; height: 24px; cursor: pointer;"
+      onclick="relocate('settings.html');">
   </div>
 
   <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
 </header>
+
 <body>
-<div class="container">
-  <section class="settings-card">
-    <h2>Preferences</h2>
+  <div class="container">
+    <section class="settings-card">
+      <h2>Preferences</h2>
 
-    <!-- Date/Number Format -->
-    <div class="settings-row">
-      <label for="FrmtSel">Date & Number Styles:</label>
-      <select id="FrmtSel" name="Format Selection">
-        <option value="USA">North American: 1,234.56 | June 23, 1982</option>
-        <option value="EUR">European: 1.234,56 | 23 June 1982</option>
-      </select>
-    </div>
+      <!-- Date/Number Format -->
+      <div class="settings-row">
+        <label for="FrmtSel">Date & Number Styles:</label>
+        <select id="FrmtSel" name="Format Selection">
+          <option value="USA">North American: 1,234.56 | June 23, 1982</option>
+          <option value="EUR">European: 1.234,56 | 23 June 1982</option>
+        </select>
+      </div>
 
-    <!-- Font Selection -->
-    <div class="settings-row">
-      <label for="FontSel">Font:</label>
-      <select id="FontSel" name="Font Selection" onchange="toggleCustomFontInput();">
-        <option value="Arial, sans-serif" style="font-family: Arial, sans-serif;">Sans Serif (Arial)</option>
-        <option value="'Times New Roman', serif" style="font-family: 'Times New Roman', serif;">Serif (Times New Roman)</option>
-        <option value="'Courier New', monospace" style="font-family: 'Courier New', monospace;">Monospaced (Courier New)</option>
-        <option value="'Unitype', sans-serif">Unitype</option>
-        <option value="'OpenDyslexic', 'OpenDyslexic'">Open Dyslexic</option>
-        <option value="Custom">Custom</option>
-      </select>
-      <input type="text" id="CustomFontInput" placeholder="'Comic Sans', sans-serif" />
-    </div>
+      <!-- Font Selection -->
+      <div class="settings-row">
+        <label for="FontSel">Font:</label>
+        <select id="FontSel" name="Font Selection" onchange="toggleCustomFontInput();">
+          <option value="Arial, sans-serif" style="font-family: Arial, sans-serif;">Sans Serif (Arial)</option>
+          <option value="'Times New Roman', serif" style="font-family: 'Times New Roman', serif;">Serif (Times New
+            Roman)</option>
+          <option value="'Courier New', monospace" style="font-family: 'Courier New', monospace;">Monospaced (Courier
+            New)</option>
+          <option value="'Unitype', sans-serif">Unitype</option>
+          <option value="'OpenDyslexic', 'OpenDyslexic'">Open Dyslexic</option>
+          <option value="Custom">Custom</option>
+        </select>
+        <input type="text" id="CustomFontInput" placeholder="'Comic Sans', sans-serif" />
+      </div>
 
-    <button class="save-btn" type="button" onclick="saveToLocal();">Save</button>
-  </section>
+      <button class="save-btn" type="button" onclick="saveToLocal();">Save</button>
+    </section>
 
-  <!-- Example Preview -->
-  <section class="settings-card example-preview">
-    <h2>Example:</h2>
-    <p>
-      A blackout occurred on <span class="date">14/AUG/2003</span> after demand
-      spiked to <span class="number">5000 56</span> terawatts.
-    </p>
-  </section>
-</div>
+    <!-- Example Preview -->
+    <section class="settings-card example-preview">
+      <h2>Example:</h2>
+      <p>
+        A blackout occurred on <span class="date">14/AUG/2003</span> after demand
+        spiked to <span class="number">5000 56</span> terawatts.
+      </p>
+    </section>
+  </div>
 
-<div id="NavGrid-placeholder"></div>
-<br>
-<br>
-<footer>
-  <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank" rel="noopener"><i>Roblox</i></a>
-</footer>
+  <div id="NavGrid-placeholder"></div>
+  <br>
+  <br>
+  <footer>
+    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i
+        class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a
+      href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank"
+      rel="noopener"><i>Roblox</i></a>
+  </footer>
 </body>
+
 </html>
