@@ -15,105 +15,7 @@
 	import points from '$lib/assets/images/heroBanners/points.webp';
 	import infoPanels from '$lib/assets/images/heroBanners/Info Panels.webp';
 	import communityServers from '$lib/assets/images/heroBanners/communityServers.webp';
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		initializeViewMoreButtons();
-        console.log("NavGrid mounted");
-		initializeArticleSearch();
-        console.log("Article search initialized");
-	});
-
-	// ==============================
-	// VIEW MORE BUTTONS IN NAVGRID
-	// ==============================
-
-	function initializeViewMoreButtons() {
-		const buttons = document.querySelectorAll('.view-more-btn');
-		if (buttons.length === 0) {
-			setTimeout(initializeViewMoreButtons, 100);
-			return;
-		}
-
-		buttons.forEach((button) => {
-			if (button.hasAttribute('data-initialized')) return;
-			button.setAttribute('data-initialized', 'true');
-
-			button.addEventListener('click', () => {
-				const moreArticles = document.querySelector('.more-articles');
-				if (!moreArticles) return;
-
-				const expanded = button.getAttribute('aria-expanded') === 'true';
-				if (expanded) {
-					moreArticles.classList.add('hidden');
-					button.textContent = 'View More';
-					button.setAttribute('aria-expanded', 'false');
-				} else {
-					moreArticles.classList.remove('hidden');
-					button.textContent = 'View Less';
-					button.setAttribute('aria-expanded', 'true');
-				}
-			});
-		});
-	}
-
-	// ==============================
-	// NAVGRID + SEARCH
-	// ==============================
-
-	function initializeArticleSearch() {
-		const searchInput = document.getElementById('articleSearch');
-		const viewMoreBtn = document.querySelector('.view-more-btn');
-		const grid = document.querySelector('.articles-grid');
-		const moreGrid = document.querySelector('.more-articles');
-		const noResultsMsg = document.getElementById('no-results-message');
-		if (!searchInput || !grid || !moreGrid || !noResultsMsg) return;
-
-		searchInput.addEventListener('input', () => {
-			const query = searchInput.value.toLowerCase().trim();
-			const gridCards = grid.querySelectorAll('.article-card');
-			const moreCards = moreGrid.querySelectorAll('.article-card');
-
-			let gridMatches = 0, moreMatches = 0;
-
-			gridCards.forEach((card) => {
-				const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
-				const match = title.includes(query);
-				card.style.display = match || !query ? '' : 'none';
-				if (match) gridMatches++;
-			});
-
-			moreCards.forEach((card) => {
-				const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
-				const match = title.includes(query);
-				card.style.display = match || !query ? '' : 'none';
-				if (match) moreMatches++;
-			});
-
-			if (!query) {
-				grid.style.display = '';
-				moreGrid.classList.add('hidden');
-				if (viewMoreBtn) viewMoreBtn.style.display = '';
-				noResultsMsg.style.display = 'none';
-			} else {
-				if (viewMoreBtn) viewMoreBtn.style.display = 'none';
-				if (gridMatches > 0 && moreMatches === 0) {
-					grid.style.display = '';
-					moreGrid.classList.add('hidden');
-				} else if (moreMatches > 0 && gridMatches === 0) {
-					grid.style.display = 'none';
-					moreGrid.classList.remove('hidden');
-				} else if (gridMatches > 0 && moreMatches > 0) {
-					grid.style.display = '';
-					moreGrid.classList.remove('hidden');
-				} else {
-					grid.style.display = 'none';
-					moreGrid.classList.add('hidden');
-				}
-				noResultsMsg.style.display = gridMatches + moreMatches === 0 ? 'block' : 'none';
-			}
-		});
-	}
+	let toggleViewBool = false
 </script>
 
 <div class="articles-section">
@@ -137,75 +39,79 @@
 			<h3>Start-Up Guide</h3>
 		</a>
 	</div>
-
-	<div class="articles-grid more-articles hidden" aria-hidden="true">
-		<!-- Hidden Articles (toggled with the "View More" button) -->
-		<a href="emergency.html" class="article-card">
-			<img src={emergency} alt="Emergency Situations" />
-			<h3>Emergency Situations</h3>
-		</a>
-		<a href="control-room.html" class="article-card">
-			<img src={controlRoom} alt="Control Room Layout" />
-			<h3>Control Room Layout</h3>
-		</a>
-		<a href="shutdown.html" class="article-card">
-			<img src={shutdown} alt="Shutdown Guide" />
-			<h3>Shutdown Guide</h3>
-		</a>
-		<a href="credits.html" class="article-card">
-			<img src={credits} alt="credits" />
-			<h3>Credits</h3>
-		</a>
-		<a href="RBMK-1500.html" class="article-card">
-			<img src={reactor} alt="credits" />
-			<h3>RBMK-1500</h3>
-		</a>
-		<a href="diagrams-and-maps.html" class="article-card">
-			<img src={diagramsAndMaps} alt="Diagrams & Maps" />
-			<h3>Diagrams & Maps</h3>
-		</a>
-		<a href="locations.html" class="article-card">
-			<img src={locations} alt="Locations" />
-			<h3>Locations</h3>
-		</a>
-		<a href="people.html" class="article-card">
-			<img src={people} alt="Workers of the Plant" />
-			<h3>Workers of the Plant</h3>
-		</a>
-		<a href="points.html" class="article-card">
-			<img src={points} alt="Points System" />
-			<h3>Points System</h3>
-		</a>
-		<a href="badges.html" class="article-card">
-			<img src={badges} alt="Badges" />
-			<h3>Badges</h3>
-		</a>
-		<a href="info-panels.html" class="article-card">
-			<img src={infoPanels} alt="Information Panels" />
-			<h3>Information Panels</h3>
-		</a>
-		<a href="updates.html" class="article-card">
-			<img src={Updates} alt="Updates Page" />
-			<h3>Updates</h3>
-		</a>
-		<a href="communityservers.html" class="article-card">
-			<img src={communityServers} alt="Community Servers" />
-			<h3>Community Servers</h3>
-		</a>
-	</div>
-
-	<p id="no-results-message" style="display: none; text-align: center; margin-top: 1rem; color: #ccc;">
+	{#if toggleViewBool == true}
+		<div class="articles-grid more-articles" aria-hidden="true">
+			<!-- Hidden Articles (toggled with the "View More" button) -->
+			<a href="emergency.html" class="article-card">
+				<img src={emergency} alt="Emergency Situations" />
+				<h3>Emergency Situations</h3>
+			</a>
+			<a href="control-room.html" class="article-card">
+				<img src={controlRoom} alt="Control Room Layout" />
+				<h3>Control Room Layout</h3>
+			</a>
+			<a href="shutdown.html" class="article-card">
+				<img src={shutdown} alt="Shutdown Guide" />
+				<h3>Shutdown Guide</h3>
+			</a>
+			<a href="credits.html" class="article-card">
+				<img src={credits} alt="credits" />
+				<h3>Credits</h3>
+			</a>
+			<a href="RBMK-1500.html" class="article-card">
+				<img src={reactor} alt="credits" />
+				<h3>RBMK-1500</h3>
+			</a>
+			<a href="diagrams-and-maps.html" class="article-card">
+				<img src={diagramsAndMaps} alt="Diagrams & Maps" />
+				<h3>Diagrams & Maps</h3>
+			</a>
+			<a href="locations.html" class="article-card">
+				<img src={locations} alt="Locations" />
+				<h3>Locations</h3>
+			</a>
+			<a href="people.html" class="article-card">
+				<img src={people} alt="Workers of the Plant" />
+				<h3>Workers of the Plant</h3>
+			</a>
+			<a href="points.html" class="article-card">
+				<img src={points} alt="Points System" />
+				<h3>Points System</h3>
+			</a>
+			<a href="badges.html" class="article-card">
+				<img src={badges} alt="Badges" />
+				<h3>Badges</h3>
+			</a>
+			<a href="info-panels.html" class="article-card">
+				<img src={infoPanels} alt="Information Panels" />
+				<h3>Information Panels</h3>
+			</a>
+			<a href="updates.html" class="article-card">
+				<img src={Updates} alt="Updates Page" />
+				<h3>Updates</h3>
+			</a>
+			<a href="communityservers.html" class="article-card">
+				<img src={communityServers} alt="Community Servers" />
+				<h3>Community Servers</h3>
+			</a>
+		</div>
+	{/if}
+	<p
+		id="no-results-message"
+		style="display: none; text-align: center; margin-top: 1rem; color: #ccc;"
+	>
 		No articles found.
 	</p>
 
-	<button class="view-more-btn" aria-expanded="false">View More</button>
+	<!-- svelte-ignore a11y_click_events_have_key_events -->
+	<!-- svelte-ignore a11y_no_static_element_interactions -->
+	<div class="view-more-btn" on:click={() => {
+		alert("pressed");
+		}}>toggle More</div>
+	{@debug toggleViewBool}
 </div>
 
 <style>
-	.hidden {
-		display: none;
-	}
-
 	@media (max-width: 600px) {
 		.articles-grid {
 			grid-template-columns: 1fr;
@@ -251,7 +157,9 @@
 		min-width: 200px;
 		max-width: 100%;
 		outline: none;
-		transition: border-color 0.2s, box-shadow 0.2s;
+		transition:
+			border-color 0.2s,
+			box-shadow 0.2s;
 	}
 
 	#articleSearch:focus {
@@ -268,7 +176,9 @@
 		color: #ddd;
 		display: flex;
 		flex-direction: column;
-		transition: background-color 0.3s ease, box-shadow 0.3s ease;
+		transition:
+			background-color 0.3s ease,
+			box-shadow 0.3s ease;
 		cursor: pointer;
 		user-select: none;
 	}
@@ -310,7 +220,8 @@
 		margin-right: auto;
 	}
 
-	.view-more-btn:hover, .view-more-btn:focus {
+	.view-more-btn:hover,
+	.view-more-btn:focus {
 		background: #3b3b3b;
 		outline: none;
 	}
