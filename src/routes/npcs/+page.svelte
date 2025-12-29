@@ -1,16 +1,12 @@
 <script>
 	import Footer from '$lib/components/Footer.svelte';
 	import '../../app.css';
-	import hero from '$lib/images/hero-banners/Workers Banner.png';
+	import Header from '$lib/components/Header.svelte'
 </script>
 
-<div class="hero min-h-screen" style="background-image: url({hero});">
-	<div class="hero-overlay"></div>
-	<div class="hero-content text-neutral-content text-center">
-		<div class="max-w-sml">
-			<h1 class="mb-5 text-5xl font-bold">Non-Playable Characters</h1>
-			<p class="mb-5">Manage one of the most complex nuclear facilities ever built.</p>
-		</div>
-	</div>
-</div>
+<Header
+    heroImg= "src/lib/images/hero-banners/Reactor Panel.png"
+    title="Oakridge Nuclear Power Station"
+    catchphrase="Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game."
+    button="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station"/>
 <Footer />

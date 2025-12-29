@@ -1,0 +1,38 @@
+{
+    "Guides": [
+        {
+            "href": "/badges/",
+            "name": "Badges",
+            "image": "src/lib/images/hero-banners/badges.png"
+        },
+        {
+            "href": "/startup/",
+            "name": "Startup",
+            "image": "src/lib/images/hero-banners/Startup.png"
+        }
+    ],
+    "Explainers": [
+        {
+            "href": "/control-room/",
+            "name": "Control Room",
+            "image": "src/lib/images/hero-banners/control-room.png"
+        },
+        {
+            "href": "/points/",
+            "name": "Points",
+            "image": "src/lib/images/hero-banners/points.png"
+        }
+    ],
+    "Misc": [
+        {
+            "href": "/credits/",
+            "name": "Credits",
+            "image": "src/lib/images/capybara.png"
+        },
+        {
+            "href": "/credits/",
+            "name": "NPCs",
+            "image": "src/lib/images/hero-banners/npcs.png"
+        }
+    ]
+}

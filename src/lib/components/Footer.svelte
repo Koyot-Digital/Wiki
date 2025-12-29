@@ -1,23 +1,23 @@
 <script>
-	import KDLogo from '$lib/images/capybara.jpg';
+	import KDLogo from '$lib/images/capybara.png';
 	import GitHub from '$lib/images/icons&logos/github-mark.svg';
-    import Discord from '$lib/images/icons&logos/Discord.svg'
+	import Discord from '$lib/images/icons&logos/Discord.svg';
 </script>
 
-<footer class="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
+<footer class="footer footer-horizontal footer-center bg-neutral text-neutral-content p-10">
 	<aside>
 		<img
 			alt="Koyot Digital Logo"
 			width="50"
 			height="50"
 			class="inline-block fill-current"
-            style="border-radius: 0.25rem;"
+			style="border-radius: 0.25rem;"
 			src={KDLogo}
 		/>
 		<p class="font-bold">
 			Koyot Digital
 			<br />
-			"we do the gamies"
+			"we do things"
 		</p>
 		<p>Copyright © {new Date().getFullYear()} - CC BY-SA 4.0</p>
 	</aside>
@@ -25,7 +25,7 @@
 		<div class="grid grid-flow-col gap-4">
 			<!-- GitHub -->
 			<a href="https://github.com/koyot-digital/Wiki/" aria-label="GitHub Link">
-				<img src={GitHub} width="24" height="24" class="fill-current" alt=""/>
+				<img src={GitHub} width="24" height="24" class="fill-current brightness-[0]" alt="" />
 			</a>
 			<!-- YouTube -->
 			<a href="???" aria-label="YouTube Link">
@@ -41,16 +41,9 @@
 					></path>
 				</svg>
 			</a>
-			<a href="somewhere" aria-label="Discord Server link" class="discord">
-				<img src={Discord} width="24" height="18.2" class="fill-current" alt=""/>
+			<a href="https://discord.gg/C4JRMA3gB7" aria-label="Discord Server link" class="discord align-middle pt-1">
+				<img src={Discord} width="24" height="18.2" class="fill-current" alt="" />
 			</a>
 		</div>
 	</nav>
 </footer>
-<style>
-    /* Discords icon wants to be different >:[ */
-    .discord {
-        vertical-align: middle;
-        padding-top: 3.8px;
-    }
-</style>

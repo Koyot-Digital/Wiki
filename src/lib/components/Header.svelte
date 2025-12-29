@@ -1,31 +1,57 @@
 <script lang="ts">
-    export let heroImg: string
-    export let title: string
-    export let catchphrase: string
-    export let button: string = ""
+	export let heroImg: string;
+	export let title: string;
+	export let catchphrase: string;
+	export let button: string = '';
+	import pageData from '$lib/data/pageData.json' with {type: "json"}
+	import { goto } from '$app/navigation'
 </script>
-<div class="navbar bg-base-100 shadow-sm">
-	<div class="flex-none">
-		<button class="btn btn-square btn-ghost" aria-label="Main Menu">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-5 w-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-		</button>
+
+<!-- #region NavBar content -->
+<div class="navbar bg-base-10">
+	<div class="drawer">
+		<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
+		<div class="drawer-content">
+			<label for="my-drawer-1" class="btn drawer-button">ONPS Wiki</label>
+		</div>
+		<div class="drawer-side">
+			<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+			<ul class="menu bg-base-200 min-h-full p-4">
+			<!-- Sidebar content here -->
+			{#each Object.entries(pageData) as [section, pages]} <!-- Note to developers in the future: if using server-side, get rid of json and iterate through directories-->
+				<details class="collapse collapse-arrow" name="my-accordion-det-1" open>
+					<summary class="collapse-title font-semibold txt-lg">{section}</summary>
+					{#each pages as page}
+						<a class="card bg-base-100 image-full w-96 h-18 mb-3" href="{page.href}">
+							<figure>
+								<img src="{page.image}" alt="{page.href}" class = "w-full h-full object-cover"/>
+							</figure>
+							<div class="card-body">
+								<h2 class="card-title">{page.name}</h2>
+							</div>
+						</a>
+					{/each}
+				</details>
+			{/each}
+			</ul>
+		</div>
 	</div>
-	<div class="flex-1">
-		<a class="btn btn-ghost text-xl" href="/">ONPS Wiki</a>
-	</div>
-	<div class="flex-none">
-		<input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-	</div>
+	<!-- <div class="flex-none">
+		<input id="searchBox" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+	</div> -->
 </div>
+<!-- #endregion -->
+<!-- #region Hero content -->
 <div class="hero heros min-h-screen" style="background-image:url('{heroImg}');">
-  <div class="hero-overlay"></div>
-  <div class="hero-content text-neutral-content text-center">
-    <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">{title}</h1>
-      <p class="mb-5">{catchphrase}</p>
-      {#if button !== ""}
-        <button class="btn btn-primary" on:click = {() => (window.open("{button}"))}>Play</button>
-      {/if}
-    </div>
-  </div>
+	<div class="hero-overlay"></div>
+	<div class="hero-content text-neutral-content text-center">
+		<div class="max-w-md">
+			<h1 class="mb-5 text-5xl font-bold">{title}</h1>
+			<p class="mb-5">{catchphrase}</p>
+			{#if button !== ''}
+				<button class="btn btn-primary" on:click={() => window.open('{button}')}>Play</button>
+			{/if}
+		</div>
+	</div>
 </div>
+<!-- #endregion -->

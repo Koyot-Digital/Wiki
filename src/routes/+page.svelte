@@ -6,7 +6,7 @@
 <Header
     heroImg= "src/lib/images/hero-banners/Reactor Panel.png"
     title="Oakridge Nuclear Power Station"
-    catchphrase="Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game." 
+    catchphrase="Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game."
     button="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station"/>
 
 <div class = "m-5 grid grid-cols-3 grid-rows-1 gap-4">
