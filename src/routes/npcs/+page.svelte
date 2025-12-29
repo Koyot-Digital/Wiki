@@ -1,5 +1,5 @@
 <script>
-	import Footer from '$lib/components/footer.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import '../../app.css';
 	import hero from '$lib/images/hero-banners/Workers Banner.png';
 </script>

@@ -1,16 +1,13 @@
 <script>
-  import "../app.css";
-  import heroImg from '$lib/images/hero-banners/Reactor Panel.png'
-  import Hero from '$lib/components/Hero.svelte'
-  import Footer from '$lib/components/footer.svelte'
-  import NavBar from '$lib/components/NavBar.svelte'
+    import "../app.css";
+    import Header from "$lib/components/Header.svelte";
+    import Footer from "$lib/components/Footer.svelte";
 </script>
-<NavBar />
-<Hero
-    heroImg={heroImg}
+<Header
+    heroImg= "src/lib/images/hero-banners/Reactor Panel.png"
     title="Oakridge Nuclear Power Station"
     catchphrase="Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game." 
-    playButton={true} />
+    button="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station"/>
 
 <div class = "m-5 grid grid-cols-3 grid-rows-1 gap-4">
     <div class="card card-border bg-base-100">
@@ -46,4 +43,4 @@
         </div>
     </div>
 </div>
-<Footer />
+<Footer/>
