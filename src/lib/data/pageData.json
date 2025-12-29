@@ -9,6 +9,21 @@
             "href": "/startup/",
             "name": "Startup",
             "image": "src/lib/images/hero-banners/Startup.png"
+        },
+        {
+            "href": "/shutdown/",
+            "name": "Shutdown",
+            "image": "src/lib/images/hero-banners/shutdown.png"
+        },
+        {
+            "href": "/emergency-situations/",
+            "name": "Emergency Situations",
+            "image": "src/lib/images/hero-banners/emergency.png"
+        },
+        {
+            "href": "/locations/",
+            "name": "Locations",
+            "image": "src/lib/images/hero-banners/locations.png"
         }
     ],
     "Explainers": [
@@ -21,6 +36,16 @@
             "href": "/points/",
             "name": "Points",
             "image": "src/lib/images/hero-banners/points.png"
+        },
+        {
+            "href": "/badges/",
+            "name": "Badges",
+            "image": "src/lib/images/hero-banners/badges.png"
+        },
+        {
+            "href": "/info-panels/",
+            "name": "Info Panels",
+            "image": "src/lib/images/hero-banners/info-panels.png"
         }
     ],
     "Misc": [
@@ -30,9 +55,29 @@
             "image": "src/lib/images/capybara.png"
         },
         {
-            "href": "/credits/",
+            "href": "/npcs/",
             "name": "NPCs",
             "image": "src/lib/images/hero-banners/npcs.png"
+        },
+        {
+            "href": "/updates/",
+            "name": "Updates",
+            "image": "src/lib/images/hero-banners/updates.png"
+        },
+        {
+            "href": "/utilities/",
+            "name": "Utilities",
+            "image": "src/lib/images/hero-banners/utilities.png"
+        },
+        {
+            "href": "/glossary/",
+            "name": "Glossary",
+            "image": "src/lib/images/capybara.png"
+        },
+        {
+            "href": "/community-servers/",
+            "name": "Community Servers",
+            "image": "src/lib/images/hero-banners/community-servers.png"
         }
     ]
 }

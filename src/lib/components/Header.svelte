@@ -4,7 +4,6 @@
 	export let catchphrase: string;
 	export let button: string = '';
 	import pageData from '$lib/data/pageData.json' with {type: "json"}
-	import { goto } from '$app/navigation'
 </script>
 
 <!-- #region NavBar content -->
@@ -16,7 +15,7 @@
 		</div>
 		<div class="drawer-side">
 			<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
-			<ul class="menu bg-base-200 min-h-full p-4">
+			<ul class="menu bg-base-200 min-h-full p-4 w-104">
 			<!-- Sidebar content here -->
 			{#each Object.entries(pageData) as [section, pages]} <!-- Note to developers in the future: if using server-side, get rid of json and iterate through directories-->
 				<details class="collapse collapse-arrow" name="my-accordion-det-1" open>
@@ -24,7 +23,7 @@
 					{#each pages as page}
 						<a class="card bg-base-100 image-full w-96 h-18 mb-3" href="{page.href}">
 							<figure>
-								<img src="{page.image}" alt="{page.href}" class = "w-full h-full object-cover"/>
+								<img src="{page.image}" alt="{page.name}" class = "w-full h-full object-cover"/>
 							</figure>
 							<div class="card-body">
 								<h2 class="card-title">{page.name}</h2>
