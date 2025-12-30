@@ -1,10 +1,8 @@
 <script>
-	import '../../../app.css';
+	import '../../../app.css'
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
-	import hero from '$lib/images/hero'
 </script>
-
 <Header
 	heroImg="src/lib/images/hero-banners/banner5.avif"
 	title="Non-Player Characters"

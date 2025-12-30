@@ -1,0 +1,94 @@
+{
+    "developers": [
+        {
+            "DisplayName": "Roscy",
+            "Username": "Ezy_gaming888",
+            "robloxID": 1234567890,
+            "Tier": "LD"
+        },
+        {
+            "DisplayName": "Anticitizen One",
+            "Username": "TrashyLasers",
+            "robloxID": 1234567890,
+            "Tier": "D"
+        },
+        {
+            "DisplayName": "chrxs_dev",
+            "Username": "chrxs_dev",
+            "robloxID": 1234567890,
+            "Tier": "D"
+        },
+        {
+            "DisplayName": "Gottie",
+            "Username": "GottyXx2",
+            "robloxID": 167084004,
+            "Tier": "SD"
+        }
+    ],
+    "testers": [
+        {
+            "DisplayName": "Stefan",
+            "Username": "inami_rin",
+            "robloxID": 132749423,
+            "Tier": "T"
+        },
+        {
+            "DisplayName": "Eugene_Fission",
+            "Username": "Slonokot",
+            "robloxID": 337362307,
+            "Tier": "T"
+        },
+        {
+            "DisplayName": "NervA_Mechanica",
+            "Username": "WoodynBuzz",
+            "robloxID": 26130438,
+            "Tier": "T"
+        },
+        {
+            "DisplayName": "Shozii",
+            "Username": "warface1234455",
+            "robloxID": 1234567890,
+            "Tier": "T"
+        }
+    ],
+    "moderators": [
+        {
+            "DisplayName": "NEODIS",
+            "Username": "_neodis",
+            "robloxID": 1234567890,
+            "Tier": "CRM"
+        },
+        {
+            "DisplayName": "Astr0",
+            "Username": "astroneero",
+            "robloxID": 536560884,
+            "Tier": "M"
+        },
+        {
+            "DisplayName": "Ayron",
+            "Username": "virohybrid",
+            "robloxID": 171093439,
+            "Tier": "M"
+        },
+        {
+            "DisplayName": "Gladi",
+            "Username": "gladi_._",
+            "robloxID": 566191026,
+            "Tier": "M"
+        },
+        {
+            "DisplayName": "NateTheGreat",
+            "Username": "NateTheGreat",
+            "robloxID": 1234567890,
+            "Tier": "M"
+        }
+    ],
+    "contributors": [
+        {
+            "DisplayName": "Bufflehead",
+            "Username": "Gargleblaster",
+            "robloxID": 8311884384,
+            "Tier": "C"
+        }
+    ]
+}
