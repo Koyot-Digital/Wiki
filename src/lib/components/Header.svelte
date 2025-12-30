@@ -17,6 +17,7 @@
 			<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
 			<ul class="menu bg-base-200 min-h-full p-4 w-104">
 			<!-- Sidebar content here -->
+			<!-- Put home link somewhere -->
 			{#each Object.entries(pageData) as [section, pages]} <!-- Note to developers in the future: if using server-side, get rid of json and iterate through directories-->
 				<details class="collapse collapse-arrow" name="my-accordion-det-1" open>
 					<summary class="collapse-title font-semibold txt-lg">{section}</summary>

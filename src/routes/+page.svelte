@@ -4,14 +4,14 @@
     import Footer from "$lib/components/Footer.svelte";
 </script>
 <Header
-    heroImg= "src/lib/images/hero-banners/Reactor Panel.png"
+    heroImg= "src/lib/images/hero-banners/banner5.avif"
     title="Oakridge Nuclear Power Station"
     catchphrase="Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game."
     button="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station"/>
 
 <div class = "m-5 grid grid-cols-3 grid-rows-1 gap-4">
     <div class="card card-border bg-base-100">
-        <figure><img src="src/lib/images/hero-banners/banner5.png" alt = "welcome"/></figure>
+        <figure><img src="src/lib/images/hero-banners/emergency.avif" alt = "welcome"/></figure>
         <div class="card-body">
             <h2 class="card-title">Update Version 0.26.4 Beta</h2>
             <ul>
@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="card card-border bg-base-100">
-        <figure><img src="src/lib/images/hero-banners/Locations.png" alt = "about"/></figure>
+        <figure><img src="src/lib/images/hero-banners/Locations.avif" alt = "about"/></figure>
         <div class="card-body">
             <h2 class="card-title">About the facility</h2>
             <p>

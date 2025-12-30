@@ -1,83 +1,73 @@
 {
     "Guides": [
         {
-            "href": "/badges/",
+            "href": "/guides/badges/",
             "name": "Badges",
-            "image": "src/lib/images/hero-banners/badges.png"
+            "image": "../../../src/lib/images/hero-banners/badges.avif"
         },
         {
-            "href": "/startup/",
-            "name": "Startup",
-            "image": "src/lib/images/hero-banners/Startup.png"
+            "href": "/guides/reactorOperations/",
+            "name": "Reactor Operation",
+            "image": "../../../src/lib/images/hero-banners/Startup.avif"
         },
         {
-            "href": "/shutdown/",
-            "name": "Shutdown",
-            "image": "src/lib/images/hero-banners/shutdown.png"
-        },
-        {
-            "href": "/emergency-situations/",
+            "href": "/guides/emergency-situations/",
             "name": "Emergency Situations",
-            "image": "src/lib/images/hero-banners/emergency.png"
+            "image": "../../../src/lib/images/hero-banners/emergency.avif"
         },
         {
-            "href": "/locations/",
+            "href": "/guides/locations/",
             "name": "Locations",
-            "image": "src/lib/images/hero-banners/locations.png"
+            "image": "../../../src/lib/images/hero-banners/locations.avif"
         }
     ],
     "Explainers": [
         {
-            "href": "/control-room/",
+            "href": "/explainers/control-room/",
             "name": "Control Room",
-            "image": "src/lib/images/hero-banners/control-room.png"
+            "image": "../../../src/lib/images/hero-banners/control-room.avif"
         },
         {
-            "href": "/points/",
+            "href": "/explainers/points/",
             "name": "Points",
-            "image": "src/lib/images/hero-banners/points.png"
+            "image": "../../../src/lib/images/hero-banners/points.avif"
         },
         {
-            "href": "/badges/",
-            "name": "Badges",
-            "image": "src/lib/images/hero-banners/badges.png"
-        },
-        {
-            "href": "/info-panels/",
+            "href": "/explainers/info-panels/",
             "name": "Info Panels",
-            "image": "src/lib/images/hero-banners/info-panels.png"
+            "image": "../../../src/lib/images/hero-banners/info-panels.avif"
+        },
+        {
+            "href": "/misc/glossary/",
+            "name": "Glossary",
+            "image": "../../../src/lib/images/capybara.png"
         }
     ],
     "Misc": [
         {
-            "href": "/credits/",
+            "href": "/misc/credits/",
             "name": "Credits",
-            "image": "src/lib/images/capybara.png"
+            "image": "../../../src/lib/images/capybara.png"
         },
         {
-            "href": "/npcs/",
+            "href": "/misc/npcs/",
             "name": "NPCs",
-            "image": "src/lib/images/hero-banners/npcs.png"
+            "image": "../../../src/lib/images/hero-banners/npcs.avif"
         },
         {
-            "href": "/updates/",
+            "href": "/misc/updates/",
             "name": "Updates",
-            "image": "src/lib/images/hero-banners/updates.png"
+            "image": "../../../src/lib/images/hero-banners/updates.avif"
         },
         {
-            "href": "/utilities/",
+            "href": "/misc/utilities/",
             "name": "Utilities",
-            "image": "src/lib/images/hero-banners/utilities.png"
+            "image": "../../../src/lib/images/hero-banners/utilities.avif"
         },
         {
-            "href": "/glossary/",
-            "name": "Glossary",
-            "image": "src/lib/images/capybara.png"
-        },
-        {
-            "href": "/community-servers/",
+            "href": "/misc/community-servers/",
             "name": "Community Servers",
-            "image": "src/lib/images/hero-banners/community-servers.png"
+            "image": "../../../src/lib/images/hero-banners/community-servers.avif"
         }
     ]
 }
