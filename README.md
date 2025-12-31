@@ -4,3 +4,4 @@
 * https://svelte.dev
 * https://tailwindcss.com/
 * https://daisyui.com/
+* https://heroicons.com/
