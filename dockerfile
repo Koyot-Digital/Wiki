@@ -1,17 +1,18 @@
-FROM debian:bookworm
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package*.json .
+RUN npm ci
+COPY . .
+RUN npm install -g @sveltejs/kit
+RUN npm install -g daisyui
+RUN npm run build
+RUN npm prune --production
 
-RUN sudo apt install git npm nvm -y
-RUN sudo npm install -g @sveltejs/kit
-RUN sudo npm install -g daisyui
-RUN git clone https://github.com/koyot-digital/wiki.git
-WORKDIR /wiki
-RUN npm install
-# Download and install nvm, Node.js version 24, and verify installations
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash && \
-    . "$HOME/.nvm/nvm.sh" && \
-    nvm install 24 && \
-    node -v && \
-    npm -v
-
-EXPOSE 5173
-CMD npm run dev -- --host
+FROM node:18-alpine
+WORKDIR /app
+COPY --from=builder /app/build build/
+COPY --from=builder /app/node_modules node_modules/
+COPY package.json .
+EXPOSE 3000
+ENV NODE_ENV=production
+CMD [ "node", "build" ]
