@@ -1,5 +1,5 @@
 <script>
-	import KDLogo from '$lib/images/capybara.png';
+	import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif';
 	import GitHub from '$lib/images/icons&logos/github-mark.svg';
 	import Discord from '$lib/images/icons&logos/Discord.svg';
 </script>
@@ -8,8 +8,8 @@
 	<aside>
 		<img
 			alt="Koyot Digital Logo"
-			width="50"
-			height="50"
+			width="70"
+			height="70"
 			class="inline-block fill-current"
 			style="border-radius: 0.25rem;"
 			src={KDLogo}
@@ -25,24 +25,24 @@
 		<div class="grid grid-flow-col gap-4">
 			<!-- GitHub -->
 			<a href="https://github.com/koyot-digital/Wiki/" aria-label="GitHub Link">
-				<img src={GitHub} width="24" height="24" class="fill-current brightness-[0]" alt="" />
+				<img src={GitHub} width="24" height="24" class="fill-stone-100" alt="" />
 			</a>
 			<!-- YouTube -->
-			<a href="???" aria-label="YouTube Link">
+			<a href="https://www.youtube.com/@KoyotDigital" aria-label="YouTube Link">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
 					height="24"
 					viewBox="0 0 24 24"
-					class="fill-current"
+					class="fill-stone-100"
 				>
 					<path
 						d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
 					></path>
 				</svg>
 			</a>
-			<a href="https://discord.gg/C4JRMA3gB7" aria-label="Discord Server link" class="discord align-middle pt-1">
-				<img src={Discord} width="24" height="18.2" class="fill-current" alt="" />
+			<a href="https://discord.gg/C4JRMA3gB7" aria-label="Discord Server link" class="align-middle pt-1">
+				<img src={Discord} width="24" height="18.2" class="fill-stone-100" alt="" />
 			</a>
 		</div>
 	</nav>
