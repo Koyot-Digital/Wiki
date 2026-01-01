@@ -3,8 +3,6 @@ WORKDIR /app
 COPY package*.json .
 RUN npm ci
 COPY . .
-RUN npm install -g @sveltejs/kit
-RUN npm install -g daisyui
 RUN npm run build
 RUN npm prune --production
 
