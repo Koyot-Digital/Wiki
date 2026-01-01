@@ -11,20 +11,8 @@
 	<div class="drawer">
 		<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
 		<div class="drawer-content">
-			<label for="my-drawer-1" class="btn drawer-button"
-				><svg
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke-width="1.5"
-					stroke="currentColor"
-					class="size-6"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-					/>
+			<label for="my-drawer-1" class="btn drawer-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
 				</svg>
 			</label>
 		</div>
@@ -54,9 +42,9 @@
 			</ul>
 		</div>
 	</div>
-	<!-- <div class="flex-none">
+	<div class="flex-none">
 		<input id="searchBox" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-	</div> -->
+	</div>
 </div>
 <!-- #endregion -->
 <!-- #region Hero content -->

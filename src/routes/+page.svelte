@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
     import "../app.css";
     import Header from "$lib/components/Header.svelte";
     import Footer from "$lib/components/Footer.svelte";
 </script>
 <Header
-    heroImg= "src/lib/images/hero-banners/banner5.avif"
+    heroImg= "src/lib/images/hero-banners/Reactor Panel.avif"
     title="Oakridge Nuclear Power Station"
     catchphrase="Experience the challenges and responsibilities of managing a nuclear power plant in this immersive Roblox game."
     button="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station"/>

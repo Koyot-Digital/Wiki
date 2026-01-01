@@ -6,7 +6,7 @@
             "image": "../../../src/lib/images/hero-banners/badges.avif"
         },
         {
-            "href": "/guides/reactorOperations/",
+            "href": "/guides/reactor-operations/",
             "name": "Reactor Operation",
             "image": "../../../src/lib/images/hero-banners/Startup.avif"
         },
@@ -34,7 +34,7 @@
         },
         {
             "href": "/explainers/info-panels/",
-            "name": "Info Panels",
+            "name": "Information Panels",
             "image": "../../../src/lib/images/hero-banners/info-panels.avif"
         },
         {

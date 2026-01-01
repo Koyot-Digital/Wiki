@@ -115,9 +115,9 @@
 				Tier: 'C'
 			},
 			{
-				DisplayName: 'Bufflehead',
-				Username: 'Gargleblaster',
-				robloxID: 8311884384,
+				DisplayName: 'REDACTED',
+				Username: 'REDACTED',
+				robloxID: 967748232,
 				Tier: 'C'
 			}
 		]
