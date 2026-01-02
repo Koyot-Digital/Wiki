@@ -1,7 +1,7 @@
 {
-    "recommendations": [
-        "bradlc.vscode-tailwindcss",
-        "svelte.svelte-vscode",
-        "ardenivanov.svelte-intellisense"
-    ]
+	"recommendations": [
+		"bradlc.vscode-tailwindcss",
+		"svelte.svelte-vscode",
+		"ardenivanov.svelte-intellisense"
+	]
 }

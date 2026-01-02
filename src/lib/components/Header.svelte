@@ -1,13 +1,13 @@
 <script lang="ts">
-	export let heroImg: string;
-	export let title: string;
-	export let catchphrase: string;
-	export let button: string = '';
-	import pageData from '$lib/data/pageData.json' with { type: 'json' };
+	export let heroImg: string
+	export let title: string
+	export let catchphrase: string
+	export let button: string = ""
+	import pageData from "$lib/data/pageData.json" with { type: "json" }
 </script>
 
 <!-- #region NavBar content -->
-<div class="navbar bg-base-10">
+<div class="navbar bg-base-100 sticky top-0 z-50">
 	<div class="drawer">
 		<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
 		<div class="drawer-content">
@@ -17,7 +17,8 @@
 			</label>
 		</div>
 		<div class="drawer-side">
-			<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+			<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"
+			></label>
 			<ul class="menu bg-base-200 min-h-full p-4 w-104">
 				<!-- Sidebar content here -->
 				<ul class="menu image-full w-96 h-18 -mb-3">

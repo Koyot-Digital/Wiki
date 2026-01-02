@@ -1,73 +1,73 @@
 {
-    "Guides": [
-        {
-            "href": "/guides/badges/",
-            "name": "Badges",
-            "image": "../../../src/lib/images/hero-banners/badges.avif"
-        },
-        {
-            "href": "/guides/reactor-operations/",
-            "name": "Reactor Operation",
-            "image": "../../../src/lib/images/hero-banners/Startup.avif"
-        },
-        {
-            "href": "/guides/emergency-situations/",
-            "name": "Emergency Situations",
-            "image": "../../../src/lib/images/hero-banners/emergency.avif"
-        },
-        {
-            "href": "/guides/locations/",
-            "name": "Locations",
-            "image": "../../../src/lib/images/hero-banners/locations.avif"
-        }
-    ],
-    "Explainers": [
-        {
-            "href": "/explainers/control-room/",
-            "name": "Control Room",
-            "image": "../../../src/lib/images/hero-banners/control-room.avif"
-        },
-        {
-            "href": "/explainers/points/",
-            "name": "Points",
-            "image": "../../../src/lib/images/hero-banners/points.avif"
-        },
-        {
-            "href": "/explainers/info-panels/",
-            "name": "Information Panels",
-            "image": "../../../src/lib/images/hero-banners/info-panels.avif"
-        },
-        {
-            "href": "/misc/glossary/",
-            "name": "Glossary",
-            "image": "../../../src/lib/images/capybara.png"
-        }
-    ],
-    "Misc": [
-        {
-            "href": "/misc/credits/",
-            "name": "Credits",
-            "image": "../../../src/lib/images/hero-banners/credits.avif"
-        },
-        {
-            "href": "/misc/npcs/",
-            "name": "NPCs",
-            "image": "../../../src/lib/images/hero-banners/npcs.avif"
-        },
-        {
-            "href": "/misc/updates/",
-            "name": "Updates",
-            "image": "../../../src/lib/images/hero-banners/updates.avif"
-        },
-        {
-            "href": "/misc/utilities/",
-            "name": "Utilities",
-            "image": "../../../src/lib/images/hero-banners/utilities.avif"
-        },
-        {
-            "href": "/misc/community-servers/",
-            "name": "Community Servers",
-            "image": "../../../src/lib/images/hero-banners/community-servers.avif"
-        }
-    ]
+	"Guides": [
+		{
+			"href": "/guides/badges/",
+			"name": "Badges",
+			"image": "../../../src/lib/images/hero-banners/badges.avif"
+		},
+		{
+			"href": "/guides/reactor-operations/",
+			"name": "Reactor Operation",
+			"image": "../../../src/lib/images/hero-banners/Startup.avif"
+		},
+		{
+			"href": "/guides/emergency-situations/",
+			"name": "Emergency Situations",
+			"image": "../../../src/lib/images/hero-banners/emergency.avif"
+		},
+		{
+			"href": "/guides/locations/",
+			"name": "Locations",
+			"image": "../../../src/lib/images/hero-banners/locations.avif"
+		}
+	],
+	"Explainers": [
+		{
+			"href": "/explainers/control-room/",
+			"name": "Control Room",
+			"image": "../../../src/lib/images/hero-banners/control-room.avif"
+		},
+		{
+			"href": "/explainers/points/",
+			"name": "Points",
+			"image": "../../../src/lib/images/hero-banners/points.avif"
+		},
+		{
+			"href": "/explainers/info-panels/",
+			"name": "Information Panels",
+			"image": "../../../src/lib/images/hero-banners/info-panels.avif"
+		},
+		{
+			"href": "/misc/glossary/",
+			"name": "Glossary",
+			"image": "../../../src/lib/images/capybara.png"
+		}
+	],
+	"Misc": [
+		{
+			"href": "/misc/credits/",
+			"name": "Credits",
+			"image": "../../../src/lib/images/hero-banners/credits.avif"
+		},
+		{
+			"href": "/misc/npcs/",
+			"name": "NPCs",
+			"image": "../../../src/lib/images/hero-banners/npcs.avif"
+		},
+		{
+			"href": "/misc/updates/",
+			"name": "Updates",
+			"image": "../../../src/lib/images/hero-banners/updates.avif"
+		},
+		{
+			"href": "/misc/utilities/",
+			"name": "Utilities",
+			"image": "../../../src/lib/images/hero-banners/utilities.avif"
+		},
+		{
+			"href": "/misc/community-servers/",
+			"name": "Community Servers",
+			"image": "../../../src/lib/images/hero-banners/community-servers.avif"
+		}
+	]
 }
