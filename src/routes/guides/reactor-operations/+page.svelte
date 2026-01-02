@@ -7,8 +7,8 @@
 
 <Header
 	heroImg="/src/lib/images/hero-banners/Startup.avif"
-	title="Reactor Operation Checklists"
-	catchphrase="'So, how do i use this again?' - Trainee"
+	title="Reactor Operations"
+	catchphrase="How does this work again?"
 />
 
 <div class="tabs tabs-lift m-5">

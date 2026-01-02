@@ -1,9 +1,9 @@
 # Licensing and Copyright of This Reposory.
 
 Unless otherwise stated, all files in this repository are released under the
-**Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0), a copy of wich avalable at `/legalcode.txt`.**
+**Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0), a copy of which avalable at `/legalcode.txt`.**
 
-The following files and directories are excluded from the CC BY-SA 4.0 license and remain under their original copyright and/or license terms, licened to us by the original owners:
+The following files and directories are excluded from the CC BY-SA 4.0 license and remain under their original copyright and/or license terms, licensed to us by the original owners:
 
 - All files in `src/lib/images/servers/`
 

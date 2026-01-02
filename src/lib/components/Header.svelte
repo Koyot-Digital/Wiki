@@ -11,7 +11,7 @@
 	<div class="drawer">
 		<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
 		<div class="drawer-content">
-			<label for="my-drawer-1" class="btn drawer-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+			<label for="my-drawer-1" class="btn bg-transparent shadow-none border-0 drawer-button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
 				</svg>
 			</label>
@@ -21,6 +21,11 @@
 			></label>
 			<ul class="menu bg-base-200 min-h-full p-4 w-104">
 				<!-- Sidebar content here -->
+				<a class="card bg-base-100 image-full w-96 h-18 mb-3" href="/">
+					<figure>
+						<img src= "src/lib/images/hero-banners/Reactor Panel.avif" alt="home" class="w-full h-full object-cover" />
+					</figure>
+				</a>
 				<ul class="menu image-full w-96 h-18 -mb-3">
 					<li><a href="/">Home</a></li>
 				</ul>
