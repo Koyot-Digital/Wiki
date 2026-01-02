@@ -1,5 +1,6 @@
 <script>
 	import KDLogo from "$lib/images/icons&logos/Koyot-Digital-Emblem.avif"
+	import LicenceImg from "$lib/images/icons&logos/license.svg"
 	import GitHub from "$lib/images/icons&logos/github-mark.svg"
 	import Discord from "$lib/images/icons&logos/Discord.svg"
 </script>
@@ -21,7 +22,7 @@
 			<br />
 			"we do things"
 		</p>
-		<p>Copyright © {new Date().getFullYear()} - CC BY-SA 4.0</p>
+		<p>Copyright © {new Date().getFullYear()} - CC BY-SA 4.0, see LICENSE.md for details.</p>
 	</aside>
 	<nav>
 		<div class="grid grid-flow-col gap-4">
@@ -58,4 +59,14 @@
 			</a>
 		</div>
 	</nav>
+	<aside>
+		<img
+			alt="Licenced under CC BY-SA 4.0"
+			height="35"
+			width= "100"
+			class="inline-block fill-current"
+			style="border-radius: 0.5rem;"
+			src={LicenceImg}
+		/>
+	</aside>
 </footer>

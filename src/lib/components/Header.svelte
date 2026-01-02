@@ -26,7 +26,7 @@
 				</ul>
 				{#each Object.entries(pageData) as [section, pages]}
 					<!-- Note to developers in the future: if using server-side, get rid of json and iterate through directories-->
-					<details class="collapse collapse-arrow" name="my-accordion-det-1" open>
+					<details class="collapse collapse-arrow" name="my-accordion-det-1">
 						<summary class="collapse-title font-semibold txt-lg">{section}</summary>
 						{#each pages as page}
 							<a class="card bg-base-100 image-full w-96 h-18 mb-3" href={page.href}>
@@ -56,7 +56,7 @@
 			<h1 class="mb-5 text-5xl font-bold">{title}</h1>
 			<p class="mb-5">{catchphrase}</p>
 			{#if button !== ''}
-				<button class="btn btn-primary" on:click={() => window.open('{button}')}>Play</button>
+				<button class="btn btn-primary" on:click={() => window.open(button)}>Play</button>
 			{/if}
 		</div>
 	</div>

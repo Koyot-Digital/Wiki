@@ -50,6 +50,7 @@
 		"svelte"
 	],
 	"dependencies": {
+		"@sveltejs/enhanced-img": "^0.9.2",
 		"@tailwindcss/vite": "^4.1.18",
 		"daisyui": "^5.5.14",
 		"tailwindcss": "^4.1.18"

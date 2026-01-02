@@ -14,7 +14,7 @@
 <div class="m-5 grid grid-cols-3 grid-rows-1 gap-4">
 	<div class="card card-border bg-base-100">
 		<figure>
-			<img src="src/lib/images/hero-banners/emergency.avif" alt="welcome" />
+			<img src="/src/lib/images/hero-banners/emergency.avif" alt="welcome" />
 		</figure>
 		<div class="card-body">
 			<h2 class="card-title">Update Version 0.26.4 Beta</h2>
