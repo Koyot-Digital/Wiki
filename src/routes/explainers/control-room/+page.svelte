@@ -1,14 +1,14 @@
 <script>
-	import "../../../app.css"
-	import Header from "$lib/components/Header.svelte"
-	import Footer from "$lib/components/Footer.svelte"
+	import '../../../app.css'
+	import Header from '$lib/components/Header.svelte'
+	import Footer from '$lib/components/Footer.svelte'
 </script>
 
 <Header
 	heroImg="/src/lib/images/hero-banners/control-room.avif"
 	title="Control Room"
-	catchphrase='"REACTOR EXPLOTET!" - Visitor, probably'
-/>
+	catchphrase=""REACTOR EXPLOTET!" - Visitor, probably"/>
+<!-- pre -->
 
 <div class="join join-vertical bg-base-100 align-">
 	<div class="collapse collapse-arrow join-item border-base-300 border">

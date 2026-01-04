@@ -1,34 +1,34 @@
 <script lang="ts">
 	export let item: string
 	export let action: string
-	export let info: string = ""
-	export let warning: string = ""
-	export let actionColor: string = "0" // 0 null/Default, 1 Red, 2 YELLow/Orange, 3 Green, 4 Blue, everything else is defaulted
+	export let info: string = ''
+	export let warning: string = ''
+	export let actionColor: string = '0' // 0 null/Default, 1 Red, 2 YELLow/Orange, 3 Green, 4 Blue, everything else is defaulted
 	export let indent: boolean = false
-	let one = ["text-red-500", "stroke-red-500"]
-	let two = ["text-yellow-500", "stroke-yellow-500"]
-	let three = ["text-green-500", "stroke-green-500"]
-	let four = ["text-sky-400", "stroke-sky-400"]
+	let one = ['text-red-500', 'stroke-red-500']
+	let two = ['text-yellow-500', 'stroke-yellow-500']
+	let three = ['text-green-500', 'stroke-green-500']
+	let four = ['text-sky-400', 'stroke-sky-400']
 	function getColor(c: string, icon: boolean = false) {
-		if (c === "1") {
+		if (c === '1') {
 			if (icon) {
 				return one[1]
 			} else {
 				return one[0]
 			}
-		} else if (c === "2") {
+		} else if (c === '2') {
 			if (icon) {
 				return two[1]
 			} else {
 				return two[0]
 			}
-		} else if (c === "3") {
+		} else if (c === '3') {
 			if (icon) {
 				return three[1]
 			} else {
 				return three[0]
 			}
-		} else if (c === "4") {
+		} else if (c === '4') {
 			if (icon) {
 				return four[1]
 			} else {
@@ -53,21 +53,21 @@
 
 	function toIndent(i: boolean) {
 		if (i === true) {
-			return "ml-7"
+			return 'ml-7'
 		} else {
-			return ""
+			return ''
 		}
 	}
 
-	import { onMount } from "svelte"
-	import { get } from "svelte/store"
+	import { onMount } from 'svelte'
+	import { get } from 'svelte/store'
 	let width = 0
 	onMount(() => {
 		const update = () => (width = window.innerWidth)
 		update()
 
-		window.addEventListener("resize", update)
-		return () => window.removeEventListener("resize", update)
+		window.addEventListener('resize', update)
+		return () => window.removeEventListener('resize', update)
 	})
 </script>
 

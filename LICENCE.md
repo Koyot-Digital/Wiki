@@ -13,4 +13,4 @@ The following files and directories are excluded from the CC BY-SA 4.0 license a
 
 These excluded files may be subject to third-party rights or restrictions. They may not be reused, modified, or redistributed without permission from their respective copyright holders.
 
-***The repository maintainers are not responsible for any damages, claims, or legal issues that may arise from the reuse, modification, or redistribution of these excluded files.***
+**_The repository maintainers are not responsible for any damages, claims, or legal issues that may arise from the reuse, modification, or redistribution of these excluded files._**

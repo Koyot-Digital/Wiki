@@ -1,8 +1,8 @@
 <script>
-	import "../../../app.css"
-	import Header from "$lib/components/Header.svelte"
-	import Footer from "$lib/components/Footer.svelte"
-	import Indicator from "$lib/components/ControlRoomIndicator.svelte"
+	import '../../../app.css'
+	import Header from '$lib/components/Header.svelte'
+	import Footer from '$lib/components/Footer.svelte'
+	import Indicator from '$lib/components/ControlRoomIndicator.svelte'
 </script>
 
 <Header
@@ -19,7 +19,8 @@
 		</div>
 		<div class="collapse-content text-sm">
 			<div class="grid grid-cols-4 gap-4">
-				<Indicator name="Test" description="test test" color="red">slot</Indicator>
+				<Indicator name="Test" description="test test" color="red">slot</Indicator
+				>
 			</div>
 		</div>
 	</div>

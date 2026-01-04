@@ -4,12 +4,12 @@
 	export let color: String
 
 	function getColor() {
-		if (color === "white") {
-			return "bg-neutral-50"
-		} else if (color === "yellow") {
-			return "bg-amber-400"
-		} else if (color === "red") {
-			return "bg-red-500"
+		if (color === 'white') {
+			return 'bg-neutral-50'
+		} else if (color === 'yellow') {
+			return 'bg-amber-400'
+		} else if (color === 'red') {
+			return 'bg-red-500'
 		}
 	}
 </script>
@@ -31,14 +31,15 @@
 	<div class="drawer-content cursor-pointer drawer-button">
 		<div class="card w-96 {getColor()} card-md shadow-sm">
 			<div class="card-body">
-				<label for="my-drawer-5" class="{getColor()}">Open drawer</label>
+				<label for="my-drawer-5" class={getColor()}>Open drawer</label>
 			</div>
 		</div>
 	</div>
-	<div class="drawer-side ">
-		<label for="my-drawer-5" aria-label="close sidebar" class="drawer-overlay"></label>
+	<div class="drawer-side">
+		<label for="my-drawer-5" aria-label="close sidebar" class="drawer-overlay"
+		></label>
 		<ul class="menu bg-base-200 min-h-full w-80 p-4">
-		<slot></slot>
+			<slot></slot>
 		</ul>
 	</div>
 </div>

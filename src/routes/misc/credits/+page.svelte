@@ -1,124 +1,124 @@
 <script>
-	import "../../../app.css"
-	import Header from "$lib/components/Header.svelte"
-	import Footer from "$lib/components/Footer.svelte"
-	import hero from "$lib/images/hero-banners/credits.avif"
+	import '../../../app.css'
+	import Header from '$lib/components/Header.svelte'
+	import Footer from '$lib/components/Footer.svelte'
+	import hero from '$lib/images/hero-banners/credits.avif'
 	// import creditsData from '$lib/data/creditsData.json' with { type: 'json' };
 	let developerData = {
 		developers: [
 			{
-				DisplayName: "Roscy",
-				Username: "Ezy_gaming888",
+				DisplayName: 'Roscy',
+				Username: 'Ezy_gaming888',
 				robloxID: 1234567890,
-				Tier: "LD",
+				Tier: 'LD',
 			},
 			{
-				DisplayName: "Gottie",
-				Username: "GottyXx2",
+				DisplayName: 'Gottie',
+				Username: 'GottyXx2',
 				robloxID: 167084004,
-				Tier: "SD",
+				Tier: 'SD',
 			},
 			{
-				DisplayName: "Anticitizen One",
-				Username: "TrashyLasers",
+				DisplayName: 'Anticitizen One',
+				Username: 'TrashyLasers',
 				robloxID: 1234567890,
-				Tier: "D",
+				Tier: 'D',
 			},
 			{
-				DisplayName: "chrxs_dev",
-				Username: "chrxs_dev",
+				DisplayName: 'chrxs_dev',
+				Username: 'chrxs_dev',
 				robloxID: 1234567890,
-				Tier: "D",
+				Tier: 'D',
 			},
 		],
 	}
 	let testerData = {
 		testers: [
 			{
-				DisplayName: "Stefan",
-				Username: "inami_rin",
+				DisplayName: 'Stefan',
+				Username: 'inami_rin',
 				robloxID: 132749423,
-				Tier: "T",
+				Tier: 'T',
 			},
 			{
-				DisplayName: "Eugene_Fission",
-				Username: "Slonokot",
+				DisplayName: 'Eugene_Fission',
+				Username: 'Slonokot',
 				robloxID: 337362307,
-				Tier: "T",
+				Tier: 'T',
 			},
 			{
-				DisplayName: "NervA_Mechanica",
-				Username: "WoodynBuzz",
+				DisplayName: 'NervA_Mechanica',
+				Username: 'WoodynBuzz',
 				robloxID: 26130438,
-				Tier: "T",
+				Tier: 'T',
 			},
 			{
-				DisplayName: "Shozii",
-				Username: "warface1234455",
+				DisplayName: 'Shozii',
+				Username: 'warface1234455',
 				robloxID: 1234567890,
-				Tier: "T",
+				Tier: 'T',
 			},
 		],
 	}
 	let moderatorData = {
 		moderators: [
 			{
-				DisplayName: "NEODIS",
-				Username: "_neodis",
+				DisplayName: 'NEODIS',
+				Username: '_neodis',
 				robloxID: 1234567890,
-				Tier: "CRM",
+				Tier: 'CRM',
 			},
 			{
-				DisplayName: "Astr0",
-				Username: "astroneero",
+				DisplayName: 'Astr0',
+				Username: 'astroneero',
 				robloxID: 536560884,
-				Tier: "M",
+				Tier: 'M',
 			},
 			{
-				DisplayName: "Ayron",
-				Username: "virohybrid",
+				DisplayName: 'Ayron',
+				Username: 'virohybrid',
 				robloxID: 171093439,
-				Tier: "M",
+				Tier: 'M',
 			},
 			{
-				DisplayName: "Gladi",
-				Username: "gladi_._",
+				DisplayName: 'Gladi',
+				Username: 'gladi_._',
 				robloxID: 566191026,
-				Tier: "M",
+				Tier: 'M',
 			},
 			{
-				DisplayName: "NateTheGreat",
-				Username: "NateTheGreat",
+				DisplayName: 'NateTheGreat',
+				Username: 'NateTheGreat',
 				robloxID: 1234567890,
-				Tier: "M",
+				Tier: 'M',
 			},
 		],
 	}
 	let contributors = {
 		contributors: [
 			{
-				DisplayName: "Bufflehead",
-				Username: "Gargleblaster",
+				DisplayName: 'Bufflehead',
+				Username: 'Gargleblaster',
 				robloxID: 8311884384,
-				Tier: "C",
+				Tier: 'C',
 			},
 			{
-				DisplayName: "ParrotMan",
-				Username: "itsthegrumpyparrotman",
+				DisplayName: 'ParrotMan',
+				Username: 'itsthegrumpyparrotman',
 				robloxID: 4038866427,
-				Tier: "C",
+				Tier: 'C',
 			},
 			{
-				DisplayName: "OneDuck",
-				Username: "DuckQuack001",
+				DisplayName: 'OneDuck',
+				Username: 'DuckQuack001',
 				robloxID: 553450691,
-				Tier: "C",
+				Tier: 'C',
 			},
 			{
-				DisplayName: "REDACTED",
-				Username: "REDACTED",
+				DisplayName: 'REDACTED',
+				Username: 'REDACTED',
 				robloxID: 967748232,
-				Tier: "C",
+				Tier: 'C',
 			},
 		],
 	}
@@ -152,11 +152,11 @@
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">{data.DisplayName}</h2>
-					{#if data.Tier === "LD"}
+					{#if data.Tier === 'LD'}
 						<p>Lead Developer</p>
-					{:else if data.Tier === "SD"}
+					{:else if data.Tier === 'SD'}
 						<p>Senior Developer</p>
-					{:else if data.Tier === "D"}
+					{:else if data.Tier === 'D'}
 						<p>Junior Developer</p>
 					{:else}
 						<p class="text-error text-lg">PARSING ERROR!!!</p>
@@ -191,7 +191,7 @@
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">{data.DisplayName}</h2>
-					{#if data.Tier === "T"}
+					{#if data.Tier === 'T'}
 						<p>Tester (AKA: Who we blame)</p>
 					{:else}
 						<p class="text-error text-lg">PARSING ERROR!!!</p>
@@ -227,9 +227,9 @@
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">{data.DisplayName}</h2>
-					{#if data.Tier === "M"}
+					{#if data.Tier === 'M'}
 						<p>Moderator</p>
-					{:else if data.Tier === "CRM"}
+					{:else if data.Tier === 'CRM'}
 						<p>Community Relations Moderator</p>
 					{:else}
 						<p class="text-error text-lg">PARSING ERROR!!!</p>

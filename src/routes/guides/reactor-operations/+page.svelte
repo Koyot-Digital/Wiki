@@ -1,8 +1,8 @@
 <script>
-	import "../../../app.css"
-	import Footer from "$lib/components/Footer.svelte"
-	import Header from "$lib/components/Header.svelte"
-	import TickBox from "$lib/components/ChecklistItem.svelte"
+	import '../../../app.css'
+	import Footer from '$lib/components/Footer.svelte'
+	import Header from '$lib/components/Header.svelte'
+	import TickBox from '$lib/components/ChecklistItem.svelte'
 </script>
 
 <Header
@@ -12,7 +12,13 @@
 />
 
 <div class="tabs tabs-lift m-5">
-	<input type="radio" name="my_tabs_4" class="tab" aria-label="Pre-start" checked />
+	<input
+		type="radio"
+		name="my_tabs_4"
+		class="tab"
+		aria-label="Pre-start"
+		checked={true}
+	/>
 	<div class="tab-content bg-base-100 border-base-300 p-6">
 		<i
 			>Prepare the RBMK-1500 reactor for a safe and stable startup by completing the
