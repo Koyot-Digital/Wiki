@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+  <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"
+    charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({ "notice_banner_type": "simple", "consent_type": "express", "palette": "dark", "language": "en", "page_load_consent_levels": ["strictly-necessary"], "notice_banner_reject_button_hide": false, "preferences_center_close_button_hide": false, "page_refresh_confirmation_buttons": false, "website_name": "ONPS Wiki" });
+    });
+  </script>
+
+  <!-- Google Analitics -->
+  <script type="text/plain" data-cookie-consent="tracking" async
+    src="https://www.googletagmanager.com/gtag/js?id=G-8C0MST73WK"></script>
+  <script type="text/plain" data-cookie-consent="tracking">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8C0MST73WK');
+  </script>
+  <!-- end of Google Analitics-->
+
+  <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+  <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+
+
+
+  <!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="ONPS - Rod Control Patterns" />
+  <meta name="description" content="Oakridge Nuclear Power Station - Rod Control Patterns" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wiki.koyot.digital/patterns.html" />
+  <meta property="og:title" content="ONPS - Rod Control Patterns" />
+  <meta property="og:description" content="Oakridge Nuclear Power Station - Rod Control Patterns" />
+  <!-- Add images for this page please -->
+  <meta property="og:image" content="/images/Startup.webp" />
+
+  <!-- X (Twitter) -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://wiki.koyot.digital/patterns.html" />
+  <meta property="twitter:title" content="ONPS - Rod Control Patterns" />
+  <meta property="twitter:description" content="Oakridge Nuclear Power Station - Rod Control Patterns" />
+  <!-- Add images for this page please -->
+  <meta property="twitter:image" content="/images/Startup.webp" />
+
+  <!-- I didn't touch any of these below -->
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oakridge Nuclear Power Station - Rod Control Patterns</title>
+  <script src="https://kit.fontawesome.com/a7bdae1ce6.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/calculator.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<header id="header" style="
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+">
+  <div style="display: flex; gap: 12px; align-items: center;">
+    <img src="images/home.svg" style="width: 24px; height: 24px; cursor: pointer;" onclick="relocate('index.html');">
+    <img src="images/settings.svg" style="width: 24px; height: 24px; cursor: pointer;"
+      onclick="relocate('settings.html');">
+  </div>
+
+  <h2 style="margin: 0;">Oakridge Nuclear Power Station Wiki</h2>
+
+   <!-- I didn't touch any of these above -->
+</header>
+
+<body>
+  <header class="hero small-hero">
+    <div class="hero-overlay"></div>
+    <!-- add the banner -->
+    <img src="images/Startup.webp" alt="Rod Control Patterns" />
+    <div class="hero-content">
+      <h1>Rod Control Patterns</h1>
+      <p>Hold on, these were important?!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="NavGrid-placeholder"></div>
+
+    <section class="articles-section">
+      <h2 style="margin-top: 3rem;">What are Rod Control Patterns?</h2>
+      <br>
+      <hr><br>
+      <p>Rod Control Patterns are a number of procedures introduced by the community to guide you through a safe reactor startup 
+        or change of power during operations. The RBMK-1500 features a total of 97 control rods consisting of 16 shutdown control 
+        rods, 17 automatic control rods, and the remaining 64 are manually control by you. Rods in the center of the core operate 
+        at higher power and temperature, while rods near the edges run cooler with lower power, keep this in mind in case you do 
+        not want to follow any of the patterns further below.</p>
+      <br>
+      <h3>How to select rods?</h3><br>
+      <hr><br>
+      <p>There are 97 LED lamps in total, each is positioned above every rod control button. They indicate if the rod is selected 
+        by glowing a bright yellow color, or if the rod is unselected by not glowing. To select a rod click on it's respective 
+        button, the LED lamp above it will light up and indicate the rod is selected.You will not be able to select automatic or shutdown control rods manually.</p>
+      <!-- unselect control rod pannel image -->
+      <br>
+      <h3>Patterns</h3><br>
+      <hr><br>
+      <p>There are a ton of patterns you can create yourself, but we especially selected 6 most balanced and safe patterns out there to follow:</p>
+      <br>
+        <!-- The control rod images here -->
+      <h3>Operational Context</h3><br>
+      <hr><br>
+      <p>Patterns are used in order to keep the heat distribution and neutron fluctuation relatively similar to each other to attain balance between the 12 heat sectors 
+        of the core located on the right side of the Rod Control Panel.  </p>
+      <br>
+      <p>Balanced Reactor — Safe Reactor</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Koyot Digital</p> Our Discord Server, <a href="https://discord.gg/RT3Y6egQhR"><i
+        class="fa-brands fa-discord"> Koyot Digital</i></a> <br> Play on <a
+      href="https://www.roblox.com/games/15684145480/Oakridge-Nuclear-Power-Station-V0-2-4-BETA" target="_blank"
+      rel="noopener"><i>Roblox</i></a>
+  </footer>
+</body>
+
+
+</html>
