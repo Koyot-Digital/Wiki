@@ -1,44 +1,37 @@
 <script lang="ts">
-export let name: String
-export let description: String
-export let color: String
+export let name: string
+export let description: string
+export let color: string
 
 function getColor() {
 	if (color === 'white') {
 		return 'bg-neutral-50'
 	} else if (color === 'yellow') {
-		return 'bg-amber-400'
+		return 'bg-yellow-300'
 	} else if (color === 'red') {
 		return 'bg-red-500'
 	}
+	return 'bg-neutral-200' // fallback color
+}
+
+let dialogId = `modal-${name?.replace(/\s+/g, '-') || Math.random().toString(36).slice(2)}`
+
+function openModal() {
+	const dialog = document.getElementById(dialogId) as HTMLDialogElement | null
+	dialog?.showModal()
 }
 </script>
 
-<!-- 
-<div class = "{getColor()}">
-    {name}{description}
-    <slot></slot>
-</div>
-
-<div class="card w-96 {getColor()} card-md shadow-sm">
-  <div class="card-body">
-    <h2 class="flex items-center justify-center">{name}</h2>
-  </div>
-</div> -->
-
-<div class="drawer drawer-end">
-	<input id="my-drawer-5" type="checkbox" class="drawer-toggle" />
-	<div class="drawer-content cursor-pointer drawer-button">
-		<div class="card w-96 {getColor()} card-md shadow-sm">
-			<div class="card-body">
-				<label for="my-drawer-5" class={getColor()}>Open drawer</label>
-			</div>
+<!-- Open the modal using openModal() method -->
+<button class="btn {getColor()} w-48 h-20 font-info-panels" on:click={openModal}>{name}</button>
+<dialog id={dialogId} class="modal">
+	<div class="modal-box">
+		<h3 class="text-lg font-bold">{name}</h3>
+		<p class="py-4">{description}</p>
+		<div class="modal-action">
+			<form method="dialog">
+				<button class="btn">Close</button>
+			</form>
 		</div>
 	</div>
-	<div class="drawer-side">
-		<label for="my-drawer-5" aria-label="close sidebar" class="drawer-overlay"></label>
-		<ul class="menu bg-base-200 min-h-full w-80 p-4">
-			<slot></slot>
-		</ul>
-	</div>
-</div>
+</dialog>

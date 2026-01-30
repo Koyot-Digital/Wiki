@@ -3,12 +3,14 @@ import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 import Indicator from '$lib/components/ControlRoomIndicator.svelte'
+const coolantPumpTripDescription =
+	'This alert indicates that the coolant pumps for either cooling tower have tripped. \nTypically, you would only see this occur during a power loss.\nTo regain power, call engineering and tell them to reset the breakers.'
 </script>
 
 <Header
 	heroImg="/src/lib/images/hero-banners/info-panels.avif"
 	title="Information Panels"
-	catchphrase="Fun Fact: Core Water Low Low is usually a bad indicator of your reactor's well-being."
+	catchphrase="Fun Fact: Radiation Level 8+ is kinda bad ngl"
 />
 
 <div class="m-5">
@@ -18,8 +20,17 @@ import Indicator from '$lib/components/ControlRoomIndicator.svelte'
 			Makeup Water - Diesel Generator - Radiation Monitoring Panel
 		</div>
 		<div class="collapse-content text-sm">
-			<div class="grid grid-cols-4 gap-4">
-				<Indicator name="Test" description="test test" color="red">slot</Indicator>
+			<div class="grid grid-cols-4 grid-rows-3">
+				<Indicator
+					name="Coolant Pump A1 Trip"
+					description={coolantPumpTripDescription}
+					color="red"
+				/>
+				<Indicator
+					name="Coolant Pump A2 Trip"
+					description={coolantPumpTripDescription}
+					color="red"
+				/>
 			</div>
 		</div>
 	</div>

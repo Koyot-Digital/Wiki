@@ -1,39 +1,112 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-@plugin "daisyui" {
-}
+@plugin "daisyui";
 
 @plugin "daisyui/theme" {
-	name: 'operations';
-	default: true;
+	name: "black";
+	default: false;
 	prefersdark: true;
-	color-scheme: 'dark';
-	--color-base-100: oklch(21% 0.006 285.885);
-	--color-base-200: oklch(14% 0 0);
-	--color-base-300: oklch(55% 0.013 58.071);
-	--color-base-content: oklch(98% 0 0);
-	--color-primary: oklch(70% 0.213 47.604);
+	color-scheme: "dark";
+	--color-base-100: oklch(13% 0.028 261.692);
+	--color-base-200: oklch(20% 0.042 265.755);
+	--color-base-300: oklch(70% 0.022 261.325);
+	--color-base-content: oklch(98% 0.002 247.839);
+	--color-primary: oklch(68% 0.169 237.323);
 	--color-primary-content: oklch(0% 0 0);
-	--color-secondary: oklch(71% 0.143 215.221);
+	--color-secondary: oklch(76% 0.188 70.08);
 	--color-secondary-content: oklch(0% 0 0);
-	--color-accent: oklch(76% 0.188 70.08);
-	--color-accent-content: oklch(0% 0 0);
-	--color-neutral: oklch(12% 0.01 260);
-	--color-neutral-content: oklch(95% 0.01 260);
-	--color-info: oklch(74% 0.16 232.661);
-	--color-info-content: oklch(0% 0 0);
-	--color-success: oklch(72% 0.219 149.579);
+	--color-accent: oklch(58% 0.233 277.117);
+	--color-accent-content: oklch(100% 0 0);
+	--color-neutral: oklch(55% 0 0);
+	--color-neutral-content: oklch(100% 0 0);
+	--color-info: oklch(54% 0.245 262.881);
+	--color-info-content: oklch(97% 0.014 254.604);
+	--color-success: oklch(62% 0.194 149.214);
 	--color-success-content: oklch(0% 0 0);
 	--color-warning: oklch(90% 0.182 98.111);
 	--color-warning-content: oklch(0% 0 0);
-	--color-error: oklch(57% 0.245 27.325);
-	--color-error-content: oklch(100% 0 0);
-	--radius-selector: 10px;
-	--radius-field: 10px;
-	--radius-box: 10px;
+	--color-error: oklch(63% 0.237 25.331);
+	--color-error-content: oklch(0% 0 0);
+	--radius-selector: 2rem;
+	--radius-field: 0.5rem;
+	--radius-box: 0.5rem;
 	--size-selector: 0.25rem;
-	--size-field: 0.3rem;
+	--size-field: 0.25rem;
 	--border: 2px;
-	--depth: 1;
+	--depth: 0;
 	--noise: 0;
 }
+
+@theme {
+	--font-info-panels: "IBM Plex Sans", sans-serif;
+}
+
+/* #region Font Imports */
+/* cyrillic-ext */
+@font-face {
+	font-family: 'IBM Plex Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llDCqg4poY.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+	font-family: 'IBM Plex Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llDA6g4poY.woff2) format('woff2');
+	unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek */
+@font-face {
+	font-family: 'IBM Plex Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llDBKg4poY.woff2) format('woff2');
+	unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+
+/* vietnamese */
+@font-face {
+	font-family: 'IBM Plex Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llDCKg4poY.woff2) format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'IBM Plex Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llDCag4poY.woff2) format('woff2');
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'IBM Plex Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/ibmplexsans/v23/zYXGKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1swZSAXcomDVmadSD6llDB6g4.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* #endregion */
