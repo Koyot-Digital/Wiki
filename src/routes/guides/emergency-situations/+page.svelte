@@ -1,8 +1,8 @@
 <script>
-	import '../../../app.css'
-	import Header from '$lib/components/Header.svelte'
-	import Footer from '$lib/components/Footer.svelte'
-	import TickBox from '$lib/components/ChecklistItem.svelte'
+import '../../../app.css'
+import Header from '$lib/components/Header.svelte'
+import Footer from '$lib/components/Footer.svelte'
+import TickBox from '$lib/components/ChecklistItem.svelte'
 </script>
 
 <Header
@@ -12,27 +12,15 @@
 />
 
 <div class="tabs tabs-lift m-5">
-	<input
-		type="radio"
-		name="my_tabs_5"
-		class="tab"
-		aria-label="Abnormal RPV Pressure"
-		checked
-	/>
+	<input type="radio" name="my_tabs_5" class="tab" aria-label="Abnormal RPV Pressure" checked />
 	<div class="tab-content bg-base-100 border-base-300 p-6">
-		<i
-			>The pressure inside the Reactor Pressure Vessel is above safe operating
-			limits.</i
-		>
-		<br /><br />
+		<i>The pressure inside the Reactor Pressure Vessel is above safe operating limits.</i>
+		<br />
+		<br />
 		<i>If Alert RPV Pressure High</i>
 		<TickBox item="Relief Valves" action="Enable as Required" indent />
 		<TickBox item="Control Rods" action="Insert as Required" indent />
-		<TickBox
-			item="Turbine A & B Bypass Valves"
-			action="Increase as Required"
-			indent
-		/>
+		<TickBox item="Turbine A & B Bypass Valves" action="Increase as Required" indent />
 		<TickBox item="RPV Pressure" action="Monitor" indent />
 		<br />
 		<i>If Alert RPV Pressure High High</i>
@@ -45,18 +33,11 @@
 		<TickBox item="All Relief Valves" action="Enable" indent />
 		<TickBox item="Turbine A & B Bypass Valves" action="100%" indent />
 	</div>
-	<input
-		type="radio"
-		name="my_tabs_5"
-		class="tab"
-		aria-label="Abnormal RPV Temperature"
-	/>
+	<input type="radio" name="my_tabs_5" class="tab" aria-label="Abnormal RPV Temperature" />
 	<div class="tab-content bg-base-100 border-base-300 p-6">
-		<i
-			>The temperature inside the Reactor Pressure Vessel is above safe operating
-			limits.</i
-		>
-		<br /><br />
+		<i>The temperature inside the Reactor Pressure Vessel is above safe operating limits.</i>
+		<br />
+		<br />
 		<i>If Alert RPV Temperature High</i>
 		<TickBox item="Main Circulation Pumps" action="Enable as Required" indent />
 		<TickBox item="Control Rods" action="Insert as Required" indent />
@@ -75,11 +56,11 @@
 	</div>
 	<input type="radio" name="my_tabs_5" class="tab" aria-label="Abnormal Water Level" />
 	<div class="tab-content bg-base-100 border-base-300 p-6">
-		<i
-			>The water level inside of the primary cooling circuit is not within
-			acceptable limits.</i
-		>
-		<br /><br />
+		<i>
+			The water level inside of the primary cooling circuit is not within acceptable limits.
+		</i>
+		<br />
+		<br />
 		<i>If Alert Core Water High</i>
 		<TickBox item="Feedwater Pumps" action="Disable as required" indent />
 		<TickBox item="Circ. Drains 1 & 2" action="Enable as required" indent />
@@ -100,11 +81,12 @@
 	</div>
 	<input type="radio" name="my_tabs_5" class="tab" aria-label="Fuel Channel Leak" />
 	<div class="tab-content bg-base-100 border-base-300 p-6">
-		<i
-			>Fuel channel ruptured. May cause power surges and water level drop beyond the
-			capability of feedwater pumps.</i
-		>
-		<br /><br />
+		<i>
+			Fuel channel ruptured. May cause power surges and water level drop beyond the capability
+			of feedwater pumps.
+		</i>
+		<br />
+		<br />
 		<TickBox
 			item="A3-5"
 			action="Enable"
@@ -139,12 +121,12 @@
 	</div>
 	<input type="radio" name="my_tabs_5" class="tab" aria-label="Loss of Offsite Power" />
 	<div class="tab-content bg-base-100 border-base-300 p-6">
-		<i
-			>Offsite power grid has failed. All systems run on onsite diesel generators,
-			they don't produce enough power to keep reactor online. Core Cooling is
-			critical.</i
-		>
-		<br /><br />
+		<i>
+			Offsite power grid has failed. All systems run on onsite diesel generators, they don't
+			produce enough power to keep reactor online. Core Cooling is critical.
+		</i>
+		<br />
+		<br />
 		<TickBox item="A3-5" action="Enable" indent={true} />
 		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />
 		<TickBox item="Once repaired" action="Start Reactor Again" indent={true} />

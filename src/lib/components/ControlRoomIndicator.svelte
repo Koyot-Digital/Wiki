@@ -1,17 +1,17 @@
 <script lang="ts">
-	export let name: String
-	export let description: String
-	export let color: String
+export let name: String
+export let description: String
+export let color: String
 
-	function getColor() {
-		if (color === 'white') {
-			return 'bg-neutral-50'
-		} else if (color === 'yellow') {
-			return 'bg-amber-400'
-		} else if (color === 'red') {
-			return 'bg-red-500'
-		}
+function getColor() {
+	if (color === 'white') {
+		return 'bg-neutral-50'
+	} else if (color === 'yellow') {
+		return 'bg-amber-400'
+	} else if (color === 'red') {
+		return 'bg-red-500'
 	}
+}
 </script>
 
 <!-- 
@@ -36,8 +36,7 @@
 		</div>
 	</div>
 	<div class="drawer-side">
-		<label for="my-drawer-5" aria-label="close sidebar" class="drawer-overlay"
-		></label>
+		<label for="my-drawer-5" aria-label="close sidebar" class="drawer-overlay"></label>
 		<ul class="menu bg-base-200 min-h-full w-80 p-4">
 			<slot></slot>
 		</ul>

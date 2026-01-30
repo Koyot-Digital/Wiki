@@ -1,8 +1,8 @@
 <script>
-	import '../../../app.css'
-	import Footer from '$lib/components/Footer.svelte'
-	import Header from '$lib/components/Header.svelte'
-	import TickBox from '$lib/components/ChecklistItem.svelte'
+import '../../../app.css'
+import Footer from '$lib/components/Footer.svelte'
+import Header from '$lib/components/Header.svelte'
+import TickBox from '$lib/components/ChecklistItem.svelte'
 </script>
 
 <Header
@@ -12,18 +12,12 @@
 />
 
 <div class="tabs tabs-lift m-5">
-	<input
-		type="radio"
-		name="my_tabs_4"
-		class="tab"
-		aria-label="Pre-start"
-		checked={true}
-	/>
+	<input type="radio" name="my_tabs_4" class="tab" aria-label="Pre-start" checked={true} />
 	<div class="tab-content bg-base-100 border-base-300 p-6">
-		<i
-			>Prepare the RBMK-1500 reactor for a safe and stable startup by completing the
-			pre-start checklist and configuring all supporting systems.</i
-		>
+		<i>
+			Prepare the RBMK-1500 reactor for a safe and stable startup by completing the pre-start
+			checklist and configuring all supporting systems.
+		</i>
 		<TickBox item="Condenser Coolant Pump A1" action="Enabled, Speed 1" />
 		<TickBox item="Condenser Coolant Pump A2" action="Enabled, Speed 1" />
 		<TickBox item="Turbine A-B Bleed Valve" action="Open" />
@@ -73,11 +67,12 @@
 
 	<input type="radio" name="my_tabs_4" class="tab" aria-label="Start-up" />
 	<div class="tab-content bg-base-100 border-base-300 p-6">
-		<i
-			>Deliver the RBMK-1500 reactor into operating mode by completing the start-up
-			checklist and configuring relevant supporting systems.</i
-		>
-		<br /><br />
+		<i>
+			Deliver the RBMK-1500 reactor into operating mode by completing the start-up checklist
+			and configuring relevant supporting systems.
+		</i>
+		<br />
+		<br />
 		<b>Pre-stage</b>
 		<TickBox item="Reactor Mode Button 1" action="Enabled" />
 		<TickBox item="Alert Mode Conflict" action="Acknowledge" />
@@ -246,8 +241,9 @@
 	</div>
 	<input type="radio" name="my_tabs_4" class="tab" aria-label="Reactor Variability" />
 	<div class="tab-content bg-base-100 border-base-300 p-6">
-		<i>Sit back and relax, and let the reactor do the rest! </i>
-		<br /><br />
+		<i>Sit back and relax, and let the reactor do the rest!</i>
+		<br />
+		<br />
 		<b>Low Power Range [4000MW - 4200MW]</b>
 		<TickBox item="Main Circulation Pumps C1 & C2" action="Speed 1" />
 		<br />
@@ -263,11 +259,9 @@
 	</div>
 	<input type="radio" name="my_tabs_4" class="tab" aria-label="Shutdown" />
 	<div class="tab-content bg-base-100 border-base-300 p-6">
-		<i
-			>Congrats! You made it. Safely shut down the RBMK-1500 reactor for the next
-			shift.</i
-		>
-		<br /><br />
+		<i>Congrats! You made it. Safely shut down the RBMK-1500 reactor for the next shift.</i>
+		<br />
+		<br />
 		<b>Pre-stage</b>
 		<TickBox
 			item="Call Grid Controller"

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import '../app.css'
-	import Header from '$lib/components/Header.svelte'
-	import Footer from '$lib/components/Footer.svelte'
+import '../app.css'
+import Header from '$lib/components/Header.svelte'
+import Footer from '$lib/components/Footer.svelte'
 </script>
 
 <Header
@@ -34,14 +34,13 @@
 		<div class="card-body">
 			<h2 class="card-title">Welcome to the team</h2>
 			<p>
-				Your first shift starts tomorrow morning! Now, we're short-staffed at the
-				moment, but I'm sure you and your big brain can figure it out! Be
-				responsible for overseeing a multi-billion-dollar operation, one of the
-				planet's most potent and delicate energy systems. Every decision matters,
-				from regulating the reactor's behaviour, running turbines and their
-				subsidiaries, managing cooling systems, maintaining pumps and valves, and
-				responding to unforeseen emergencies and conditions, all while maintaining
-				strict safety protocols.
+				Your first shift starts tomorrow morning! Now, we're short-staffed at the moment,
+				but I'm sure you and your big brain can figure it out! Be responsible for overseeing
+				a multi-billion-dollar operation, one of the planet's most potent and delicate
+				energy systems. Every decision matters, from regulating the reactor's behaviour,
+				running turbines and their subsidiaries, managing cooling systems, maintaining pumps
+				and valves, and responding to unforeseen emergencies and conditions, all while
+				maintaining strict safety protocols.
 			</p>
 		</div>
 	</div>
@@ -52,17 +51,15 @@
 		<div class="card-body">
 			<h2 class="card-title">About the facility</h2>
 			<p>
-				Oakridge Nuclear Power Station (ONPS) is a Roblox game developed by Koyot
-				Digital. The game places you inside a power plant operating an RBMK-1500.
-				Your goal: keep the facility stable, productive, and safe within a
-				semi-realistic framework. You can play as an operator responsible for
-				monitoring and managing all critical systems: the reactor core, turbines,
-				cooling systems, backup systems, and more. Or play as a security officer
-				and handle unauthorized personnel and detain operators causing mishaps.
-				Every action matters, and a single mistake can trigger a chain reaction of
-				problems. Oakridge aims to balance technical realism with accessibility,
-				delivering an immersive experience that remains understandable for all
-				skill levels.
+				Oakridge Nuclear Power Station (ONPS) is a Roblox game developed by Koyot Digital.
+				The game places you inside a power plant operating an RBMK-1500. Your goal: keep the
+				facility stable, productive, and safe within a semi-realistic framework. You can
+				play as an operator responsible for monitoring and managing all critical systems:
+				the reactor core, turbines, cooling systems, backup systems, and more. Or play as a
+				security officer and handle unauthorized personnel and detain operators causing
+				mishaps. Every action matters, and a single mistake can trigger a chain reaction of
+				problems. Oakridge aims to balance technical realism with accessibility, delivering
+				an immersive experience that remains understandable for all skill levels.
 			</p>
 		</div>
 	</div>

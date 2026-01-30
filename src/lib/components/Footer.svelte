@@ -1,13 +1,11 @@
 <script>
-	import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
-	import LicenceImg from '$lib/images/icons&logos/license.svg'
-	import GitHub from '$lib/images/icons&logos/github-mark.svg'
-	import Discord from '$lib/images/icons&logos/Discord.svg'
+import KDLogo from '$lib/images/icons&logos/Koyot-Digital-Emblem.avif'
+import LicenceImg from '$lib/images/icons&logos/license.svg'
+import GitHub from '$lib/images/icons&logos/github-mark.svg'
+import Discord from '$lib/images/icons&logos/Discord.svg'
 </script>
 
-<footer
-	class="footer footer-horizontal footer-center bg-neutral text-neutral-content p-10"
->
+<footer class="footer footer-horizontal footer-center bg-neutral text-neutral-content p-10">
 	<aside>
 		<img
 			alt="Koyot Digital Logo"
@@ -51,13 +49,7 @@
 				aria-label="Discord Server link"
 				class="align-middle pt-1"
 			>
-				<img
-					src={Discord}
-					width="24"
-					height="18.2"
-					class="fill-stone-100"
-					alt=""
-				/>
+				<img src={Discord} width="24" height="18.2" class="fill-stone-100" alt="" />
 			</a>
 		</div>
 	</nav>

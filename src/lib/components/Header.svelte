@@ -1,9 +1,9 @@
 <script lang="ts">
-	export let heroImg: string
-	export let title: string
-	export let catchphrase: string
-	export let button: string = ''
-	import pageData from '$lib/data/pageData.json' with { type: 'json' }
+export let heroImg: string
+export let title: string
+export let catchphrase: string
+export let button: string = ''
+import pageData from '$lib/data/pageData.json' with { type: 'json' }
 </script>
 
 <!-- #region NavBar content -->
@@ -11,10 +11,8 @@
 	<div class="drawer">
 		<input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
 		<div class="drawer-content">
-			<label
-				for="my-drawer-1"
-				class="btn bg-transparent shadow-none border-0 drawer-button"
-				><svg
+			<label for="my-drawer-1" class="btn bg-transparent shadow-none border-0 drawer-button">
+				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 24 24"
@@ -34,29 +32,24 @@
 			<label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
 			<ul class="menu bg-base-200 min-h-full p-4 w-104">
 				<!-- Note to developers in the future: if using server-side, get rid of json and iterate through directories-->
-					<a class="card bg-base-100 image-full w-96 h-18 mb-3" href="/">
-						<figure>
-							<img
-								src="src/lib/images/hero-banners/Reactor-Panel.avif"
-								alt="home"
-								class="w-full h-full object-cover"
-							/>
-						</figure>
-						<div class="card-body">
-							<h2 class="card-title">Home</h2>
-						</div>
-					</a>
+				<a class="card bg-base-100 image-full w-96 h-18 mb-3" href="/">
+					<figure>
+						<img
+							src="src/lib/images/hero-banners/Reactor-Panel.avif"
+							alt="home"
+							class="w-full h-full object-cover"
+						/>
+					</figure>
+					<div class="card-body">
+						<h2 class="card-title">Home</h2>
+					</div>
+				</a>
 				{#each Object.entries(pageData) as [section, pages]}
 					<!-- Note to developers in the future: if using server-side, get rid of json and iterate through directories-->
 					<details class="collapse collapse-arrow" name="my-accordion-det-1">
-						<summary class="collapse-title font-semibold txt-lg"
-							>{section}</summary
-						>
+						<summary class="collapse-title font-semibold txt-lg">{section}</summary>
 						{#each pages as page}
-							<a
-								class="card bg-base-100 image-full w-96 h-18 mb-3"
-								href={page.href}
-							>
+							<a class="card bg-base-100 image-full w-96 h-18 mb-3" href={page.href}>
 								<figure>
 									<img
 										src={page.image}
@@ -92,9 +85,7 @@
 			<h1 class="mb-5 text-5xl font-bold">{title}</h1>
 			<p class="mb-5">{catchphrase}</p>
 			{#if button !== ''}
-				<button class="btn btn-primary" on:click={() => window.open(button)}
-					>Play</button
-				>
+				<button class="btn btn-primary" on:click={() => window.open(button)}>Play</button>
 			{/if}
 		</div>
 	</div>

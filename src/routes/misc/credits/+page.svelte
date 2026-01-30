@@ -1,127 +1,127 @@
 <script>
-	import '../../../app.css'
-	import Header from '$lib/components/Header.svelte'
-	import Footer from '$lib/components/Footer.svelte'
-	import hero from '$lib/images/hero-banners/credits.avif'
-	// import creditsData from '$lib/data/creditsData.json' with { type: 'json' };
-	let developerData = {
-		developers: [
-			{
-				DisplayName: 'Roscy',
-				Username: 'Ezy_gaming888',
-				robloxID: 1234567890,
-				Tier: 'LD',
-			},
-			{
-				DisplayName: 'Gottie',
-				Username: 'GottyXx2',
-				robloxID: 167084004,
-				Tier: 'SD',
-			},
-			{
-				DisplayName: 'Anticitizen One',
-				Username: 'TrashyLasers',
-				robloxID: 1234567890,
-				Tier: 'D',
-			},
-			{
-				DisplayName: 'chrxs_dev',
-				Username: 'chrxs_dev',
-				robloxID: 1234567890,
-				Tier: 'D',
-			},
-		],
-	}
-	let testerData = {
-		testers: [
-			{
-				DisplayName: 'Stefan',
-				Username: 'inami_rin',
-				robloxID: 132749423,
-				Tier: 'T',
-			},
-			{
-				DisplayName: 'Eugene_Fission',
-				Username: 'Slonokot',
-				robloxID: 337362307,
-				Tier: 'T',
-			},
-			{
-				DisplayName: 'NervA_Mechanica',
-				Username: 'WoodynBuzz',
-				robloxID: 26130438,
-				Tier: 'T',
-			},
-			{
-				DisplayName: 'Shozii',
-				Username: 'warface1234455',
-				robloxID: 1234567890,
-				Tier: 'T',
-			},
-		],
-	}
-	let moderatorData = {
-		moderators: [
-			{
-				DisplayName: 'NEODIS',
-				Username: '_neodis',
-				robloxID: 1234567890,
-				Tier: 'CRM',
-			},
-			{
-				DisplayName: 'Astr0',
-				Username: 'astroneero',
-				robloxID: 536560884,
-				Tier: 'M',
-			},
-			{
-				DisplayName: 'Ayron',
-				Username: 'virohybrid',
-				robloxID: 171093439,
-				Tier: 'M',
-			},
-			{
-				DisplayName: 'Gladi',
-				Username: 'gladi_._',
-				robloxID: 566191026,
-				Tier: 'M',
-			},
-			{
-				DisplayName: 'NateTheGreat',
-				Username: 'NateTheGreat',
-				robloxID: 1234567890,
-				Tier: 'M',
-			},
-		],
-	}
-	let contributors = {
-		contributors: [
-			{
-				DisplayName: 'Bufflehead',
-				Username: 'Gargleblaster',
-				robloxID: 8311884384,
-				Tier: 'C',
-			},
-			{
-				DisplayName: 'ParrotMan',
-				Username: 'itsthegrumpyparrotman',
-				robloxID: 4038866427,
-				Tier: 'C',
-			},
-			{
-				DisplayName: 'OneDuck',
-				Username: 'DuckQuack001',
-				robloxID: 553450691,
-				Tier: 'C',
-			},
-			{
-				DisplayName: 'REDACTED',
-				Username: 'REDACTED',
-				robloxID: 967748232,
-				Tier: 'C',
-			},
-		],
-	}
+import '../../../app.css'
+import Header from '$lib/components/Header.svelte'
+import Footer from '$lib/components/Footer.svelte'
+import hero from '$lib/images/hero-banners/credits.avif'
+// import creditsData from '$lib/data/creditsData.json' with { type: 'json' };
+let developerData = {
+	developers: [
+		{
+			DisplayName: 'Roscy',
+			Username: 'Ezy_gaming888',
+			robloxID: 1234567890,
+			Tier: 'LD',
+		},
+		{
+			DisplayName: 'Gottie',
+			Username: 'GottyXx2',
+			robloxID: 167084004,
+			Tier: 'SD',
+		},
+		{
+			DisplayName: 'Anticitizen One',
+			Username: 'TrashyLasers',
+			robloxID: 1234567890,
+			Tier: 'D',
+		},
+		{
+			DisplayName: 'chrxs_dev',
+			Username: 'chrxs_dev',
+			robloxID: 1234567890,
+			Tier: 'D',
+		},
+	],
+}
+let testerData = {
+	testers: [
+		{
+			DisplayName: 'Stefan',
+			Username: 'inami_rin',
+			robloxID: 132749423,
+			Tier: 'T',
+		},
+		{
+			DisplayName: 'Eugene_Fission',
+			Username: 'Slonokot',
+			robloxID: 337362307,
+			Tier: 'T',
+		},
+		{
+			DisplayName: 'NervA_Mechanica',
+			Username: 'WoodynBuzz',
+			robloxID: 26130438,
+			Tier: 'T',
+		},
+		{
+			DisplayName: 'Shozii',
+			Username: 'warface1234455',
+			robloxID: 1234567890,
+			Tier: 'T',
+		},
+	],
+}
+let moderatorData = {
+	moderators: [
+		{
+			DisplayName: 'NEODIS',
+			Username: '_neodis',
+			robloxID: 1234567890,
+			Tier: 'CRM',
+		},
+		{
+			DisplayName: 'Astr0',
+			Username: 'astroneero',
+			robloxID: 536560884,
+			Tier: 'M',
+		},
+		{
+			DisplayName: 'Ayron',
+			Username: 'virohybrid',
+			robloxID: 171093439,
+			Tier: 'M',
+		},
+		{
+			DisplayName: 'Gladi',
+			Username: 'gladi_._',
+			robloxID: 566191026,
+			Tier: 'M',
+		},
+		{
+			DisplayName: 'NateTheGreat',
+			Username: 'NateTheGreat',
+			robloxID: 1234567890,
+			Tier: 'M',
+		},
+	],
+}
+let contributors = {
+	contributors: [
+		{
+			DisplayName: 'Bufflehead',
+			Username: 'Gargleblaster',
+			robloxID: 8311884384,
+			Tier: 'C',
+		},
+		{
+			DisplayName: 'ParrotMan',
+			Username: 'itsthegrumpyparrotman',
+			robloxID: 4038866427,
+			Tier: 'C',
+		},
+		{
+			DisplayName: 'OneDuck',
+			Username: 'DuckQuack001',
+			robloxID: 553450691,
+			Tier: 'C',
+		},
+		{
+			DisplayName: 'REDACTED',
+			Username: 'REDACTED',
+			robloxID: 967748232,
+			Tier: 'C',
+		},
+	],
+}
 </script>
 
 <Header heroImg={hero} title="Credits" catchphrase="Who designed this reactor again?" />
@@ -214,8 +214,7 @@
 			stroke-linecap="round"
 			stroke-linejoin="round"
 			d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z"
-		>
-		</path>
+		></path>
 	</svg>
 
 	<h1>Moderators</h1>
