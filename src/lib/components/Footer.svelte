@@ -5,7 +5,9 @@ import GitHub from '$lib/images/icons&logos/github-mark.svg'
 import Discord from '$lib/images/icons&logos/Discord.svg'
 </script>
 
-<footer class="footer footer-horizontal footer-center bg-neutral text-neutral-content p-10">
+<footer
+	class="footer footer-horizontal footer-center base-400 border-2 border-base-200 text-neutral-content p-10"
+>
 	<aside>
 		<img
 			alt="Koyot Digital Logo"
