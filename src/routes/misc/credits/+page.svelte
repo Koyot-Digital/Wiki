@@ -3,125 +3,7 @@ import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 import hero from '$lib/images/hero-banners/credits.avif'
-// import creditsData from '$lib/data/creditsData.json' with { type: 'json' };
-let developerData = {
-	developers: [
-		{
-			DisplayName: 'Roscy',
-			Username: 'Ezy_gaming888',
-			robloxID: 1234567890,
-			Tier: 'LD',
-		},
-		{
-			DisplayName: 'Gottie',
-			Username: 'GottyXx2',
-			robloxID: 167084004,
-			Tier: 'SD',
-		},
-		{
-			DisplayName: 'Anticitizen One',
-			Username: 'TrashyLasers',
-			robloxID: 1234567890,
-			Tier: 'D',
-		},
-		{
-			DisplayName: 'chrxs_dev',
-			Username: 'chrxs_dev',
-			robloxID: 1234567890,
-			Tier: 'D',
-		},
-	],
-}
-let testerData = {
-	testers: [
-		{
-			DisplayName: 'Stefan',
-			Username: 'inami_rin',
-			robloxID: 132749423,
-			Tier: 'T',
-		},
-		{
-			DisplayName: 'Eugene_Fission',
-			Username: 'Slonokot',
-			robloxID: 337362307,
-			Tier: 'T',
-		},
-		{
-			DisplayName: 'NervA_Mechanica',
-			Username: 'WoodynBuzz',
-			robloxID: 26130438,
-			Tier: 'T',
-		},
-		{
-			DisplayName: 'Shozii',
-			Username: 'warface1234455',
-			robloxID: 1234567890,
-			Tier: 'T',
-		},
-	],
-}
-let moderatorData = {
-	moderators: [
-		{
-			DisplayName: 'NEODIS',
-			Username: '_neodis',
-			robloxID: 1234567890,
-			Tier: 'CRM',
-		},
-		{
-			DisplayName: 'Astr0',
-			Username: 'astroneero',
-			robloxID: 536560884,
-			Tier: 'M',
-		},
-		{
-			DisplayName: 'Ayron',
-			Username: 'virohybrid',
-			robloxID: 171093439,
-			Tier: 'M',
-		},
-		{
-			DisplayName: 'Gladi',
-			Username: 'gladi_._',
-			robloxID: 566191026,
-			Tier: 'M',
-		},
-		{
-			DisplayName: 'NateTheGreat',
-			Username: 'NateTheGreat',
-			robloxID: 1234567890,
-			Tier: 'M',
-		},
-	],
-}
-let contributors = {
-	contributors: [
-		{
-			DisplayName: 'Bufflehead',
-			Username: 'Gargleblaster',
-			robloxID: 8311884384,
-			Tier: 'C',
-		},
-		{
-			DisplayName: 'ParrotMan',
-			Username: 'itsthegrumpyparrotman',
-			robloxID: 4038866427,
-			Tier: 'C',
-		},
-		{
-			DisplayName: 'OneDuck',
-			Username: 'DuckQuack001',
-			robloxID: 553450691,
-			Tier: 'C',
-		},
-		{
-			DisplayName: 'REDACTED',
-			Username: 'REDACTED',
-			robloxID: 967748232,
-			Tier: 'C',
-		},
-	],
-}
+import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 </script>
 
 <Header heroImg={hero} title="Credits" catchphrase="Who designed this reactor again?" />
@@ -142,7 +24,7 @@ let contributors = {
 	</svg>
 	<h1>Developers</h1>
 	<div class="tab-content bg-base-100 flex flex-wrap justify-center p-7">
-		{#each developerData.developers as data}
+		{#each itemData.developers as data}
 			<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
 				<figure>
 					<img
@@ -184,7 +66,7 @@ let contributors = {
 
 	<h1>Testers</h1>
 	<div class="tab-content bg-base-100 flex flex-wrap justify-center p-7">
-		{#each testerData.testers as data}
+		{#each itemData.testers as data}
 			<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
 				<figure>
 					<img src="/src/lib/images/capybara.png" alt={data.DisplayName} />
@@ -219,7 +101,7 @@ let contributors = {
 
 	<h1>Moderators</h1>
 	<div class="tab-content bg-base-100 flex flex-wrap justify-center p-7">
-		{#each moderatorData.moderators as data}
+		{#each itemData.moderators as data}
 			<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
 				<figure>
 					<img src="/src/lib/images/capybara.png" alt={data.DisplayName} />

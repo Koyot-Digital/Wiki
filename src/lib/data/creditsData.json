@@ -1,0 +1,149 @@
+{
+	"quotes": [
+		{
+			"developers": [
+				"we're working on the game we SWEAR!",
+				{
+					"Ezy_gaming888": "The cake is a lie.",
+					"GottyXx2": "The cake isn't a lie.",
+					"TrashyLasers": "I am the cake",
+					"chrxs_dev": "We all tell the cake that it is and isn't a lie, but never ask how the cake feels!"
+				}
+			],
+			"testers": [
+				"Runs into a bar. Crawls into a bar. Dances into a bar. Flies into a bar. Jumps into a bar. And orders: A beer. 2 beers. 0 beers. +2147483647 beers. a lizard in a beer glass. -1 beer. \"qwertyuiop\" beers. Testing complete. A real customer walks into the bar and asks where the bathroom is. The bar goes up in flames.",
+				{
+					"inami_rin": "The cake is a lie.",
+					"GottyXx2": "The cake isn't a lie.",
+					"TrashyLasers": "I am the cake",
+					"chrxs_dev": "We all tell the cake that it is and isn't a lie, but never ask how the cake feels!"
+				}
+			],
+			"moderators": [
+				"WHO GAVE NEODIS MOD",
+				{
+					"_neodis": "The cake isn't a lie.",
+					"astroneero": "I am the cake",
+					"virohybrid": "We all tell the cake that it is and isn't a lie, but never ask how the cake feels!",
+					"gladi_._": "Pro",
+					"NateTheGreat": "the cake is a quantum bit that has yet to be observed"
+				}
+			],
+			"contributors": [
+				"Fun fact, water isn't wet. Or is it? *vsauce music*",
+				{
+					"Gargleblaster": "some idiot just pressed the AZ-5 with 200% efficiency",
+					"REDACTED": "N/A",
+					"itsthegrumpyparrotman": "N/A",
+					"DuckQuack001": "N/A",
+					"kristian1047": "N/A"
+				}
+			]
+		}
+	],
+	"developers": [
+		{
+			"DisplayName": "Roscy",
+			"Username": "Ezy_gaming888",
+			"robloxID": 1234567890,
+			"Tier": "LD"
+		},
+		{
+			"DisplayName": "Gottie",
+			"Username": "GottyXx2",
+			"robloxID": 167084004,
+			"Tier": "SD"
+		},
+		{
+			"DisplayName": "Anticitizen One",
+			"Username": "TrashyLasers",
+			"robloxID": 1234567890
+		}
+	],
+	"testers": [
+		{
+			"DisplayName": "Stefan",
+			"Username": "inami_rin",
+			"robloxID": 132749423
+		},
+		{
+			"DisplayName": "Eugene_Fission",
+			"Username": "Slonokot",
+			"robloxID": 337362307
+		},
+		{
+			"DisplayName": "NervA_Mechanica",
+			"Username": "WoodynBuzz",
+			"Tier": "T"
+		},
+		{
+			"DisplayName": "Shozii",
+			"Username": "warface1234455",
+			"robloxID": 1234567890
+		}
+	],
+	"moderators": [
+		{
+			"DisplayName": "NEODIS",
+			"Username": "_neodis",
+			"robloxID": 1234567890,
+			"Tier": "CRM"
+		},
+		{
+			"DisplayName": "Astr0",
+			"Username": "astroneero",
+			"robloxID": 536560884,
+			"Tier": "M"
+		},
+		{
+			"DisplayName": "Ayron",
+			"Username": "virohybrid",
+			"robloxID": 171093439,
+			"Tier": "SM"
+		},
+		{
+			"DisplayName": "Gladi",
+			"Username": "gladi_._",
+			"robloxID": 566191026,
+			"Tier": "SM"
+		},
+		{
+			"DisplayName": "NateTheGreat",
+			"Username": "NateTheGreat",
+			"robloxID": 1234567890,
+			"Tier": "M"
+		}
+	],
+	"contributors": [
+		{
+			"DisplayName": "Bufflehead",
+			"Username": "Gargleblaster",
+			"robloxID": 8311884384,
+			"Tier": "LC"
+		},
+		{
+			"DisplayName": "REDACTED",
+			"Username": "REDACTED",
+			"robloxID": 967748232,
+			"Tier": "WA"
+		},
+		{
+			"DisplayName": "ParrotMan",
+			"Username": "itsthegrumpyparrotman",
+			"robloxID": 4038866427,
+			"Tier": "C"
+		},
+		{
+			"DisplayName": "OneDuck",
+			"Username": "DuckQuack001",
+			"robloxID": 553450691,
+			"Tier": "C"
+		},
+		{
+			"DisplayName": "Krys",
+			"Username": "kristian1047",
+			"robloxID": "UNKNOWN",
+			"Tier": "CM"
+		}
+	]
+}

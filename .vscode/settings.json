@@ -1,11 +1,4 @@
 {
-	"cSpell.words": [
-		"daisyui",
-		"EXPLOTET",
-		"Koyot",
-		"Oakridge",
-		"prefersdark",
-		"Temperature"
-	],
+	"cSpell.words": ["daisyui", "EXPLOTET", "Koyot", "Oakridge", "prefersdark", "Temperature"],
 	"css.lint.unknownAtRules": "ignore"
 }
