@@ -4,6 +4,7 @@ export let title: string
 export let catchphrase: string
 export let button: string = ''
 import pageData from '$lib/data/pageData.json' with { type: 'json' }
+import homeImage from '$lib/images/hero-banners/Reactor-Panel.avif'
 </script>
 
 <!-- #region NavBar content -->
@@ -35,7 +36,7 @@ import pageData from '$lib/data/pageData.json' with { type: 'json' }
 				<a class="card bg-base-100 image-full w-96 h-18 mb-3" href="/">
 					<figure>
 						<img
-							src="src/lib/images/hero-banners/Reactor-Panel.avif"
+							src={homeImage}
 							alt="home"
 							class="w-full h-full object-cover"
 						/>
