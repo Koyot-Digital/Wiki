@@ -90,7 +90,7 @@ Stuck on something? Everyone needs help sometimes, and there are a few ways to g
 ### 🏷️ Where to Ask
 
 **Technical Issues:**
-If you're having trouble with the code side of things, open an Issue in the repository or reach out to @ShrimpQuack on Discord. Be specific about what you're trying to do and what's going wrong.
+If you're having trouble with the code side of things, open an Issue in the repository or reach out to **@gargleblaster_rmbk**, **@felix2557** or anyone with a **Contributor** Role on the [Discord Server](https://discord.com/invite/exnVZvUJUw). Be specific about what you're trying to do and what's going wrong.
 
 **Content Questions:**
 Not sure if your changes fit the site's goals? Ask! Open an Issue and ask. It's better to check than to spend time on something that might not work out.
