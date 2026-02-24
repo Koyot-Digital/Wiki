@@ -8,7 +8,7 @@ const hero = '/images/hero-banners/points.avif'
 <Header
 	heroImg={hero}
 	title="Ranks and Points"
-	catchphrase=""You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor."
+	catchphrase='"You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor.'
 />
 
 <div class="m-5">
