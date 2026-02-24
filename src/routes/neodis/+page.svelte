@@ -13,6 +13,8 @@ import neodis from '/images/people-and-npcs/mods/comunity-relations/Neodis.avif'
 			class="inline-block fill-current ml-4"
 			style="border-radius: 0.25rem;"
 		/>
-		<div class="text-overlay">Neodis is bad he broke my lights he also went to "the island"</div>
+		<div class="text-overlay">
+			Neodis is bad he broke my lights he also went to "the island"
+		</div>
 	</div>
 </div>

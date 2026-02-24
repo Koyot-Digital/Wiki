@@ -8,16 +8,14 @@ import badgeData from '$lib/data/badgesData.json' with { type: 'json' }
 
 <Header heroImg={hero} title="Badges" catchphrase="Gotta get them all!" />
 
-<div class="m-5">
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="mx-auto my-4 max-w-[95vw]">
+	<div class="flex flex-wrap gap-4">
 		{#each badgeData as data}
-			<div class="card card-border bg-base-100">
+			<div class="card card-border bg-base-100 w-3/16">
 				<div class="hover-3d">
-					<!-- content -->
 					<figure class="w-fit rounded-full m-4 mx-auto">
-						<img src={data.image} alt={data.name} width="150" height="150" />
+						<img src={data.image} alt={data.name} width="175" height="175" />
 					</figure>
-					<!-- 8 empty divs needed for the 3D effect -->
 					<div></div>
 					<div></div>
 					<div></div>
@@ -30,6 +28,11 @@ import badgeData from '$lib/data/badgesData.json' with { type: 'json' }
 				<div class="card-body">
 					<h2 class="card-title">{data.name}</h2>
 					<p class="text-sm">{data.description}</p>
+					{#if data.unobtainable == true}
+						<div class="bg-warning text-warning-content rounded-full max-w-fit">
+							<p class="m-2"><b>Badge Is Unobtainable</b></p>
+						</div>
+					{/if}
 					<div class="divider my-2"></div>
 					<details class="collapse collapse-arrow bg-base-200">
 						<summary class="collapse-title">How to Get</summary>

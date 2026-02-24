@@ -1,0 +1,39 @@
+[
+	{
+		"name": "Fuel Rod Control Left",
+		"width": 2,
+		"height": 3,
+		"annunciators": [
+			[
+				{
+					"name": "Mode 1",
+					"description": "Reactor is in mode 1 (Startup). This is normal for the startup of the reactor",
+					"fix": false
+				},
+				{
+					"name": "Mode 2",
+					"description": "Reactor is in Mode 2 (Startup). This is normal for the startup of the reactor",
+					"fix": false
+				}
+			]
+		]
+	},
+	{
+		"name": "Fuel Rod Control Right",
+		"width": 1234,
+		"height": 1234,
+		"annunciators": [
+			{
+				"name": "Fuel Channel Leak",
+				"description": "One or more fuel rods (channels), have leaked. This is a high priority emergency.",
+				"fix": [
+					"A3-5",
+					"Turn On ECCS",
+					"Get OCC on",
+					"Once core is offline, call enginering and ask to repair systems.",
+					"When they give the all clear you may start the reactor back up. Be aware of the Xenon-135 level."
+				]
+			}
+		]
+	}
+]

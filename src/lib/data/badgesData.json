@@ -4,6 +4,7 @@
 		"description": "Blow up the reactor within 8 minutes.",
 		"image": "/images/capybara.png",
 		"guideType": "num",
+		"unobtainable": true,
 		"guide": [
 			"Disable Auto Scram.",
 			"Disable Main Circ Pumps and isolation valves, withdraw rods as fast as possible.",
