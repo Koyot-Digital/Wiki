@@ -30,7 +30,13 @@ const Discord = '/images/icons&logos/Discord.svg'
 		<div class="grid grid-flow-col gap-4">
 			<!-- GitHub -->
 			<a href="https://github.com/koyot-digital/Wiki/" aria-label="GitHub Link">
-				<img src={GitHub} width="24" height="24" class="fill-stone-100" alt="" />
+				<img
+					src={GitHub}
+					width="24"
+					height="24"
+					class="not-dark:fill-violet-950 dark:fill-white"
+					alt=""
+				/>
 			</a>
 			<!-- YouTube -->
 			<a href="https://www.youtube.com/@KoyotDigital" aria-label="YouTube Link">
@@ -55,7 +61,15 @@ const Discord = '/images/icons&logos/Discord.svg'
 			</a>
 		</div>
 	</nav>
-	<aside>
+	<aside class="flex flex-row flex-wrap gap-2 justify-center">
+		<img
+			alt="Licenced under CC BY-SA 4.0"
+			height="35"
+			width="100"
+			class="inline-block fill-current"
+			style="border-radius: 0.5rem;"
+			src={LicenceImg}
+		/>
 		<img
 			alt="Licenced under CC BY-SA 4.0"
 			height="35"
@@ -66,3 +80,9 @@ const Discord = '/images/icons&logos/Discord.svg'
 		/>
 	</aside>
 </footer>
+
+<style>
+.icon {
+	@apply dark:fill-slate-950 fill-white;
+}
+</style>

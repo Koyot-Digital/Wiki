@@ -23,7 +23,7 @@ onMount(() => {
 <div class="m-5 grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-4">
 	<div class="card card-border bg-base-100">
 		<figure>
-			<img src={updates} alt="welcome" />
+			<img src={updates} alt="welcome" class="card-img" />
 		</figure>
 		<div class="card-body">
 			<h2 class="card-title">Update Version 0.26.6 Beta</h2>
@@ -50,7 +50,7 @@ onMount(() => {
 	</div>
 	<div class="card card-border bg-base-100">
 		<figure>
-			<img src={teamImg} alt="welcome" />
+			<img src={teamImg} alt="welcome" class="card-img" />
 		</figure>
 		<div class="card-body">
 			<h2 class="card-title">Welcome to the team</h2>
@@ -68,7 +68,7 @@ onMount(() => {
 	</div>
 	<div class="card card-border bg-base-100">
 		<figure>
-			<img src={locations} alt="about" />
+			<img src={locations} alt="about" class="card-img" />
 		</figure>
 		<div class="card-body">
 			<h2 class="card-title">About the facility</h2>
@@ -93,3 +93,13 @@ onMount(() => {
 	</div>
 </div>
 <Footer />
+
+<style>
+.card-img {
+	background-position: center;
+	object-fit: cover;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+}
+</style>
