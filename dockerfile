@@ -7,6 +7,8 @@ COPY package*.json ./
 RUN npm ci
 
 COPY . .
+RUN node run ./scripts/busts.js
+RUN node run ./scripts/fetchBadges.js
 RUN npm run build
    
 # Remove dev dependencies
