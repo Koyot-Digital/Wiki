@@ -5,11 +5,13 @@ import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/points.avif'
 </script>
 
+<!-- prettier-ignore-start -->
 <Header
 	heroImg={hero}
 	title="Ranks and Points"
-	catchphrase=""You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor."
+	catchphrase='You dont know about the ranks around here? What are they teaching the new trainees? We work for a nuclear powerplant for the NRCs sake!" - Supervisor.'
 />
+<!-- prettier-ignore-end -->
 
 <div class="m-5">
 	<div class="collapse bg-base-100 mb-4">
@@ -29,9 +31,13 @@ const hero = '/images/hero-banners/points.avif'
 		<p class="text-base">
 			The Ranks and Points system in this game is fairly simple. To rank up you just need to
 			keep the reactor and the turbines connected to the grid and meet demand. At the end of
-			your shift (At 00:00) you will earn a paycheck. Each time you get your paycheck your
+			your shift (At 00:00:00) you will earn a paycheck. Each time you get your paycheck your
 			'Money' turns into points. In other words your main priority is to sell as much power as
-			possible.
+			possible. 1/3 of your points go to security, without affecting your operations paycheck
+			if you play as operations. If you play as security, you get 100% of your points. This is
+			to encourage security to do their job and not just leech off of operations. Also, the
+			points you earn are based on your rank. The higher your rank, the more points you earn.
+			So if you want to rank up faster, you need to rank up!
 		</p>
 	</div>
 

@@ -1,0 +1,116 @@
+[
+  {
+    "id": 353671962078220,
+    "name": "?????",
+    "description": "What?",
+    "file": "images/badges/.avif"
+  },
+  {
+    "id": 2781205894218609,
+    "name": "#1 Enemy of staff morale",
+    "description": "Throw all the pizza into the spent fuel pool.",
+    "file": "images/badges/1_Enemy_of_staff_morale.avif"
+  },
+  {
+    "id": 4362948830446609,
+    "name": "Deep fried",
+    "description": "Make contact with live wires in the bridge circuit room.",
+    "file": "images/badges/Deep_fried.avif"
+  },
+  {
+    "id": 665817079380911,
+    "name": "Sufficiently ionized",
+    "description": "Reach a fatal dosage of ionizing radiation.",
+    "file": "images/badges/Sufficiently_ionized.avif"
+  },
+  {
+    "id": 1114354604815131,
+    "name": "Power to the people",
+    "description": "Connect to the grid and deliver power.",
+    "file": "images/badges/Power_to_the_people.avif"
+  },
+  {
+    "id": 4181698056926892,
+    "name": "BOOP!",
+    "description": ":3c",
+    "file": "images/badges/BOOP.avif"
+  },
+  {
+    "id": 4278406373032910,
+    "name": "Floor pizza",
+    "description": "Kinda gross, ngl.",
+    "file": "images/badges/Floor_pizza.avif"
+  },
+  {
+    "id": 3250779068720189,
+    "name": "You're fired!",
+    "description": "Fail to produce any power within 48 hours.",
+    "file": "images/badges/Youre_fired.avif"
+  },
+  {
+    "id": 1666029584008430,
+    "name": "7 Nights at Oakridge",
+    "description": "Complete a whole week at the plant.",
+    "file": "images/badges/7_Nights_at_Oakridge.avif"
+  },
+  {
+    "id": 1026219050548484,
+    "name": "Senior operator",
+    "description": "You've proven yourself in the art of reactor operation.",
+    "file": "images/badges/Senior_operator.avif"
+  },
+  {
+    "id": 3577894804694359,
+    "name": "By the book",
+    "description": "Reach 100% efficiency while meeting demand.",
+    "file": "images/badges/By_the_book.avif"
+  },
+  {
+    "id": 2700116911274395,
+    "name": "Teamwork? Sounds like a liability",
+    "description": "Complete an entire shift all on your own.",
+    "file": "images/badges/Teamwork_Sounds_like_a_liability.avif"
+  },
+  {
+    "id": 3264722715275126,
+    "name": "GET ME FEEDWATER!",
+    "description": "",
+    "file": "images/badges/GET_ME_FEEDWATER.avif"
+  },
+  {
+    "id": 1100342795791732,
+    "name": "Junior operator",
+    "description": "Hope you were paying attention.",
+    "file": "images/badges/Junior_operator.avif"
+  },
+  {
+    "id": 2625833812070171,
+    "name": "Energy tycoon",
+    "description": "Sell over 20 gigawatt-hours of power in one day",
+    "file": "images/badges/Energy_tycoon.avif"
+  },
+  {
+    "id": 4176997595831347,
+    "name": "Supervisor",
+    "description": "Share your wisdom and guide your peers to success!",
+    "file": "images/badges/Supervisor.avif"
+  },
+  {
+    "id": 2896406166276203,
+    "name": "OSHA would be proud",
+    "description": "Safely shut down the reactor without mishap.",
+    "file": "images/badges/OSHA_would_be_proud.avif"
+  },
+  {
+    "id": 1806944995331066,
+    "name": "Shift Manager",
+    "description": "Middle management, maximum ego.",
+    "file": "images/badges/Shift_Manager.avif"
+  },
+  {
+    "id": 746081918419453,
+    "name": "Plant Director",
+    "description": "Certified to blame others when things explode.",
+    "file": "images/badges/Plant_Director.avif"
+  }
+]

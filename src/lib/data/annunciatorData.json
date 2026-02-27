@@ -43,6 +43,7 @@
 			{
 				"name": "Fuel Channel Leak",
 				"description": "One or more fuel rods (channels), have leaked and/or cracked. This is a high priority emergency.",
+				"color": "red",
 				"fix": [
 					"A3-5",
 					"Turn On ECCS",

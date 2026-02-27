@@ -14,7 +14,7 @@ import neodis from '/images/people-and-npcs/mods/comunity-relations/Neodis.avif'
 			style="border-radius: 0.25rem;"
 		/>
 		<div class="text-overlay">
-			Neodis is bad he broke my lights he also went to "the island"
+			Neodis is bad he broke my lights he also went to "that island" 🫪
 		</div>
 	</div>
 </div>
