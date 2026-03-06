@@ -43,8 +43,8 @@ pnpm-debug.log*
 # =========================
 # Generated Images
 # =========================
-/src/static/images/badges/*.avif
-/src/static/images/people/*.avif
+/static/images/badges/*.avif
+/static/images/people/*.avif
 
 # =========================
 # Environment
