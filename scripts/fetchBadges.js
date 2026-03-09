@@ -48,7 +48,7 @@ async function fetchBadgeThumbnails(badges) {
 		throw new Error(`Failed to fetch thumbnails: ${res.status} ${res.statusText} - ${body}`)
 	}
 	const json = await res.json()
-	if (VERBOSE) console.log('Thumbnails response:', JSON.stringify(json, null, 2))
+	if (VERBOSE) console.log('Roblox API response:', JSON.stringify(json, null, 2))
 	const map = {}
 	for (const item of json.data || []) {
 		map[String(item.targetId)] = item
@@ -81,7 +81,7 @@ async function downloadImage(url, destPath) {
 }
 
 async function main() {
-	console.log('Ensuring badges directory exists at', BADGES_DIR)
+	console.log('Ensuring badges directory exists at: ', BADGES_DIR)
 	await fs.mkdir(BADGES_DIR, { recursive: true })
 	const badges = await fetchBadgeIDs()
 	const thumbMap = await fetchBadgeThumbnails(badges)

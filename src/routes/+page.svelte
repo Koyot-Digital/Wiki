@@ -136,7 +136,4 @@ onMount(() => {
 	height: 300px;
 	width: 100%;
 }
-.nav-chip {
-	@apply: rounded-full;
-}
 </style>

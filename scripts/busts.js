@@ -3,7 +3,7 @@ import path from 'path'
 import sharp from 'sharp'
 
 const DATA_PATH = path.resolve('./src/lib/data/creditsData.json')
-const STATIC_DIR = path.resolve('./static/images')
+const STATIC_DIR = path.resolve('./static/images/people')
 const VALID_PHOTO_TYPES = new Set(['bust', 'full'])
 // #region People
 async function collectRobloxIds(data) {
