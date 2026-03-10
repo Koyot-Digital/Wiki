@@ -17,13 +17,20 @@
 		"Hass",
 		"Koycraft",
 		"Koyot",
+		"npcs",
 		"Oakridge",
 		"ONPS",
 		"powerplant",
 		"prefersdark",
+		"RBMK",
 		"Roleplay",
 		"screensize",
-		"Speedrunner"
+		"Speedrunner",
+		"большой",
+		"канальный",
+		"мощности",
+		"РБМК",
+		"Реактор"
 	],
 	"css.lint.unknownAtRules": "ignore"
 }

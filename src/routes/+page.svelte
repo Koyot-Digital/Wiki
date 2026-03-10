@@ -3,15 +3,10 @@ import '../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 import PageData from '$lib/data/pageData.json' with { type: 'json' }
-import { onMount } from 'svelte'
 const headerImg = '/images/hero-banners/banner5.avif'
 const locations = '/images/hero-banners/emergency.avif'
 const updates = '/images/hero-banners/updates.avif'
 const teamImg = '/images/hero-banners/npcs.avif'
-var displayWidth = 0
-onMount(() => {
-	displayWidth = window.innerWidth
-})
 </script>
 
 <Header
@@ -59,7 +54,7 @@ onMount(() => {
 					Your first shift starts RIGHT NOW! Though, we're short-staffed at the moment I'm
 					sure you and your big brain can figure it out! Be responsible for overseeing a
 					multi-billion-dollar operation, one of the planet's most potent and delicate
-					energy systems. Every decision matters, from regulating the reactor's behaviour,
+					energy systems. Every decision matters, from regulating the reactor's behavior,
 					running turbines and their subsidiaries, managing cooling systems, maintaining
 					pumps and valves, and responding to unforeseen emergencies and conditions, all
 					while maintaining <s>strict</s>

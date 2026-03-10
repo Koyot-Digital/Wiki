@@ -14,7 +14,8 @@ import neodis from '/images/people-and-npcs/mods/comunity-relations/Neodis.avif'
 			style="border-radius: 0.25rem;"
 		/>
 		<div class="text-overlay">
-			Neodis is bad he broke my lights he also went to "that island" 🫪
+			Neodis is bad he broke my lights he also went to Bloxstine's island on the Bloxstina
+			Express 🫪
 		</div>
 	</div>
 </div>

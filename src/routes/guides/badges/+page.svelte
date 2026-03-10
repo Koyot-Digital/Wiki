@@ -9,9 +9,9 @@ import badgeData from '$lib/data/badgesData.json' with { type: 'json' }
 <Header heroImg={hero} title="Badges" catchphrase="Gotta get them all!" />
 
 <div class="mx-auto my-4 max-w-[95vw]">
-	<div class="flex flex-wrap gap-4">
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4">
 		{#each badgeData as data}
-			<div class="card card-border bg-base-100 w-3/16">
+			<div class="card card-border bg-base-100 w-full">
 				<div class="hover-3d">
 					<figure class="w-fit rounded-full m-4 mx-auto">
 						<img src={data.image} alt={data.name} width="175" height="175" />

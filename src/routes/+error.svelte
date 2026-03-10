@@ -7,7 +7,7 @@ import { page } from '$app/state'
 // add more later for different status codes
 if (page.status == 404) {
 	var catchphrase =
-		"Looks like the page you're looking for wandered into the core and got irradiated!"
+		"ok where did the polonium- I mean page go? we had it right here a second ago... maybe check the waste storage? or the cooling towers? maybe it's in the turbine hall? who knows, but it's definitely not here."
 } else {
 	var catchphrase = 'An unexpected error has occurred.'
 }
