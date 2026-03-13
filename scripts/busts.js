@@ -1,8 +1,9 @@
 import fs from 'fs/promises'
 import path from 'path'
 import sharp from 'sharp'
+import yaml from 'js-yaml'
 
-const DATA_PATH = path.resolve('./src/lib/data/creditsData.json')
+const DATA_PATH = path.resolve('./src/lib/data/creditsData.yaml')
 const STATIC_DIR = path.resolve('./static/images/people')
 const VALID_PHOTO_TYPES = new Set(['bust', 'full'])
 // #region People
@@ -49,7 +50,9 @@ async function fetchAvatarBatch(items, photoType) {
 
 	const userIds = items.map(item => item.id)
 	const endpoint = photoType === 'full' ? 'avatar' : 'avatar-bust'
-	const api = `https://thumbnails.roblox.com/v1/users/${endpoint}?userIds=${userIds.join(',')}&size=420x420&format=Webp&isCircular=false`
+	const api = `https://thumbnails.roblox.com/v1/users/${endpoint}?userIds=${userIds.join(
+		','
+	)}&size=420x420&format=Webp&isCircular=false`
 
 	const res = await fetch(api)
 	const json = await res.json()
@@ -69,7 +72,7 @@ async function fetchAvatarBatch(items, photoType) {
 			const imgRes = await fetch(image.imageUrl)
 			const buffer = Buffer.from(await imgRes.arrayBuffer())
 
-			const outPath = path.join(STATIC_DIR, +'/people/' + `${item.username}.avif`)
+			const outPath = path.join(STATIC_DIR, `${item.username}.avif`)
 
 			await sharp(buffer).avif({ quality: 60 }).toFile(outPath)
 
@@ -92,7 +95,7 @@ async function main() {
 	await fs.mkdir(STATIC_DIR, { recursive: true })
 
 	const raw = await fs.readFile(DATA_PATH, 'utf-8')
-	const data = JSON.parse(raw)
+	const data = yaml.load(raw)
 
 	const usernameToId = await collectRobloxIds(data)
 	const items = [...usernameToId.entries()].map(([username, id]) => ({ username, id }))

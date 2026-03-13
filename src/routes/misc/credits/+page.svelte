@@ -3,7 +3,7 @@ import '../../../app.css'
 import Header from '$lib/components/Header.svelte'
 import Footer from '$lib/components/Footer.svelte'
 const hero = '/images/hero-banners/credits.avif'
-import itemData from '$lib/data/creditsData.json' with { type: 'json' }
+import itemData from '$lib/data/creditsData.yaml'
 </script>
 
 <Header heroImg={hero} title="Credits" catchphrase="Who designed this reactor again?" />
@@ -25,20 +25,15 @@ import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 	<h1>Developers</h1>
 	<div class="tab-content bg-base-100 flex flex-wrap justify-center p-7">
 		{#each itemData.developers as data}
-			{#if typeof data === 'object'}
-				<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
-					<figure>
-						<img
-							src="/src/lib/images/people-and-npcs/devs/{data.username}.avif"
-							alt={data.username}
-						/>
-					</figure>
-					<div class="card-body">
-						<h2 class="card-title">{data.username}</h2>
-						<p class="italic">"{data.quote}"</p>
-					</div>
+			<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
+				<figure>
+					<img src="/images/people/{data.username}.avif" alt={data.username} />
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title">{data.username}</h2>
+					<p class="italic">"{data.quote}"</p>
 				</div>
-			{/if}
+			</div>
 		{/each}
 	</div>
 </div>
@@ -64,7 +59,7 @@ import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 			{#if typeof data === 'object'}
 				<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
 					<figure>
-						<img src="/src/lib/images/capybara.png" alt={data.username} />
+						<img src="/images/people/{data.username}.avif" alt={data.username} />
 					</figure>
 					<div class="card-body">
 						<h2 class="card-title">{data.username}</h2>
@@ -97,7 +92,7 @@ import itemData from '$lib/data/creditsData.json' with { type: 'json' }
 			{#if typeof data === 'object'}
 				<div class="card bg-base-100 w-1/5 shadow-sm border-2 border-base-300 m-4">
 					<figure>
-						<img src="/src/lib/images/capybara.png" alt={data.username} />
+						<img src="/images/people/{data.username}.avif" alt={data.username} />
 					</figure>
 					<div class="card-body">
 						<h2 class="card-title">{data.username}</h2>
