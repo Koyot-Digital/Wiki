@@ -1,3 +1,10 @@
+// Setup
+
+const script = document.createElement('script');
+script.src = 'https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js';
+script.onload = () => console.log('DOMPurify loaded');
+document.head.appendChild(script);
+
 // ==============================
 // FORMATTING / PREFERENCES
 // ==============================
@@ -102,7 +109,7 @@ function initializeInfoPanels() {
 
       if (explanationDiv) {
         document.getElementById('panel-title').textContent = this.textContent;
-        document.getElementById('panel-explanation').innerHTML = explanationDiv.innerHTML;
+        document.getElementById('panel-explanation').innerHTML = DOMPurify.sanitize(explanationDiv.innerHTML);
         document.getElementById('sidePanel').classList.add('open');
         console.log('Side panel opened');
       } else {
@@ -435,7 +442,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       const placeholder = document.getElementById('NavGrid-placeholder');
       if (!placeholder) return;
-      placeholder.innerHTML = data;
+      placeholder.innerHTML = DOMPurify.sanitize(data);
       initializeViewMoreButtons();
       initializeArticleSearch();
     })
