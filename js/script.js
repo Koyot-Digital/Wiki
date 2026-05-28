@@ -5,6 +5,19 @@ script.src = 'https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.
 script.onload = () => console.log('DOMPurify loaded');
 document.head.appendChild(script);
 
+function waitForDOMPurify() {
+  return new Promise((resolve) => {
+    if (window.DOMPurify) return resolve();
+
+    const check = setInterval(() => {
+      if (window.DOMPurify) {
+        clearInterval(check);
+        resolve();
+      }
+    }, 50);
+  });
+}
+
 // ==============================
 // FORMATTING / PREFERENCES
 // ==============================
@@ -437,16 +450,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Load NavGrid
-  fetch('NavGrid.html')
-    .then(response => response.text())
-    .then(data => {
-      const placeholder = document.getElementById('NavGrid-placeholder');
-      if (!placeholder) return;
-      placeholder.innerHTML = DOMPurify.sanitize(data);
-      initializeViewMoreButtons();
-      initializeArticleSearch();
-    })
-    .catch(error => console.error('Error loading NavGrid:', error));
+  waitForDOMPurify().then(() => {
+    fetch('NavGrid.html')
+      .then(response => response.text())
+      .then(data => {
+        const placeholder = document.getElementById('NavGrid-placeholder');
+        if (!placeholder) return;
+
+        placeholder.innerHTML = DOMPurify.sanitize(data);
+
+        initializeViewMoreButtons();
+        initializeArticleSearch();
+      })
+      .catch(error => console.error('Error loading NavGrid:', error));
+  });
 
   console.log('Page initialization complete');
 });
