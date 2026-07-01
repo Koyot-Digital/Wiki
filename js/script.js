@@ -1,3 +1,5 @@
+alert("We have moved to Miraheze. Please go to the new wiki at oakridge.miraheze.org. This wiki will no longer be updated. DATE OF LAST EDIT: JUL/1/2026")
+
 // Setup
 
 const script = document.createElement('script');
