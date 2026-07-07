@@ -1,5 +1,12 @@
-alert("We have moved to Miraheze. Please go to the new wiki at oakridge.miraheze.org. This wiki will no longer be updated. DATE OF LAST EDIT: JUL/1/2026")
+const params = new URLSearchParams(location.search);
 
+alert("This wiki has moved to https://oakridge.miraheze.org/, you will be redirected in 5 seconds.");
+
+if (!params.has("dev")) {
+  setTimeout(() => {
+    window.location.replace("https://oakridge.miraheze.org/");
+  }, 5000);
+}
 // Setup
 
 const script = document.createElement('script');
