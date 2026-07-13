@@ -1,12 +1,4 @@
-const params = new URLSearchParams(location.search);
-
-alert("This wiki has moved to https://oakridge.miraheze.org/, you will be redirected in 5 seconds.");
-
-if (!params.has("dev")) {
-  setTimeout(() => {
-    window.location.replace("https://oakridge.miraheze.org/");
-  }, 5000);
-}
+alert("This wiki has moved to https://oakridge.miraheze.org/");
 // Setup
 
 const script = document.createElement('script');
