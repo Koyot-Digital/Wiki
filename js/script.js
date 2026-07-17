@@ -1,4 +1,3 @@
-alert("This wiki has moved to https://oakridge.miraheze.org/");
 // Setup
 
 const script = document.createElement('script');
